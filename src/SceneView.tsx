@@ -98,6 +98,9 @@ export const SceneView: React.FC<{ scene: Scene }> = ({ scene }) => {
     blur = k * 28;
   }
   if (tr === "flash") flash = interpolate(t, [0, 0.25], [1, 0], { extrapolateRight: "clamp" });
+  // моргание: кадр начинается закрытым, «веки» открываются (с одним полудрожанием)
+  let lid = 0;
+  if (tr === "blink") lid = interpolate(t, [0, 0.25, 0.4, 0.5, 0.75], [1, 1, 0.35, 0.5, 0], { extrapolateRight: "clamp" });
 
   return (
     <AbsoluteFill style={{ background: "#000" }}>
@@ -115,6 +118,12 @@ export const SceneView: React.FC<{ scene: Scene }> = ({ scene }) => {
       {scene.title ? <Title spec={scene.title} t={t} len={len} letterbox={letterbox} /> : null}
       {letterbox ? <Letterbox /> : null}
       {flash > 0 ? <AbsoluteFill style={{ background: "#fff", opacity: flash }} /> : null}
+      {lid > 0 ? (
+        <AbsoluteFill>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: `${lid * 51}%`, background: "#000", borderBottomLeftRadius: "50% 30%", borderBottomRightRadius: "50% 30%" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lid * 51}%`, background: "#000", borderTopLeftRadius: "50% 30%", borderTopRightRadius: "50% 30%" }} />
+        </AbsoluteFill>
+      ) : null}
     </AbsoluteFill>
   );
 };

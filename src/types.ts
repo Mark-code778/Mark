@@ -204,7 +204,7 @@ export type Scene = {
   title?: TitleSpec;
   plate?: PlateSpec;
   sfx?: SfxSpec[];
-  transition?: "cut" | "fade" | "whip" | "flash";
+  transition?: "cut" | "fade" | "whip" | "flash" | "blink";
   split?: { left: SubScene; right: SubScene };
   note?: string; // для себя: что происходит в сцене
 };

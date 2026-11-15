@@ -11,7 +11,7 @@ const MOVES = ["static", "dolly-in", "dolly-out", "pan-left", "pan-right", "orbi
 const SFX = ["whoosh", "swoosh", "rise", "pop", "click", "ding", "thud", "impact", "tick", "glitch", "heartbeat", "sparkle", "buzz", "boing", "scribble", "cash"];
 const HAIR = ["none", "puff", "bob", "bun", "cap", "headband"];
 const HELD = ["none", "phone", "bottle", "sign", "cup", "coin", "book"];
-const TRANS = ["cut", "fade", "whip", "flash"];
+const TRANS = ["cut", "fade", "whip", "flash", "blink"];
 
 const errors = [];
 const warns = [];

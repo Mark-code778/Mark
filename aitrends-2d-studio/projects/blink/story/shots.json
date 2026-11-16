@@ -1,0 +1,9445 @@
+{
+ "title": "Моргни",
+ "duration": 502.27,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0,
+   "end": 0.95,
+   "line": "Ты моргаешь,",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkAt": [
+     [
+      0.45,
+      0.75
+     ]
+    ],
+    "blinkIn": 0.5,
+    "expr": "neutral"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.5,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s002",
+   "start": 0.95,
+   "end": 2.99,
+   "line": "и тебе уже двадцать два.",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "so": {
+     "mood": "day"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.12
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -60,
+      "s": 1.7,
+      "expr": [
+       [
+        0,
+        "surprised"
+       ],
+       [
+        0.8,
+        "confused"
+       ]
+      ]
+     }
+    ],
+    "ov": [
+     {
+      "k": "age",
+      "v": 22,
+      "at": 0.6
+     }
+    ],
+    "blinkIn": 0.35
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.6,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s003",
+   "start": 2.99,
+   "end": 4.35,
+   "line": "Моргаешь еще раз,",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "neutral",
+    "bg": {
+     "set": "park"
+    },
+    "blinkAt": [
+     [
+      0.35,
+      0.65
+     ]
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.3,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s004",
+   "start": 4.35,
+   "end": 6.87,
+   "line": "и твой лучший друг Егор женат.",
+   "scene": "set:wedding",
+   "params": {
+    "k": "set",
+    "set": "wedding",
+    "cam": {
+     "z": [
+      1.08,
+      1.14
+     ],
+     "x": [
+      -40,
+      0
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 30,
+      "s": 1.5,
+      "expr": "joy",
+      "pose": "cheer",
+      "f": 1
+     },
+     {
+      "who": "WIFE",
+      "x": 170,
+      "s": 1.5,
+      "expr": "happy",
+      "f": -1,
+      "pose": "wave"
+     },
+     {
+      "who": "MAX",
+      "x": -380,
+      "s": 1.6,
+      "expr": "shocked",
+      "pose": "handsOnHead"
+     }
+    ],
+    "ov": [
+     {
+      "k": "age",
+      "v": 23,
+      "at": 0.4
+     },
+     {
+      "k": "line",
+      "s": "ЖЕНАТ.",
+      "at": 0.8
+     }
+    ],
+    "blinkIn": 0.35
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.6,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s005",
+   "start": 6.87,
+   "end": 9.45,
+   "line": "Моргаешь в третий раз, и у Егора появляется",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.1,
+      1.16
+     ],
+     "x": [
+      0,
+      30
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 140,
+      "s": 1.5,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "happy"
+     },
+     {
+      "who": "MAX",
+      "x": -330,
+      "s": 1.6,
+      "expr": "shocked"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": 115,
+      "y": -230,
+      "s": 0.65
+     }
+    ],
+    "ov": [
+     {
+      "k": "age",
+      "v": 24,
+      "at": 0.4
+     }
+    ],
+    "blinkIn": 0.35
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s006",
+   "start": 9.45,
+   "end": 11.83,
+   "line": "сын, которого зовут Максим.",
+   "scene": "insert:carrier",
+   "params": {
+    "k": "insert",
+    "what": "carrier",
+    "bg": {
+     "set": "home"
+    },
+    "ov": [
+     {
+      "k": "line",
+      "s": "МАКСИМ.",
+      "at": 1.5500000000000007
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s007",
+   "start": 11.83,
+   "end": 15.33,
+   "line": "Моргаешь в четвертый раз, ты стоишь посреди автосалона",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      0.85,
+      1
+     ],
+     "x": [
+      -200,
+      60
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 120,
+      "s": 1.2,
+      "f": -1,
+      "expr": "scared",
+      "still": true
+     },
+     {
+      "who": "EGOR",
+      "x": -60,
+      "s": 1.2,
+      "f": 1,
+      "beard": true,
+      "expr": "worried"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.2,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "happy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "age",
+      "v": 25,
+      "at": 0.4
+     }
+    ],
+    "blinkIn": 0.35
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.4,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s008",
+   "start": 15.33,
+   "end": 16.81,
+   "line": "на Кутузовском проспекте,",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.3,
+      1.4
+     ],
+     "x": [
+      120,
+      160
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 150,
+      "s": 1.6,
+      "expr": "scared",
+      "f": -1,
+      "still": true,
+      "pose": "stand"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КУТУЗОВСКИЙ ПРОСПЕКТ",
+      "at": 0.2,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s009",
+   "start": 16.81,
+   "end": 19.21,
+   "line": "не моргая четвертую минуту.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "shake": 3,
+    "ov": [
+     {
+      "k": "counter",
+      "label": "НЕ МОРГАЯ",
+      "from": 236,
+      "to": 240,
+      "fmt": "mmss",
+      "at": 0.2,
+      "until": 3
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0,
+     "gain": -10
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.4,
+     "gain": -10
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s010",
+   "start": 19.21,
+   "end": 21.81,
+   "line": "Сергей Николаевич протягивает конверт.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.25,
+      1.32
+     ],
+     "x": [
+      180,
+      220
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "expr": "scared",
+      "f": 1,
+      "still": true
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "happy"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "envelope",
+      "x": 270,
+      "y": -235,
+      "s": 0.4
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s011",
+   "start": 21.81,
+   "end": 23.81,
+   "line": "Максим, твоя премия.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "happy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "side": 1,
+    "talk": [
+     21.91,
+     23.57
+    ],
+    "x": 160
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s012",
+   "start": 23.81,
+   "end": 26.33,
+   "line": "А Егор вытирает тебе слезы.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.35,
+      1.42
+     ],
+     "x": [
+      80,
+      100
+     ],
+     "y": -70
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.5,
+      "expr": "cry",
+      "f": 1,
+      "pose": "sad"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "reach",
+      "expr": "happy",
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.5,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s013",
+   "start": 26.33,
+   "end": 27.89,
+   "line": "А теперь давай сначала.",
+   "scene": "title",
+   "params": {
+    "k": "title",
+    "lines": [
+     "ЕСЛИ БЫ КАЖДОЕ",
+     "МОРГАНИЕ СТОИЛО ГОД"
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    }
+   },
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0,
+     "gain": -12
+    },
+    {
+     "name": "stinger",
+     "at": 0.6,
+     "gain": -8
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s014",
+   "start": 27.89,
+   "end": 31.59,
+   "line": "Тебя зовут Максим. Тебе двадцать один год.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#4a3646"
+    },
+    "cam": {
+     "z": [
+      1.1,
+      1.18
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.9,
+      "expr": [
+       [
+        0,
+        "smile"
+       ],
+       [
+        1.2,
+        "happy"
+       ]
+      ],
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.4,
+        "wave"
+       ],
+       [
+        1.6,
+        "relaxed"
+       ]
+      ]
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "МАКСИМ",
+      "at": 0.3,
+      "y": 220,
+      "size": 56
+     },
+     {
+      "k": "age",
+      "v": 21,
+      "at": 2.0600000000000023
+     }
+    ]
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.3,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s015",
+   "start": 31.59,
+   "end": 33.49,
+   "line": "Ты живешь в Москве и работаешь",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      0.8,
+      0.9
+     ],
+     "x": [
+      -500,
+      -300
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.2,
+      "f": -1,
+      "expr": "neutral"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "МОСКВА · АВТОСАЛОН",
+      "at": 0.3,
+      "y": 160
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s016",
+   "start": 33.49,
+   "end": 35.21,
+   "line": "менеджером в автосалоне.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.12,
+      1.18
+     ],
+     "x": [
+      -160,
+      -120
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -80,
+      "s": 1.5,
+      "f": -1,
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.3,
+        "point"
+       ]
+      ],
+      "expr": "smile"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "МЕНЕДЖЕР",
+      "at": 0.3,
+      "y": 960
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s017",
+   "start": 35.21,
+   "end": 37.25,
+   "line": "Твой начальник, Сергей Николаевич,",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.35,
+      1.4
+     ],
+     "x": [
+      500,
+      540
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "BOSS",
+      "x": 420,
+      "s": 1.5,
+      "f": -1,
+      "pose": "crossArms",
+      "expr": "smirk"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "СЕРГЕЙ НИКОЛАЕВИЧ",
+      "at": 0.3,
+      "y": 960
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s018",
+   "start": 37.25,
+   "end": 40.55,
+   "line": "обещает выписать тебе премию уже больше месяца.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.22,
+      1.28
+     ],
+     "x": [
+      220,
+      260
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "pose": "think",
+      "expr": "thinking"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "pose": "explain",
+      "expr": "happy"
+     }
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "ПРЕМИЯ",
+      "at": 0.4,
+      "y": 170
+     },
+     {
+      "k": "counter",
+      "label": "ОБЕЩАЕТ УЖЕ",
+      "from": 1,
+      "to": 34,
+      "unit": " ДН.",
+      "at": 0.6,
+      "until": 2.6
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "counter",
+     "at": 0.6,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s019",
+   "start": 40.55,
+   "end": 44.35,
+   "line": "У тебя есть лучший друг Егор, который знает о тебе все,",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "so": {
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.1,
+      1.12
+     ],
+     "x": [
+      -100,
+      120
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.6,
+      "walk": [
+       -420,
+       160
+      ],
+      "expr": "happy"
+     },
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.6,
+      "walk": [
+       -250,
+       330
+      ],
+      "expr": "joy",
+      "talk": [
+       41.55,
+       43.55
+      ]
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ЕГОР",
+      "at": 0.4,
+      "y": 960
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s020",
+   "start": 44.35,
+   "end": 47.91,
+   "line": "даже то, что ты до сих пор не любишь темные подъезды.",
+   "scene": "set:stairwell",
+   "params": {
+    "k": "set",
+    "set": "stairwell",
+    "cam": {
+     "z": [
+      1.15,
+      1.25
+     ],
+     "shake": 2
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -140,
+      "s": 1.5,
+      "expr": "scared",
+      "pose": "crouch",
+      "f": 1,
+      "sweat": true
+     }
+    ],
+    "fx": [
+     "dust"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "gain": -12
+    },
+    {
+     "name": "buzz",
+     "at": 1.2,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s021",
+   "start": 47.91,
+   "end": 51.69,
+   "line": "И все это начинается в самый обычный понедельник.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024,
+     "mood": "interiorCool",
+     "clock": 32400
+    },
+    "cam": {
+     "z": [
+      0.86,
+      0.95
+     ],
+     "x": [
+      -260,
+      -120
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.2,
+      "f": -1,
+      "expr": "sleepy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "ПОНЕДЕЛЬНИК",
+      "at": 0.6,
+      "y": 150
+     }
+    ]
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s022",
+   "start": 51.69,
+   "end": 54.11,
+   "line": "Ты стоишь в салоне возле серого кроссовера",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024,
+     "price": "3 899 000"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.1
+     ],
+     "x": [
+      -120,
+      -80
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "neutral"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s023",
+   "start": 54.11,
+   "end": 57.79,
+   "line": "за три миллиона восемьсот девяносто девять тысяч рублей.",
+   "scene": "insert:price",
+   "params": {
+    "k": "insert",
+    "what": "price",
+    "v": "3 899 000",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 0.3,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s024",
+   "start": 57.79,
+   "end": 58.95,
+   "line": "Клиентов нет.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024,
+     "price": "3 899 000"
+    },
+    "cam": {
+     "z": [
+      0.92,
+      0.95
+     ],
+     "x": [
+      100,
+      60
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.2,
+      "f": -1,
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.3,
+        "shrug"
+       ]
+      ],
+      "expr": "sad"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КЛИЕНТОВ: 0",
+      "at": 0.3,
+      "y": 960
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s025",
+   "start": 58.95,
+   "end": 61.27,
+   "line": "Кофе остыл еще в девять утра.",
+   "scene": "insert:cup",
+   "params": {
+    "k": "insert",
+    "what": "cup",
+    "cold": true,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    },
+    "ov": [
+     {
+      "k": "readout",
+      "label": "ОСТЫЛ В",
+      "v": "9:00",
+      "at": 0.4
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s026",
+   "start": 61.27,
+   "end": 65.21,
+   "line": "Мимо проходит Сергей Николаевич, хлопает тебя по плечу и говорит",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.18,
+      1.22
+     ],
+     "x": [
+      180,
+      220
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 40,
+      "s": 1.5,
+      "f": 1,
+      "prop": "cup",
+      "pose": "holdFront",
+      "expr": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        2.6,
+        "sleepy"
+       ]
+      ]
+     },
+     {
+      "who": "BOSS",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       700,
+       230
+      ],
+      "walkT": [
+       0,
+       2.2
+      ],
+      "endPose": "reach",
+      "f": -1,
+      "expr": "happy"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.9,
+     "gain": -16
+    },
+    {
+     "name": "hit",
+     "at": 2.4,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s027",
+   "start": 65.21,
+   "end": 69.13,
+   "line": "Максим, премия на этой неделе. Точно.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": [
+     [
+      0,
+      "happy"
+     ],
+     [
+      3.2,
+      "smirk"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     65.31,
+     68.89
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s028",
+   "start": 69.13,
+   "end": 72.97,
+   "line": "Ты слышишь эту фразу уже тридцать четвертый день подряд.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.4,
+      1.5
+     ],
+     "x": [
+      40,
+      60
+     ],
+     "y": -80
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 40,
+      "s": 1.5,
+      "pose": "facepalm",
+      "expr": "sad"
+     }
+    ],
+    "ov": [
+     {
+      "k": "counter",
+      "label": "ДЕНЬ",
+      "from": 1,
+      "to": 34,
+      "at": 0.3,
+      "until": 2.4,
+      "x": 1180,
+      "y": 560
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "counter",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "buzz",
+     "at": 2.6,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s029",
+   "start": 72.97,
+   "end": 75.35,
+   "line": "До конца смены – восемь часов.",
+   "scene": "insert:clock",
+   "params": {
+    "k": "insert",
+    "what": "clock",
+    "clock": 36420,
+    "tick": true,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    },
+    "ov": [
+     {
+      "k": "line",
+      "s": "ДО КОНЦА СМЕНЫ 8 ЧАСОВ",
+      "at": 0.4,
+      "y": 120,
+      "size": 60
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s030",
+   "start": 75.35,
+   "end": 79.69,
+   "line": "Ты смотришь на часы над кассой, и в голове крутится одна мысль.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      420,
+      440
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 380,
+      "s": 1.5,
+      "f": 1,
+      "look": [
+       0.6,
+       -0.9
+      ],
+      "expr": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        2.5,
+        "thinking"
+       ]
+      ],
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        2.4,
+        "think"
+       ]
+      ]
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0.2,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s031",
+   "start": 79.69,
+   "end": 82.07,
+   "line": "Скорее бы все это закончилось.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "sleepy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#8e96a3",
+      "year": 2024
+     }
+    },
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Скорее бы всё это закончилось»",
+      "at": 0.3,
+      "y": 960
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -20
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s032",
+   "start": 82.07,
+   "end": 83.49,
+   "line": "И ты моргаешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkAt": [
+     [
+      0.6,
+      1.25
+     ]
+    ],
+    "blinkOut": 0
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "slowmo",
+     "at": 0.3,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s033",
+   "start": 83.49,
+   "end": 85.51,
+   "line": "Ты открываешь глаза.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.08,
+      1.12
+     ],
+     "x": [
+      -60,
+      -40
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "surprised"
+     }
+    ],
+    "blinkIn": 0.7,
+    "ov": [
+     {
+      "k": "age",
+      "v": 22,
+      "at": 0.6
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.6,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s034",
+   "start": 85.51,
+   "end": 88.85,
+   "line": "Часы над кассой показывают ту же самую минуту.",
+   "scene": "insert:clock",
+   "params": {
+    "k": "insert",
+    "what": "clock",
+    "clock": 36420,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ТА ЖЕ МИНУТА",
+      "at": 0.5,
+      "y": 120
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.3,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s035",
+   "start": 88.85,
+   "end": 90.89,
+   "line": "Но кроссовер почему -то красный.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.35
+     ],
+     "x": [
+      -420,
+      -440
+     ],
+     "ease": "out"
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 140,
+      "s": 1.5,
+      "f": -1,
+      "expr": "shocked",
+      "pose": "handsOnHead"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.4,
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s036",
+   "start": 90.89,
+   "end": 93.77,
+   "line": "На ценнике четыре миллиона двести тысяч,",
+   "scene": "insert:price",
+   "params": {
+    "k": "insert",
+    "what": "price",
+    "v": "3 899 000",
+    "v2": "4 200 000",
+    "flipAt": 0.5,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 0.5,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s037",
+   "start": 93.77,
+   "end": 96.37,
+   "line": "а на стене висит новый календарь.",
+   "scene": "insert:calendar",
+   "params": {
+    "k": "insert",
+    "what": "calendar",
+    "year": 2024,
+    "year2": 2025,
+    "flipAt": 0.6,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "ov": [
+     {
+      "k": "sub",
+      "s": "НОВЫЙ КАЛЕНДАРЬ",
+      "at": 0.4,
+      "y": 140
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.6,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s038",
+   "start": 96.37,
+   "end": 101.17,
+   "line": "Ты достаешь телефон. Год на экране на один больше, чем должен быть.",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "year",
+    "yearFrom": 2024,
+    "yearTo": 2025,
+    "flipAt": 9.509999999999991,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "ov": [
+     {
+      "k": "age",
+      "v": 22,
+      "at": 3.4
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "phonebuzz",
+     "at": 0.2,
+     "gain": -14
+    },
+    {
+     "name": "stinger",
+     "at": 2.9,
+     "gain": -10
+    }
+   ]
+  },
+  {
+   "id": "s039",
+   "start": 101.17,
+   "end": 103.97,
+   "line": "Мимо снова проходит Сергей Николаевич и говорит",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.18,
+      1.22
+     ],
+     "x": [
+      180,
+      220
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 40,
+      "s": 1.5,
+      "f": 1,
+      "expr": "confused"
+     },
+     {
+      "who": "BOSS",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       700,
+       260
+      ],
+      "walkT": [
+       0,
+       2
+      ],
+      "endPose": "talk",
+      "f": -1,
+      "expr": "happy"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.9,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s040",
+   "start": 103.97,
+   "end": 107.93,
+   "line": "Максим, премия на этой неделе. Точно.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": [
+     [
+      0,
+      "happy"
+     ],
+     [
+      2.6,
+      "smirk"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     104.07,
+     107.69
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s041",
+   "start": 107.93,
+   "end": 109.31,
+   "line": "Ты не выдерживаешь.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "angry",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "zoom": [
+     1,
+     1.15
+    ],
+    "shake": 2
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "hit",
+     "at": 0.2,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s042",
+   "start": 109.31,
+   "end": 111.23,
+   "line": "Вы мне это говорили год назад.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.28,
+      1.32
+     ],
+     "x": [
+      200,
+      220
+     ],
+     "y": -50
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "pose": "point",
+      "expr": "angry",
+      "talk": [
+       109.41,
+       111.35
+      ]
+     },
+     {
+      "who": "BOSS",
+      "x": 340,
+      "s": 1.5,
+      "f": -1,
+      "expr": "neutral"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s043",
+   "start": 111.23,
+   "end": 113.61,
+   "line": "Он даже не останавливается.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.18
+     ],
+     "x": [
+      200,
+      260
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "pose": "shrug",
+      "expr": "confused"
+     },
+     {
+      "who": "BOSS",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       340,
+       900
+      ],
+      "f": 1,
+      "expr": "smirk"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.2,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.8,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s044",
+   "start": 113.61,
+   "end": 115.83,
+   "line": "Тогда квартал был другой.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "smirk",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "side": 1,
+    "x": 260,
+    "talk": [
+     113.71,
+     115.51
+    ],
+    "tilt": 0.06
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s045",
+   "start": 115.83,
+   "end": 119.47,
+   "line": "В галереи у тебя 342 новые фотографии.",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "gallery",
+    "count": 342,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "ov": [
+     {
+      "k": "line",
+      "s": "342 ФОТО",
+      "at": 1.2,
+      "y": 120,
+      "x": 1500,
+      "size": 64
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "counter",
+     "at": 0.2,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s046",
+   "start": 119.47,
+   "end": 121.31,
+   "line": "Ты на всех улыбаешься.",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "photo",
+    "photo": "sea",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ТЫ НА ВСЕХ УЛЫБАЕШЬСЯ",
+      "at": 0.3,
+      "y": 140
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.1,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s047",
+   "start": 121.31,
+   "end": 122.31,
+   "line": "В кафе, на",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "photo",
+    "photo": "cafe",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.05,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s048",
+   "start": 122.31,
+   "end": 123.03,
+   "line": "набережной,",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "photo",
+    "photo": "park",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.05,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s049",
+   "start": 123.03,
+   "end": 124.27,
+   "line": "у какого -то моря.",
+   "scene": "insert:phone",
+   "params": {
+    "k": "insert",
+    "what": "phone",
+    "screen": "photo",
+    "photo": "sea",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.05,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s050",
+   "start": 124.27,
+   "end": 126.01,
+   "line": "Ты не помнишь ни одной.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "confused",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s051",
+   "start": 126.01,
+   "end": 131.37,
+   "line": "Кто -то прожил этот год вместо тебя, и ему, судя по снимкам, было весело.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#3a2a4a"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.12
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -260,
+      "s": 1.8,
+      "expr": "sad",
+      "pose": "sad"
+     },
+     {
+      "who": "MAX",
+      "x": 260,
+      "s": 1.8,
+      "expr": "joy",
+      "pose": [
+       [
+        0,
+        "cheer"
+       ],
+       [
+        1.2,
+        "wave"
+       ],
+       [
+        2.4,
+        "cheer"
+       ],
+       [
+        3.6,
+        "jump"
+       ],
+       [
+        4.2,
+        "cheer"
+       ]
+      ],
+      "alpha": 0.45,
+      "rimColor": "#9fd8ff"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КТО-ТО ДРУГОЙ",
+      "at": 0.6,
+      "x": 1220,
+      "y": 300
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.6,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s052",
+   "start": 131.37,
+   "end": 132.47,
+   "line": "Это правда.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "ЭТО ПРАВДА.",
+    "color": "cream"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s053",
+   "start": 132.47,
+   "end": 134.59,
+   "line": "И это не твоя вина.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "И ЭТО НЕ ТВОЯ ВИНА."
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.4,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s054",
+   "start": 134.59,
+   "end": 138.17,
+   "line": "Человек моргает от 15 до 20 раз в минуту.",
+   "scene": "bp:rate",
+   "params": {
+    "k": "bp",
+    "mode": "rate",
+    "at": 1.289999999999992
+   },
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0,
+     "gain": -12
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s055",
+   "start": 138.17,
+   "end": 143.65,
+   "line": "И примерно 10 % времени, пока ты бодрствуешь, глаза у тебя закрыты.",
+   "scene": "bp:closed",
+   "params": {
+    "k": "bp",
+    "mode": "closed",
+    "at": 0.9300000000000068
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 1.4,
+     "gain": -14
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s056",
+   "start": 143.65,
+   "end": 149.09,
+   "line": "Мозг просто вырезает эти секунды из картинки, поэтому мир для тебя не мигает.",
+   "scene": "bp:cut",
+   "params": {
+    "k": "bp",
+    "mode": "cut"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.8,
+     "gain": -12
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s057",
+   "start": 149.09,
+   "end": 155.75,
+   "line": "Но если бы у тебя каждое моргание стоило год, за одну минуту ты бы состарился лет на 15.",
+   "scene": "bp:age",
+   "params": {
+    "k": "bp",
+    "mode": "age"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "counter",
+     "at": 0.6,
+     "gain": -16
+    },
+    {
+     "name": "stinger",
+     "at": 5.6,
+     "gain": -12
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s058",
+   "start": 155.75,
+   "end": 159.37,
+   "line": "К обеду тебе было бы больше, чем Сергею Николаевичу.",
+   "scene": "bp:lunch",
+   "params": {
+    "k": "bp",
+    "mode": "lunch"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.3,
+     "gain": -14
+    },
+    {
+     "name": "pop",
+     "at": 1,
+     "gain": -14
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s059",
+   "start": 159.37,
+   "end": 161.43,
+   "line": "Тебе повезло только в одном.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "thinking",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    },
+    "x": -120
+   },
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s060",
+   "start": 161.43,
+   "end": 165.07,
+   "line": "Ты еще не знаешь, что работает это не всегда.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "РАБОТАЕТ ЭТО НЕ ВСЕГДА.",
+    "color": "accent",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2025
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "stinger",
+     "at": 0.3,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s061",
+   "start": 165.07,
+   "end": 166.75,
+   "line": "В обед ты бежишь к Егору.",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "so": {
+     "mood": "day"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.08
+     ],
+     "x": [
+      -200,
+      200
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.6,
+      "walk": [
+       -900,
+       700,
+       true
+      ],
+      "expr": "determined"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.1,
+     "gain": -10
+    },
+    {
+     "name": "footstep",
+     "at": 0.4,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.7,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s062",
+   "start": 166.75,
+   "end": 168.61,
+   "line": "Кофейня напротив салона.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1,
+      1.05
+     ],
+     "x": [
+      -120,
+      -60
+     ]
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "steam": true
+     }
+    ],
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": "smile"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КОФЕЙНЯ НАПРОТИВ САЛОНА",
+      "at": 0.3,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s063",
+   "start": 168.61,
+   "end": 170.93,
+   "line": "Капучина за 350 рублей.",
+   "scene": "insert:cup",
+   "params": {
+    "k": "insert",
+    "what": "cup",
+    "steam": true,
+    "bg": {
+     "set": "cafe"
+    },
+    "mood": "interiorWarm",
+    "ov": [
+     {
+      "k": "readout",
+      "label": "КАПУЧИНО",
+      "v": "350 РУБ.",
+      "at": 0.4
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 0.4,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s064",
+   "start": 170.93,
+   "end": 175.45,
+   "line": "Ты рассказываешь все, он слушает, жует круассан и говорит.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": [
+      -80,
+      -60
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": [
+       [
+        0,
+        "sit"
+       ],
+       [
+        0.4,
+        {
+         "head": [
+          6,
+          -180
+         ],
+         "sh": [
+          1,
+          -146
+         ],
+         "hip": [
+          0,
+          -72
+         ],
+         "eF": [
+          26,
+          -112
+         ],
+         "hF": [
+          52,
+          -128
+         ],
+         "eB": [
+          12,
+          -110
+         ],
+         "hB": [
+          30,
+          -84
+         ],
+         "kF": [
+          44,
+          -74
+         ],
+         "fF": [
+          46,
+          0
+         ],
+         "kB": [
+          40,
+          -72
+         ],
+         "fB": [
+          38,
+          0
+         ]
+        }
+       ]
+      ],
+      "expr": "worried",
+      "talk": [
+       171.05,
+       173.45
+      ]
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        2.5,
+        "thinking"
+       ]
+      ]
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s065",
+   "start": 175.45,
+   "end": 179.97,
+   "line": "Ты неделю ходишь странной, но чтобы год пропал, это новое.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "smirk",
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     175.55,
+     179.85
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s066",
+   "start": 179.97,
+   "end": 183.57,
+   "line": "Ты просишь. Скажи что -нибудь, что я мог пропустить.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "worried",
+    "bg": {
+     "set": "cafe"
+    },
+    "talk": [
+     181.07,
+     183.37
+    ],
+    "x": -120
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s067",
+   "start": 183.57,
+   "end": 187.25,
+   "line": "Он пожимает плечами. Ничего, все как обычно.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": [
+      -80,
+      -60
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": "sit",
+      "expr": "worried"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": [
+       [
+        0,
+        "sit"
+       ],
+       [
+        0.3,
+        {
+         "head": [
+          4,
+          -184
+         ],
+         "sh": [
+          0,
+          -150
+         ],
+         "hip": [
+          0,
+          -72
+         ],
+         "eF": [
+          26,
+          -130
+         ],
+         "hF": [
+          40,
+          -150
+         ],
+         "eB": [
+          -22,
+          -130
+         ],
+         "hB": [
+          -36,
+          -150
+         ],
+         "kF": [
+          44,
+          -74
+         ],
+         "fF": [
+          46,
+          0
+         ],
+         "kB": [
+          40,
+          -72
+         ],
+         "fB": [
+          38,
+          0
+         ]
+        }
+       ]
+      ],
+      "expr": "smile",
+      "talk": [
+       185.35,
+       187.13
+      ]
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s068",
+   "start": 187.25,
+   "end": 190.55,
+   "line": "И тут он говорит. Слушай, давай проверим.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": [
+     [
+      0,
+      "thinking"
+     ],
+     [
+      1.4,
+      "smirk"
+     ]
+    ],
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     188.87,
+     190.43
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s069",
+   "start": 190.55,
+   "end": 191.35,
+   "line": "Моргни.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "determined",
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "zoom": [
+     1.1,
+     1.18
+    ],
+    "talk": [
+     190.65,
+     191.21
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "МОРГНИ.",
+      "at": 0.1,
+      "y": 160
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s070",
+   "start": 191.35,
+   "end": 192.63,
+   "line": "Ты моргаешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkAt": [
+     [
+      0.35,
+      0.8
+     ]
+    ],
+    "bg": {
+     "set": "cafe"
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "slowmo",
+     "at": 0.2,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s071",
+   "start": 192.63,
+   "end": 195.45,
+   "line": "Егор сидит напротив, но у него борода и",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": [
+      -80,
+      -60
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": "sitBack",
+      "expr": "shocked"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": "smile",
+      "beard": true
+     }
+    ],
+    "blinkIn": 0.5,
+    "ov": [
+     {
+      "k": "age",
+      "v": 23,
+      "at": 0.5
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s072",
+   "start": 195.45,
+   "end": 196.77,
+   "line": "на пальце кольцо.",
+   "scene": "insert:ring",
+   "params": {
+    "k": "insert",
+    "what": "ring",
+    "bg": {
+     "set": "cafe"
+    },
+    "mood": "interiorWarm",
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КОЛЬЦО",
+      "at": 0.4,
+      "y": 140
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.3,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s073",
+   "start": 196.77,
+   "end": 199.83,
+   "line": "Ты на моей свадьбе был дурак, говорит он.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "happy",
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     196.87,
+     198.95
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s074",
+   "start": 199.83,
+   "end": 201.35,
+   "line": "Даже речь произнес.",
+   "scene": "set:wedding",
+   "params": {
+    "k": "set",
+    "set": "wedding",
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      0,
+      30
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -60,
+      "s": 1.5,
+      "pose": "explain",
+      "expr": "joy",
+      "talk": [
+       199.95,
+       201.25
+      ]
+     },
+     {
+      "who": "EGOR",
+      "x": 260,
+      "s": 1.5,
+      "f": -1,
+      "expr": "joy",
+      "beard": true,
+      "pose": "cheer"
+     },
+     {
+      "who": "WIFE",
+      "x": 420,
+      "s": 1.5,
+      "f": -1,
+      "expr": "happy"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "glass",
+      "x": -20,
+      "y": -235
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "applause",
+     "at": 0.2,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s075",
+   "start": 201.35,
+   "end": 202.77,
+   "line": "Ты правда не помнишь?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "confused",
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     201.45,
+     202.69
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   },
+   "bars": "scope"
+  },
+  {
+   "id": "s076",
+   "start": 202.77,
+   "end": 204.03,
+   "line": "И что я сказал?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "confused",
+    "bg": {
+     "set": "cafe"
+    },
+    "x": -120,
+    "talk": [
+     202.87,
+     203.91
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s077",
+   "start": 204.03,
+   "end": 206.47,
+   "line": "Что надо ловить момент.",
+   "scene": "set:wedding",
+   "params": {
+    "k": "set",
+    "set": "wedding",
+    "cam": {
+     "z": [
+      1.35,
+      1.42
+     ],
+     "x": [
+      -40,
+      -30
+     ],
+     "y": -80
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -40,
+      "s": 1.5,
+      "pose": "explain",
+      "expr": "joy",
+      "talk": [
+       204.13,
+       206.25
+      ]
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "glass",
+      "x": -20,
+      "y": -235
+     }
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "«ЛОВИ МОМЕНТ»",
+      "at": 0.6,
+      "y": 170
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "name": "applause",
+     "at": 1.4,
+     "gain": -20
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s078",
+   "start": 206.47,
+   "end": 208.61,
+   "line": "Ты смотришь в чашку с капучина.",
+   "scene": "insert:cup",
+   "params": {
+    "k": "insert",
+    "what": "cup",
+    "bg": {
+     "set": "cafe"
+    },
+    "mood": "interiorWarm",
+    "cam": {
+     "z": [
+      1.15,
+      1.25
+     ]
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s079",
+   "start": 208.61,
+   "end": 211.79,
+   "line": "Тебе 23 и тебя больше всего бесит, что",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "angry",
+    "bg": {
+     "set": "cafe"
+    },
+    "x": -120,
+    "ov": [
+     {
+      "k": "age",
+      "v": 23,
+      "at": 0.4
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s080",
+   "start": 211.79,
+   "end": 215.29,
+   "line": "тот, другой Максим говорил хорошие речи.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#4a3a3a",
+     "light": "#ffd59a"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.1
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -280,
+      "s": 1.8,
+      "expr": "angry",
+      "pose": "crossArms"
+     },
+     {
+      "who": "MAX",
+      "x": 260,
+      "s": 1.8,
+      "expr": "joy",
+      "pose": "explain",
+      "alpha": 0.45,
+      "rimColor": "#9fd8ff",
+      "talk": [
+       211.55,
+       215.15
+      ]
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«ДРУГОЙ» МАКСИМ",
+      "at": 0.4,
+      "x": 1240,
+      "y": 300
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "applause",
+     "at": 0.8,
+     "gain": -22
+    }
+   ]
+  },
+  {
+   "id": "s081",
+   "start": 215.29,
+   "end": 219.43,
+   "line": "Егор молчит секунд 10, потом очень серьезно говорит.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.32
+     ],
+     "x": [
+      -80,
+      0
+     ],
+     "y": -40
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": "sit",
+      "expr": "worried"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": [
+       [
+        0,
+        "sit"
+       ],
+       [
+        2.4,
+        {
+         "head": [
+          6,
+          -180
+         ],
+         "sh": [
+          1,
+          -146
+         ],
+         "hip": [
+          0,
+          -72
+         ],
+         "eF": [
+          16,
+          -110
+         ],
+         "hF": [
+          -6,
+          -116
+         ],
+         "eB": [
+          10,
+          -112
+         ],
+         "hB": [
+          12,
+          -118
+         ],
+         "kF": [
+          44,
+          -74
+         ],
+         "fF": [
+          46,
+          0
+         ],
+         "kB": [
+          40,
+          -72
+         ],
+         "fB": [
+          38,
+          0
+         ]
+        }
+       ]
+      ],
+      "expr": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        2.5,
+        "determined"
+       ]
+      ],
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s082",
+   "start": 219.43,
+   "end": 222.41,
+   "line": "Больше не моргай. Вообще.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "determined",
+    "bg": {
+     "set": "cafe"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "zoom": [
+     1.05,
+     1.15
+    ],
+    "talk": [
+     219.53,
+     222.09
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "БОЛЬШЕ НЕ МОРГАЙ.",
+      "at": 0.2,
+      "y": 150
+     },
+     {
+      "k": "line",
+      "s": "ВООБЩЕ.",
+      "at": 2.030000000000001,
+      "y": 980,
+      "color": "accent",
+      "size": 60
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "stinger",
+     "at": 0.2,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s083",
+   "start": 222.41,
+   "end": 223.85,
+   "line": "Но ты не можешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "shake": 4,
+    "bg": {
+     "set": "cafe"
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.1,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s084",
+   "start": 223.85,
+   "end": 225.55,
+   "line": "Через час ты вдруг чихаешь.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": -60,
+     "y": -30,
+     "shake": 0
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": [
+       [
+        0,
+        "sit"
+       ],
+       [
+        0.6,
+        {
+         "head": [
+          -4,
+          -192
+         ],
+         "sh": [
+          -4,
+          -150
+         ],
+         "hip": [
+          0,
+          -72
+         ],
+         "eF": [
+          16,
+          -120
+         ],
+         "hF": [
+          12,
+          -150
+         ],
+         "eB": [
+          10,
+          -112
+         ],
+         "hB": [
+          8,
+          -140
+         ],
+         "kF": [
+          44,
+          -74
+         ],
+         "fF": [
+          46,
+          0
+         ],
+         "kB": [
+          40,
+          -72
+         ],
+         "fB": [
+          38,
+          0
+         ]
+        }
+       ],
+       [
+        0.95,
+        {
+         "head": [
+          26,
+          -150
+         ],
+         "sh": [
+          12,
+          -134
+         ],
+         "hip": [
+          0,
+          -72
+         ],
+         "eF": [
+          30,
+          -104
+         ],
+         "hF": [
+          34,
+          -136
+         ],
+         "eB": [
+          22,
+          -104
+         ],
+         "hB": [
+          30,
+          -132
+         ],
+         "kF": [
+          44,
+          -74
+         ],
+         "fF": [
+          46,
+          0
+         ],
+         "kB": [
+          40,
+          -72
+         ],
+         "fB": [
+          38,
+          0
+         ]
+        }
+       ]
+      ],
+      "expr": [
+       [
+        0,
+        "worried"
+       ],
+       [
+        0.5,
+        "sleepy"
+       ],
+       [
+        0.95,
+        "shocked"
+       ]
+      ]
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": "surprised",
+      "beard": true
+     }
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "АПЧХИ!",
+      "at": 0.95,
+      "y": 200,
+      "color": "accent"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.95,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -27
+   }
+  },
+  {
+   "id": "s085",
+   "start": 225.55,
+   "end": 228.95,
+   "line": "Глаза закрываются сами и ты думаешь с чувством.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkOut": 2.4,
+    "bg": {
+     "set": "cafe"
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "slowmo",
+     "at": 1,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s086",
+   "start": 228.95,
+   "end": 230.77,
+   "line": "Скорее бы выходные.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "«СКОРЕЕ БЫ ВЫХОДНЫЕ»",
+    "color": "cream",
+    "bg": {
+     "set": "studio",
+     "so": {
+      "color": "#1a1420"
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -20
+    }
+   ]
+  },
+  {
+   "id": "s087",
+   "start": 230.77,
+   "end": 232.31,
+   "line": "И открываешь их.",
+   "scene": "set:doorway",
+   "params": {
+    "k": "set",
+    "set": "doorway",
+    "cam": {
+     "z": [
+      1,
+      1.04
+     ],
+     "x": [
+      -160,
+      -140
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -520,
+      "s": 1.7,
+      "f": 1,
+      "expr": "surprised"
+     }
+    ],
+    "blinkIn": 0.7
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.6,
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s088",
+   "start": 232.31,
+   "end": 234.05,
+   "line": "Егор стоит у твоей двери.",
+   "scene": "set:doorway",
+   "params": {
+    "k": "set",
+    "set": "doorway",
+    "cam": {
+     "z": [
+      1.05,
+      1.1
+     ],
+     "x": [
+      -120,
+      -100
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.6,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "smile",
+      "beard": true
+     },
+     {
+      "who": "MAX",
+      "x": -520,
+      "s": 1.7,
+      "f": 1,
+      "expr": "shocked"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": -30,
+      "y": -215,
+      "s": 0.7
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s089",
+   "start": 234.05,
+   "end": 236.71,
+   "line": "В руках у него переноска люлька.",
+   "scene": "insert:carrier",
+   "params": {
+    "k": "insert",
+    "what": "carrier",
+    "bg": {
+     "set": "doorway"
+    },
+    "mood": "night",
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ПЕРЕНОСКА-ЛЮЛЬКА",
+      "at": 0.4,
+      "y": 140
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s090",
+   "start": 236.71,
+   "end": 240.45,
+   "line": "Знакомься, говорит он тихо. Это Максим.",
+   "scene": "set:doorway",
+   "params": {
+    "k": "set",
+    "set": "doorway",
+    "cam": {
+     "z": [
+      1.35,
+      1.42
+     ],
+     "x": [
+      -30,
+      -20
+     ],
+     "y": -80
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.6,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "smile",
+      "beard": true,
+      "talk": [
+       236.81,
+       240.21
+      ]
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": -30,
+      "y": -215,
+      "s": 0.7
+     }
+    ],
+    "ov": [
+     {
+      "k": "age",
+      "v": 24,
+      "at": 0.4
+     },
+     {
+      "k": "line",
+      "s": "ЭТО МАКСИМ.",
+      "at": 2.4499999999999886,
+      "y": 170
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s091",
+   "start": 240.45,
+   "end": 245.79,
+   "line": "Ты смотришь на ребенка, которому, судя по всему, уже несколько месяцев и спрашиваешь.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": [
+     [
+      0,
+      "awe"
+     ],
+     [
+      3,
+      "thinking"
+     ]
+    ],
+    "bg": {
+     "set": "doorway"
+    },
+    "look": [
+     0.3,
+     0.6
+    ],
+    "x": -120
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s092",
+   "start": 245.79,
+   "end": 248.03,
+   "line": "Вы назвали его в мою честь?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "surprised",
+    "bg": {
+     "set": "doorway"
+    },
+    "x": -120,
+    "talk": [
+     245.89,
+     247.81
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s093",
+   "start": 248.03,
+   "end": 250.45,
+   "line": "Егор улыбается. Ты крестный.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": [
+     [
+      0,
+      "smile"
+     ],
+     [
+      1.2,
+      "happy"
+     ]
+    ],
+    "bg": {
+     "set": "doorway"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     249.55,
+     250.37
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "ТЫ КРЕСТНЫЙ.",
+      "at": 1.5699999999999932,
+      "y": 160
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s094",
+   "start": 250.45,
+   "end": 253.75,
+   "line": "Ты держал его на крестинах. Плакал больше всех.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#5a4a3a",
+     "light": "#ffe2a8"
+    },
+    "cam": {
+     "z": [
+      1.1,
+      1.16
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -40,
+      "s": 1.9,
+      "pose": "holdFront",
+      "expr": "cry",
+      "alpha": 0.75
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": 60,
+      "y": -235,
+      "s": 0.8
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КРЕСТИНЫ",
+      "at": 0.3,
+      "y": 160
+     },
+     {
+      "k": "line",
+      "s": "ПЛАКАЛ БОЛЬШЕ ВСЕХ",
+      "at": 1.990000000000009,
+      "y": 980,
+      "size": 56
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.3,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s095",
+   "start": 253.75,
+   "end": 256.47,
+   "line": "Ты ничего из этого не помнишь.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "sad",
+    "bg": {
+     "set": "doorway"
+    },
+    "x": -120
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s096",
+   "start": 256.47,
+   "end": 258.41,
+   "line": "Тебе 24.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "ТЕБЕ 24.",
+    "bg": {
+     "set": "doorway"
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.2,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s097",
+   "start": 258.41,
+   "end": 262.01,
+   "line": "Вот тут тебе становится по -настоящему страшно.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "scared",
+    "bg": {
+     "set": "stairwell"
+    },
+    "shake": 3,
+    "zoom": [
+     1,
+     1.2
+    ],
+    "sweat": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "gain": -10
+    },
+    {
+     "name": "heartbeat",
+     "at": 1.6,
+     "gain": -10
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s098",
+   "start": 262.01,
+   "end": 265.51,
+   "line": "Не из -за потерянных лет, а потому что ты понимаешь.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#2a2a40",
+     "light": "#9fb8ff"
+    },
+    "cam": {
+     "z": [
+      1,
+      1.08
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.7,
+      "pose": "sad",
+      "expr": "worried"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "НЕ ИЗ-ЗА ПОТЕРЯННЫХ ЛЕТ",
+      "at": 0.4,
+      "y": 180
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s099",
+   "start": 265.51,
+   "end": 268.71,
+   "line": "Егор не просто так дошел до этого момента.",
+   "scene": "set:doorway",
+   "params": {
+    "k": "set",
+    "set": "doorway",
+    "cam": {
+     "z": [
+      1.15,
+      1.22
+     ],
+     "x": [
+      -60,
+      -40
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.6,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "smile",
+      "beard": true
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": -30,
+      "y": -215,
+      "s": 0.7
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s100",
+   "start": 268.71,
+   "end": 270.53,
+   "line": "Каждый раз, когда ты моргал,",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.2,
+      1.26
+     ],
+     "x": [
+      60,
+      90
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -80,
+      "s": 1.5,
+      "expr": "sleepy"
+     },
+     {
+      "who": "EGOR",
+      "x": 130,
+      "s": 1.5,
+      "f": -1,
+      "expr": "smile",
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s101",
+   "start": 270.53,
+   "end": 272.05,
+   "line": "он оставался рядом.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.26
+     ],
+     "x": [
+      -80,
+      -50
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ]
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": "sit",
+      "expr": "sleepy"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": "smile",
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s102",
+   "start": 272.05,
+   "end": 275.49,
+   "line": "Он прожил весь этот год и со мной, и без меня.",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.15,
+      1.22
+     ],
+     "x": [
+      0,
+      30
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": -60,
+      "s": 1.5,
+      "pose": "holdFront",
+      "expr": "happy",
+      "beard": true
+     },
+     {
+      "who": "WIFE",
+      "x": 190,
+      "s": 1.5,
+      "f": -1,
+      "expr": "smile"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "carrier",
+      "x": -30,
+      "y": -225,
+      "s": 0.7
+     }
+    ]
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s103",
+   "start": 275.49,
+   "end": 277.25,
+   "line": "И ни разу не бросил.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "smile",
+    "bg": {
+     "set": "home"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "ov": [
+     {
+      "k": "sub",
+      "s": "И НИ РАЗУ НЕ БРОСИЛ",
+      "at": 0.3,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.3,
+     "gain": -18
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s104",
+   "start": 277.25,
+   "end": 279.09,
+   "line": "Егор сразу покупает в аптеке",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "cam": {
+     "z": [
+      1.05,
+      1.08
+     ],
+     "x": [
+      -500,
+      -300
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.6,
+      "walk": [
+       -760,
+       -260,
+       true
+      ],
+      "walkT": [
+       0,
+       1.8
+      ],
+      "endPose": "cheer",
+      "expr": "happy",
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.6,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s105",
+   "start": 279.09,
+   "end": 281.03,
+   "line": "капли за 490 рублей.",
+   "scene": "insert:drops",
+   "params": {
+    "k": "insert",
+    "what": "drops",
+    "v": "490 РУБ.",
+    "bg": {
+     "set": "park"
+    },
+    "mood": "dusk"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.4,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s106",
+   "start": 281.03,
+   "end": 285.39,
+   "line": "Вы сидите на скамейке и пытаетесь не моргать, как два кота.",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "cam": {
+     "z": [
+      1,
+      1.08
+     ],
+     "x": [
+      -30,
+      0
+     ]
+    },
+    "props": [
+     {
+      "k": "bench",
+      "x": 0
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -110,
+      "s": 1.4,
+      "pose": "sit",
+      "expr": "awe",
+      "y": -8,
+      "noBlink": true,
+      "f": 1
+     },
+     {
+      "who": "EGOR",
+      "x": 110,
+      "s": 1.4,
+      "f": -1,
+      "pose": "sit",
+      "expr": "awe",
+      "y": -8,
+      "noBlink": true,
+      "beard": true
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КАК ДВА КОТА",
+      "at": 3.4700000000000273,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s107",
+   "start": 285.39,
+   "end": 288.51,
+   "line": "Тебе кажется, что у тебя глаза сейчас вывалятся.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "shake": 5,
+    "bg": {
+     "set": "park"
+    },
+    "mood": "dusk"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s108",
+   "start": 288.51,
+   "end": 291.83,
+   "line": "Егор достает из кармана секундомер и засекает.",
+   "scene": "insert:stopwatch",
+   "params": {
+    "k": "insert",
+    "what": "stopwatch",
+    "from": 0,
+    "to": 4,
+    "bg": {
+     "set": "park"
+    },
+    "mood": "dusk"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.2,
+     "gain": -12
+    },
+    {
+     "name": "clock",
+     "at": 0.6,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s109",
+   "start": 291.83,
+   "end": 294.41,
+   "line": "Одна минута, две минуты.",
+   "scene": "insert:stopwatch",
+   "params": {
+    "k": "insert",
+    "what": "stopwatch",
+    "from": 60,
+    "to": 120,
+    "bg": {
+     "set": "park"
+    },
+    "mood": "dusk",
+    "ov": [
+     {
+      "k": "line",
+      "s": "1 МИНУТА",
+      "at": 0.1,
+      "y": 120,
+      "end": 1.2
+     },
+     {
+      "k": "line",
+      "s": "2 МИНУТЫ",
+      "at": 1.3900000000000432,
+      "y": 120
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s110",
+   "start": 294.41,
+   "end": 295.85,
+   "line": "Слезы текут сами.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "sad",
+    "bg": {
+     "set": "park"
+    },
+    "x": -120,
+    "tear": 2,
+    "noBlink": true,
+    "redEyes": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.3,
+     "gain": -18
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s111",
+   "start": 295.85,
+   "end": 299.69,
+   "line": "И ты, наконец, понимаешь, зачем людям нужно моргать.",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "cam": {
+     "z": [
+      1.2,
+      1.3
+     ],
+     "x": [
+      0,
+      10
+     ],
+     "y": -40
+    },
+    "props": [
+     {
+      "k": "bench",
+      "x": 0
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -110,
+      "s": 1.4,
+      "pose": "sit",
+      "expr": "cry",
+      "y": -8,
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": 110,
+      "s": 1.4,
+      "f": -1,
+      "pose": "sit",
+      "expr": "cry",
+      "y": -8,
+      "noBlink": true,
+      "beard": true
+     }
+    ],
+    "fx": [
+     "dust",
+     "tears"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s112",
+   "start": 299.69,
+   "end": 302.93,
+   "line": "На третьей минуте Егор задумывается и говорит.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "thinking",
+    "bg": {
+     "set": "park"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "noBlink": true,
+    "redEyes": true,
+    "ov": [
+     {
+      "k": "readout",
+      "label": "ТАЙМЕР",
+      "v": "3:00",
+      "at": 0.3,
+      "x": 120
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s113",
+   "start": 302.93,
+   "end": 306.25,
+   "line": "Подожди, ты каждый раз перед этим что -то говорил.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "surprised",
+    "bg": {
+     "set": "park"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     303.03,
+     306.21
+    ],
+    "noBlink": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s114",
+   "start": 306.25,
+   "end": 308.17,
+   "line": "Я только сейчас вспомнил.",
+   "scene": "set:park",
+   "params": {
+    "k": "set",
+    "set": "park",
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      -20,
+      10
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "bench",
+      "x": 0
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -110,
+      "s": 1.4,
+      "pose": "sit",
+      "expr": "confused",
+      "y": -8,
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": 110,
+      "s": 1.4,
+      "f": -1,
+      "pose": "point",
+      "expr": "surprised",
+      "y": -8,
+      "noBlink": true,
+      "beard": true,
+      "talk": [
+       306.35,
+       308.23
+      ]
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s115",
+   "start": 308.17,
+   "end": 308.95,
+   "line": "Что?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "confused",
+    "bg": {
+     "set": "park"
+    },
+    "x": -120,
+    "talk": [
+     308.27,
+     308.77
+    ],
+    "noBlink": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s116",
+   "start": 308.95,
+   "end": 312.01,
+   "line": "Не помню. Но ты всегда вздыхал.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": [
+     [
+      0,
+      "confused"
+     ],
+     [
+      0.8,
+      "thinking"
+     ]
+    ],
+    "bg": {
+     "set": "park"
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     309.05,
+     311.91
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ТЫ ВСЕГДА ВЗДЫХАЛ",
+      "at": 0.9499999999999886,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s117",
+   "start": 312.01,
+   "end": 316.01,
+   "line": "Ты возвращаешься в салон и не моргаешь уже четвертый час.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2026
+    },
+    "cam": {
+     "z": [
+      1,
+      1.06
+     ],
+     "x": [
+      -80,
+      -40
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "awe",
+      "still": true,
+      "noBlink": true
+     }
+    ],
+    "ov": [
+     {
+      "k": "counter",
+      "label": "БЕЗ МОРГАНИЯ",
+      "from": 0,
+      "to": 4,
+      "unit": " Ч",
+      "at": 0.4,
+      "until": 3.4
+     }
+    ]
+   },
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s118",
+   "start": 316.01,
+   "end": 318.49,
+   "line": "Держишься на каплях и упрямстве.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2026
+    },
+    "cam": {
+     "z": [
+      1.45,
+      1.5
+     ],
+     "x": [
+      130,
+      140
+     ],
+     "y": -100
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "determined",
+      "noBlink": true,
+      "pose": {
+       "head": [
+        6,
+        -204
+       ],
+       "sh": [
+        1,
+        -172
+       ],
+       "hip": [
+        0,
+        -100
+       ],
+       "eF": [
+        26,
+        -170
+       ],
+       "hF": [
+        24,
+        -232
+       ],
+       "eB": [
+        -7,
+        -136
+       ],
+       "hB": [
+        -9,
+        -100
+       ],
+       "kF": [
+        6,
+        -50
+       ],
+       "fF": [
+        3,
+        0
+       ],
+       "kB": [
+        -6,
+        -50
+       ],
+       "fB": [
+        -11,
+        0
+       ]
+      }
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 0.6,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s119",
+   "start": 318.49,
+   "end": 322.21,
+   "line": "Но на втором часу ты слышишь у себя за спиной знакомое.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2026
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      380,
+      400
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "BOSS",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       900,
+       520
+      ],
+      "walkT": [
+       0.4,
+       3.4
+      ],
+      "f": -1,
+      "expr": "happy"
+     }
+    ],
+    "fg": [
+     {
+      "who": "MAX",
+      "x": -340,
+      "s": 3.2,
+      "f": 1,
+      "y": 330,
+      "noBlink": true
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 1,
+     "gain": -18
+    },
+    {
+     "name": "footstep",
+     "at": 1.6,
+     "gain": -18
+    },
+    {
+     "name": "footstep",
+     "at": 2.2,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s120",
+   "start": 322.21,
+   "end": 324.61,
+   "line": "Максим, премия на этой неделе!",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "happy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2026
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     322.31,
+     324.49
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s121",
+   "start": 324.61,
+   "end": 329.01,
+   "line": "Ты не выдерживаешь, злишься, жмуришься на секунду и думаешь.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": [
+     [
+      0,
+      "angry"
+     ],
+     [
+      2.2,
+      "sleepy"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2026
+     }
+    },
+    "x": -120,
+    "shake": 2,
+    "blinkAt": [
+     [
+      2.4,
+      2.9
+     ]
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "hit",
+     "at": 0.3,
+     "gain": -16
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s122",
+   "start": 329.01,
+   "end": 330.73,
+   "line": "Ну, давай уже, хватит!",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "«НУ, ДАВАЙ УЖЕ, ХВАТИТ!»",
+    "color": "accent",
+    "bg": {
+     "set": "studio",
+     "so": {
+      "color": "#1a1420"
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.1,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s123",
+   "start": 330.73,
+   "end": 331.99,
+   "line": "И моргаешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkAt": [
+     [
+      0.3,
+      1.1
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2026
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "slowmo",
+     "at": 0.2,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s124",
+   "start": 331.99,
+   "end": 333.57,
+   "line": "Ты открываешь глаза.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.1
+     ],
+     "x": [
+      -60,
+      -40
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "shocked"
+     }
+    ],
+    "blinkIn": 0.6
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.5,
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s125",
+   "start": 333.57,
+   "end": 335.21,
+   "line": "Тебе 25.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "ТЕБЕ 25.",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.2,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s126",
+   "start": 335.21,
+   "end": 341.89,
+   "line": "Салон перекрашен, на ресепшене стоит какая -то новая девушка, а Сергей Николаевич стоит и говорит.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      0.82,
+      0.92
+     ],
+     "x": [
+      -100,
+      120
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 140,
+      "s": 1.2,
+      "f": -1,
+      "expr": "shocked"
+     },
+     {
+      "who": "BOSS",
+      "x": 420,
+      "s": 1.2,
+      "f": -1,
+      "expr": "happy"
+     },
+     {
+      "who": "GIRL",
+      "x": 760,
+      "s": 1.2,
+      "f": -1,
+      "expr": "smile",
+      "y": -10
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "САЛОН ПЕРЕКРАШЕН",
+      "at": 0.3,
+      "y": 160
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2,
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s127",
+   "start": 341.89,
+   "end": 345.71,
+   "line": "Максим, премия в этом месяце! Прямо точно!",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": [
+     [
+      0,
+      "happy"
+     ],
+     [
+      2.4,
+      "joy"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     341.99,
+     345.37
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s128",
+   "start": 345.71,
+   "end": 348.89,
+   "line": "В этот раз ты решаешь довести всё до конца.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "determined",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "x": -120,
+    "noBlink": true,
+    "zoom": [
+     1,
+     1.1
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.2,
+     "gain": -16
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s129",
+   "start": 348.89,
+   "end": 353.29,
+   "line": "Егор приходит прямо в салон, встаёт рядом с пипеткой и шепчет.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      60,
+      100
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "determined",
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       -700,
+       -140
+      ],
+      "walkT": [
+       0,
+       2.6
+      ],
+      "endPose": "holdFront",
+      "expr": "determined",
+      "beard": true,
+      "f": 1
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.9,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s130",
+   "start": 353.29,
+   "end": 355.83,
+   "line": "Выдержим. Ещё чуть -чуть.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "determined",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     353.39,
+     355.51
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«ВЫДЕРЖИМ»",
+      "at": 0.2,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s131",
+   "start": 355.83,
+   "end": 357.29,
+   "line": "Ты не моргаешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "shake": 3,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.1,
+     "gain": -10
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s132",
+   "start": 357.29,
+   "end": 360.03,
+   "line": "Минуту. Две минуты. Три.",
+   "scene": "insert:stopwatch",
+   "params": {
+    "k": "insert",
+    "what": "stopwatch",
+    "from": 60,
+    "to": 180,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "ov": [
+     {
+      "k": "line",
+      "s": "1",
+      "at": 0.1,
+      "y": 120,
+      "end": 0.85
+     },
+     {
+      "k": "line",
+      "s": "2",
+      "at": 0.9899999999999523,
+      "y": 120,
+      "end": 2.109999999999957
+     },
+     {
+      "k": "line",
+      "s": "3",
+      "at": 2.109999999999957,
+      "y": 120
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.1,
+     "gain": -12
+    },
+    {
+     "name": "tick",
+     "at": 0.95,
+     "gain": -12
+    },
+    {
+     "name": "tick",
+     "at": 2,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s133",
+   "start": 360.03,
+   "end": 362.01,
+   "line": "По щеке течёт слеза.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "determined",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "x": -120,
+    "tear": 1,
+    "noBlink": true,
+    "redEyes": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.4,
+     "gain": -18
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s134",
+   "start": 362.01,
+   "end": 365.21,
+   "line": "Сергей Николаевич идёт к тебе с белым конвертом.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      200,
+      220
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "determined",
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": -120,
+      "s": 1.5,
+      "f": 1,
+      "expr": "worried",
+      "beard": true
+     },
+     {
+      "who": "BOSS",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       800,
+       330
+      ],
+      "walkT": [
+       0,
+       2.8
+      ],
+      "endPose": "holdFront",
+      "f": -1,
+      "expr": "happy"
+     }
+    ],
+    "propsFront": []
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "footstep",
+     "at": 0.3,
+     "gain": -16
+    },
+    {
+     "name": "footstep",
+     "at": 0.9,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s135",
+   "start": 365.21,
+   "end": 366.95,
+   "line": "И вот мои вернулись.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.3,
+      1.36
+     ],
+     "x": [
+      160,
+      180
+     ],
+     "y": -50,
+     "r": [
+      -0.02,
+      0.01
+     ]
+    },
+    "freeze": {
+     "badge": "4:00"
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "scared",
+      "still": true
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "happy"
+     }
+    ],
+    "propsFront": [
+     {
+      "k": "envelope",
+      "x": 270,
+      "y": -235,
+      "s": 0.4
+     }
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "И ВОТ МЫ ВЕРНУЛИСЬ",
+      "at": 0.3,
+      "y": 170
+     }
+    ]
+   },
+   "in": {
+    "type": "flash",
+    "dur": 0.45
+   },
+   "sfx": [
+    {
+     "name": "freeze",
+     "at": 0.05,
+     "gain": -8
+    }
+   ],
+   "bars": "scope",
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s136",
+   "start": 366.95,
+   "end": 368.37,
+   "line": "Ты стоишь посреди",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1,
+      0.86
+     ],
+     "x": [
+      60,
+      -200
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 120,
+      "s": 1.2,
+      "f": -1,
+      "expr": "scared",
+      "still": true,
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": -60,
+      "s": 1.2,
+      "f": 1,
+      "beard": true,
+      "expr": "worried"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.2,
+      "f": -1,
+      "pose": "holdFront",
+      "expr": "happy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "КУТУЗОВСКИЙ ПРОСПЕКТ",
+      "at": 0.4,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s137",
+   "start": 368.37,
+   "end": 368.99,
+   "line": "автосалона",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.25,
+      1.3
+     ],
+     "x": [
+      200,
+      230
+     ],
+     "y": -50
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "worried",
+      "noBlink": true
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "pose": "talk",
+      "expr": "happy"
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s138",
+   "start": 368.99,
+   "end": 370.69,
+   "line": "на Кутузовском проспекте,",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.4,
+      1.45
+     ],
+     "x": [
+      780,
+      790
+     ],
+     "y": -110
+    },
+    "actors": [
+     {
+      "who": "GIRL",
+      "x": 760,
+      "s": 1.5,
+      "f": -1,
+      "pose": "wave",
+      "expr": "smile",
+      "y": -10
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "НОВАЯ ДЕВУШКА",
+      "at": 0.3,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s139",
+   "start": 370.69,
+   "end": 372.99,
+   "line": "не моргая четвёртую минуту.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "shake": 3,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "ov": [
+     {
+      "k": "counter",
+      "label": "НЕ МОРГАЯ",
+      "from": 236,
+      "to": 240,
+      "fmt": "mmss",
+      "at": 0.2,
+      "until": 2.2
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.1,
+     "gain": -10
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s140",
+   "start": 372.99,
+   "end": 375.69,
+   "line": "Сергей Николаевич протягивает конверт.",
+   "scene": "insert:envelope",
+   "params": {
+    "k": "insert",
+    "what": "envelope",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "label": "ПРЕМИЯ"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.2,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s141",
+   "start": 375.69,
+   "end": 377.59,
+   "line": "Максим, твоя премия.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "happy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     375.79,
+     377.45
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s142",
+   "start": 377.59,
+   "end": 378.53,
+   "line": "Почти.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "smirk",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     377.69,
+     378.57
+    ],
+    "tilt": 0.05
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s143",
+   "start": 378.53,
+   "end": 379.49,
+   "line": "Почти?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "confused",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "x": -120,
+    "talk": [
+     378.63,
+     379.35
+    ],
+    "noBlink": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s144",
+   "start": 379.49,
+   "end": 383.29,
+   "line": "63 тысячи? Вместо 60 тысяч?",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "63 000?",
+    "s2": "ВМЕСТО 60 000?",
+    "at2": 1.8700000000000045,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 0.2,
+     "gain": -14
+    },
+    {
+     "name": "blip",
+     "at": 1.8,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s145",
+   "start": 383.29,
+   "end": 385.81,
+   "line": "Егор наклоняется к тебе и шепчет.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.4,
+      1.5
+     ],
+     "x": [
+      -20,
+      0
+     ],
+     "y": -80
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "confused",
+      "noBlink": true
+     },
+     {
+      "who": "EGOR",
+      "x": -130,
+      "s": 1.5,
+      "f": 1,
+      "pose": {
+       "head": [
+        22,
+        -196
+       ],
+       "sh": [
+        12,
+        -168
+       ],
+       "hip": [
+        0,
+        -100
+       ],
+       "eF": [
+        24,
+        -140
+       ],
+       "hF": [
+        30,
+        -116
+       ],
+       "eB": [
+        -6,
+        -136
+       ],
+       "hB": [
+        -8,
+        -102
+       ],
+       "kF": [
+        6,
+        -50
+       ],
+       "fF": [
+        3,
+        0
+       ],
+       "kB": [
+        -6,
+        -50
+       ],
+       "fB": [
+        -11,
+        0
+       ]
+      },
+      "expr": "determined",
+      "beard": true
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s146",
+   "start": 385.81,
+   "end": 387.83,
+   "line": "Максим, я всё понял.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "surprised",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     385.91,
+     387.69
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s147",
+   "start": 387.83,
+   "end": 393.51,
+   "line": "Перед каждым разом ты вздыхал и говорил «скорее бы». Четыре раза из четырёх.",
+   "scene": "bp:pattern",
+   "params": {
+    "k": "bp",
+    "mode": "pattern",
+    "head": "4 РАЗА ИЗ 4",
+    "items": [
+     {
+      "s": "«Скорее бы…»",
+      "age": "21→22",
+      "at": 0.4
+     },
+     {
+      "s": "«Скорее бы…»",
+      "age": "22→23",
+      "at": 1
+     },
+     {
+      "s": "«Скорее бы…»",
+      "age": "23→24",
+      "at": 1.6
+     },
+     {
+      "s": "«Хватит!»",
+      "age": "24→25",
+      "at": 2.2
+     }
+    ]
+   },
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.4,
+     "gain": -14
+    },
+    {
+     "name": "pop",
+     "at": 1,
+     "gain": -14
+    },
+    {
+     "name": "pop",
+     "at": 1.6,
+     "gain": -14
+    },
+    {
+     "name": "pop",
+     "at": 2.2,
+     "gain": -14
+    },
+    {
+     "name": "stinger",
+     "at": 3.8,
+     "gain": -12
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s148",
+   "start": 393.51,
+   "end": 395.99,
+   "line": "Не после чихания, не от усталости.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "determined",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true,
+    "talk": [
+     393.61,
+     399.59
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s149",
+   "start": 395.99,
+   "end": 399.71,
+   "line": "Только когда ты хотел, чтобы время побыстрее прошло.",
+   "scene": "insert:clock",
+   "params": {
+    "k": "insert",
+    "what": "clock",
+    "clock": 36000,
+    "spin": 10800,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "ov": [
+     {
+      "k": "line",
+      "s": "ЧТОБЫ ВРЕМЯ ПРОШЛО ПОБЫСТРЕЕ",
+      "at": 0.4,
+      "y": 120,
+      "size": 56
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "clock",
+     "at": 0,
+     "gain": -12
+    },
+    {
+     "name": "whoosh",
+     "at": 1.5,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s150",
+   "start": 399.71,
+   "end": 400.99,
+   "line": "Ты замираешь.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.45,
+      1.5
+     ],
+     "x": [
+      60,
+      70
+     ],
+     "y": -90,
+     "r": [
+      -0.015,
+      0
+     ]
+    },
+    "freeze": {
+     "badge": "ПАУЗА"
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "shocked",
+      "still": true,
+      "noBlink": true
+     }
+    ]
+   },
+   "in": {
+    "type": "flash",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "name": "freeze",
+     "at": 0.05,
+     "gain": -10
+    }
+   ],
+   "bars": "scope",
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s151",
+   "start": 400.99,
+   "end": 402.83,
+   "line": "Все четыре раза.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "awe",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "x": -120,
+    "noBlink": true,
+    "zoom": [
+     1.05,
+     1.2
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s152",
+   "start": 402.83,
+   "end": 404.09,
+   "line": "Скорее бы вечер.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#8e96a3",
+     "year": 2024
+    },
+    "cam": {
+     "z": [
+      1.35,
+      1.4
+     ],
+     "x": [
+      380,
+      400
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 380,
+      "s": 1.5,
+      "f": 1,
+      "expr": "sleepy",
+      "pose": "think"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Скорее бы вечер»",
+      "at": 0.15,
+      "y": 980,
+      "size": 46
+     },
+     {
+      "k": "age",
+      "v": 21,
+      "at": 0.15
+     }
+    ],
+    "veil": [
+     "#302010",
+     0.2
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s153",
+   "start": 404.09,
+   "end": 405.93,
+   "line": "Ну когда уже эта премия?",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2025
+    },
+    "cam": {
+     "z": [
+      1.25,
+      1.3
+     ],
+     "x": [
+      200,
+      220
+     ],
+     "y": -50
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "angry",
+      "pose": "crossArms"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "expr": "happy",
+      "pose": "talk"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Ну когда уже эта премия?»",
+      "at": 0.15,
+      "y": 980,
+      "size": 46
+     },
+     {
+      "k": "age",
+      "v": 22,
+      "at": 0.15
+     }
+    ],
+    "veil": [
+     "#302010",
+     0.2
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s154",
+   "start": 405.93,
+   "end": 407.47,
+   "line": "Скорее бы выходные.",
+   "scene": "set:cafe",
+   "params": {
+    "k": "set",
+    "set": "cafe",
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": [
+      -80,
+      -60
+     ],
+     "y": -30
+    },
+    "props": [
+     {
+      "k": "chair",
+      "x": -230,
+      "f": 1
+     },
+     {
+      "k": "chair",
+      "x": 230,
+      "f": -1
+     },
+     {
+      "k": "table",
+      "x": 0,
+      "cups": [
+       -60,
+       70
+      ],
+      "croissant": 110
+     }
+    ],
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -230,
+      "s": 1.5,
+      "pose": "sit",
+      "expr": "sleepy"
+     },
+     {
+      "who": "EGOR",
+      "x": 230,
+      "s": 1.5,
+      "f": -1,
+      "pose": "sit",
+      "expr": "surprised",
+      "beard": true
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Скорее бы выходные»",
+      "at": 0.15,
+      "y": 980,
+      "size": 46
+     },
+     {
+      "k": "age",
+      "v": 23,
+      "at": 0.15
+     }
+    ],
+    "veil": [
+     "#302010",
+     0.2
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s155",
+   "start": 407.47,
+   "end": 409.05,
+   "line": "Давай уже, хватит!",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2026
+    },
+    "cam": {
+     "z": [
+      1.4,
+      1.45
+     ],
+     "x": [
+      140,
+      150
+     ],
+     "y": -90
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 160,
+      "s": 1.5,
+      "f": -1,
+      "expr": "angry",
+      "pose": "facepalm"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Давай уже, хватит!»",
+      "at": 0.15,
+      "y": 980,
+      "size": 46
+     },
+     {
+      "k": "age",
+      "v": 24,
+      "at": 0.15
+     }
+    ],
+    "veil": [
+     "#302010",
+     0.2
+    ]
+   },
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s156",
+   "start": 409.05,
+   "end": 411.21,
+   "line": "Ты не терял год от моргания.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "ТЫ НЕ ТЕРЯЛ ГОД ОТ МОРГАНИЯ.",
+    "color": "cream",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    }
+   },
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": []
+  },
+  {
+   "id": "s157",
+   "start": 411.21,
+   "end": 412.81,
+   "line": "Ты отдавал его сам.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "ТЫ ОТДАВАЛ ЕГО САМ.",
+    "color": "accent",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "stinger",
+     "at": 0.1,
+     "gain": -10
+    }
+   ]
+  },
+  {
+   "id": "s158",
+   "start": 412.81,
+   "end": 416.11,
+   "line": "Каждый раз, когда просил, чтобы он закончился.",
+   "scene": "set:studio",
+   "params": {
+    "k": "set",
+    "set": "studio",
+    "so": {
+     "color": "#2a2a40",
+     "light": "#9fb8ff"
+    },
+    "cam": {
+     "z": [
+      1.05,
+      1.12
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -60,
+      "s": 1.8,
+      "pose": "sad",
+      "expr": "sad"
+     }
+    ],
+    "ov": [
+     {
+      "k": "counter",
+      "label": "ОТДАНО",
+      "from": 0,
+      "to": 4,
+      "unit": " ГОДА",
+      "at": 0.4,
+      "until": 2.6,
+      "x": 1150,
+      "y": 540
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "counter",
+     "at": 0.4,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s159",
+   "start": 416.11,
+   "end": 417.57,
+   "line": "Глаза у тебя горят.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "redEyes": true,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "expr": "determined"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.1,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s160",
+   "start": 417.57,
+   "end": 419.09,
+   "line": "Ты смотришь на Егора.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "EGOR",
+    "expr": "smile",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "beard": true
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s161",
+   "start": 419.09,
+   "end": 420.05,
+   "line": "На конверт.",
+   "scene": "insert:envelope",
+   "params": {
+    "k": "insert",
+    "what": "envelope",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "label": "ПРЕМИЯ"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s162",
+   "start": 420.05,
+   "end": 421.45,
+   "line": "На красный кроссовер.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true
+    },
+    "cam": {
+     "z": [
+      1.5,
+      1.55
+     ],
+     "x": [
+      -470,
+      -460
+     ],
+     "y": -60
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.2,
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s163",
+   "start": 421.45,
+   "end": 425.75,
+   "line": "На Сергея Николаевича, который всё ещё стоит с идиотской надеждой на лице.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": [
+     [
+      0,
+      "happy"
+     ],
+     [
+      2,
+      "smile"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "ov": [
+     {
+      "k": "sub",
+      "s": "С ИДИОТСКОЙ НАДЕЖДОЙ",
+      "at": 1.6,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s164",
+   "start": 425.75,
+   "end": 430.71,
+   "line": "И в голове ты впервые за много недель говоришь совсем другое.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": [
+     [
+      0,
+      "neutral"
+     ],
+     [
+      2.6,
+      "smile"
+     ]
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "x": -120,
+    "noBlink": true,
+    "zoom": [
+     1,
+     1.08
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 1.4,
+     "gain": -16
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s165",
+   "start": 430.71,
+   "end": 432.45,
+   "line": "Пусть будет сегодня.",
+   "scene": "line",
+   "params": {
+    "k": "line",
+    "s": "«ПУСТЬ БУДЕТ СЕГОДНЯ»",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    }
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.2,
+     "gain": -12
+    }
+   ]
+  },
+  {
+   "id": "s166",
+   "start": 432.45,
+   "end": 435.55,
+   "line": "Пусть этот день будет именно этим.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "happy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "x": -120,
+    "noBlink": true,
+    "ov": [
+     {
+      "k": "sub",
+      "s": "«Пусть этот день будет именно этим»",
+      "at": 0.3,
+      "y": 980,
+      "size": 44
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s167",
+   "start": 435.55,
+   "end": 436.87,
+   "line": "И моргаешь.",
+   "scene": "insert:eyes",
+   "params": {
+    "k": "insert",
+    "what": "eyes",
+    "blinkAt": [
+     [
+      0.3,
+      0.75
+     ]
+    ],
+    "expr": "happy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "slowmo",
+     "at": 0.1,
+     "gain": -14
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s168",
+   "start": 436.87,
+   "end": 438.55,
+   "line": "Ничего не происходит.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.18
+     ],
+     "x": [
+      100,
+      120
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "surprised"
+     },
+     {
+      "who": "EGOR",
+      "x": -140,
+      "s": 1.5,
+      "f": 1,
+      "expr": "neutral",
+      "beard": true
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "expr": "happy",
+      "pose": "holdFront"
+     }
+    ],
+    "blinkIn": 0.4,
+    "ov": [
+     {
+      "k": "line",
+      "s": "НИЧЕГО НЕ ПРОИСХОДИТ.",
+      "at": 0.5,
+      "y": 170,
+      "size": 64
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.4,
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s169",
+   "start": 438.55,
+   "end": 440.85,
+   "line": "Тот же салон, тот же календарь,",
+   "scene": "insert:calendar",
+   "params": {
+    "k": "insert",
+    "what": "calendar",
+    "year": 2027,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ТОТ ЖЕ КАЛЕНДАРЬ",
+      "at": 0.2,
+      "y": 140
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": []
+  },
+  {
+   "id": "s170",
+   "start": 440.85,
+   "end": 442.49,
+   "line": "тот же Егор рядом.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.3,
+      1.35
+     ],
+     "x": [
+      -20,
+      0
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "joy"
+     },
+     {
+      "who": "EGOR",
+      "x": -140,
+      "s": 1.5,
+      "f": 1,
+      "expr": "happy",
+      "beard": true
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "ТОТ ЖЕ ЕГОР РЯДОМ",
+      "at": 0.3,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s171",
+   "start": 442.49,
+   "end": 444.47,
+   "line": "Сергей Николаевич хмурится.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "confused",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "side": 1,
+    "x": 140
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s172",
+   "start": 444.47,
+   "end": 445.85,
+   "line": "Ты чего моргаешь?",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "BOSS",
+    "expr": "angry",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "side": 1,
+    "x": 140,
+    "talk": [
+     444.57,
+     445.71
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s173",
+   "start": 445.85,
+   "end": 450.11,
+   "line": "А Егор складывается пополам от смеха и вытирает слёзы рукавом.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.15,
+      1.2
+     ],
+     "x": [
+      100,
+      130
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": "smile"
+     },
+     {
+      "who": "EGOR",
+      "x": -150,
+      "s": 1.5,
+      "f": 1,
+      "beard": true,
+      "expr": "joy",
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.4,
+        {
+         "head": [
+          30,
+          -150
+         ],
+         "sh": [
+          20,
+          -126
+         ],
+         "hip": [
+          0,
+          -90
+         ],
+         "eF": [
+          36,
+          -100
+         ],
+         "hF": [
+          40,
+          -80
+         ],
+         "eB": [
+          14,
+          -96
+         ],
+         "hB": [
+          24,
+          -150
+         ],
+         "kF": [
+          10,
+          -46
+         ],
+         "fF": [
+          6,
+          0
+         ],
+         "kB": [
+          -6,
+          -46
+         ],
+         "fB": [
+          -12,
+          0
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "expr": "confused",
+      "pose": "holdFront"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "applause",
+     "at": 0.4,
+     "gain": -26
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s174",
+   "start": 450.11,
+   "end": 454.91,
+   "line": "Первый раз за четыре года ты моргаешь просто так, как нормальный человек.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "joy",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "x": -120,
+    "blinkP": 1.2,
+    "zoom": [
+     1,
+     1.06
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.6,
+     "gain": -16
+    }
+   ],
+   "bars": "scope"
+  },
+  {
+   "id": "s175",
+   "start": 454.91,
+   "end": 458.01,
+   "line": "И это лучшее чувство в твоей жизни.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1,
+      0.84
+     ],
+     "x": [
+      60,
+      -220
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 120,
+      "s": 1.2,
+      "f": -1,
+      "pose": "cheer",
+      "expr": "joy"
+     },
+     {
+      "who": "EGOR",
+      "x": -60,
+      "s": 1.2,
+      "f": 1,
+      "beard": true,
+      "pose": "cheer",
+      "expr": "joy"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.2,
+      "f": -1,
+      "expr": "confused"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "ЛУЧШЕЕ ЧУВСТВО",
+      "at": 0.6,
+      "y": 170
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "powerup",
+     "at": 0.2,
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s176",
+   "start": 458.01,
+   "end": 459.65,
+   "line": "Ты вскрываешь конверт.",
+   "scene": "insert:envelope",
+   "params": {
+    "k": "insert",
+    "what": "envelope",
+    "take": 0.4,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "label": "ПРЕМИЯ"
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.4,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s177",
+   "start": 459.65,
+   "end": 462.45,
+   "line": "Внутри три тысячи рублей и записка.",
+   "scene": "insert:note",
+   "params": {
+    "k": "insert",
+    "what": "note",
+    "money": true,
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    },
+    "ov": [
+     {
+      "k": "readout",
+      "label": "ВНУТРИ",
+      "v": "3 000 РУБ.",
+      "at": 0.3,
+      "y": 980
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.3,
+     "gain": -14
+    }
+   ]
+  },
+  {
+   "id": "s178",
+   "start": 462.45,
+   "end": 464.81,
+   "line": "Остальное в следующем месяце.",
+   "scene": "insert:note",
+   "params": {
+    "k": "insert",
+    "what": "note",
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    }
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 1.2,
+     "gain": -16
+    }
+   ]
+  },
+  {
+   "id": "s179",
+   "start": 464.81,
+   "end": 468.65,
+   "line": "Ты смотришь на неё и вдруг начинаешь смеяться тоже.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.2,
+      1.25
+     ],
+     "x": [
+      100,
+      130
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": 60,
+      "s": 1.5,
+      "f": 1,
+      "expr": [
+       [
+        0,
+        "smirk"
+       ],
+       [
+        1.2,
+        "joy"
+       ]
+      ],
+      "pose": [
+       [
+        0,
+        "holdFront"
+       ],
+       [
+        1.2,
+        {
+         "head": [
+          26,
+          -170
+         ],
+         "sh": [
+          16,
+          -146
+         ],
+         "hip": [
+          0,
+          -96
+         ],
+         "eF": [
+          30,
+          -110
+         ],
+         "hF": [
+          34,
+          -90
+         ],
+         "eB": [
+          10,
+          -110
+         ],
+         "hB": [
+          18,
+          -90
+         ],
+         "kF": [
+          8,
+          -48
+         ],
+         "fF": [
+          6,
+          0
+         ],
+         "kB": [
+          -6,
+          -48
+         ],
+         "fB": [
+          -12,
+          0
+         ]
+        }
+       ]
+      ]
+     },
+     {
+      "who": "EGOR",
+      "x": -150,
+      "s": 1.5,
+      "f": 1,
+      "beard": true,
+      "expr": "joy",
+      "pose": "cheer"
+     },
+     {
+      "who": "BOSS",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "expr": "confused",
+      "pose": "shrug"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s180",
+   "start": 468.65,
+   "end": 470.97,
+   "line": "В субботу ты приезжаешь к Егору.",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1,
+      1.06
+     ],
+     "x": [
+      -60,
+      0
+     ]
+    },
+    "actors": [
+     {
+      "who": "EGOR",
+      "x": 380,
+      "s": 1.5,
+      "f": -1,
+      "beard": true,
+      "expr": "happy",
+      "pose": "wave"
+     },
+     {
+      "who": "MAX",
+      "x": 0,
+      "s": 1.5,
+      "walk": [
+       -900,
+       -420
+      ],
+      "walkT": [
+       0,
+       1.8
+      ],
+      "endPose": "wave",
+      "expr": "happy"
+     }
+    ],
+    "ov": [
+     {
+      "k": "line",
+      "s": "СУББОТА",
+      "at": 0.4,
+      "y": 160
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s181",
+   "start": 470.97,
+   "end": 472.91,
+   "line": "Маленький Максим сидит на ковре и",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.3,
+      1.36
+     ],
+     "x": [
+      -60,
+      -40
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "BABY",
+      "x": 60,
+      "s": 1.4,
+      "f": -1,
+      "pose": "sit",
+      "expr": "happy"
+     },
+     {
+      "who": "MAX",
+      "x": -330,
+      "s": 1.5,
+      "f": 1,
+      "expr": "smile"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s182",
+   "start": 472.91,
+   "end": 474.27,
+   "line": "тянет к тебе руки.",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.7,
+      1.76
+     ],
+     "x": [
+      40,
+      50
+     ],
+     "y": -10
+    },
+    "actors": [
+     {
+      "who": "BABY",
+      "x": 60,
+      "s": 1.4,
+      "f": -1,
+      "pose": {
+       "head": [
+        8,
+        -176
+       ],
+       "sh": [
+        4,
+        -144
+       ],
+       "hip": [
+        0,
+        -72
+       ],
+       "eF": [
+        30,
+        -170
+       ],
+       "hF": [
+        56,
+        -196
+       ],
+       "eB": [
+        24,
+        -168
+       ],
+       "hB": [
+        48,
+        -190
+       ],
+       "kF": [
+        44,
+        -74
+       ],
+       "fF": [
+        46,
+        0
+       ],
+       "kB": [
+        40,
+        -72
+       ],
+       "fB": [
+        38,
+        0
+       ]
+      },
+      "expr": "joy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s183",
+   "start": 474.27,
+   "end": 476.83,
+   "line": "Ты не помнишь, как держал его на крестинах,",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.3,
+      1.36
+     ],
+     "x": [
+      -60,
+      -40
+     ],
+     "y": -40
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -120,
+      "s": 1.5,
+      "f": 1,
+      "pose": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        1,
+        "kneel"
+       ]
+      ],
+      "expr": "smile"
+     },
+     {
+      "who": "BABY",
+      "x": 60,
+      "s": 1.4,
+      "f": -1,
+      "pose": "sit",
+      "expr": "joy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s184",
+   "start": 476.83,
+   "end": 479.21,
+   "line": "но сейчас ты берёшь его на руки и",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.2,
+      1.3
+     ],
+     "x": [
+      -80,
+      -60
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -80,
+      "s": 1.5,
+      "f": 1,
+      "pose": "cheer",
+      "expr": "joy"
+     },
+     {
+      "who": "BABY",
+      "x": -60,
+      "s": 1.3,
+      "f": -1,
+      "pose": "cheer",
+      "expr": "joy",
+      "y": -390,
+      "shadow": false
+     },
+     {
+      "who": "EGOR",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "beard": true,
+      "expr": "happy"
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "shimmer",
+     "at": 0.3,
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s185",
+   "start": 479.21,
+   "end": 481.01,
+   "line": "это уже твой момент.",
+   "scene": "face",
+   "params": {
+    "k": "face",
+    "who": "MAX",
+    "expr": "joy",
+    "bg": {
+     "set": "home"
+    },
+    "x": -120,
+    "ov": [
+     {
+      "k": "line",
+      "s": "ЭТО ТВОЙ МОМЕНТ.",
+      "at": 0.2,
+      "y": 150
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "bars": "scope"
+  },
+  {
+   "id": "s186",
+   "start": 481.01,
+   "end": 483.11,
+   "line": "И никто не заберёт его у тебя.",
+   "scene": "set:home",
+   "params": {
+    "k": "set",
+    "set": "home",
+    "cam": {
+     "z": [
+      1.05,
+      0.95
+     ]
+    },
+    "actors": [
+     {
+      "who": "MAX",
+      "x": -80,
+      "s": 1.5,
+      "f": 1,
+      "pose": "cheer",
+      "expr": "joy"
+     },
+     {
+      "who": "BABY",
+      "x": -60,
+      "s": 1.3,
+      "f": -1,
+      "pose": "cheer",
+      "expr": "joy",
+      "y": -390,
+      "shadow": false
+     },
+     {
+      "who": "EGOR",
+      "x": 330,
+      "s": 1.5,
+      "f": -1,
+      "beard": true,
+      "expr": "happy"
+     },
+     {
+      "who": "WIFE",
+      "x": 470,
+      "s": 1.5,
+      "f": -1,
+      "expr": "smile"
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "И НИКТО НЕ ЗАБЕРЁТ ЕГО У ТЕБЯ",
+      "at": 0.3,
+      "y": 980
+     }
+    ],
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s187",
+   "start": 483.11,
+   "end": 490.43,
+   "line": "Итак, какой год ты бы согласился пропустить, а какой не отдал бы ни за что? Напиши в комментариях.",
+   "scene": "end",
+   "params": {
+    "k": "end",
+    "q": "Какой год ты бы пропустил?",
+    "s2": "А какой не отдал бы ни за что?"
+   },
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.8,
+     "gain": -14
+    }
+   ],
+   "bars": "none"
+  },
+  {
+   "id": "s188",
+   "start": 490.43,
+   "end": 497.23,
+   "line": "И подписывайся, потому что Сергей Николаевич обещал, что следующая серия выйдет в следующем месяце.",
+   "scene": "set:showroom",
+   "params": {
+    "k": "set",
+    "set": "showroom",
+    "so": {
+     "carColor": "#c8352c",
+     "price": "4 200 000",
+     "year": 2027,
+     "repaint": true,
+     "mood": "golden"
+    },
+    "cam": {
+     "z": [
+      1.3,
+      1.36
+     ],
+     "x": [
+      380,
+      400
+     ],
+     "y": -60
+    },
+    "actors": [
+     {
+      "who": "BOSS",
+      "x": 380,
+      "s": 1.5,
+      "f": -1,
+      "pose": "talk",
+      "expr": [
+       [
+        0,
+        "happy"
+       ],
+       [
+        3,
+        "smirk"
+       ]
+      ],
+      "talk": [
+       492.15,
+       496.93
+      ]
+     }
+    ],
+    "ov": [
+     {
+      "k": "sub",
+      "s": "СЛЕДУЮЩАЯ СЕРИЯ — В СЛЕДУЮЩЕМ МЕСЯЦЕ",
+      "at": 1.6,
+      "y": 980,
+      "size": 40
+     }
+    ]
+   },
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "name": "blip",
+     "at": 1.6,
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s189",
+   "start": 497.23,
+   "end": 502.27,
+   "line": "Каждая история начинается со слова «если».",
+   "scene": "title",
+   "params": {
+    "k": "title",
+    "lines": [
+     "КАЖДАЯ ИСТОРИЯ НАЧИНАЕТСЯ",
+     "СО СЛОВА «ЕСЛИ»"
+    ],
+    "bg": {
+     "set": "showroom",
+     "so": {
+      "carColor": "#c8352c",
+      "price": "4 200 000",
+      "year": 2027,
+      "repaint": true,
+      "mood": "golden"
+     }
+    }
+   },
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "name": "stinger",
+     "at": 0.3,
+     "gain": -12
+    }
+   ],
+   "bars": "scope"
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 26.3,
+   "mood": "tension",
+   "intensity": 0.6
+  },
+  {
+   "start": 26.3,
+   "end": 82,
+   "mood": "calm",
+   "intensity": 0.3
+  },
+  {
+   "start": 82,
+   "end": 134.6,
+   "mood": "mystery",
+   "intensity": 0.5
+  },
+  {
+   "start": 134.6,
+   "end": 165.1,
+   "mood": "wonder",
+   "intensity": 0.45
+  },
+  {
+   "start": 165.1,
+   "end": 222.4,
+   "mood": "playful",
+   "intensity": 0.35
+  },
+  {
+   "start": 222.4,
+   "end": 262,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 262,
+   "end": 277.2,
+   "mood": "sad",
+   "intensity": 0.4
+  },
+  {
+   "start": 277.2,
+   "end": 312,
+   "mood": "playful",
+   "intensity": 0.45
+  },
+  {
+   "start": 312,
+   "end": 365.2,
+   "mood": "tension",
+   "intensity": 0.6
+  },
+  {
+   "start": 365.2,
+   "end": 409.1,
+   "mood": "dark",
+   "intensity": 0.75
+  },
+  {
+   "start": 409.1,
+   "end": 430.7,
+   "mood": "sad",
+   "intensity": 0.45
+  },
+  {
+   "start": 430.7,
+   "end": 468.6,
+   "mood": "hopeful",
+   "intensity": 0.55
+  },
+  {
+   "start": 468.6,
+   "end": 483.1,
+   "mood": "triumph",
+   "intensity": 0.5
+  },
+  {
+   "start": 483.1,
+   "end": 502.27,
+   "mood": "hopeful",
+   "intensity": 0.4
+  }
+ ]
+}

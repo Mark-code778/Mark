@@ -1,0 +1,4 @@
+node_modules/
+**/build/
+examples/reaction-time/build/
+__pycache__/

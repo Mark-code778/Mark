@@ -48,5 +48,19 @@ export const STYLES = {
     grade: { contrast: 0.92, sat: 0.92, lift: [0.07, 0.055, 0.085], gamma: [1.12, 1.1, 1.06], gain: [1.06, 1.03, 0.98], vignette: 0.3, grain: 0.07, bloom: 0.45 },
     moods: { night: { sky: ['#2a2f5a', '#4a4f80', '#6a6aa0'], wall: '#3e4266' }, dusk: { sky: ['#6a5a90', '#c08aa8', '#f2b0a0', '#fbe0b8'] } },
   },
+  reference: {
+    name: 'Reference Office', desc: 'По референсу пользователя: светлый серо-голубой день, бледное небо, серый город за окнами, кремовый контур, мягкое зерно.',
+    ink: '#141416', inkFar: '#3a3d4a', feature: '#f6f1e6', rimWidth: 4.5, ui: { ...UI, gold: '#ffd47e' },
+    grade: { contrast: 0.96, sat: 0.86, lift: [0.03, 0.035, 0.05], gamma: [1.04, 1.04, 1.06], gain: [1.0, 1.0, 1.02], vignette: 0.35, grain: 0.05, bloom: 0.35 },
+    moods: {
+      day: { sky: ['#9fb0c8', '#c9d3df', '#e8e4dc'], wall: '#8a93a8', floor: '#5c5967', dark: '#3a3e4c', rim: '#f4ead6', key: '#fff3dc', practical: '#ffe2a8' },
+      interiorWarm: { wall: '#8c8a96', floor: '#5e5864', dark: '#3a3844', rim: '#f4ead6', sky: ['#a9b8cc', '#d8d4cc', '#efe2cc'] },
+      interiorCool: { wall: '#7f8aa0', floor: '#565a68', dark: '#343846', rim: '#f4ead6', sky: ['#8ea0bc', '#c2ccda'] },
+      golden: { sky: ['#8e9ab8', '#d8b8a0', '#f2d8b0'], rim: '#f4ead6', grass: '#6a8a6a', wall: '#7a7488', floor: '#555060' },
+      dusk: { sky: ['#5a6488', '#8e98b8', '#d8c0b0'], rim: '#f4ead6', wall: '#6e7088', floor: '#4a4a5c' },
+      night: { sky: ['#2a3150', '#3e4670', '#5a6290'], rim: '#dfe6f4', wall: '#3e4462', floor: '#2c3044' },
+      void: { sky: ['#6e7a96', '#9aa6be'], rim: '#f4ead6', wall: '#6e7a96', floor: '#5a6480', dark: '#3a4058' },
+    },
+  },
 };
 export const STYLE_IDS = Object.keys(STYLES);

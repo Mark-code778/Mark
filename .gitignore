@@ -1,2 +1,4 @@
 node_modules/
 out/
+aitrends-2d-studio/projects/*/build/
+aitrends-2d-studio/projects/*/out/

@@ -1,0 +1,6672 @@
+{
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "duration": 501,
+ "theme": "pastel",
+ "style": "flat",
+ "letterbox": true,
+ "subtitles": false,
+ "audio": {
+  "voice": "audio/voice.mp3",
+  "musicParts": [
+   {
+    "from": 0,
+    "src": "music/mystery.wav"
+   },
+   {
+    "from": 26.33,
+    "src": "music/calm.wav"
+   },
+   {
+    "from": 83.49,
+    "src": "music/mystery.wav",
+    "offset": 20
+   },
+   {
+    "from": 165.07,
+    "src": "music/calm.wav",
+    "offset": 30
+   },
+   {
+    "from": 258.41,
+    "src": "music/tense.wav"
+   },
+   {
+    "from": 425.75,
+    "src": "music/upbeat.wav"
+   }
+  ],
+  "music": null,
+  "musicDb": -22,
+  "sfxDb": -13
+ },
+ "scenes": [
+  {
+   "start": 0,
+   "end": 2.99,
+   "note": "Ты моргаешь, и тебе уже 22.",
+   "location": "street",
+   "transition": "blink",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised",
+     "beats": [
+      {
+       "at": 1.2,
+       "face": "worried"
+      }
+     ]
+    }
+   ],
+   "title": {
+    "text": "22.",
+    "at": 1,
+    "position": "bottom",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 2.99,
+   "end": 6.87,
+   "note": "Моргаешь ещё раз — Егор женат.",
+   "location": "park",
+   "time": "day",
+   "transition": "blink",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.2,
+     "z": 0.5,
+     "action": "cheer",
+     "face": "grin"
+    },
+    {
+     "id": "wife",
+     "shirt": "#ffffff",
+     "sleeves": "short",
+     "hair": "bob",
+     "hairColor": "#6b4a2b",
+     "pants": "#f4f4f4",
+     "x": 1.5,
+     "z": 0.3,
+     "action": "cheer",
+     "face": "happy",
+     "facing": -20
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -2.3,
+     "z": 1,
+     "face": "surprised",
+     "facing": 40
+    }
+   ],
+   "title": {
+    "text": "ЖЕНАТ.",
+    "at": 0.6,
+    "position": "left",
+    "size": "medium"
+   },
+   "sfx": [
+    {
+     "name": "sparkle",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "start": 6.87,
+   "end": 11.83,
+   "note": "Моргаешь в третий раз — у Егора сын Максим.",
+   "location": "room",
+   "transition": "blink",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     -0.4,
+     0.4
+    ]
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.9,
+     "z": 0.5,
+     "face": "happy",
+     "facing": -30
+    },
+    {
+     "id": "baby",
+     "shirt": "#8fd0f2",
+     "sleeves": "short",
+     "scale": 0.5,
+     "hair": "puff",
+     "hairColor": "#6b4a2b",
+     "x": 0,
+     "z": 0.9,
+     "action": "wave",
+     "face": "happy"
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.8,
+     "z": 0.5,
+     "face": "surprised",
+     "facing": 40,
+     "action": "scared"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "start": 11.83,
+   "end": 15.45,
+   "note": "Моргаешь в четвёртый раз — посреди автосалона на Кутузовском…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "transition": "blink",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.8,
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "start": 15.45,
+   "end": 19.21,
+   "note": "…не моргая четвёртую минуту.",
+   "location": "studio",
+   "bg": "#2a3d5c",
+   "camera": {
+    "shot": "extreme",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "scared"
+    }
+   ],
+   "title": {
+    "text": "НЕ МОРГАЯ.",
+    "at": 0.4,
+    "position": "bottom",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 19.21,
+   "end": 21.81,
+   "note": "Сергей Николаевич протягивает конверт.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "scared"
+    },
+    {
+     "facing": -55,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "face": "smirk",
+     "action": "point"
+    }
+   ]
+  },
+  {
+   "start": 21.81,
+   "end": 23.81,
+   "note": "«Максим, твоя премия».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "scared"
+    },
+    {
+     "facing": -20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "face": "grin",
+     "action": "talk",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, твоя премия",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 23.81,
+   "end": 26.33,
+   "note": "А Егор вытирает тебе слёзы.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max",
+    "angle": -25
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0.5,
+     "action": "cry",
+     "face": "sad"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.7,
+     "z": 0.6,
+     "facing": -60,
+     "face": "happy",
+     "action": "wave"
+    }
+   ]
+  },
+  {
+   "start": 26.33,
+   "end": 27.89,
+   "note": "А теперь давай сначала.",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "transition": "fade",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-out",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "neutral"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "swoosh",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "start": 27.89,
+   "end": 31.59,
+   "note": "Тебя зовут Максим. Тебе 21 год.",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "wave",
+     "face": "grin"
+    }
+   ],
+   "title": {
+    "text": "МАКСИМ, 21.",
+    "at": 0.5,
+    "position": "left",
+    "size": "big"
+   }
+  },
+  {
+   "start": 31.59,
+   "end": 35.21,
+   "note": "Москва, менеджер в автосалоне.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН",
+     "МОСКВА"
+    ]
+   },
+   "transition": "whip",
+   "camera": {
+    "shot": "wide",
+    "move": "pan-right"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0.5,
+     "z": 0.6,
+     "action": "point",
+     "facing": 50,
+     "face": "happy"
+    }
+   ]
+  },
+  {
+   "start": 35.21,
+   "end": 40.55,
+   "note": "Начальник Сергей Николаевич больше месяца обещает премию.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "ПРЕМИЯ",
+     "СКОРО"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    },
+    {
+     "facing": -55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "think",
+     "face": "worried"
+    }
+   ]
+  },
+  {
+   "start": 40.55,
+   "end": 44.25,
+   "note": "Лучший друг Егор знает о тебе всё…",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "pan-right",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -3,
+     "z": 0.3,
+     "action": "walk",
+     "to": [
+      1.5,
+      0.3
+     ],
+     "face": "happy"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": -1.8,
+     "z": 0.6,
+     "action": "walk",
+     "to": [
+      2.7,
+      0.6
+     ],
+     "face": "grin",
+     "talking": true
+    }
+   ]
+  },
+  {
+   "start": 44.25,
+   "end": 47.91,
+   "note": "…даже то, что ты не любишь тёмные подъезды.",
+   "location": "street",
+   "time": "night",
+   "camera": {
+    "shot": "medium",
+    "move": "shake",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "scared",
+     "face": "scared"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "start": 47.91,
+   "end": 51.69,
+   "note": "И всё это начинается в обычный понедельник.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "ПОНЕДЕЛЬНИК"
+    ]
+   },
+   "transition": "fade",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.5,
+     "z": 0.5,
+     "face": "neutral"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "start": 51.69,
+   "end": 57.79,
+   "note": "Серый кроссовер за 3 899 000 рублей.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "3 899 000",
+     "РУБЛЕЙ"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "orbit",
+    "target": [
+     2.2,
+     0.3,
+     -1.4
+    ]
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0.4,
+     "z": 0.4,
+     "facing": 40,
+     "face": "neutral"
+    }
+   ]
+  },
+  {
+   "start": 57.79,
+   "end": 58.95,
+   "note": "Клиентов нет.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "wide",
+    "move": "static",
+    "height": 1
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.4,
+     "action": "shrug",
+     "face": "sad"
+    }
+   ]
+  },
+  {
+   "start": 58.95,
+   "end": 61.27,
+   "note": "Кофе остыл ещё в девять утра.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "held": "cup",
+     "face": "sleepy"
+    }
+   ]
+  },
+  {
+   "start": 61.27,
+   "end": 65.05,
+   "note": "Мимо проходит Сергей Николаевич, хлопает по плечу…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0.9,
+     "z": 0.4,
+     "held": "cup",
+     "face": "neutral",
+     "facing": -40
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -5,
+     "z": 0.8,
+     "action": "walk",
+     "to": [
+      -0.4,
+      0.6
+     ],
+     "face": "grin",
+     "beats": [
+      {
+       "at": 3.2,
+       "action": "wave",
+       "facing": 50
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 65.05,
+   "end": 69.13,
+   "note": "«Максим, премия на этой неделе. Точно».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    },
+    {
+     "facing": -55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "cup",
+     "face": "neutral"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе. Точно",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 69.13,
+   "end": 72.97,
+   "note": "Эту фразу ты слышишь 34-й день подряд.",
+   "location": "studio",
+   "bg": "#a8c6e8",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "facepalm",
+     "face": "sad"
+    }
+   ],
+   "title": {
+    "text": "34-Й ДЕНЬ.",
+    "at": 0.4,
+    "position": "left",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "buzz",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "start": 72.97,
+   "end": 75.35,
+   "note": "До конца смены — восемь часов.",
+   "location": "studio",
+   "bg": "#f6d9a8",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "ДО КОНЦА",
+      "СМЕНЫ 8:00"
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.3
+    },
+    {
+     "name": "tick",
+     "at": 1.3
+    }
+   ],
+   "title": {
+    "text": "8 ЧАСОВ.",
+    "at": 0.5,
+    "position": "right",
+    "size": "medium"
+   }
+  },
+  {
+   "start": 75.35,
+   "end": 79.69,
+   "note": "Смотришь на часы над кассой, в голове одна мысль…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max",
+    "angle": 40
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1,
+     "z": 0.2,
+     "facing": -150,
+     "face": "sleepy",
+     "action": "think"
+    }
+   ]
+  },
+  {
+   "start": 79.69,
+   "end": 82.07,
+   "note": "«Скорее бы всё это закончилось».",
+   "location": "studio",
+   "bg": "#7d8fb3",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad"
+    }
+   ],
+   "title": {
+    "text": "СКОРЕЕ БЫ…",
+    "at": 0.4,
+    "position": "bottom",
+    "size": "big"
+   }
+  },
+  {
+   "start": 82.07,
+   "end": 83.49,
+   "note": "И ты моргаешь.",
+   "location": "studio",
+   "bg": "#7d8fb3",
+   "camera": {
+    "shot": "extreme",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "start": 83.49,
+   "end": 85.51,
+   "note": "Ты открываешь глаза.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "transition": "blink",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ]
+  },
+  {
+   "start": 85.51,
+   "end": 88.85,
+   "note": "Часы над кассой — та же минута.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": [
+     -3.2,
+     1.9,
+     -7.6
+    ]
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.3
+    },
+    {
+     "name": "tick",
+     "at": 1.3
+    },
+    {
+     "name": "tick",
+     "at": 2.3
+    }
+   ]
+  },
+  {
+   "start": 88.85,
+   "end": 90.89,
+   "note": "Но кроссовер почему-то красный.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "push",
+    "target": [
+     2.6,
+     0.2,
+     -1.6
+    ]
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.8,
+     "z": 0.6,
+     "facing": 60,
+     "face": "surprised",
+     "action": "point"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "glitch",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "start": 90.89,
+   "end": 96.37,
+   "note": "На ценнике 4 200 000, на стене новый календарь.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "4 200 000",
+     "РУБЛЕЙ"
+    ]
+   },
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.8,
+     "facing": "away",
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "start": 96.37,
+   "end": 97.97,
+   "note": "Ты достаёшь телефон.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "held": "phone",
+     "face": "worried"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "click",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 97.97,
+   "end": 101.17,
+   "note": "Год на экране на один больше.",
+   "location": "studio",
+   "bg": "#2f9e94",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "2027 → 2028",
+      "+1 ГОД"
+     ]
+    }
+   ],
+   "title": {
+    "text": "+1 ГОД.",
+    "at": 0.5,
+    "position": "left",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "glitch",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 101.17,
+   "end": 104.55,
+   "note": "Мимо снова проходит Сергей Николаевич…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "angle": -15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0.9,
+     "z": 0.4,
+     "held": "phone",
+     "face": "worried",
+     "facing": -40
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -5,
+     "z": 0.8,
+     "action": "walk",
+     "to": [
+      -0.4,
+      0.6
+     ],
+     "face": "grin",
+     "beats": [
+      {
+       "at": 3,
+       "action": "talk",
+       "talking": true,
+       "facing": 50
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 104.55,
+   "end": 107.93,
+   "note": "«Максим, премия на этой неделе. Точно».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    },
+    {
+     "facing": -55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "angry"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе. Точно",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 107.93,
+   "end": 111.23,
+   "note": "Ты не выдерживаешь: «Вы мне это говорили год назад!»",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "neutral"
+    },
+    {
+     "facing": -20,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "angry",
+     "face": "angry",
+     "talking": true
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 1.4
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Вы мне это говорили год назад!",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 111.23,
+   "end": 115.83,
+   "note": "Он даже не останавливается: «Тогда квартал был другой».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "pan-right",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.2,
+     "z": 0.4,
+     "face": "angry",
+     "facing": 60
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 0,
+     "z": 0.6,
+     "action": "walk",
+     "to": [
+      4.5,
+      0.2
+     ],
+     "face": "smirk",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Тогда квартал был другой",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 115.83,
+   "end": 119.47,
+   "note": "В галерее 342 новые фотографии.",
+   "location": "studio",
+   "bg": "#e8a0bf",
+   "transition": "whip",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "ГАЛЕРЕЯ",
+      "342 НОВЫХ"
+     ]
+    }
+   ],
+   "title": {
+    "text": "342 ФОТО.",
+    "at": 0.5,
+    "position": "left",
+    "size": "big"
+   }
+  },
+  {
+   "start": 119.47,
+   "end": 124.27,
+   "note": "На всех ты улыбаешься: кафе, набережная, море.",
+   "split": {
+    "left": {
+     "location": "cafe",
+     "label": "КАФЕ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "cheer",
+       "face": "grin"
+      }
+     ]
+    },
+    "right": {
+     "location": "park",
+     "label": "МОРЕ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "dance",
+       "face": "grin"
+      }
+     ]
+    }
+   },
+   "sfx": [
+    {
+     "name": "click",
+     "at": 0.3
+    },
+    {
+     "name": "click",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "start": 124.27,
+   "end": 126.01,
+   "note": "Ты не помнишь ни одной.",
+   "location": "studio",
+   "bg": "#8a93b8",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "worried",
+     "action": "think"
+    }
+   ]
+  },
+  {
+   "start": 126.01,
+   "end": 131.37,
+   "note": "Кто-то прожил этот год вместо тебя — и ему было весело.",
+   "split": {
+    "left": {
+     "bg": "#ffd27a",
+     "label": "ОН",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "dance",
+       "face": "grin"
+      }
+     ]
+    },
+    "right": {
+     "bg": "#8a93b8",
+     "label": "ТЫ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "shrug",
+       "face": "sad"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "start": 131.37,
+   "end": 134.59,
+   "note": "Это правда. И это не твоя вина.",
+   "location": "studio",
+   "bg": "#8a93b8",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-out",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad"
+    }
+   ]
+  },
+  {
+   "start": 134.59,
+   "end": 138.17,
+   "note": "Человек моргает 15–20 раз в минуту.",
+   "location": "lab",
+   "transition": "whip",
+   "screen": {
+    "lines": [
+     "15–20 РАЗ",
+     "В МИНУТУ"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.8,
+     "z": 0.4,
+     "facing": -60,
+     "action": "point",
+     "face": "surprised"
+    }
+   ]
+  },
+  {
+   "start": 138.17,
+   "end": 143.65,
+   "note": "Примерно 10% времени глаза закрыты.",
+   "location": "lab",
+   "screen": {
+    "lines": [
+     "ГЛАЗА",
+     "ЗАКРЫТЫ"
+    ],
+    "progress": {
+     "label": "ВРЕМЯ",
+     "from": 0,
+     "to": 10
+    }
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 2.6,
+     "z": 0.4,
+     "facing": -60,
+     "face": "surprised",
+     "action": "point"
+    }
+   ]
+  },
+  {
+   "start": 143.65,
+   "end": 149.09,
+   "note": "Мозг вырезает эти секунды, поэтому мир не мигает.",
+   "location": "lab",
+   "screen": {
+    "lines": [
+     "МОЗГ",
+     "МОНТИРУЕТ"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "orbit",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.8,
+     "z": 0.5,
+     "action": "think",
+     "face": "smirk"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "scribble",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "start": 149.09,
+   "end": 152.45,
+   "note": "Но если бы каждое моргание стоило год…",
+   "location": "studio",
+   "bg": "#3a3f66",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     1,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "1 МОРГАНИЕ",
+      "= 1 ГОД"
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "rise",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "start": 152.45,
+   "end": 155.75,
+   "note": "…за минуту ты бы состарился лет на 15.",
+   "location": "studio",
+   "bg": "#3a3f66",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "scared",
+     "action": "scared"
+    }
+   ],
+   "title": {
+    "text": "+15 ЛЕТ.",
+    "at": 0.4,
+    "position": "bottom",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 155.75,
+   "end": 159.37,
+   "note": "К обеду тебе было бы больше, чем Сергею Николаевичу.",
+   "split": {
+    "left": {
+     "bg": "#f7c59f",
+     "label": "ТЫ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "face": "scared",
+       "action": "scared"
+      }
+     ]
+    },
+    "right": {
+     "bg": "#8fd6df",
+     "label": "ШЕФ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "boss",
+       "shirt": "#454a58",
+       "sleeves": "long",
+       "pants": "#262a34",
+       "hair": "none",
+       "outfit": "suit",
+       "x": 0,
+       "z": 0.5,
+       "face": "smirk",
+       "action": "idle"
+      }
+     ]
+    }
+   },
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "start": 159.37,
+   "end": 165.07,
+   "note": "Повезло в одном: ты ещё не знаешь, что это работает не всегда.",
+   "location": "studio",
+   "bg": "#5a7fa8",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "think",
+     "face": "worried"
+    }
+   ],
+   "title": {
+    "text": "НЕ ВСЕГДА.",
+    "at": 2.4,
+    "position": "left",
+    "size": "big"
+   }
+  },
+  {
+   "start": 165.07,
+   "end": 166.75,
+   "note": "В обед ты бежишь к Егору.",
+   "location": "street",
+   "transition": "whip",
+   "camera": {
+    "shot": "medium",
+    "move": "pan-right",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -5,
+     "z": 0.4,
+     "action": "run",
+     "to": [
+      4,
+      0.4
+     ],
+     "face": "worried"
+    }
+   ]
+  },
+  {
+   "start": 166.75,
+   "end": 170.93,
+   "note": "Кофейня напротив салона. Капучино за 350.",
+   "location": "cafe",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.2,
+     "z": 0,
+     "held": "cup",
+     "face": "happy",
+     "action": "wave",
+     "facing": -30
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -2.5,
+     "z": 0.8,
+     "action": "walk",
+     "to": [
+      -1,
+      0.4
+     ],
+     "face": "worried"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 170.93,
+   "end": 175.45,
+   "note": "Ты рассказываешь всё, он слушает и жуёт круассан.",
+   "location": "cafe",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "worried"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "cup",
+     "face": "neutral"
+    }
+   ]
+  },
+  {
+   "start": 175.45,
+   "end": 179.97,
+   "note": "«Ты неделю ходишь странный, но чтобы год пропал — это новое».",
+   "location": "cafe",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "worried"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "cup",
+     "action": "talk",
+     "talking": true,
+     "face": "smirk"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты неделю ходишь странный, но чтобы год пропал — это новое",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 179.97,
+   "end": 183.57,
+   "note": "«Скажи что-нибудь, что я мог пропустить».",
+   "location": "cafe",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "worried"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "cup",
+     "face": "neutral"
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Скажи что-нибудь, что я мог пропустить",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 183.57,
+   "end": 187.25,
+   "note": "Он пожимает плечами: «Ничего, всё как обычно».",
+   "location": "cafe",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": "egor",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "worried"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "shrug",
+     "face": "neutral",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ничего, всё как обычно",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 187.25,
+   "end": 191.35,
+   "note": "«Слушай, давай проверим. Моргни».",
+   "location": "cafe",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "scared"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "cap",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "point",
+     "face": "smirk",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Слушай, давай проверим. Моргни",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 191.35,
+   "end": 192.63,
+   "note": "Ты моргаешь.",
+   "location": "cafe",
+   "camera": {
+    "shot": "extreme",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "start": 192.63,
+   "end": 196.77,
+   "note": "Егор напротив — с бородой и кольцом.",
+   "location": "cafe",
+   "time": "sunset",
+   "transition": "blink",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "cup",
+     "face": "grin"
+    }
+   ],
+   "title": {
+    "text": "ГОД СПУСТЯ.",
+    "at": 1,
+    "position": "left",
+    "size": "medium"
+   }
+  },
+  {
+   "start": 196.77,
+   "end": 201.35,
+   "note": "«Ты на моей свадьбе был, дурак. Даже речь произнёс».",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты на моей свадьбе был, дурак. Даже речь произнёс",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 201.35,
+   "end": 204.03,
+   "note": "«Ты правда не помнишь?» — «И что я сказал?»",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "worried",
+     "talking": true,
+     "action": "shrug"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "surprised"
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Ты правда не помнишь?",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 204.03,
+   "end": 206.47,
+   "note": "«Что надо ловить момент».",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "worried"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "happy"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Что надо ловить момент",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 206.47,
+   "end": 208.61,
+   "note": "Ты смотришь в чашку с капучино.",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "held": "cup",
+     "face": "sad"
+    }
+   ]
+  },
+  {
+   "start": 208.61,
+   "end": 215.29,
+   "note": "Тебе 23, и бесит, что тот, другой Максим, говорил хорошие речи.",
+   "split": {
+    "left": {
+     "bg": "#8a93b8",
+     "label": "ТЫ, 23",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "face": "angry",
+       "action": "angry"
+      }
+     ]
+    },
+    "right": {
+     "location": "stage",
+     "label": "ТОТ МАКСИМ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "talk",
+       "talking": true,
+       "face": "grin"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "start": 215.29,
+   "end": 219.43,
+   "note": "Егор молчит секунд десять…",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "sad"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "think",
+     "face": "worried"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.5
+    },
+    {
+     "name": "tick",
+     "at": 1.5
+    },
+    {
+     "name": "tick",
+     "at": 2.5
+    }
+   ]
+  },
+  {
+   "start": 219.43,
+   "end": 222.41,
+   "note": "«Больше не моргай. Вообще».",
+   "location": "cafe",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "scared"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "point",
+     "talking": true,
+     "face": "angry"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Больше не моргай. Вообще",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 222.41,
+   "end": 225.55,
+   "note": "Но ты не можешь. Через час ты чихаешь.",
+   "location": "street",
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "worried",
+     "beats": [
+      {
+       "at": 2.6,
+       "action": "jump",
+       "face": "surprised"
+      }
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 2.7
+    }
+   ]
+  },
+  {
+   "start": 225.55,
+   "end": 230.77,
+   "note": "Глаза закрываются сами: «Скорее бы выходные».",
+   "location": "studio",
+   "bg": "#7d8fb3",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "title": {
+    "text": "СКОРЕЕ БЫ ВЫХОДНЫЕ.",
+    "at": 3.3,
+    "position": "bottom",
+    "size": "medium"
+   }
+  },
+  {
+   "start": 230.77,
+   "end": 232.31,
+   "note": "И открываешь их.",
+   "location": "room",
+   "transition": "blink",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "props": [
+    {
+     "type": "door",
+     "x": 2.5,
+     "z": -2
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ]
+  },
+  {
+   "start": 232.31,
+   "end": 236.71,
+   "note": "Егор у твоей двери. В руках переноска.",
+   "location": "room",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 15
+   },
+   "props": [
+    {
+     "type": "door",
+     "x": 2.5,
+     "z": -2
+    },
+    {
+     "type": "box",
+     "x": 1.1,
+     "z": 0.9,
+     "y": 0.95,
+     "scale": 0.55,
+     "color": "#8fd0f2"
+    }
+   ],
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.6,
+     "z": 0.4,
+     "face": "happy",
+     "facing": -50
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1,
+     "z": 0.4,
+     "face": "surprised",
+     "facing": 55
+    }
+   ]
+  },
+  {
+   "start": 236.71,
+   "end": 240.45,
+   "note": "«Знакомься, — говорит он тихо. — Это Максим».",
+   "location": "room",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "baby"
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.4,
+     "z": 0.2,
+     "face": "happy",
+     "talking": true,
+     "facing": -40
+    },
+    {
+     "id": "baby",
+     "shirt": "#8fd0f2",
+     "sleeves": "short",
+     "scale": 0.5,
+     "hair": "puff",
+     "hairColor": "#6b4a2b",
+     "x": 0.3,
+     "z": 0.9,
+     "action": "wave",
+     "face": "happy"
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.2,
+     "z": 0.4,
+     "face": "surprised",
+     "facing": 50
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Знакомься, — говорит он тихо. — Это Максим",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 240.45,
+   "end": 245.79,
+   "note": "Ребёнку уже несколько месяцев…",
+   "location": "room",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "baby"
+   },
+   "actors": [
+    {
+     "id": "baby",
+     "shirt": "#8fd0f2",
+     "sleeves": "short",
+     "scale": 0.5,
+     "hair": "puff",
+     "hairColor": "#6b4a2b",
+     "x": 0,
+     "z": 0.6,
+     "face": "happy",
+     "action": "jump"
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0,
+     "face": "worried",
+     "facing": 60
+    }
+   ]
+  },
+  {
+   "start": 245.79,
+   "end": 248.03,
+   "note": "«Вы назвали его в мою честь?»",
+   "location": "room",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised",
+     "talking": true,
+     "action": "point"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "happy"
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Вы назвали его в мою честь?",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 248.03,
+   "end": 250.45,
+   "note": "Егор улыбается: «Ты крёстный».",
+   "location": "room",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "grin",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты крёстный",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 250.45,
+   "end": 253.75,
+   "note": "«Ты держал его на крестинах. Плакал больше всех».",
+   "location": "studio",
+   "bg": "#ffd9a8",
+   "transition": "fade",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.7,
+     "z": 0.5,
+     "action": "cry",
+     "face": "sad"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.8,
+     "z": 0.4,
+     "face": "grin",
+     "facing": -40
+    }
+   ]
+  },
+  {
+   "start": 253.75,
+   "end": 258.41,
+   "note": "Ты ничего не помнишь. Тебе 24.",
+   "location": "room",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad"
+    }
+   ],
+   "title": {
+    "text": "24.",
+    "at": 2.7,
+    "position": "bottom",
+    "size": "big"
+   }
+  },
+  {
+   "start": 258.41,
+   "end": 262.01,
+   "note": "Вот тут становится по-настоящему страшно.",
+   "location": "studio",
+   "bg": "#1f2a44",
+   "camera": {
+    "shot": "extreme",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "scared",
+     "action": "scared"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 262.01,
+   "end": 268.71,
+   "note": "Не из-за лет, а потому что Егор не просто так дошёл до этого.",
+   "location": "studio",
+   "bg": "#1f2a44",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-out",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "worried",
+     "action": "think"
+    }
+   ]
+  },
+  {
+   "start": 268.71,
+   "end": 272.05,
+   "note": "Каждый раз, когда ты моргал, он оставался рядом.",
+   "location": "park",
+   "time": "sunset",
+   "transition": "fade",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0.5,
+     "face": "sad",
+     "facing": 30
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0.4,
+     "face": "happy",
+     "facing": -30
+    }
+   ]
+  },
+  {
+   "start": 272.05,
+   "end": 277.25,
+   "note": "Прожил весь год и с тобой, и без тебя. И ни разу не бросил.",
+   "location": "park",
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0.5,
+     "face": "sad",
+     "facing": 30
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0.4,
+     "face": "happy",
+     "facing": -20
+    }
+   ]
+  },
+  {
+   "start": 277.25,
+   "end": 281.03,
+   "note": "Егор покупает в аптеке капли за 490 рублей.",
+   "location": "hospital",
+   "screen": {
+    "lines": [
+     "АПТЕКА",
+     "490 РУБ."
+    ]
+   },
+   "transition": "whip",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0,
+     "z": 0.5,
+     "held": "bottle",
+     "face": "grin",
+     "action": "wave"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "start": 281.03,
+   "end": 285.39,
+   "note": "Сидите на скамейке и не моргаете, как два кота.",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": [
+     0,
+     0.5,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    }
+   ]
+  },
+  {
+   "start": 285.39,
+   "end": 288.51,
+   "note": "Кажется, глаза сейчас вывалятся.",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "shake"
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    }
+   ]
+  },
+  {
+   "start": 288.51,
+   "end": 291.83,
+   "note": "Егор достаёт секундомер и засекает.",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in"
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "held": "phone",
+     "face": "neutral"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "click",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "start": 291.83,
+   "end": 294.41,
+   "note": "Одна минута, две минуты.",
+   "location": "studio",
+   "bg": "#2f9e94",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "НЕ МОРГАТЬ"
+     ],
+     "progress": {
+      "label": "МИНУТЫ",
+      "from": 0,
+      "to": 66
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.3
+    },
+    {
+     "name": "tick",
+     "at": 1.3
+    }
+   ]
+  },
+  {
+   "start": 294.41,
+   "end": 299.69,
+   "note": "Слёзы текут сами. Теперь ты понимаешь, зачем моргать.",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in"
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "sad"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "worried"
+    }
+   ]
+  },
+  {
+   "start": 299.69,
+   "end": 302.93,
+   "note": "На третьей минуте Егор задумывается…",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": "egor",
+    "angle": -25
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "sad"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "worried",
+     "beats": [
+      {
+       "at": 2.6,
+       "face": "surprised"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 302.93,
+   "end": 308.17,
+   "note": "«Подожди, ты каждый раз перед этим что-то говорил».",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "push"
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised",
+     "talking": true
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.4
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Подожди, ты каждый раз перед этим что-то говорил",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 308.17,
+   "end": 312.01,
+   "note": "«Что?» — «Не помню. Но ты всегда вздыхал».",
+   "location": "park",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 20
+   },
+   "props": [
+    {
+     "type": "bench",
+     "x": 0,
+     "z": -0.25
+    }
+   ],
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "surprised",
+     "talking": true
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.6,
+     "z": 0,
+     "action": "sit",
+     "face": "worried",
+     "talking": true
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Что?",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 312.01,
+   "end": 316.01,
+   "note": "Ты в салоне и не моргаешь уже четвёртый час.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "transition": "fade",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 316.01,
+   "end": 318.49,
+   "note": "Держишься на каплях и упрямстве.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "held": "bottle",
+     "face": "angry"
+    }
+   ]
+  },
+  {
+   "start": 318.49,
+   "end": 322.21,
+   "note": "За спиной слышишь знакомое…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0.5,
+     "z": 0.8,
+     "face": "worried"
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.5,
+     "z": -2.2,
+     "action": "walk",
+     "to": [
+      -0.6,
+      -0.4
+     ],
+     "face": "grin"
+    }
+   ]
+  },
+  {
+   "start": 322.21,
+   "end": 324.61,
+   "note": "«Максим, премия на этой неделе!»",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    },
+    {
+     "facing": -55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "angry"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе!",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 324.61,
+   "end": 329.01,
+   "note": "Ты злишься, жмуришься и думаешь…",
+   "location": "studio",
+   "bg": "#c0504a",
+   "camera": {
+    "shot": "close",
+    "move": "shake",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "angry",
+     "face": "angry"
+    }
+   ]
+  },
+  {
+   "start": 329.01,
+   "end": 331.99,
+   "note": "«Ну давай уже, хватит!» — и моргаешь.",
+   "location": "studio",
+   "bg": "#c0504a",
+   "camera": {
+    "shot": "extreme",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "angry",
+     "beats": [
+      {
+       "at": 1.8,
+       "face": "sleepy"
+      }
+     ]
+    }
+   ],
+   "title": {
+    "text": "ДАВАЙ УЖЕ, ХВАТИТ!",
+    "at": 0.2,
+    "position": "bottom",
+    "size": "medium"
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "start": 331.99,
+   "end": 335.21,
+   "note": "Ты открываешь глаза. Тебе 25.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "transition": "blink",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ],
+   "title": {
+    "text": "25.",
+    "at": 1.6,
+    "position": "bottom",
+    "size": "big"
+   }
+  },
+  {
+   "start": 335.21,
+   "end": 341.89,
+   "note": "Салон перекрашен, на ресепшене новая девушка, Сергей Николаевич…",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "НОВЫЙ",
+     "САЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "wide",
+    "move": "pan-left"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.5,
+     "z": 0.8,
+     "face": "worried"
+    },
+    {
+     "id": "girl",
+     "shirt": "#e86aa6",
+     "sleeves": "short",
+     "hair": "bun",
+     "hairColor": "#3a2a20",
+     "x": -3.5,
+     "z": -2.5,
+     "face": "happy",
+     "action": "wave"
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.8,
+     "z": 0.4,
+     "facing": -50,
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    }
+   ]
+  },
+  {
+   "start": 341.89,
+   "end": 345.71,
+   "note": "«Максим, премия в этом месяце! Прямо точно!»",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "angry"
+    },
+    {
+     "facing": -20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "cheer",
+     "talking": true,
+     "face": "grin"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия в этом месяце! Прямо точно!",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 345.71,
+   "end": 348.89,
+   "note": "В этот раз ты решаешь довести всё до конца.",
+   "location": "studio",
+   "bg": "#3a3f66",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "angry"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "rise",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 348.89,
+   "end": 355.83,
+   "note": "Егор приходит с пипеткой и шепчет: «Выдержим. Ещё чуть-чуть».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.8,
+     "z": 0.4,
+     "face": "angry",
+     "facing": 40
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 4,
+     "z": 0.4,
+     "held": "bottle",
+     "action": "walk",
+     "to": [
+      0.6,
+      0.4
+     ],
+     "face": "worried",
+     "beats": [
+      {
+       "at": 3,
+       "action": "talk",
+       "talking": true,
+       "facing": -55
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 355.83,
+   "end": 360.03,
+   "note": "Ты не моргаешь. Минуту. Две. Три.",
+   "location": "studio",
+   "bg": "#2f9e94",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "НЕ МОРГАТЬ"
+     ],
+     "progress": {
+      "label": "МИНУТЫ",
+      "from": 0,
+      "to": 100
+     }
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 1.3
+    },
+    {
+     "name": "tick",
+     "at": 2.4
+    },
+    {
+     "name": "tick",
+     "at": 3.5
+    }
+   ]
+  },
+  {
+   "start": 360.03,
+   "end": 362.01,
+   "note": "По щеке течёт слеза.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "extreme",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 362.01,
+   "end": 365.21,
+   "note": "Сергей Николаевич идёт к тебе с белым конвертом.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "static",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "sad",
+     "facing": -55
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": -4.5,
+     "z": 0.6,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "action": "walk",
+     "to": [
+      -1.1,
+      0.4
+     ],
+     "face": "grin"
+    }
+   ]
+  },
+  {
+   "start": 365.21,
+   "end": 366.95,
+   "note": "И вот мы вернулись.",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "transition": "whip",
+   "camera": {
+    "shot": "wide",
+    "move": "static"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "smirk",
+     "action": "wave"
+    }
+   ],
+   "title": {
+    "text": "МЫ ВЕРНУЛИСЬ.",
+    "at": 0.2,
+    "position": "left",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "rise",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 366.95,
+   "end": 372.99,
+   "note": "Посреди автосалона на Кутузовском, не моргая четвёртую минуту.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in",
+    "target": "max",
+    "angle": -20
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.8,
+     "face": "surprised"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.6,
+     "z": 0.2,
+     "held": "bottle",
+     "face": "worried",
+     "facing": -50
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 372.99,
+   "end": 377.59,
+   "note": "Сергей Николаевич протягивает конверт: «Максим, твоя премия».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -55,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, твоя премия",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 377.59,
+   "end": 383.29,
+   "note": "«Почти». — «Почти?! Три тысячи вместо шестидесяти?»",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "facing": 20,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "angry",
+     "action": "angry",
+     "talking": true
+    },
+    {
+     "facing": -55,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "face": "smirk"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "buzz",
+     "at": 0.9
+    }
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Почти",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 383.29,
+   "end": 387.83,
+   "note": "Егор шепчет: «Максим, я всё понял».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "worried"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 2.4
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Максим, я всё понял",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 387.83,
+   "end": 393.51,
+   "note": "«Перед каждым разом ты вздыхал и говорил „скорее бы“. Четыре из четырёх».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 25
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -55,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "talk",
+     "talking": true,
+     "face": "worried"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Перед каждым разом ты вздыхал и говорил „скорее бы“. Четыре из четырёх",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 393.51,
+   "end": 399.71,
+   "note": "«Не после чихания, не от усталости. Только когда ты хотел, чтобы время прошло».",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "surprised"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "action": "point",
+     "talking": true,
+     "face": "neutral"
+    }
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Не после чихания, не от усталости. Только когда ты хотел, чтобы время прошло",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 399.71,
+   "end": 402.83,
+   "note": "Ты замираешь. Все четыре раза.",
+   "location": "studio",
+   "bg": "#1f2a44",
+   "camera": {
+    "shot": "extreme",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 402.83,
+   "end": 404.09,
+   "note": "Скорее бы вечер.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#9aa3ad"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "transition": "flash",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "title": {
+    "text": "СКОРЕЕ БЫ ВЕЧЕР.",
+    "at": 0.1,
+    "position": "bottom",
+    "size": "small"
+   }
+  },
+  {
+   "start": 404.09,
+   "end": 405.93,
+   "note": "Ну когда уже эта премия?",
+   "location": "cafe",
+   "transition": "flash",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad",
+     "held": "cup"
+    }
+   ],
+   "title": {
+    "text": "КОГДА УЖЕ ПРЕМИЯ?",
+    "at": 0.1,
+    "position": "bottom",
+    "size": "small"
+   }
+  },
+  {
+   "start": 405.93,
+   "end": 407.47,
+   "note": "Скорее бы выходные.",
+   "location": "street",
+   "time": "sunset",
+   "transition": "flash",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "title": {
+    "text": "СКОРЕЕ БЫ ВЫХОДНЫЕ.",
+    "at": 0.1,
+    "position": "bottom",
+    "size": "small"
+   }
+  },
+  {
+   "start": 407.47,
+   "end": 409.05,
+   "note": "Давай уже, хватит!",
+   "location": "studio",
+   "bg": "#c0504a",
+   "transition": "flash",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "angry"
+    }
+   ],
+   "title": {
+    "text": "ДАВАЙ УЖЕ, ХВАТИТ!",
+    "at": 0.1,
+    "position": "bottom",
+    "size": "small"
+   }
+  },
+  {
+   "start": 409.05,
+   "end": 412.81,
+   "note": "Ты не терял год от моргания. Ты отдавал его сам.",
+   "location": "studio",
+   "bg": "#3a3f66",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad"
+    }
+   ],
+   "title": {
+    "text": "ОТДАВАЛ САМ.",
+    "at": 2.2,
+    "position": "bottom",
+    "size": "big"
+   }
+  },
+  {
+   "start": 412.81,
+   "end": 416.11,
+   "note": "Каждый раз, когда просил, чтобы он закончился.",
+   "location": "studio",
+   "bg": "#3a3f66",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-out",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sad",
+     "action": "think"
+    }
+   ]
+  },
+  {
+   "start": 416.11,
+   "end": 419.09,
+   "note": "Глаза горят. Ты смотришь на Егора.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "sad"
+    },
+    {
+     "facing": -20,
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.1,
+     "z": 0.4,
+     "face": "happy"
+    }
+   ]
+  },
+  {
+   "start": 419.09,
+   "end": 420.05,
+   "note": "На конверт.",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "camera": {
+    "shot": "medium",
+    "move": "push",
+    "target": [
+     0,
+     0.5,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "sign",
+     "x": 0,
+     "z": 0,
+     "label": "ПРЕМИЯ"
+    }
+   ]
+  },
+  {
+   "start": 420.05,
+   "end": 421.45,
+   "note": "На красный кроссовер.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "push",
+    "target": [
+     2.6,
+     0.2,
+     -1.6
+    ]
+   }
+  },
+  {
+   "start": 421.45,
+   "end": 425.75,
+   "note": "На Сергея Николаевича с идиотской надеждой на лице.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 0,
+     "z": 0.5,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "face": "grin"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 1.5
+    }
+   ]
+  },
+  {
+   "start": 425.75,
+   "end": 430.71,
+   "note": "Впервые за много недель ты говоришь себе другое…",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "transition": "fade",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "neutral",
+     "beats": [
+      {
+       "at": 3,
+       "face": "happy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 430.71,
+   "end": 435.55,
+   "note": "«Пусть будет сегодня. Пусть этот день будет именно этим».",
+   "location": "studio",
+   "bg": "#ffd27a",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "happy"
+    }
+   ],
+   "title": {
+    "text": "ПУСТЬ БУДЕТ СЕГОДНЯ.",
+    "at": 0.2,
+    "position": "bottom",
+    "size": "medium"
+   },
+   "sfx": [
+    {
+     "name": "sparkle",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "start": 435.55,
+   "end": 436.87,
+   "note": "И моргаешь.",
+   "location": "studio",
+   "bg": "#ffd27a",
+   "camera": {
+    "shot": "extreme",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "sleepy"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "start": 436.87,
+   "end": 438.55,
+   "note": "Ничего не происходит.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "transition": "blink",
+   "camera": {
+    "shot": "close",
+    "move": "static",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "surprised"
+    }
+   ],
+   "title": {
+    "text": "НИЧЕГО.",
+    "at": 0.8,
+    "position": "bottom",
+    "size": "big"
+   }
+  },
+  {
+   "start": 438.55,
+   "end": 442.49,
+   "note": "Тот же салон, тот же календарь, тот же Егор рядом.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "wide",
+    "move": "orbit"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.6,
+     "z": 0.6,
+     "face": "happy"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.9,
+     "z": 0.3,
+     "face": "happy",
+     "facing": -40
+    },
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 2.6,
+     "z": 0.8,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "facing": -60,
+     "face": "neutral"
+    }
+   ]
+  },
+  {
+   "start": 442.49,
+   "end": 445.85,
+   "note": "Сергей Николаевич хмурится: «Ты чего моргаешь?»",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "push",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "facing": 55,
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.1,
+     "z": 0.4,
+     "face": "happy"
+    },
+    {
+     "facing": -20,
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 1.1,
+     "z": 0.4,
+     "held": "sign",
+     "heldText": "ПРЕМИЯ",
+     "face": "angry",
+     "talking": true,
+     "action": "talk"
+    }
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Ты чего моргаешь?",
+    "at": 0.2
+   }
+  },
+  {
+   "start": 445.85,
+   "end": 450.11,
+   "note": "А Егор складывается пополам от смеха и вытирает слёзы.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "egor"
+   },
+   "actors": [
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.4,
+     "z": 0.5,
+     "action": "facepalm",
+     "face": "grin",
+     "beats": [
+      {
+       "at": 1.8,
+       "action": "jump",
+       "face": "grin"
+      }
+     ]
+    },
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -1.4,
+     "z": 0.5,
+     "face": "grin",
+     "facing": 40
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "start": 450.11,
+   "end": 454.91,
+   "note": "Первый раз за четыре года ты моргаешь просто так.",
+   "location": "studio",
+   "bg": "#ffd27a",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "happy"
+    }
+   ]
+  },
+  {
+   "start": 454.91,
+   "end": 458.01,
+   "note": "И это лучшее чувство в твоей жизни.",
+   "location": "studio",
+   "bg": "#ffd27a",
+   "camera": {
+    "shot": "medium",
+    "move": "orbit",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "cheer",
+     "face": "grin"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "sparkle",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 458.01,
+   "end": 462.45,
+   "note": "Вскрываешь конверт: три тысячи и записка.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "held": "sign",
+     "heldText": "3 000 РУБ.",
+     "face": "surprised"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "cash",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "start": 462.45,
+   "end": 464.81,
+   "note": "«Остальное — в следующем месяце».",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "camera": {
+    "shot": "medium",
+    "move": "push",
+    "target": [
+     0,
+     0.8,
+     0
+    ]
+   },
+   "props": [
+    {
+     "type": "screen",
+     "x": 0,
+     "z": -0.5,
+     "scale": 1.2,
+     "lines": [
+      "ОСТАЛЬНОЕ —",
+      "В СЛЕДУЮЩЕМ",
+      "МЕСЯЦЕ"
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "start": 464.81,
+   "end": 468.65,
+   "note": "Ты смотришь на неё и начинаешь смеяться тоже.",
+   "location": "office",
+   "props": [
+    {
+     "type": "car",
+     "x": 3.2,
+     "z": -2.2,
+     "rotation": -25,
+     "color": "#e0453a"
+    },
+    {
+     "type": "clock",
+     "x": -3.2,
+     "z": -7.8,
+     "y": 3.3
+    },
+    {
+     "type": "plant",
+     "x": -5.5,
+     "z": -3
+    }
+   ],
+   "screen": {
+    "lines": [
+     "АВТОСАЛОН"
+    ]
+   },
+   "time": "sunset",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-out"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.8,
+     "z": 0.5,
+     "action": "cheer",
+     "face": "grin",
+     "held": "sign",
+     "heldText": "3 000 РУБ."
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 0.8,
+     "z": 0.5,
+     "action": "jump",
+     "face": "grin"
+    }
+   ]
+  },
+  {
+   "start": 468.65,
+   "end": 470.97,
+   "note": "В субботу ты приезжаешь к Егору.",
+   "location": "room",
+   "time": "day",
+   "transition": "fade",
+   "camera": {
+    "shot": "wide",
+    "move": "dolly-in"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -3.5,
+     "z": 0.6,
+     "action": "walk",
+     "to": [
+      -1.2,
+      0.6
+     ],
+     "face": "happy"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 1.5,
+     "z": 0.2,
+     "face": "grin",
+     "action": "wave",
+     "facing": -40
+    }
+   ]
+  },
+  {
+   "start": 470.97,
+   "end": 474.27,
+   "note": "Маленький Максим сидит на ковре и тянет к тебе руки.",
+   "location": "room",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "baby"
+   },
+   "actors": [
+    {
+     "id": "baby",
+     "shirt": "#8fd0f2",
+     "sleeves": "short",
+     "scale": 0.5,
+     "hair": "puff",
+     "hairColor": "#6b4a2b",
+     "x": 0,
+     "z": 0.8,
+     "action": "cheer",
+     "face": "happy"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "start": 474.27,
+   "end": 481.01,
+   "note": "Ты не помнишь крестин, но сейчас берёшь его на руки — это твой момент.",
+   "location": "room",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "angle": 15
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": -0.5,
+     "z": 0.3,
+     "face": "happy",
+     "facing": 30
+    },
+    {
+     "id": "baby",
+     "shirt": "#8fd0f2",
+     "sleeves": "short",
+     "scale": 0.5,
+     "hair": "puff",
+     "hairColor": "#6b4a2b",
+     "x": 0.4,
+     "z": 0.9,
+     "action": "jump",
+     "face": "happy"
+    },
+    {
+     "id": "egor",
+     "shirt": "#3fae62",
+     "sleeves": "short",
+     "pants": "#5a4a3f",
+     "hair": "bun",
+     "hairColor": "#2e7d46",
+     "outfit": "tee",
+     "x": 2,
+     "z": 0,
+     "face": "happy",
+     "facing": -40
+    }
+   ]
+  },
+  {
+   "start": 481.01,
+   "end": 483.11,
+   "note": "И никто не заберёт его у тебя.",
+   "location": "room",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "happy"
+    }
+   ],
+   "title": {
+    "text": "ТВОЙ МОМЕНТ.",
+    "at": 0.4,
+    "position": "bottom",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "start": 483.11,
+   "end": 489.03,
+   "note": "Какой год ты бы пропустил, а какой не отдал бы ни за что?",
+   "split": {
+    "left": {
+     "bg": "#8a93b8",
+     "label": "ПРОПУСТИТЬ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "shrug",
+       "face": "sleepy"
+      }
+     ]
+    },
+    "right": {
+     "bg": "#ffd27a",
+     "label": "НЕ ОТДАТЬ",
+     "camera": {
+      "shot": "medium",
+      "move": "static"
+     },
+     "actors": [
+      {
+       "id": "max",
+       "shirt": "#e8692e",
+       "sleeves": "long",
+       "pants": "#3c5288",
+       "hair": "none",
+       "outfit": "hoodie",
+       "x": 0,
+       "z": 0.5,
+       "action": "cheer",
+       "face": "grin"
+      }
+     ]
+    }
+   },
+   "transition": "whip"
+  },
+  {
+   "start": 489.03,
+   "end": 490.43,
+   "note": "Напиши в комментариях.",
+   "location": "studio",
+   "bg": "#2f9e94",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "action": "point",
+     "face": "grin"
+    }
+   ],
+   "title": {
+    "text": "ПИШИ В КОММЕНТАХ.",
+    "at": 0.3,
+    "position": "left",
+    "size": "medium"
+   }
+  },
+  {
+   "start": 490.43,
+   "end": 497.23,
+   "note": "Подписывайся: Сергей Николаевич обещал следующую серию в следующем месяце.",
+   "location": "studio",
+   "bg": "#a8c6e8",
+   "camera": {
+    "shot": "medium",
+    "move": "dolly-in",
+    "target": "boss"
+   },
+   "actors": [
+    {
+     "id": "boss",
+     "shirt": "#454a58",
+     "sleeves": "long",
+     "pants": "#262a34",
+     "hair": "none",
+     "outfit": "suit",
+     "x": 0,
+     "z": 0.5,
+     "held": "sign",
+     "heldText": "СКОРО",
+     "action": "talk",
+     "talking": true,
+     "face": "grin"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "boing",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "start": 497.23,
+   "end": 501,
+   "note": "Каждая история начинается со слова «если».",
+   "location": "studio",
+   "bg": "#f2c48d",
+   "transition": "fade",
+   "camera": {
+    "shot": "close",
+    "move": "dolly-in",
+    "target": "max"
+   },
+   "actors": [
+    {
+     "id": "max",
+     "shirt": "#e8692e",
+     "sleeves": "long",
+     "pants": "#3c5288",
+     "hair": "none",
+     "outfit": "hoodie",
+     "x": 0,
+     "z": 0.5,
+     "face": "smirk",
+     "action": "wave"
+    }
+   ],
+   "title": {
+    "text": "ЕСЛИ…",
+    "at": 0.6,
+    "position": "bottom",
+    "size": "big"
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.6
+    }
+   ]
+  }
+ ]
+}

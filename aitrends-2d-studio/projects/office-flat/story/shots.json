@@ -1,0 +1,4 @@
+{ "title": "Office Flat Style Test", "duration": 5,
+  "shots": [
+    { "id": "s001", "start": 0, "end": 5, "line": "", "scene": "open-plan office by big windows, snowy day; hoodie guy (late) faces the boss, who points at him. No speech bubble.", "set": "office", "bars": "none", "in": {"type": "cut"}, "vignette": false, "captions": false }
+  ] }

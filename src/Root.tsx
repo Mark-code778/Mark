@@ -5,13 +5,27 @@ import transcriptJson from "../data/transcript.json";
 import type { Word } from "./overlay/Overlays";
 import type { Project } from "./types";
 import { StickmanVideo } from "./Video";
+import { Still, type StillProps } from "./Still";
 
 const project = projectJson as unknown as Project;
 const words = ((transcriptJson as { words?: Word[] }).words ?? []) as Word[];
 
 const Main: React.FC = () => <StickmanVideo project={project} words={words} />;
 
+const StillComp: React.FC<StillProps> = (p) => <Still base={project} {...p} />;
+const stillDefaults: StillProps = { theme: "pastel", scene: project.scenes[0] };
+
 export const RemotionRoot: React.FC = () => (
+  <>
+  <Composition
+    id="Still"
+    component={StillComp}
+    durationInFrames={90}
+    fps={30}
+    width={1920}
+    height={1080}
+    defaultProps={stillDefaults}
+  />
   <Composition
     id="Stickman"
     component={Main}
@@ -20,4 +34,5 @@ export const RemotionRoot: React.FC = () => (
     width={project.width}
     height={project.height}
   />
+  </>
 );

@@ -1328,7 +1328,7 @@
    "sfx": [
     {
      "at": 2,
-     "name": "click",
+     "name": "tick",
      "gain": -8
     },
     {
@@ -2504,7 +2504,7 @@
     },
     {
      "at": 0.6,
-     "name": "boing",
+     "name": "pop",
      "gain": -14
     }
    ],
@@ -4013,17 +4013,17 @@
    "sfx": [
     {
      "at": 0.4,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     },
     {
      "at": 1.2,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     },
     {
      "at": 2,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     }
    ],
@@ -7057,17 +7057,17 @@
    "sfx": [
     {
      "at": 1,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     },
     {
      "at": 1.8,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     },
     {
      "at": 2.6,
-     "name": "click",
+     "name": "tick",
      "gain": -10
     }
    ],
@@ -9283,7 +9283,7 @@
    "sfx": [
     {
      "at": 0.6,
-     "name": "boing",
+     "name": "pop",
      "gain": -12
     }
    ],

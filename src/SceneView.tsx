@@ -7,6 +7,7 @@ import { barHeight, Letterbox, Plate, PlateBox, Title } from "./overlay/Overlays
 import { THEMES } from "./theme";
 import { World, crowdActors, type WorldInput } from "./three/World";
 import type { Scene, SubScene } from "./types";
+import { FlatScene } from "./flat/Flat";
 
 const Canvas3D: React.FC<{ input: WorldInput; t: number; len: number; width: number; height: number; themeKey: string }> = ({
   input,
@@ -15,8 +16,10 @@ const Canvas3D: React.FC<{ input: WorldInput; t: number; len: number; width: num
   width,
   height,
 }) => {
-  const { theme } = useCtx();
+  const { theme, project } = useCtx();
   const sceneTheme = input.scene.time === "night" ? THEMES.night : input.scene.time === "sunset" ? THEMES.dusk : theme;
+  if (project.style === "flat")
+    return <FlatScene input={{ ...input, bubble: (input.scene as Scene).bubble }} theme={theme} t={t} len={len} width={width} height={height} />;
   return (
     <ThreeCanvas width={width} height={height} flat linear={false} gl={{ antialias: true, preserveDrawingBuffer: true }}>
       <World input={input} theme={sceneTheme} t={t} len={len} />

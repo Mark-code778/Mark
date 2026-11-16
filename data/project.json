@@ -4,6 +4,7 @@
  "height": 1080,
  "duration": 501,
  "theme": "pastel",
+ "style": "flat",
  "letterbox": true,
  "subtitles": false,
  "audio": {
@@ -55,10 +56,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised",
@@ -97,11 +99,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.2,
      "z": 0.5,
      "action": "cheer",
@@ -122,10 +125,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -2.3,
      "z": 1,
      "face": "surprised",
@@ -163,11 +167,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.9,
      "z": 0.5,
      "face": "happy",
@@ -187,10 +192,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.8,
      "z": 0.5,
      "face": "surprised",
@@ -244,10 +250,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.8,
      "face": "surprised"
@@ -274,10 +281,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "scared"
@@ -335,10 +343,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "scared"
@@ -346,10 +355,11 @@
     {
      "facing": -55,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "held": "sign",
@@ -398,10 +408,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "scared"
@@ -409,10 +420,11 @@
     {
      "facing": -20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "held": "sign",
@@ -421,7 +433,12 @@
      "action": "talk",
      "talking": true
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, твоя премия",
+    "at": 0.2
+   }
   },
   {
    "start": 23.81,
@@ -462,10 +479,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0.5,
      "action": "cry",
@@ -473,11 +491,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.7,
      "z": 0.6,
      "facing": -60,
@@ -501,10 +520,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "neutral"
@@ -531,10 +551,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "wave",
@@ -587,10 +608,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0.5,
      "z": 0.6,
      "action": "point",
@@ -639,10 +661,11 @@
     {
      "facing": 55,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -652,10 +675,11 @@
     {
      "facing": -55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "action": "think",
@@ -676,10 +700,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -3,
      "z": 0.3,
      "action": "walk",
@@ -691,11 +716,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": -1.8,
      "z": 0.6,
      "action": "walk",
@@ -722,10 +748,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "scared",
@@ -777,10 +804,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.5,
      "z": 0.5,
      "face": "neutral"
@@ -836,10 +864,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0.4,
      "z": 0.4,
      "facing": 40,
@@ -885,10 +914,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.4,
      "action": "shrug",
@@ -934,10 +964,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "held": "cup",
@@ -983,10 +1014,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0.9,
      "z": 0.4,
      "held": "cup",
@@ -995,10 +1027,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -5,
      "z": 0.8,
      "action": "walk",
@@ -1056,10 +1089,11 @@
     {
      "facing": 20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -1069,16 +1103,22 @@
     {
      "facing": -55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "held": "cup",
      "face": "neutral"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе. Точно",
+    "at": 0.2
+   }
   },
   {
    "start": 69.13,
@@ -1094,10 +1134,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "facepalm",
@@ -1200,10 +1241,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1,
      "z": 0.2,
      "facing": -150,
@@ -1226,10 +1268,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad"
@@ -1256,10 +1299,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -1311,10 +1355,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -1356,7 +1401,7 @@
     "move": "dolly-in",
     "target": [
      -3.2,
-     3.9,
+     1.9,
      -7.6
     ]
    },
@@ -1417,10 +1462,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.8,
      "z": 0.6,
      "facing": 60,
@@ -1473,10 +1519,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.8,
      "facing": "away",
@@ -1528,10 +1575,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "held": "phone",
@@ -1623,10 +1671,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0.9,
      "z": 0.4,
      "held": "phone",
@@ -1635,10 +1684,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -5,
      "z": 0.8,
      "action": "walk",
@@ -1697,10 +1747,11 @@
     {
      "facing": 20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -1710,15 +1761,21 @@
     {
      "facing": -55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "face": "angry"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе. Точно",
+    "at": 0.2
+   }
   },
   {
    "start": 107.93,
@@ -1759,10 +1816,11 @@
     {
      "facing": 55,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.1,
      "z": 0.4,
      "face": "neutral"
@@ -1770,10 +1828,11 @@
     {
      "facing": -20,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "action": "angry",
@@ -1786,7 +1845,12 @@
      "name": "impact",
      "at": 1.4
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Вы мне это говорили год назад!",
+    "at": 0.2
+   }
   },
   {
    "start": 111.23,
@@ -1826,10 +1890,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.2,
      "z": 0.4,
      "face": "angry",
@@ -1837,10 +1902,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 0,
      "z": 0.6,
      "action": "walk",
@@ -1851,7 +1917,12 @@
      "face": "smirk",
      "talking": true
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Тогда квартал был другой",
+    "at": 0.2
+   }
   },
   {
    "start": 115.83,
@@ -1903,10 +1974,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "cheer",
@@ -1924,10 +1996,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "dance",
@@ -1961,10 +2034,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "worried",
@@ -1987,10 +2061,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "dance",
@@ -2008,10 +2083,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "shrug",
@@ -2035,10 +2111,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad"
@@ -2065,10 +2142,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.8,
      "z": 0.4,
      "facing": -60,
@@ -2100,10 +2178,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 2.6,
      "z": 0.4,
      "facing": -60,
@@ -2131,10 +2210,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.8,
      "z": 0.5,
      "action": "think",
@@ -2196,10 +2276,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "scared",
@@ -2234,10 +2315,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "face": "scared",
@@ -2255,10 +2337,11 @@
      "actors": [
       {
        "id": "boss",
-       "shirt": "#283a66",
+       "shirt": "#454a58",
        "sleeves": "long",
-       "pants": "#283a66",
+       "pants": "#262a34",
        "hair": "none",
+       "outfit": "suit",
        "x": 0,
        "z": 0.5,
        "face": "smirk",
@@ -2288,10 +2371,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "think",
@@ -2319,10 +2403,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -5,
      "z": 0.4,
      "action": "run",
@@ -2346,11 +2431,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.2,
      "z": 0,
      "held": "cup",
@@ -2360,10 +2446,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -2.5,
      "z": 0.8,
      "action": "walk",
@@ -2395,10 +2482,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -2408,11 +2496,12 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "held": "cup",
@@ -2434,10 +2523,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "worried"
@@ -2445,11 +2535,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "held": "cup",
@@ -2457,7 +2548,12 @@
      "talking": true,
      "face": "smirk"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты неделю ходишь странный, но чтобы год пропал — это новое",
+    "at": 0.2
+   }
   },
   {
    "start": 179.97,
@@ -2473,10 +2569,11 @@
     {
      "facing": 20,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -2486,17 +2583,23 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "held": "cup",
      "face": "neutral"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Скажи что-нибудь, что я мог пропустить",
+    "at": 0.2
+   }
   },
   {
    "start": 183.57,
@@ -2513,10 +2616,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "worried"
@@ -2524,18 +2628,24 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "shrug",
      "face": "neutral",
      "talking": true
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ничего, всё как обычно",
+    "at": 0.2
+   }
   },
   {
    "start": 187.25,
@@ -2551,10 +2661,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "scared"
@@ -2562,11 +2673,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "cap",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "point",
@@ -2574,11 +2686,10 @@
      "talking": true
     }
    ],
-   "title": {
-    "text": "МОРГНИ.",
-    "at": 3.3,
-    "position": "bottom",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Слушай, давай проверим. Моргни",
+    "at": 0.2
    }
   },
   {
@@ -2594,10 +2705,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -2626,10 +2738,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -2637,11 +2750,12 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "held": "cup",
@@ -2670,10 +2784,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -2681,18 +2796,24 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "talk",
      "talking": true,
      "face": "grin"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты на моей свадьбе был, дурак. Даже речь произнёс",
+    "at": 0.2
+   }
   },
   {
    "start": 201.35,
@@ -2709,10 +2830,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "worried",
@@ -2722,16 +2844,22 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "face": "surprised"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Ты правда не помнишь?",
+    "at": 0.2
+   }
   },
   {
    "start": 204.03,
@@ -2748,10 +2876,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "worried"
@@ -2759,11 +2888,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "talk",
@@ -2771,11 +2901,10 @@
      "face": "happy"
     }
    ],
-   "title": {
-    "text": "ЛОВИ МОМЕНТ.",
-    "at": 0.3,
-    "position": "bottom",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Что надо ловить момент",
+    "at": 0.2
    }
   },
   {
@@ -2792,10 +2921,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "held": "cup",
@@ -2818,10 +2948,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "face": "angry",
@@ -2839,10 +2970,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "talk",
@@ -2868,10 +3000,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "sad"
@@ -2879,11 +3012,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "think",
@@ -2920,10 +3054,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "scared"
@@ -2931,11 +3066,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "point",
@@ -2943,11 +3079,10 @@
      "face": "angry"
     }
    ],
-   "title": {
-    "text": "НЕ МОРГАЙ.",
-    "at": 0.3,
-    "position": "bottom",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Больше не моргай. Вообще",
+    "at": 0.2
    }
   },
   {
@@ -2964,10 +3099,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "worried",
@@ -3001,10 +3137,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -3038,10 +3175,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -3076,11 +3214,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.6,
      "z": 0.4,
      "face": "happy",
@@ -3088,10 +3227,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1,
      "z": 0.4,
      "face": "surprised",
@@ -3112,11 +3252,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.4,
      "z": 0.2,
      "face": "happy",
@@ -3137,21 +3278,21 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.2,
      "z": 0.4,
      "face": "surprised",
      "facing": 50
     }
    ],
-   "title": {
-    "text": "ЭТО МАКСИМ.",
-    "at": 2.3,
-    "position": "left",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Знакомься, — говорит он тихо. — Это Максим",
+    "at": 0.2
    }
   },
   {
@@ -3179,10 +3320,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0,
      "face": "worried",
@@ -3204,10 +3346,11 @@
     {
      "facing": 20,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised",
@@ -3217,16 +3360,22 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "face": "happy"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Вы назвали его в мою честь?",
+    "at": 0.2
+   }
   },
   {
    "start": 248.03,
@@ -3242,10 +3391,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -3253,22 +3403,22 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "face": "grin",
      "talking": true
     }
    ],
-   "title": {
-    "text": "КРЁСТНЫЙ.",
-    "at": 1.4,
-    "position": "bottom",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Ты крёстный",
+    "at": 0.2
    }
   },
   {
@@ -3285,10 +3435,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.7,
      "z": 0.5,
      "action": "cry",
@@ -3296,11 +3447,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.8,
      "z": 0.4,
      "face": "grin",
@@ -3321,10 +3473,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad"
@@ -3351,10 +3504,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "scared",
@@ -3382,10 +3536,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "worried",
@@ -3408,10 +3563,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0.5,
      "face": "sad",
@@ -3419,11 +3575,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0.4,
      "face": "happy",
@@ -3445,10 +3602,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0.5,
      "face": "sad",
@@ -3456,11 +3614,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0.4,
      "face": "happy",
@@ -3488,11 +3647,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0,
      "z": 0.5,
      "held": "bottle",
@@ -3531,10 +3691,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3542,11 +3703,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3573,10 +3735,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3584,11 +3747,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3615,10 +3779,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3626,11 +3791,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3706,10 +3872,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3717,11 +3884,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3750,10 +3918,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3761,11 +3930,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3798,10 +3968,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3809,11 +3980,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3826,7 +3998,12 @@
      "name": "ding",
      "at": 0.4
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Подожди, ты каждый раз перед этим что-то говорил",
+    "at": 0.2
+   }
   },
   {
    "start": 308.17,
@@ -3848,10 +4025,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0,
      "action": "sit",
@@ -3860,11 +4038,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.6,
      "z": 0,
      "action": "sit",
@@ -3872,11 +4051,10 @@
      "talking": true
     }
    ],
-   "title": {
-    "text": "ВЗДЫХАЛ.",
-    "at": 1.8,
-    "position": "right",
-    "size": "big"
+   "bubble": {
+    "actor": "max",
+    "text": "Что?",
+    "at": 0.2
    }
   },
   {
@@ -3918,10 +4096,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -3972,10 +4151,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "held": "bottle",
@@ -4021,20 +4201,22 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0.5,
      "z": 0.8,
      "face": "worried"
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.5,
      "z": -2.2,
      "action": "walk",
@@ -4085,10 +4267,11 @@
     {
      "facing": 20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -1.1,
      "z": 0.4,
      "action": "talk",
@@ -4098,15 +4281,21 @@
     {
      "facing": -55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "face": "angry"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия на этой неделе!",
+    "at": 0.2
+   }
   },
   {
    "start": 324.61,
@@ -4122,10 +4311,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "angry",
@@ -4147,10 +4337,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "angry",
@@ -4215,10 +4406,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -4270,10 +4462,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.5,
      "z": 0.8,
      "face": "worried"
@@ -4291,10 +4484,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.8,
      "z": 0.4,
      "facing": -50,
@@ -4344,10 +4538,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "angry"
@@ -4355,17 +4550,23 @@
     {
      "facing": -20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "action": "cheer",
      "talking": true,
      "face": "grin"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, премия в этом месяце! Прямо точно!",
+    "at": 0.2
+   }
   },
   {
    "start": 345.71,
@@ -4381,10 +4582,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "angry"
@@ -4436,10 +4638,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.8,
      "z": 0.4,
      "face": "angry",
@@ -4447,11 +4650,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 4,
      "z": 0.4,
      "held": "bottle",
@@ -4557,10 +4761,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad"
@@ -4612,10 +4817,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 1.1,
      "z": 0.4,
      "face": "sad",
@@ -4623,10 +4829,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": -4.5,
      "z": 0.6,
      "held": "sign",
@@ -4654,10 +4861,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "smirk",
@@ -4717,21 +4925,23 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.8,
      "face": "surprised"
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.6,
      "z": 0.2,
      "held": "bottle",
@@ -4786,10 +4996,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -4797,10 +5008,11 @@
     {
      "facing": -55,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "held": "sign",
@@ -4809,7 +5021,12 @@
      "talking": true,
      "face": "grin"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Максим, твоя премия",
+    "at": 0.2
+   }
   },
   {
    "start": 377.59,
@@ -4851,10 +5068,11 @@
     {
      "facing": 20,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "angry",
@@ -4864,10 +5082,11 @@
     {
      "facing": -55,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "held": "sign",
@@ -4875,18 +5094,17 @@
      "face": "smirk"
     }
    ],
-   "title": {
-    "text": "ПОЧТИ?",
-    "at": 0.9,
-    "position": "bottom",
-    "size": "big"
-   },
    "sfx": [
     {
      "name": "buzz",
      "at": 0.9
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "max",
+    "text": "Почти",
+    "at": 0.2
+   }
   },
   {
    "start": 383.29,
@@ -4928,10 +5146,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "worried"
@@ -4939,11 +5158,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "talk",
@@ -4956,7 +5176,12 @@
      "name": "ding",
      "at": 2.4
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Максим, я всё понял",
+    "at": 0.2
+   }
   },
   {
    "start": 387.83,
@@ -4998,10 +5223,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -5009,11 +5235,12 @@
     {
      "facing": -55,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "talk",
@@ -5021,11 +5248,10 @@
      "face": "worried"
     }
    ],
-   "title": {
-    "text": "«СКОРЕЕ БЫ».",
-    "at": 2,
-    "position": "left",
-    "size": "big"
+   "bubble": {
+    "actor": "egor",
+    "text": "Перед каждым разом ты вздыхал и говорил „скорее бы“. Четыре из четырёх",
+    "at": 0.2
    }
   },
   {
@@ -5068,10 +5294,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "surprised"
@@ -5079,18 +5306,24 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "action": "point",
      "talking": true,
      "face": "neutral"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "egor",
+    "text": "Не после чихания, не от усталости. Только когда ты хотел, чтобы время прошло",
+    "at": 0.2
+   }
   },
   {
    "start": 399.71,
@@ -5106,10 +5339,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -5161,10 +5395,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -5191,10 +5426,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad",
@@ -5223,10 +5459,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -5254,10 +5491,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "angry"
@@ -5284,10 +5522,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad"
@@ -5314,10 +5553,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sad",
@@ -5365,10 +5605,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "sad"
@@ -5376,11 +5617,12 @@
     {
      "facing": -20,
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.1,
      "z": 0.4,
      "face": "happy"
@@ -5491,10 +5733,11 @@
    "actors": [
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 0,
      "z": 0.5,
      "held": "sign",
@@ -5524,10 +5767,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "neutral",
@@ -5554,10 +5798,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "happy"
@@ -5590,10 +5835,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "sleepy"
@@ -5646,10 +5892,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "surprised"
@@ -5700,21 +5947,23 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.6,
      "z": 0.6,
      "face": "happy"
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.9,
      "z": 0.3,
      "face": "happy",
@@ -5722,10 +5971,11 @@
     },
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 2.6,
      "z": 0.8,
      "held": "sign",
@@ -5775,10 +6025,11 @@
     {
      "facing": 55,
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.1,
      "z": 0.4,
      "face": "happy"
@@ -5786,10 +6037,11 @@
     {
      "facing": -20,
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 1.1,
      "z": 0.4,
      "held": "sign",
@@ -5798,7 +6050,12 @@
      "talking": true,
      "action": "talk"
     }
-   ]
+   ],
+   "bubble": {
+    "actor": "boss",
+    "text": "Ты чего моргаешь?",
+    "at": 0.2
+   }
   },
   {
    "start": 445.85,
@@ -5839,11 +6096,12 @@
    "actors": [
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.4,
      "z": 0.5,
      "action": "facepalm",
@@ -5858,10 +6116,11 @@
     },
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -1.4,
      "z": 0.5,
      "face": "grin",
@@ -5889,10 +6148,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "happy"
@@ -5913,10 +6173,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "cheer",
@@ -5969,10 +6230,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "held": "sign",
@@ -6060,10 +6322,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.8,
      "z": 0.5,
      "action": "cheer",
@@ -6073,11 +6336,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 0.8,
      "z": 0.5,
      "action": "jump",
@@ -6099,10 +6363,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -3.5,
      "z": 0.6,
      "action": "walk",
@@ -6114,11 +6379,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 1.5,
      "z": 0.2,
      "face": "grin",
@@ -6171,10 +6437,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": -0.5,
      "z": 0.3,
      "face": "happy",
@@ -6194,11 +6461,12 @@
     },
     {
      "id": "egor",
-     "shirt": "#4cb86a",
+     "shirt": "#3fae62",
      "sleeves": "short",
      "pants": "#5a4a3f",
      "hair": "bun",
      "hairColor": "#2e7d46",
+     "outfit": "tee",
      "x": 2,
      "z": 0,
      "face": "happy",
@@ -6219,10 +6487,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "happy"
@@ -6256,10 +6525,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "shrug",
@@ -6277,10 +6547,11 @@
      "actors": [
       {
        "id": "max",
-       "shirt": "#f28c38",
+       "shirt": "#e8692e",
        "sleeves": "long",
-       "pants": "#3a4466",
+       "pants": "#3c5288",
        "hair": "none",
+       "outfit": "hoodie",
        "x": 0,
        "z": 0.5,
        "action": "cheer",
@@ -6305,10 +6576,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "action": "point",
@@ -6336,10 +6608,11 @@
    "actors": [
     {
      "id": "boss",
-     "shirt": "#283a66",
+     "shirt": "#454a58",
      "sleeves": "long",
-     "pants": "#283a66",
+     "pants": "#262a34",
      "hair": "none",
+     "outfit": "suit",
      "x": 0,
      "z": 0.5,
      "held": "sign",
@@ -6371,10 +6644,11 @@
    "actors": [
     {
      "id": "max",
-     "shirt": "#f28c38",
+     "shirt": "#e8692e",
      "sleeves": "long",
-     "pants": "#3a4466",
+     "pants": "#3c5288",
      "hair": "none",
+     "outfit": "hoodie",
      "x": 0,
      "z": 0.5,
      "face": "smirk",

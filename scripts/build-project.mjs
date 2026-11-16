@@ -5,9 +5,9 @@ import { writeFileSync } from "node:fs";
 const DURATION = 501;
 
 // ── Каст ──────────────────────────────────────────────
-const MAX = { id: "max", shirt: "#f28c38", sleeves: "long", pants: "#3a4466", hair: "none" }; // оранжевое худи
-const EGOR = { id: "egor", shirt: "#4cb86a", sleeves: "short", pants: "#5a4a3f", hair: "cap", hairColor: "#2e7d46" }; // зелёный
-const BOSS = { id: "boss", shirt: "#283a66", sleeves: "long", pants: "#283a66", hair: "none" }; // Сергей Николаевич
+const MAX = { id: "max", shirt: "#e8692e", sleeves: "long", pants: "#3c5288", hair: "none", outfit: "hoodie" }; // оранжевое худи
+const EGOR = { id: "egor", shirt: "#3fae62", sleeves: "short", pants: "#5a4a3f", hair: "cap", hairColor: "#2e7d46", outfit: "tee" }; // зелёный
+const BOSS = { id: "boss", shirt: "#454a58", sleeves: "long", pants: "#262a34", hair: "none", outfit: "suit" }; // Сергей Николаевич
 const BABY = { id: "baby", shirt: "#8fd0f2", sleeves: "short", scale: 0.5, hair: "puff", hairColor: "#6b4a2b" };
 const WIFE = { id: "wife", shirt: "#ffffff", sleeves: "short", hair: "bob", hairColor: "#6b4a2b", pants: "#f4f4f4" };
 const GIRL = { id: "girl", shirt: "#e86aa6", sleeves: "short", hair: "bun", hairColor: "#3a2a20" };
@@ -156,7 +156,7 @@ sc(83.64, "Ты открываешь глаза.", {
   actors: [max({ face: "surprised" })],
 });
 sc(85.66, "Часы над кассой — та же минута.", {
-  ...salon({ carColor: RED }), camera: cam("close", "dolly-in", [-3.2, 3.9, -7.6]),
+  ...salon({ carColor: RED }), camera: cam("close", "dolly-in", [-3.2, 1.9, -7.6]),
   sfx: [{ name: "tick", at: 0.3 }, { name: "tick", at: 1.3 }, { name: "tick", at: 2.3 }],
 });
 sc(89.0, "Но кроссовер почему-то красный.", {
@@ -690,12 +690,22 @@ for (const s of scenes) {
   if (close && s.title && (s.title.position === "left" || s.title.position === "center" || s.title.position === "right") && (s.actors ?? []).length) s.title.position = "bottom";
 }
 
+// Речевые облачка: реплика в «кавычках» из описания сцены — над тем, кто говорит
+for (const s of scenes) {
+  const m = s.note.match(/«([^»]+)»/);
+  const talker = (s.actors ?? []).find((a) => a.talking || a.action === "talk");
+  if (!m || !talker || s.split) continue;
+  s.bubble = { actor: talker.id, text: m[1].replace(/[.]$/, ""), at: 0.2 };
+  delete s.title;
+}
+
 const project = {
   fps: 30,
   width: 1920,
   height: 1080,
   duration: DURATION,
   theme: "pastel",
+  style: "flat",
   letterbox: true,
   subtitles: false,
   audio: {

@@ -77,6 +77,7 @@ export type Actor = {
   held?: HeldName;
   heldText?: string; // текст на табличке (held: "sign")
   print?: "none" | "dino"; // принт на груди футболки
+  outfit?: "hoodie" | "suit" | "tee"; // одежда в 2D
   action?: ActionName;
   face?: FaceName;
   facing?: Facing;
@@ -207,6 +208,7 @@ export type Scene = {
   transition?: "cut" | "fade" | "whip" | "flash" | "blink";
   split?: { left: SubScene; right: SubScene };
   note?: string; // для себя: что происходит в сцене
+  bubble?: { actor: string; text: string; at?: number; until?: number }; // речевое облачко (2D)
 };
 
 export type Project = {
@@ -215,6 +217,7 @@ export type Project = {
   height: number;
   duration: number; // секунды
   theme: ThemeName;
+  style?: "3d" | "flat"; // flat — плоская 2D-анимация
   letterbox?: boolean;
   subtitles?: boolean;
   brand?: { name: string; color: string; icon?: "ban" | "none" };

@@ -1,0 +1,7 @@
+# Деплой Drim на Render.com: New → Blueprint → выберите этот репозиторий.
+services:
+  - type: web
+    name: drim
+    runtime: docker
+    plan: free
+    healthCheckPath: /

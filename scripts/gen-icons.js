@@ -17,7 +17,7 @@ const { chromium } = require('playwright');
   }
   // maskable: иконка с запасом по краям на сплошном фоне
   await page.setViewportSize({ width: 512, height: 512 });
-  await page.setContent(`<html><body style="margin:0;background:linear-gradient(135deg,#A855F7,#6D28D9 50%,#2563EB)"><div style="padding:56px">${svg.replace('<svg ', '<svg width="400" height="400" ')}</div></body></html>`);
+  await page.setContent(`<html><body style="margin:0;background:linear-gradient(180deg,#1E1B4B,#312E81 60%,#4C1D95)"><div style="padding:56px">${svg.replace('<svg ', '<svg width="400" height="400" ')}</div></body></html>`);
   await page.screenshot({ path: path.join(dir, 'icon-maskable-512.png'), clip: { x: 0, y: 0, width: 512, height: 512 } });
   await browser.close();
   console.log('Иконки сгенерированы в', dir);

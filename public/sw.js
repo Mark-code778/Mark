@@ -1,5 +1,5 @@
 // Service worker Drim: кэширует оболочку приложения для быстрого запуска и работы как PWA.
-const CACHE = 'drim-v1';
+const CACHE = 'drim-v2';
 const SHELL = ['/', '/index.html', '/styles.css', '/js/core.js', '/js/layout.js', '/js/chat.js', '/js/modals.js', '/js/calls.js', '/js/main.js', '/emoji.js', '/icons/icon.svg', '/icons/icon-192.png', '/manifest.webmanifest'];
 
 self.addEventListener('install', (e) => {

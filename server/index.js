@@ -787,4 +787,6 @@ setInterval(() => {
 
 server.listen(PORT, () => {
   console.log(`✨ Drim запущен: http://localhost:${PORT}`);
+  const nets = Object.values(require('os').networkInterfaces()).flat().filter((n) => n && n.family === 'IPv4' && !n.internal);
+  for (const n of nets) console.log(`   в локальной сети: http://${n.address}:${PORT}`);
 });

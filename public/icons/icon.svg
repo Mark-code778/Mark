@@ -1,35 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="bg" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8B5CF6"/>
-      <stop offset="0.5" stop-color="#6366F1"/>
-      <stop offset="1" stop-color="#06B6D4"/>
+    <linearGradient id="g" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A855F7"/><stop offset=".5" stop-color="#6D28D9"/><stop offset="1" stop-color="#2563EB"/>
     </linearGradient>
-    <radialGradient id="glow" cx="150" cy="110" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <radialGradient id="hl" cx="120" cy="80" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="moon" x1="190" y1="170" x2="330" y2="330" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#0EA5E9"/>
-    </linearGradient>
-    <mask id="crescent">
-      <rect width="512" height="512" fill="#000"/>
-      <circle cx="244" cy="246" r="74" fill="#fff"/>
-      <circle cx="284" cy="214" r="64" fill="#000"/>
-    </mask>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1E1B4B" flood-opacity="0.35"/>
-    </filter>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1048" flood-opacity=".4"/></filter>
   </defs>
-  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
-  <rect width="512" height="512" rx="116" fill="url(#glow)"/>
-  <!-- облачко сообщения -->
-  <path filter="url(#shadow)" fill="#FFFFFF"
-        d="M256 92c-95 0-172 66-172 150 0 46 23 87 60 115l-16 62c-2.6 10 8 18 17 13l72-40c12 3 25 4.5 39 4.5 95 0 172-66 172-150S351 92 256 92z"/>
-  <!-- полумесяц — «мечта» -->
-  <rect width="512" height="512" fill="url(#moon)" mask="url(#crescent)"/>
-  <!-- искры -->
-  <path fill="url(#moon)" d="M334 252c3 16 9 22 25 25-16 3-22 9-25 25-3-16-9-22-25-25 16-3 22-9 25-25z"/>
-  <path fill="url(#moon)" d="M346 196c2 9 5 12 14 14-9 2-12 5-14 14-2-9-5-12-14-14 9-2 12-5 14-14z"/>
+  <rect width="512" height="512" rx="116" fill="url(#g)"/>
+  <rect width="512" height="512" rx="116" fill="url(#hl)"/>
+  <path filter="url(#s)" fill="#fff" fill-rule="evenodd"
+    d="M186 112H264A128 128 0 0 1 264 368H204L140 410C131 416 121 408 125 398L150 346V148A36 36 0 0 1 186 112Z
+       M214 180V300H262A60 60 0 0 0 262 180Z"/>
+  <path fill="#fff" d="M392 104c3 18 10 25 28 28-18 3-25 10-28 28-3-18-10-25-28-28 18-3 25-10 28-28z"/>
 </svg>

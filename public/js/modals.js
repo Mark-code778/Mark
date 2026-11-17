@@ -228,7 +228,8 @@ function settingsModal() {
       toggle('sound', 'Звуки', 'Звук при получении и отправке'),
       h('div.setting-group', null, 'О приложении'),
       h('div.setting-row', null, h('img', { src: '/icons/icon.svg', style: { width: '48px', height: '48px', borderRadius: '13px' } }),
-        h('div.sr-main', null, h('div', { style: { fontWeight: 700 } }, 'Drim 1.0'), h('div.sr-sub', null, 'Мессенджер в реальном времени. Можно установить как приложение через меню браузера.'))),
+        h('div.sr-main', null, h('div', { style: { fontWeight: 700 } }, 'Drim 1.0'), h('div.sr-sub', null, 'Мессенджер в реальном времени')),
+        !isStandalone() ? h('button.btn.btn-ghost', { onclick: installApp }, icon('download'), 'Установить') : null),
     );
     applySettings();
   };
@@ -319,6 +320,38 @@ function sendFilesModal(files, forceFiles = false) {
       md.close();
     } catch (e) { toast(e.message, true); btn.disabled = false; }
   };
+}
+
+// ---------- инструкция по установке ----------
+function installModal() {
+  const ua = navigator.userAgent;
+  const ios = /iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+  const android = /android/i.test(ua);
+  const step = (n, text) => h('div.setting-row', null, h('span.badge', { style: { minWidth: '28px', height: '28px', borderRadius: '14px' } }, n), h('div.sr-main', null, text));
+  const iosSteps = [
+    step(1, 'Откройте эту страницу в Safari'),
+    step(2, 'Нажмите «Поделиться» — квадрат со стрелкой вверх внизу экрана'),
+    step(3, 'Выберите «На экран „Домой“» и нажмите «Добавить»'),
+  ];
+  const androidSteps = [
+    step(1, 'Откройте эту страницу в Chrome'),
+    step(2, 'Нажмите ⋮ в правом верхнем углу'),
+    step(3, 'Выберите «Установить приложение» или «Добавить на главный экран»'),
+  ];
+  const body = [
+    h('div', { style: { display: 'flex', justifyContent: 'center', margin: '4px 0 14px' } },
+      h('img', { src: '/icons/icon.svg', alt: '', style: { width: '88px', height: '88px', borderRadius: '22px', boxShadow: 'var(--shadow)' } })),
+    h('p.confirm-text', { style: { textAlign: 'center', marginBottom: '10px' } }, 'Drim появится на главном экране с иконкой и откроется как обычное приложение — без адресной строки.'),
+  ];
+  if (!window.isSecureContext) {
+    body.push(h('div.sys-msg', { style: { background: 'color-mix(in srgb, var(--danger) 12%, transparent)', color: 'var(--danger)', margin: '0 0 12px', maxWidth: 'none' } },
+      'Сейчас сайт открыт по http. Телефоны разрешают установку, звонки и голосовые только по защищённому адресу https://'));
+  }
+  if (ios) body.push(...iosSteps);
+  else if (android) body.push(...androidSteps);
+  else body.push(h('div.setting-group', null, 'iPhone / iPad'), ...iosSteps, h('div.setting-group', null, 'Android'), ...androidSteps,
+    h('div.setting-group', null, 'Компьютер'), step(1, 'В Chrome или Edge нажмите значок установки ⊕ справа в адресной строке'));
+  modal({ title: 'Установить Drim', body });
 }
 
 // ---------- панель информации ----------

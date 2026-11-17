@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14112B"/><stop offset="1" stop-color="#090814"/>
+    </linearGradient>
+    <linearGradient id="n" x1="110" y1="110" x2="400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#A855F7"/><stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#n)" stroke-width="30" stroke-linejoin="round" stroke-linecap="round">
+    <path filter="url(#glow)" opacity=".8" d="M190 130H266A114 114 0 0 1 266 358H206L148 396L162 344V158A28 28 0 0 1 190 130Z"/>
+    <path d="M190 130H266A114 114 0 0 1 266 358H206L148 396L162 344V158A28 28 0 0 1 190 130Z"/>
+  </g>
+  <circle cx="262" cy="244" r="30" fill="url(#n)"/>
+  <circle cx="262" cy="244" r="30" fill="url(#n)" filter="url(#glow)" opacity=".7"/>
+</svg>

@@ -198,6 +198,21 @@ function notifyMessage(chat, m) {
 }
 navigator.serviceWorker?.addEventListener('message', (e) => { if (e.data?.type === 'openChat' && S.chats.has(e.data.chatId)) openChat(e.data.chatId); });
 
+// ---------- установка как приложения ----------
+let installPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e; });
+window.addEventListener('appinstalled', () => { installPrompt = null; toast('Drim установлен 🎉'); });
+const isStandalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+async function installApp() {
+  if (installPrompt) {
+    installPrompt.prompt();
+    try { await installPrompt.userChoice; } catch { /* отменено */ }
+    installPrompt = null;
+    return;
+  }
+  installModal();
+}
+
 // ---------- запуск ----------
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));

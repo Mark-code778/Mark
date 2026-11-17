@@ -215,6 +215,7 @@ function openDrawer() {
       { icon: 'channel', label: 'Создать канал', action: () => { close(); newGroupModal('channel'); } },
       { icon: 'archive', label: 'Архив', action: () => { close(); setFolder('archive'); } },
       '-',
+      !isStandalone() && { icon: 'download', label: 'Установить на телефон', action: () => { close(); installApp(); } },
       { icon: document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', label: themeLabel(), action: () => { close(); settings.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; saveSettings(); } },
       { icon: 'settings', label: 'Настройки', action: () => { close(); settingsModal(); } },
       { icon: 'logout', label: 'Выйти', danger: true, action: async () => { close(); if (await confirmDialog('Выход', 'Вы уверены, что хотите выйти из аккаунта?', 'Выйти', true)) logout(); } },

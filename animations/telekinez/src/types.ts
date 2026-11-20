@@ -78,6 +78,7 @@ export type Actor = {
   heldText?: string; // текст на табличке (held: "sign")
   print?: "none" | "dino"; // принт на груди футболки
   hoodie?: boolean; // худи: капюшон на спине, шнурки, карман
+  float?: { at?: number; until?: number; height?: number; glow?: boolean }; // левитация персонажа
   action?: ActionName;
   face?: FaceName;
   facing?: Facing;
@@ -106,7 +107,10 @@ export type PropName =
   | "money"
   | "trophy"
   | "syringe"
-  | "phone";
+  | "phone"
+  | "ball" | "egg" | "mug" | "pot" | "fridge" | "sofa" | "washer" | "pizza" | "remote" | "key" | "wrench"
+  | "shovel" | "jack" | "stand" | "knife" | "pan" | "brain" | "soil" | "goal" | "stairs" | "toothbrush"
+  | "bag" | "socks" | "glass" | "needle";
 
 export type Prop = {
   type: PropName;
@@ -120,7 +124,9 @@ export type Prop = {
   lines?: string[]; // текст для screen / sign
   progress?: ScreenProgress;
   // телекинез: с момента at предмет поднимается на height, светится; to — полёт в точку [x,y,z] за dur секунд
-  float?: { at?: number; height?: number; spin?: boolean; to?: [number, number, number]; dur?: number; glow?: string };
+  float?: { at?: number; until?: number; height?: number; spin?: boolean; bob?: boolean; shake?: boolean; to?: [number, number, number]; dur?: number; glow?: string; aura?: number };
+  tilt?: number; // наклон (домкрат), градусы
+  pitch?: number; // наклон вперёд/назад, градусы
 };
 
 export type ScreenProgress = {

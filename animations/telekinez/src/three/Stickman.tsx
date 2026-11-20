@@ -272,8 +272,17 @@ export const Stickman: React.FC<{ actor: Actor; state: ActorState; defaultShirt:
     );
   };
 
+  const fl = actor.float;
+  const fk = fl
+    ? Math.min(1, Math.max(0, (state.t - (fl.at ?? 0)) / 0.8)) *
+      (fl.until !== undefined ? 1 - Math.min(1, Math.max(0, (state.t - fl.until) / 0.6)) : 1)
+    : 0;
+  const fy = fl ? (fl.height ?? 1) * (fk * fk * (3 - 2 * fk)) + Math.sin(state.t * 2.1) * 0.06 * fk : 0;
   return (
-    <group position={[state.x, 0, state.z]} rotation={[0, state.yaw, 0]} scale={1}>
+    <group position={[state.x, fy, state.z]} rotation={[0, state.yaw, 0]} scale={1}>
+      {fl && fl.glow !== false && fk > 0.02 ? (
+        <mesh geometry={G.sphere} material={mat("#b06bff", { emissive: true, opacity: 0.18 })} position={[0, 1.3, 0]} scale={[0.9 * fk, 1.45 * fk, 0.9 * fk]} />
+      ) : null}
       <mesh geometry={G.circle} material={shadowMat} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, lying ? -1.0 : 0]} scale={lying ? [0.55, 1.2, 1] : [0.45, 0.45, 1]} />
       <group position={[0, p.lift, 0]} rotation={[p.rootX, 0, p.rootZ]}>
         <group position={[0, HIP_Y + p.bob, 0]} rotation={[0, p.twist, 0]}>

@@ -5,7 +5,7 @@ import path from "node:path";
 const LOCATIONS = ["street", "plaza", "cafe", "lab", "room", "office", "park", "stage", "hospital", "studio"];
 const ACTIONS = ["idle", "walk", "run", "wave", "point", "cheer", "shrug", "think", "scared", "fall", "lie", "sit", "jump", "talk", "facepalm", "dance", "cry", "angry"];
 const FACES = ["neutral", "happy", "grin", "sad", "scared", "angry", "surprised", "sleepy", "smirk", "worried"];
-const PROPS = ["bottle", "table", "chair", "tree", "car", "sign", "box", "coin", "bench", "lamp", "screen", "bed", "door", "plant", "rock", "clock", "money", "trophy", "syringe", "phone"];
+const PROPS = ["bottle", "table", "chair", "tree", "car", "sign", "box", "coin", "bench", "lamp", "screen", "bed", "door", "plant", "rock", "clock", "money", "trophy", "syringe", "phone", "ball", "egg", "mug", "pot", "fridge", "sofa", "washer", "pizza", "remote", "key", "wrench", "shovel", "jack", "stand", "knife", "pan", "brain", "soil", "goal", "stairs", "toothbrush", "bag", "socks", "glass", "needle"];
 const SHOTS = ["wide", "medium", "close", "extreme"];
 const MOVES = ["static", "dolly-in", "dolly-out", "pan-left", "pan-right", "orbit", "push", "rise", "shake"];
 const SFX = ["whoosh", "swoosh", "rise", "pop", "click", "ding", "thud", "impact", "tick", "glitch", "heartbeat", "sparkle", "buzz", "boing", "scribble", "cash"];

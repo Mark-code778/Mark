@@ -46,8 +46,9 @@ export function talkAmount(globalT, from = -1, to = 1e9) {
 
 // time (global seconds) when a word is spoken: wordTime('brain', 40) -> 43.78 (null if not found)
 export function wordTime(match, after = 0) {
-  const m = match.toLowerCase().replace(/[^\w']/g, '');
-  const w = E.words.find(w => w.start >= after - 0.05 && w.word.toLowerCase().replace(/[^\w']/g, '').startsWith(m));
+  const norm = x => x.toLowerCase().replace(/ё/g, 'е').replace(/[^\p{L}\p{N}']/gu, '');
+  const m = norm(match); if (!m) return null;
+  const w = E.words.find(w => w.start >= after - 0.05 && norm(w.word).startsWith(m));
   return w ? w.start : null;
 }
 
@@ -87,14 +88,20 @@ export function backdrop(g, colors, area = [-E.W, -E.H, E.W * 3, E.H * 3]) { g.f
 // ---------- text ----------
 export const FONTS = { title: 'Fredoka', ui: 'Nunito', serif: 'Playfair Display' };
 export function text(g, str, x, y, o = {}) {
-  const { size = 48, font = FONTS.title, weight = 700, color = '#fff', align = 'center', base = 'middle', glow: gl = 0, glowColor = 'rgba(255,140,60,.8)', spacing = 0, alpha: a = 1, stroke = 0, strokeColor = '#000', italic = false } = o;
-  g.save(); g.globalAlpha *= a; g.font = `${italic ? 'italic ' : ''}${weight} ${size}px "${font}"`; g.textAlign = align; g.textBaseline = base;
-  if ('letterSpacing' in g) g.letterSpacing = `${spacing}px`;
+  let { size = 48, font = FONTS.title, weight = 700, color = '#fff', align = 'center', base = 'middle', glow: gl = 0, glowColor = 'rgba(255,140,60,.8)', spacing = 0, alpha: a = 1, stroke = 0, strokeColor = '#000', italic = false, maxW = 0 } = o;
+  g.save(); g.globalAlpha *= a;
+  const setF = () => { g.font = `${italic ? 'italic ' : ''}${weight} ${size}px "${font}"`; if ('letterSpacing' in g) g.letterSpacing = `${spacing}px`; };
+  setF();
+  // maxW: shrink the text so it never spills outside the object it is written on
+  if (maxW > 0) { const w = g.measureText(str).width + stroke; if (w > maxW) { const k = maxW / w; size *= k; spacing *= k; stroke *= k; gl *= k; setF(); } }
+  g.textAlign = align; g.textBaseline = base;
   if (stroke) { g.lineJoin = 'round'; g.lineWidth = stroke; g.strokeStyle = strokeColor; g.strokeText(str, x, y); }
   if (gl) { g.shadowColor = glowColor; g.shadowBlur = gl; }
   g.fillStyle = color; g.fillText(str, x, y); g.restore();
 }
-export function measure(g, str, size, font = FONTS.title, weight = 700) { g.save(); g.font = `${weight} ${size}px "${font}"`; const w = g.measureText(str).width; g.restore(); return w; }
+export function measure(g, str, size, font = FONTS.title, weight = 700, spacing = 0) { g.save(); g.font = `${weight} ${size}px "${font}"`; if ('letterSpacing' in g) g.letterSpacing = `${spacing}px`; const w = g.measureText(str).width; g.restore(); return w; }
+// largest size <= size at which str fits into maxW
+export function fitSize(g, str, size, maxW, font = FONTS.title, weight = 700, spacing = 0) { const w = measure(g, str, size, font, weight, spacing); return w > maxW ? size * maxW / w : size; }
 
 // ---------- camera & parallax ----------
 // cam = {x, y, z (zoom), r (roll, radians)}; depth 1 = character plane, <1 farther, >1 foreground

@@ -1,0 +1,11543 @@
+{
+ "title": "Что если ты станешь невидимым на 30 дней",
+ "duration": 1031.09,
+ "shots": [
+  {
+   "id": "s001",
+   "line": "Утром ты подходишь к зеркалу и не видишь себя.",
+   "sfx": [],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.28,
+       0.45
+      ],
+      "wk": [
+       0,
+       0.7
+      ]
+     }
+    ],
+    "cam": "push",
+    "fx": [
+     "dust"
+    ]
+   },
+   "start": 0.0,
+   "end": 3.13
+  },
+  {
+   "id": "s002",
+   "line": "Пустая ванная, только зубная щетка висит в воздухе.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.47,
+      "p": "holdFront",
+      "f": 1,
+      "e": "neutral",
+      "hold": {
+       "n": "toothbrush",
+       "s": 0.55,
+       "rot": -0.3
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ],
+     "x": 120,
+     "y": -80
+    }
+   },
+   "start": 3.13,
+   "end": 6.65
+  },
+  {
+   "id": "s003",
+   "line": "Ты стал невидимым.",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "shimmer",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "shocked",
+    "set": "bathroom"
+   },
+   "start": 6.65,
+   "end": 8.37
+  },
+  {
+   "id": "s004",
+   "line": "Ты думаешь, что это свобода, но за",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy"
+     }
+    ],
+    "s": "w",
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 8.37,
+   "end": 10.65
+  },
+  {
+   "id": "s005",
+   "line": "30 дней ты услышишь то, что люди",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "card:street",
+   "params": {
+    "tpl": "card",
+    "str": "30 ДНЕЙ",
+    "set": "street",
+    "so": {
+     "mood": "golden"
+    },
+    "sub": "ТЫ УСЛЫШИШЬ ТО, ЧТО НЕ ГОВОРЯТ В ЛИЦО"
+   },
+   "bars": "scope",
+   "start": 10.65,
+   "end": 12.99
+  },
+  {
+   "id": "s006",
+   "line": "никогда не сказали бы тебе в лицо.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad",
+      "talk": true
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "A",
+      "x": 0.24,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised"
+     }
+    ],
+    "so": {
+     "doorway": true
+    },
+    "cam": "push"
+   },
+   "start": 12.99,
+   "end": 15.43
+  },
+  {
+   "id": "s007",
+   "line": "А на 25 -й день будешь стоять рядом",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.36,
+      "p": "phone",
+      "f": 1,
+      "e": "scared",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.55,
+      "p": "stand",
+      "f": -1,
+      "e": "angry"
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 25"
+     }
+    ]
+   },
+   "start": 15.43,
+   "end": 17.81
+  },
+  {
+   "id": "s008",
+   "line": "с бабушкой и слушать как телефонный мошенник выдает себя.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "handset",
+      "x": 0.5,
+      "y": 0.82,
+      "s": 2.2,
+      "rot": 0.4,
+      "shake": 6
+     }
+    ],
+    "rings": [
+     0.47,
+     0.4
+    ],
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 17.81,
+   "end": 21.71
+  },
+  {
+   "id": "s009",
+   "line": "За тебя.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "worried",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 21.71,
+   "end": 23.09
+  },
+  {
+   "id": "s010",
+   "line": "Давай по порядку. Правила такие.",
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "stinger",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "title:void",
+   "params": {
+    "tpl": "title",
+    "lines": [
+     "ЧТО ЕСЛИ ТЫ СТАНЕШЬ",
+     "НЕВИДИМЫМ НА 30 ДНЕЙ?"
+    ]
+   },
+   "bars": "scope",
+   "start": 23.09,
+   "end": 25.89
+  },
+  {
+   "id": "s011",
+   "line": "Ровно 30 дней ты не видим.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "card:void",
+   "params": {
+    "tpl": "card",
+    "str": "ПРАВИЛО 1",
+    "set": "void",
+    "sub": "РОВНО 30 ДНЕЙ ТЫ НЕВИДИМ"
+   },
+   "bars": "scope",
+   "start": 25.89,
+   "end": 27.65
+  },
+  {
+   "id": "s012",
+   "line": "Видишь и слышишь ты все как раньше.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "card:void",
+   "params": {
+    "tpl": "card",
+    "str": "ПРАВИЛО 2",
+    "set": "void",
+    "sub": "ВИДИШЬ И СЛЫШИШЬ ВСЁ КАК РАНЬШЕ"
+   },
+   "bars": "scope",
+   "start": 27.65,
+   "end": 30.29
+  },
+  {
+   "id": "s013",
+   "line": "Не видимо все, что на тебе и внутри",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "neutral"
+     }
+    ],
+    "ui": [
+     {
+      "k": "callout",
+      "at2": [
+       0.47,
+       0.6
+      ],
+      "to": [
+       0.62,
+       0.36
+      ],
+      "str": "ОДЕЖДА — НЕВИДИМА",
+      "at": 0.15
+     }
+    ]
+   },
+   "start": 30.29,
+   "end": 32.21
+  },
+  {
+   "id": "s014",
+   "line": "тебя, а все, что ты берешь в руки, видно.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "holdFront",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "mug",
+       "s": 0.8
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ],
+     "x": -60
+    },
+    "ui": [
+     {
+      "k": "callout",
+      "at2": [
+       0.5,
+       0.5
+      ],
+      "to": [
+       0.66,
+       0.3
+      ],
+      "str": "ВЕЩИ В РУКАХ — ВИДНЫ",
+      "at": 0.15
+     }
+    ]
+   },
+   "start": 32.21,
+   "end": 35.51
+  },
+  {
+   "id": "s015",
+   "line": "Тебя можно услышать, потрогать и даже унюхать.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "card:void",
+   "params": {
+    "tpl": "card",
+    "str": "ПРАВИЛО 3",
+    "set": "void",
+    "sub": "ТЕБЯ СЛЫШНО, МОЖНО ПОТРОГАТЬ И ДАЖЕ УНЮХАТЬ"
+   },
+   "bars": "scope",
+   "start": 35.51,
+   "end": 38.67
+  },
+  {
+   "id": "s016",
+   "line": "Только сам ты про 30 дней не знаешь.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "worried",
+    "set": "bathroom",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "30 ДНЕЙ?"
+     }
+    ]
+   },
+   "start": 38.67,
+   "end": 41.15
+  },
+  {
+   "id": "s017",
+   "line": "Для тебя это может быть навсегда.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "card:bathroom",
+   "params": {
+    "tpl": "card",
+    "str": "НАВСЕГДА?",
+    "set": "bathroom"
+   },
+   "bars": "scope",
+   "start": 41.15,
+   "end": 43.65
+  },
+  {
+   "id": "s018",
+   "line": "Ты машешь рукой перед зеркалом.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "wave",
+      "f": 1,
+      "e": "nervous"
+     }
+    ],
+    "cam": "push",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 1"
+     }
+    ]
+   },
+   "start": 43.65,
+   "end": 45.69
+  },
+  {
+   "id": "s019",
+   "line": "Ничего.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [],
+    "cam": {
+     "k": "slow",
+     "z": 2.1,
+     "x": 320,
+     "y": -560
+    },
+    "fx": [
+     "dust"
+    ]
+   },
+   "start": 45.69,
+   "end": 46.73
+  },
+  {
+   "id": "s020",
+   "line": "Корчишь рожу.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "smirk",
+    "set": "bathroom",
+    "tilt": 0.12
+   },
+   "start": 46.73,
+   "end": 48.19
+  },
+  {
+   "id": "s021",
+   "line": "Ничего.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [],
+    "cam": {
+     "k": "slow",
+     "z": [
+      2.0,
+      2.15
+     ],
+     "x": 320,
+     "y": -560
+    }
+   },
+   "start": 48.19,
+   "end": 49.25
+  },
+  {
+   "id": "s022",
+   "line": "Открываешь рот и видишь как щетка во рту, то есть в воздухе, дергается вверх вниз.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [],
+    "so": {
+     "brush": true
+    },
+    "cam": {
+     "k": "slow",
+     "z": [
+      2.0,
+      2.2
+     ],
+     "x": 320,
+     "y": -560
+    }
+   },
+   "start": 49.25,
+   "end": 55.61
+  },
+  {
+   "id": "s023",
+   "line": "Ты роняешь ее в раковину, щетка звякает и замирает.",
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "ding",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "insert:bathroom",
+   "params": {
+    "tpl": "insert",
+    "set": "bathroom",
+    "items": [
+     {
+      "n": "toothbrush",
+      "x": 0.5,
+      "y": 0.3,
+      "s": 1.6,
+      "path": [
+       [
+        0,
+        0.48,
+        0.32,
+        -0.3
+       ],
+       [
+        0.45,
+        0.52,
+        0.78,
+        1.4
+       ],
+       [
+        1,
+        0.52,
+        0.78,
+        1.5
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 55.61,
+   "end": 59.47
+  },
+  {
+   "id": "s024",
+   "line": "Ты смотришь вниз на свои ноги, пол, только пол.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "confused"
+     }
+    ],
+    "cam": {
+     "k": "slow",
+     "z": [
+      1.8,
+      1.9
+     ],
+     "y": 300,
+     "x": 0
+    }
+   },
+   "start": 59.47,
+   "end": 63.69
+  },
+  {
+   "id": "s025",
+   "line": "Ты чувствуешь как стоишь, как пальцы касаются холодной плитки, но глазами пусто.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "confused"
+     }
+    ],
+    "cam": {
+     "k": "slow",
+     "z": [
+      2.2,
+      2.4
+     ],
+     "y": 330,
+     "x": 0
+    },
+    "ui": [
+     {
+      "k": "line",
+      "str": "",
+      "at": 0
+     }
+    ]
+   },
+   "start": 63.69,
+   "end": 69.61
+  },
+  {
+   "id": "s026",
+   "line": "Мозг отказывается это принимать и тебя слегка мутит как на качелях.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "slowmo",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "facepalm",
+      "f": 1,
+      "e": "nervous"
+     }
+    ],
+    "cam": "roll"
+   },
+   "start": 69.61,
+   "end": 73.97
+  },
+  {
+   "id": "s027",
+   "line": "Кстати, по законам физики невидимый человек был бы слепым. Чтобы видеть, глаз должен ловить свет, а через невидимку свет проходит насквозь.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "eye"
+   },
+   "start": 73.97,
+   "end": 82.23
+  },
+  {
+   "id": "s028",
+   "line": "Поэтому человек невидимка из романа Уэлса на самом деле ничего бы не видел.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "book"
+   },
+   "start": 82.23,
+   "end": 87.01
+  },
+  {
+   "id": "s029",
+   "line": "Но тебе повезло, твоя невидимость с законом физики не подчиняется.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy"
+     }
+    ],
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 87.01,
+   "end": 91.21
+  },
+  {
+   "id": "s030",
+   "line": "Ты видишь все, кроме себя.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "x": 120
+    }
+   },
+   "start": 91.21,
+   "end": 93.53
+  },
+  {
+   "id": "s031",
+   "line": "Ты звонишь Лехе,",
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "phonering",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "nervous",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      }
+     }
+    ],
+    "ui": [
+     {
+      "k": "quote",
+      "str": "Приезжай. Срочно. Не спрашивай.",
+      "x": 0.62,
+      "y": 0.22,
+      "w": 640,
+      "h": 110
+     }
+    ]
+   },
+   "start": 93.53,
+   "end": 94.81
+  },
+  {
+   "id": "s032",
+   "line": "приезжай, срочно, не спрашивай.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.55,
+      "p": "phone",
+      "f": -1,
+      "e": "surprised",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      }
+     }
+    ],
+    "so": {
+     "sky": "golden"
+    },
+    "cam": "push"
+   },
+   "start": 94.81,
+   "end": 97.47
+  },
+  {
+   "id": "s033",
+   "line": "Через 20 минут он открывает дверь своим ключом.",
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "footstep",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.72,
+      "p": "stand",
+      "f": -1,
+      "walk": [
+       0.74,
+       0.6
+      ],
+      "wk": [
+       0.1,
+       0.8
+      ],
+      "hold": {
+       "n": "keys",
+       "s": 0.8
+      }
+     }
+    ],
+    "so": {
+     "open": 0.7
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ЧЕРЕЗ 20 МИНУТ"
+     }
+    ]
+   },
+   "start": 97.47,
+   "end": 100.55
+  },
+  {
+   "id": "s034",
+   "line": "Тёма, я здесь, говоришь ты, прямо у него перед носом.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.48,
+      "p": "talk",
+      "f": 1,
+      "e": "smile",
+      "voice": true
+     },
+     {
+      "c": "L",
+      "x": 0.58,
+      "p": "stand",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    }
+   },
+   "start": 100.55,
+   "end": 104.63
+  },
+  {
+   "id": "s035",
+   "line": "Леха подпрыгивает, врезается в вешалку",
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "stinger",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.5,
+      "p": "jump",
+      "f": -1,
+      "e": "shocked"
+     }
+    ],
+    "cam": "shake"
+   },
+   "start": 104.63,
+   "end": 106.99
+  },
+  {
+   "id": "s036",
+   "line": "и роняет на себя все куртки.",
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.3,
+      "p": "lie",
+      "f": -1,
+      "e": "confused",
+      "rot": -1.5,
+      "dy": -0.03
+     }
+    ],
+    "so": {
+     "coats": "floor"
+    },
+    "cam": "shake"
+   },
+   "start": 106.99,
+   "end": 109.09
+  },
+  {
+   "id": "s037",
+   "line": "Ты помогаешь ему встать и он видит как куртки сами",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.32,
+      "p": "crouch",
+      "f": -1,
+      "e": "confused"
+     },
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "reach",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "coats": "floor"
+    }
+   },
+   "start": 109.09,
+   "end": 111.89
+  },
+  {
+   "id": "s038",
+   "line": "с собой поднимаются с пола и вешаются обратно на крючки.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.6,
+      "p": "stand",
+      "f": -1,
+      "e": "shocked"
+     }
+    ],
+    "so": {
+     "coats": "floor"
+    },
+    "items": [
+     {
+      "n": "coat",
+      "x": 0.29,
+      "y": 0.8,
+      "s": 1,
+      "path": [
+       [
+        0,
+        0.27,
+        0.8,
+        1.2
+       ],
+       [
+        0.6,
+        0.29,
+        0.5,
+        0
+       ],
+       [
+        1,
+        0.29,
+        0.5,
+        0
+       ]
+      ],
+      "o": {
+       "color": "#7a5040"
+      }
+     },
+     {
+      "n": "coat",
+      "x": 0.33,
+      "y": 0.8,
+      "s": 1,
+      "path": [
+       [
+        0.2,
+        0.33,
+        0.8,
+        -1.2
+       ],
+       [
+        0.85,
+        0.33,
+        0.5,
+        0
+       ],
+       [
+        1,
+        0.33,
+        0.5,
+        0
+       ]
+      ],
+      "o": {
+       "color": "#3e5a70"
+      }
+     }
+    ]
+   },
+   "start": 111.89,
+   "end": 115.67
+  },
+  {
+   "id": "s039",
+   "line": "Леха садится на тумбочку для обуви, долго молчит.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.475,
+      "p": "sit",
+      "f": 1,
+      "e": [
+       [
+        0,
+        "shocked"
+       ],
+       [
+        0.6,
+        "neutral"
+       ]
+      ]
+     }
+    ],
+    "cam": "slow"
+   },
+   "start": 115.67,
+   "end": 118.97
+  },
+  {
+   "id": "s040",
+   "line": "А потом говорит, я кофе не пил, мне можно такое видеть.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "face:hallway",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "confused",
+    "set": "hallway",
+    "talk": true
+   },
+   "start": 118.97,
+   "end": 123.21
+  },
+  {
+   "id": "s041",
+   "line": "Через час он уже проверяет тебя на ощупь, как слепой, статуя.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.54,
+      "p": "reach",
+      "f": -1,
+      "e": "thinking"
+     },
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "s": "m",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ЧЕРЕЗ ЧАС"
+     }
+    ]
+   },
+   "start": 123.21,
+   "end": 127.75
+  },
+  {
+   "id": "s042",
+   "line": "Нос на месте, уши на месте, Тём, оказывается худой.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.56,
+      "p": [
+       [
+        0,
+        "reach"
+       ],
+       [
+        0.5,
+        "pointUp"
+       ]
+      ],
+      "f": -1,
+      "e": "surprised",
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "smirk"
+     }
+    ],
+    "s": "c",
+    "cam": {
+     "k": "push",
+     "y": -120
+    }
+   },
+   "start": 127.75,
+   "end": 132.37
+  },
+  {
+   "id": "s043",
+   "line": "Он тычет тебя в живот и ты смеешься.",
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.54,
+      "p": "point",
+      "f": -1,
+      "e": "smirk"
+     },
+     {
+      "c": "A",
+      "x": 0.46,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy",
+      "voice": true
+     }
+    ]
+   },
+   "start": 132.37,
+   "end": 135.25
+  },
+  {
+   "id": "s044",
+   "line": "Смех из пустоты пугает его даже сильнее, чем голос.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "scared",
+    "set": "living",
+    "ui": []
+   },
+   "start": 135.25,
+   "end": 138.91
+  },
+  {
+   "id": "s045",
+   "line": "На следующий день Леха привозит родителей.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.66,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.78,
+       0.62
+      ]
+     },
+     {
+      "c": "DAD",
+      "x": 0.8,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.9,
+       0.76
+      ]
+     },
+     {
+      "c": "L",
+      "x": 0.45,
+      "p": "explain",
+      "f": 1,
+      "e": "nervous"
+     }
+    ],
+    "so": {
+     "open": 0.8
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 2"
+     }
+    ]
+   },
+   "start": 138.91,
+   "end": 141.87
+  },
+  {
+   "id": "s046",
+   "line": "Мама долго стоит посреди комнаты и не знает куда смотреть.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "worried",
+      "look": [
+       [
+        -1,
+        0
+       ]
+      ]
+     },
+     {
+      "c": "DAD",
+      "x": 0.68,
+      "p": "crossArms",
+      "f": -1,
+      "e": "worried"
+     },
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "cam": "slow"
+   },
+   "start": 141.87,
+   "end": 145.37
+  },
+  {
+   "id": "s047",
+   "line": "Ты говоришь, мам, я здесь.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.5,
+      "p": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.4,
+        "reach"
+       ]
+      ],
+      "f": -1,
+      "e": [
+       [
+        0,
+        "worried"
+       ],
+       [
+        0.4,
+        "surprised"
+       ]
+      ]
+     },
+     {
+      "c": "A",
+      "x": 0.38,
+      "p": "talk",
+      "f": 1,
+      "e": "smile",
+      "voice": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ]
+    }
+   },
+   "start": 145.37,
+   "end": 147.73
+  },
+  {
+   "id": "s048",
+   "line": "И она идет на голос и обнимает пустоту.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.5,
+      "p": "stand",
+      "f": -1,
+      "walk": [
+       0.52,
+       0.42
+      ],
+      "wk": [
+       0,
+       0.4
+      ]
+     },
+     {
+      "c": "A",
+      "x": 0.38,
+      "p": "hug",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "items": [],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ],
+     "x": -150
+    },
+    "fx": [
+     "dust",
+     "hearts"
+    ]
+   },
+   "start": 147.73,
+   "end": 150.97
+  },
+  {
+   "id": "s049",
+   "line": "Только пустота теплая и пахнет её с сыном.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "MOM",
+    "e": "cry",
+    "set": "living",
+    "tears": true
+   },
+   "start": 150.97,
+   "end": 154.15
+  },
+  {
+   "id": "s050",
+   "line": "Мама плачет, папа держится.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.42,
+      "p": "sad",
+      "f": 1,
+      "e": "cry"
+     },
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "crossArms",
+      "f": -1,
+      "e": "determined"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 154.15,
+   "end": 156.43
+  },
+  {
+   "id": "s051",
+   "line": "Только выходит на балкон чаще обычного.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.4,
+      "p": "stand",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": "left",
+    "fx": [
+     "dust"
+    ]
+   },
+   "start": 156.43,
+   "end": 159.19
+  },
+  {
+   "id": "s052",
+   "line": "Мама остается у тебя на несколько дней.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.62,
+      "p": "holdFront",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "A",
+      "x": 0.22,
+      "p": "sit",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "x": -120
+    }
+   },
+   "start": 159.19,
+   "end": 161.73
+  },
+  {
+   "id": "s053",
+   "line": "По вечерам она садится на край кровати, туда, где, как ей кажется, ты лежишь.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "scene:bedroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bedroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "lie",
+      "f": 1,
+      "e": "sleepy",
+      "rot": -1.55,
+      "dy": 0.04,
+      "chair": false
+     },
+     {
+      "c": "MOM",
+      "x": 0.58,
+      "p": "sit",
+      "f": 1,
+      "e": "smile",
+      "dy": -0.03,
+      "chair": false
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 161.73,
+   "end": 165.91
+  },
+  {
+   "id": "s054",
+   "line": "Иногда промахивается и садится тебе на ногу.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "scene:bedroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bedroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "lie",
+      "f": 1,
+      "e": "shocked",
+      "rot": -1.55,
+      "dy": 0.04,
+      "chair": false,
+      "voice": true
+     },
+     {
+      "c": "MOM",
+      "x": 0.68,
+      "p": "sit",
+      "f": 1,
+      "e": "surprised",
+      "dy": -0.03,
+      "chair": false
+     }
+    ],
+    "cam": "shake"
+   },
+   "start": 165.91,
+   "end": 169.11
+  },
+  {
+   "id": "s055",
+   "line": "А потом рассказывает истории, которой ты слышал сто раз.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "scene:bedroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bedroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "lie",
+      "f": 1,
+      "e": "smile",
+      "rot": -1.55,
+      "dy": 0.04,
+      "chair": false
+     },
+     {
+      "c": "MOM",
+      "x": 0.56,
+      "p": "sit",
+      "f": 1,
+      "e": "happy",
+      "dy": -0.03,
+      "chair": false,
+      "talk": true
+     }
+    ],
+    "cam": "slow"
+   },
+   "start": 169.11,
+   "end": 172.71
+  },
+  {
+   "id": "s056",
+   "line": "Как ты в три года съел пластилин, как",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "card:bedroom",
+   "params": {
+    "tpl": "card",
+    "str": "3 ГОДА",
+    "set": "bedroom",
+    "sub": "СЪЕЛ ПЛАСТИЛИН"
+   },
+   "bars": "scope",
+   "start": 172.71,
+   "end": 174.97
+  },
+  {
+   "id": "s057",
+   "line": "в первом классе принес домой ежа, ты лежишь и",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "card:bedroom",
+   "params": {
+    "tpl": "card",
+    "str": "1 КЛАСС",
+    "set": "bedroom",
+    "sub": "ПРИНЁС ДОМОЙ ЕЖА"
+   },
+   "bars": "scope",
+   "start": 174.97,
+   "end": 178.07
+  },
+  {
+   "id": "s058",
+   "line": "слушаешь, и тебе кажется, что тебе снова семь лет.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "scene:bedroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bedroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "lie",
+      "f": 1,
+      "e": "sleepy",
+      "rot": -1.55,
+      "dy": 0.04,
+      "chair": false
+     },
+     {
+      "c": "MOM",
+      "x": 0.56,
+      "p": "sit",
+      "f": 1,
+      "e": "smile",
+      "dy": -0.03,
+      "chair": false,
+      "talk": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.25
+     ],
+     "x": 150
+    },
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 178.07,
+   "end": 181.85
+  },
+  {
+   "id": "s059",
+   "line": "Врачи, ты представляешь, как это будет.",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "clinic",
+   "scene": "scene:clinic",
+   "params": {
+    "tpl": "scene",
+    "set": "clinic",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.42
+      ]
+     }
+    ],
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 181.85,
+   "end": 184.89
+  },
+  {
+   "id": "s060",
+   "line": "В поликлинику приходит пустой воздух и говорит, у меня кажется проблема.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "clinic",
+   "scene": "scene:clinic",
+   "params": {
+    "tpl": "scene",
+    "set": "clinic",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "talk",
+      "f": 1,
+      "e": "nervous",
+      "voice": true
+     },
+     {
+      "c": "NURSE",
+      "x": 0.58,
+      "p": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.5,
+        "handsOnHead"
+       ]
+      ],
+      "f": -1,
+      "e": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        0.5,
+        "shocked"
+       ]
+      ]
+     }
+    ],
+    "ui": [
+     {
+      "k": "quote",
+      "str": "У меня, кажется, проблема",
+      "x": 0.42,
+      "y": 0.2,
+      "w": 560,
+      "h": 100
+     }
+    ]
+   },
+   "start": 184.89,
+   "end": 189.61
+  },
+  {
+   "id": "s061",
+   "line": "А через час с тобой уже занимаются совсем не терапевты.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "lab",
+   "scene": "scene:lab",
+   "params": {
+    "tpl": "scene",
+    "set": "lab",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "handsOnHead",
+      "f": 1,
+      "e": "scared"
+     },
+     {
+      "c": "DOC",
+      "x": 0.36,
+      "p": "point",
+      "f": 1,
+      "e": "awe"
+     },
+     {
+      "c": "DOC",
+      "x": 0.64,
+      "p": "holdFront",
+      "f": -1,
+      "e": "awe",
+      "prop": "tablet"
+     },
+     {
+      "c": "GUARD",
+      "x": 0.78,
+      "p": "crossArms",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "cam": "roll"
+   },
+   "start": 189.61,
+   "end": 193.03
+  },
+  {
+   "id": "s062",
+   "line": "Нет уж, решаете ждать.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.56,
+      "p": "crossArms",
+      "f": -1,
+      "e": "determined"
+     },
+     {
+      "c": "A",
+      "x": 0.44,
+      "p": "crossArms",
+      "f": 1,
+      "e": "determined"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 193.03,
+   "end": 194.81
+  },
+  {
+   "id": "s063",
+   "line": "А быт превращается в цирк.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [],
+    "so": {
+     "noKettle": true
+    },
+    "items": [
+     {
+      "n": "kettle",
+      "x": 0.62,
+      "y": 0.52,
+      "s": 1,
+      "bob": 14
+     },
+     {
+      "n": "cup",
+      "x": 0.5,
+      "y": 0.6,
+      "s": 1.2,
+      "bob": 10,
+      "seed": 2
+     },
+     {
+      "n": "spoon",
+      "x": 0.44,
+      "y": 0.55,
+      "s": 1.2,
+      "bob": 12,
+      "seed": 4,
+      "rot": 0.4
+     },
+     {
+      "n": "sandwich",
+      "x": 0.35,
+      "y": 0.5,
+      "s": 0.8,
+      "bob": 16,
+      "seed": 6
+     }
+    ],
+    "cam": "pull"
+   },
+   "start": 194.81,
+   "end": 197.45
+  },
+  {
+   "id": "s064",
+   "line": "Ты наливаешь чай, и чайник висит в воздухе.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.6,
+      "p": "holdFront",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "kettle",
+       "s": 0.5,
+       "rot": 0.5,
+       "dy": 40
+      }
+     }
+    ],
+    "so": {
+     "noKettle": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ],
+     "x": 100
+    }
+   },
+   "start": 197.45,
+   "end": 200.27
+  },
+  {
+   "id": "s065",
+   "line": "Чашка висит, ложка звенит сама по себе.",
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "ding",
+     "gain": -10
+    },
+    {
+     "at": 1.1,
+     "name": "ding",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "insert:kitchen",
+   "params": {
+    "tpl": "insert",
+    "set": "kitchen",
+    "items": [
+     {
+      "n": "cup",
+      "x": 0.5,
+      "y": 0.72,
+      "s": 2.4,
+      "bob": 10
+     },
+     {
+      "n": "spoon",
+      "x": 0.53,
+      "y": 0.6,
+      "s": 2,
+      "rot": 0.3,
+      "path": [
+       [
+        0,
+        0.53,
+        0.6,
+        0.2
+       ],
+       [
+        0.5,
+        0.5,
+        0.6,
+        -0.4
+       ],
+       [
+        1,
+        0.53,
+        0.6,
+        0.2
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 200.27,
+   "end": 203.03
+  },
+  {
+   "id": "s066",
+   "line": "Ты ешь бутерброд, и Лёха смотрит, как куски хлеба один за другим исчезают в пустоте.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.14,
+      "p": "sit",
+      "f": 1,
+      "e": "happy",
+      "hold": {
+       "n": "sandwich",
+       "s": 0.5,
+       "o": {}
+      }
+     },
+     {
+      "c": "L",
+      "x": 0.36,
+      "p": "sit",
+      "f": -1,
+      "e": "shocked"
+     }
+    ],
+    "items": [
+     {
+      "n": "sandwich",
+      "x": 0.165,
+      "y": 0.6,
+      "s": 0.6,
+      "o": {
+       "bitesK": 4
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "x": [
+      -420,
+      -460
+     ]
+    }
+   },
+   "start": 203.03,
+   "end": 208.39
+  },
+  {
+   "id": "s067",
+   "line": "Это самое мерзкое, что я видел в жизни, говорит он, и всё равно не может отвести глаз.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "face:kitchen",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "nervous",
+    "set": "kitchen",
+    "talk": true
+   },
+   "start": 208.39,
+   "end": 213.75
+  },
+  {
+   "id": "s068",
+   "line": "А потом ты выходишь на улицу.",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.3,
+       0.55
+      ]
+     }
+    ],
+    "s": "w",
+    "cam": "left"
+   },
+   "start": 213.75,
+   "end": 215.65
+  },
+  {
+   "id": "s069",
+   "line": "И первые дни – это правда свобода.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy"
+     }
+    ],
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 215.65,
+   "end": 218.07
+  },
+  {
+   "id": "s070",
+   "line": "Ты стоишь посреди площади, и никто на тебя не смотрит.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "relaxed",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.45
+      ]
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.6
+      ],
+      "seed": 2
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.8,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.7,
+       0.95
+      ],
+      "seed": 3
+     }
+    ],
+    "s": "w",
+    "cam": "slow"
+   },
+   "start": 218.07,
+   "end": 221.29
+  },
+  {
+   "id": "s071",
+   "line": "Ты корчишь рожа охраннику, танцуешь в",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "GUARD",
+      "x": 0.58,
+      "p": "crossArms",
+      "f": -1,
+      "e": "neutral"
+     },
+     {
+      "c": "A",
+      "x": 0.48,
+      "p": "shrug",
+      "f": 1,
+      "e": "smirk"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    }
+   },
+   "start": 221.29,
+   "end": 223.75
+  },
+  {
+   "id": "s072",
+   "line": "вагоне метро, ты заходишь в зоопарк, и",
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -24
+   },
+   "set": "metro",
+   "scene": "scene:metro",
+   "params": {
+    "tpl": "scene",
+    "set": "metro",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": [
+       [
+        0,
+        "cheer"
+       ],
+       [
+        0.25,
+        "jump"
+       ],
+       [
+        0.5,
+        "kick"
+       ],
+       [
+        0.75,
+        "cheer"
+       ]
+      ],
+      "f": 1,
+      "e": "joy"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.25,
+      "p": "phone",
+      "f": 1,
+      "e": "neutral",
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.75,
+      "p": "phone",
+      "f": -1,
+      "e": "neutral",
+      "prop": "phone",
+      "seed": 3
+     }
+    ],
+    "cam": "right"
+   },
+   "start": 223.75,
+   "end": 226.13
+  },
+  {
+   "id": "s073",
+   "line": "полчаса стоишь нос к носу с жирафом.",
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "set": "zoo",
+   "scene": "scene:zoo",
+   "params": {
+    "tpl": "scene",
+    "set": "zoo",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "awe"
+     }
+    ],
+    "so": {
+     "giraffeX": 140
+    },
+    "cam": "push"
+   },
+   "start": 226.13,
+   "end": 228.83
+  },
+  {
+   "id": "s074",
+   "line": "Жираф кажется единственный, кто что -то подозревает.",
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "set": "zoo",
+   "scene": "scene:zoo",
+   "params": {
+    "tpl": "scene",
+    "set": "zoo",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised"
+     }
+    ],
+    "so": {
+     "giraffeX": 140,
+     "look": -1
+    },
+    "cam": {
+     "k": "slow",
+     "z": [
+      1.5,
+      1.6
+     ],
+     "x": 185,
+     "y": -285
+    }
+   },
+   "start": 228.83,
+   "end": 231.81
+  },
+  {
+   "id": "s075",
+   "line": "Лёху ты доводишь до белого коления.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.5,
+      "p": "handsOnHead",
+      "f": 1,
+      "e": "angry"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 231.81,
+   "end": 234.27
+  },
+  {
+   "id": "s076",
+   "line": "Его кружка уезжает по столу сама.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "insert:living",
+   "params": {
+    "tpl": "insert",
+    "set": "living",
+    "items": [
+     {
+      "n": "mug",
+      "x": 0.4,
+      "y": 0.66,
+      "s": 2.2,
+      "path": [
+       [
+        0,
+        0.36,
+        0.66,
+        0
+       ],
+       [
+        1,
+        0.64,
+        0.66,
+        0
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 234.27,
+   "end": 236.41
+  },
+  {
+   "id": "s077",
+   "line": "Его шнурки завязываются вместе.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "insert:hallway",
+   "params": {
+    "tpl": "insert",
+    "set": "hallway",
+    "items": [
+     {
+      "n": "shoes",
+      "x": 0.5,
+      "y": 0.76,
+      "s": 2,
+      "o": {
+       "pk": [
+        0.1,
+        0.8
+       ]
+      }
+     }
+    ]
+   },
+   "start": 236.41,
+   "end": 238.47
+  },
+  {
+   "id": "s078",
+   "line": "Его телефон шепчет ему в ухо. Лёха.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "scared",
+    "set": "living",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.82,
+      "y": 0.98,
+      "s": 1.3
+     }
+    ],
+    "ui": [
+     {
+      "k": "quote",
+      "str": "Лёха…",
+      "x": 0.75,
+      "y": 0.25,
+      "w": 300,
+      "h": 90
+     }
+    ]
+   },
+   "start": 238.47,
+   "end": 241.63
+  },
+  {
+   "id": "s079",
+   "line": "На третий день Лёха вешает в квартире табличку.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.38,
+      "p": "reach",
+      "f": -1,
+      "e": "determined"
+     }
+    ],
+    "so": {
+     "plaque": "ТЁМА, ЕСЛИ ТЫ ЗДЕСЬ —\nКАШЛЯНИ"
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 3"
+     }
+    ]
+   },
+   "start": 241.63,
+   "end": 244.53
+  },
+  {
+   "id": "s080",
+   "line": "Тёма, если ты здесь – кашляне.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [],
+    "so": {
+     "plaque": "ТЁМА, ЕСЛИ ТЫ ЗДЕСЬ —\nКАШЛЯНИ"
+    },
+    "cam": {
+     "k": "slow",
+     "z": [
+      2.6,
+      2.8
+     ],
+     "x": -240,
+     "y": -632
+    }
+   },
+   "start": 244.53,
+   "end": 247.05
+  },
+  {
+   "id": "s081",
+   "line": "А ещё ты делай что, что раньше и в голову не приходило.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "think",
+      "f": 1,
+      "e": "thinking"
+     }
+    ],
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "push"
+   },
+   "start": 247.05,
+   "end": 250.05
+  },
+  {
+   "id": "s082",
+   "line": "Ты просто смотришь на людей.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.32,
+      "p": "stand",
+      "f": 1,
+      "e": "neutral"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.45,
+       0.85
+      ]
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.55
+      ],
+      "seed": 2
+     }
+    ],
+    "s": "w",
+    "cam": "slow"
+   },
+   "start": 250.05,
+   "end": 251.39
+  },
+  {
+   "id": "s083",
+   "line": "Как они ведут себя, когда думают, что их никто не видит.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.32,
+      "p": "think",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.6,
+      "p": "phone",
+      "f": -1,
+      "e": "smile",
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.75,
+      "p": "relaxed",
+      "f": -1,
+      "e": "happy",
+      "seed": 4
+     }
+    ],
+    "s": "w",
+    "cam": "right"
+   },
+   "start": 251.39,
+   "end": 254.81
+  },
+  {
+   "id": "s084",
+   "line": "Мужчина в дорогом пальто в пустом лифте поёт что -то из девяностых.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "elevator",
+   "scene": "scene:elevator",
+   "params": {
+    "tpl": "scene",
+    "set": "elevator",
+    "actors": [
+     {
+      "c": "COAT",
+      "x": 0.5,
+      "p": [
+       [
+        0,
+        "talk"
+       ],
+       [
+        0.5,
+        "cheer"
+       ]
+      ],
+      "f": 1,
+      "e": "joy",
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "crossArms",
+      "f": 1,
+      "e": "smirk"
+     }
+    ],
+    "items": [
+     {
+      "n": "note",
+      "x": 0.58,
+      "y": 0.42,
+      "s": 1,
+      "bob": 20
+     },
+     {
+      "n": "note",
+      "x": 0.64,
+      "y": 0.36,
+      "s": 0.8,
+      "bob": 16,
+      "seed": 3
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 254.81,
+   "end": 259.35
+  },
+  {
+   "id": "s085",
+   "line": "Строгая женщина из соседнего подъезда кормит бездомных кошек и разговаривает с ними по именам.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "STRICT",
+      "x": 0.5,
+      "p": "crouch",
+      "f": 1,
+      "e": "smile",
+      "talk": true
+     }
+    ],
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "cat",
+      "x": 0.58,
+      "y": 0.8,
+      "s": 1
+     },
+     {
+      "n": "cat",
+      "x": 0.64,
+      "y": 0.82,
+      "s": 0.9,
+      "o": {
+       "color": "#c8904a"
+      }
+     },
+     {
+      "n": "cat",
+      "x": 0.42,
+      "y": 0.81,
+      "s": 1,
+      "o": {
+       "color": "#8a8a90"
+      }
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 259.35,
+   "end": 265.03
+  },
+  {
+   "id": "s086",
+   "line": "Люди без зрителей гораздо смешнее, добрее и страннее, чем ты думал.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "relaxed",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "phone",
+      "f": 1,
+      "e": "smile",
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.72,
+      "p": "wave",
+      "f": -1,
+      "e": "happy",
+      "seed": 2
+     }
+    ],
+    "s": "w",
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "pull"
+   },
+   "start": 265.03,
+   "end": 270.53
+  },
+  {
+   "id": "s087",
+   "line": "И тогда ты придумываешь себе игру – быть невидимым добрым духом.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "pointUp",
+      "f": 1,
+      "e": "joy"
+     }
+    ],
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "push",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 270.53,
+   "end": 275.39
+  },
+  {
+   "id": "s088",
+   "line": "У женщины на остановке выпадает кошелёк, и через",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "WOMAN",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "neutral",
+      "hold": {
+       "n": "handbag",
+       "s": 0.5,
+       "dy": 30
+      }
+     }
+    ],
+    "so": {
+     "stop": true,
+     "stopX": -460
+    },
+    "items": [
+     {
+      "n": "wallet",
+      "x": 0.48,
+      "y": 0.6,
+      "s": 0.8,
+      "path": [
+       [
+        0,
+        0.48,
+        0.66,
+        0
+       ],
+       [
+        0.6,
+        0.5,
+        0.8,
+        0.8
+       ],
+       [
+        1,
+        0.5,
+        0.8,
+        0.8
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 275.39,
+   "end": 278.13
+  },
+  {
+   "id": "s089",
+   "line": "секунду он сам возвращается к ней в сумку.",
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "WOMAN",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised",
+      "hold": {
+       "n": "handbag",
+       "s": 0.5,
+       "dy": 30
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.53,
+      "p": "crouch",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "stop": true,
+     "stopX": -460
+    },
+    "items": [
+     {
+      "n": "wallet",
+      "x": 0.5,
+      "y": 0.8,
+      "s": 0.8,
+      "path": [
+       [
+        0,
+        0.5,
+        0.8,
+        0.8
+       ],
+       [
+        0.7,
+        0.475,
+        0.62,
+        0
+       ],
+       [
+        1,
+        0.475,
+        0.62,
+        0
+       ]
+      ],
+      "show": [
+       0,
+       0.75
+      ]
+     }
+    ]
+   },
+   "start": 278.13,
+   "end": 280.43
+  },
+  {
+   "id": "s090",
+   "line": "Бабушка не может дотянуться до верхней полки в",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "store",
+   "scene": "scene:store",
+   "params": {
+    "tpl": "scene",
+    "set": "store",
+    "actors": [
+     {
+      "c": "OLD",
+      "x": 0.5,
+      "p": "reach",
+      "f": 1,
+      "e": "worried",
+      "hold": {
+       "n": "basket",
+       "s": 0.45,
+       "dy": 160
+      }
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 280.43,
+   "end": 283.35
+  },
+  {
+   "id": "s091",
+   "line": "магазине, и пачка гречки сама ложится ей в корзину.",
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "store",
+   "scene": "scene:store",
+   "params": {
+    "tpl": "scene",
+    "set": "store",
+    "actors": [
+     {
+      "c": "OLD",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised"
+     },
+     {
+      "c": "A",
+      "x": 0.6,
+      "p": "reach",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "items": [
+     {
+      "n": "basket",
+      "x": 0.53,
+      "y": 0.7,
+      "s": 0.8
+     },
+     {
+      "n": "buckwheat",
+      "x": 0.6,
+      "y": 0.3,
+      "s": 0.8,
+      "path": [
+       [
+        0,
+        0.62,
+        0.3,
+        0
+       ],
+       [
+        0.7,
+        0.53,
+        0.64,
+        0.2
+       ],
+       [
+        1,
+        0.53,
+        0.64,
+        0.2
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 283.35,
+   "end": 287.21
+  },
+  {
+   "id": "s092",
+   "line": "Малыш раняет в лужу шапку, и шапка сама прыгает обратно ему на голову.",
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "insert:street",
+   "params": {
+    "tpl": "insert",
+    "set": "street",
+    "items": [
+     {
+      "n": "puddle",
+      "x": 0.5,
+      "y": 0.8,
+      "s": 1.6
+     },
+     {
+      "n": "hat",
+      "x": 0.5,
+      "y": 0.78,
+      "s": 2,
+      "path": [
+       [
+        0,
+        0.5,
+        0.79,
+        0
+       ],
+       [
+        0.4,
+        0.5,
+        0.78,
+        0
+       ],
+       [
+        0.8,
+        0.52,
+        0.05,
+        0.3
+       ],
+       [
+        1,
+        0.52,
+        -0.2,
+        0.3
+       ]
+      ]
+     }
+    ],
+    "so": {
+     "mood": "day"
+    }
+   },
+   "start": 287.21,
+   "end": 291.85
+  },
+  {
+   "id": "s093",
+   "line": "Малыш в восторге, его мама не очень.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "WOMAN",
+      "x": 0.55,
+      "p": "handsOnHead",
+      "f": -1,
+      "e": "shocked"
+     },
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "shrug",
+      "f": 1,
+      "e": "smirk"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 291.85,
+   "end": 295.17
+  },
+  {
+   "id": "s094",
+   "line": "Но очень скоро ты понимаешь главную опасность – тебя никто не видит.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "worried"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.15,
+       0.85
+      ],
+      "run": true
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.6,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.1
+      ],
+      "run": true,
+      "seed": 2
+     }
+    ],
+    "s": "w",
+    "cam": "roll"
+   },
+   "start": 295.17,
+   "end": 300.19
+  },
+  {
+   "id": "s095",
+   "line": "Водители, велосипедисты, прохожие уткнувшиеся в телефоны.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "carpass",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.6
+      ],
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.6,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.9,
+       0.4
+      ],
+      "prop": "phone",
+      "seed": 2
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.8,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.7,
+       1.0
+      ],
+      "prop": "phone",
+      "seed": 3
+     }
+    ],
+    "items": [
+     {
+      "n": "car",
+      "x": 0.5,
+      "y": 0.86,
+      "s": 1.4,
+      "path": [
+       [
+        0,
+        -0.2,
+        0.86,
+        0
+       ],
+       [
+        1,
+        1.2,
+        0.86,
+        0
+       ]
+      ]
+     }
+    ],
+    "s": "w",
+    "cam": "slow"
+   },
+   "start": 300.19,
+   "end": 304.63
+  },
+  {
+   "id": "s096",
+   "line": "Тебя толкает, на тебя наступает, а на переходе",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "fall",
+      "f": -1,
+      "e": "shocked"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.42,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.3,
+       0.6
+      ],
+      "prop": "phone"
+     }
+    ],
+    "cam": "shake"
+   },
+   "start": 304.63,
+   "end": 307.33
+  },
+  {
+   "id": "s097",
+   "line": "машина чуть не сбивает человека, которого как будто нет.",
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "carpass",
+     "gain": -6
+    },
+    {
+     "at": 0.45,
+     "name": "whoosh",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.55,
+      "p": "ready",
+      "f": -1,
+      "e": "scared",
+      "dy": 0.12
+     }
+    ],
+    "items": [
+     {
+      "n": "car",
+      "x": 0.5,
+      "y": 0.94,
+      "s": 1.6,
+      "path": [
+       [
+        0,
+        -0.3,
+        0.94,
+        0
+       ],
+       [
+        0.5,
+        0.45,
+        0.94,
+        0
+       ],
+       [
+        1,
+        1.4,
+        0.94,
+        0
+       ]
+      ]
+     }
+    ],
+    "so": {
+     "red": false
+    },
+    "cam": "shake"
+   },
+   "start": 307.33,
+   "end": 310.89
+  },
+  {
+   "id": "s098",
+   "line": "Решение придумывает мама – яркий, желтый зонд.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.5,
+      "p": "holdFront",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "umbrella",
+       "s": 0.55,
+       "dy": 40
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "stand",
+      "f": -1,
+      "e": "surprised"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 310.89,
+   "end": 315.07
+  },
+  {
+   "id": "s099",
+   "line": "Вещи в твоих руках видно, значит видно его.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "holdFront",
+      "f": 1,
+      "e": "happy",
+      "hold": {
+       "n": "umbrella",
+       "s": 0.55,
+       "dy": 40
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ]
+    },
+    "ui": [
+     {
+      "k": "callout",
+      "at2": [
+       0.5,
+       0.35
+      ],
+      "to": [
+       0.68,
+       0.2
+      ],
+      "str": "ВИДНО!",
+      "at": 0.3
+     }
+    ]
+   },
+   "start": 315.07,
+   "end": 319.03
+  },
+  {
+   "id": "s100",
+   "line": "И вот по улице идёт зонд – сам.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.6
+      ],
+      "hold": {
+       "n": "umbrella",
+       "s": 0.55,
+       "dy": 40
+      }
+     }
+    ],
+    "s": "w",
+    "cam": "left",
+    "so": {
+     "mood": "golden"
+    }
+   },
+   "start": 319.03,
+   "end": 321.61
+  },
+  {
+   "id": "s101",
+   "line": "Останавливается на светофоре, вежливо пропускает бабушек.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.3,
+       0.58
+      ],
+      "wk": [
+       0,
+       0.3
+      ],
+      "hold": {
+       "n": "umbrella",
+       "s": 0.55,
+       "dy": 40
+      }
+     },
+     {
+      "c": "OLD",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.66
+      ],
+      "wk": [
+       0.3,
+       1
+      ]
+     },
+     {
+      "c": "OLD",
+      "x": 0.85,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       1.1,
+       0.8
+      ],
+      "wk": [
+       0.4,
+       1
+      ],
+      "seed": 4
+     }
+    ],
+    "s": "w",
+    "so": {
+     "mood": "golden",
+     "red": true,
+     "lightX": 200
+    },
+    "cam": "slow"
+   },
+   "start": 321.61,
+   "end": 325.25
+  },
+  {
+   "id": "s102",
+   "line": "Через два дня в интернете уже верусится видео «Призрак с зонтом».",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "counter",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "insert:living",
+   "params": {
+    "tpl": "insert",
+    "set": "living",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.5,
+      "y": 0.95,
+      "s": 1.9,
+      "o": {
+       "name": "ПРИЗРАК С ЗОНТОМ",
+       "sub": "▶ видео"
+      }
+     }
+    ],
+    "ui": [
+     {
+      "k": "counter",
+      "label": "ПРОСМОТРЫ",
+      "from": 0,
+      "to": 2000000,
+      "x": 0.78,
+      "y": 0.5,
+      "size": 64,
+      "d": 1.8
+     }
+    ]
+   },
+   "start": 325.25,
+   "end": 329.45
+  },
+  {
+   "id": "s103",
+   "line": "Блогеры спорят, где там леска.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "insert:living",
+   "params": {
+    "tpl": "insert",
+    "set": "living",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.5,
+      "y": 0.95,
+      "s": 1.9,
+      "o": {
+       "name": "ГДЕ ТАМ ЛЕСКА?",
+       "sub": "комментарии"
+      }
+     }
+    ]
+   },
+   "start": 329.45,
+   "end": 331.43
+  },
+  {
+   "id": "s104",
+   "line": "Кто -то пишет, что это реклама фильма ужасов.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "insert:living",
+   "params": {
+    "tpl": "insert",
+    "set": "living",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.5,
+      "y": 0.95,
+      "s": 1.9,
+      "o": {
+       "name": "РЕКЛАМА ФИЛЬМА УЖАСОВ",
+       "sub": "комментарии"
+      }
+     }
+    ]
+   },
+   "start": 331.43,
+   "end": 333.61
+  },
+  {
+   "id": "s105",
+   "line": "А ты стоишь на остановке и слушаешь, как две школьницы на полном серьёзе обсуждают.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "GIRL",
+      "x": 0.42,
+      "p": "talk",
+      "f": 1,
+      "e": "surprised",
+      "talk": true
+     },
+     {
+      "c": "GIRL",
+      "x": 0.56,
+      "p": "explain",
+      "f": -1,
+      "e": "awe",
+      "seed": 3
+     },
+     {
+      "c": "A",
+      "x": 0.7,
+      "p": "stand",
+      "f": -1,
+      "e": "smirk",
+      "hold": {
+       "n": "umbrella",
+       "s": 0.5,
+       "dy": 40,
+       "o": {
+        "open": 0.1
+       }
+      }
+     }
+    ],
+    "so": {
+     "stop": true,
+     "stopX": 0,
+     "light": false
+    },
+    "cam": "push"
+   },
+   "start": 333.61,
+   "end": 338.77
+  },
+  {
+   "id": "s106",
+   "line": "«Призрак ты» или «Инопланетянин».",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "GIRL",
+      "x": 0.42,
+      "p": "talk",
+      "f": 1,
+      "e": "surprised",
+      "talk": true
+     },
+     {
+      "c": "GIRL",
+      "x": 0.56,
+      "p": "explain",
+      "f": -1,
+      "e": "awe",
+      "seed": 3
+     },
+     {
+      "c": "A",
+      "x": 0.7,
+      "p": "stand",
+      "f": -1,
+      "e": "smirk"
+     }
+    ],
+    "so": {
+     "stop": true,
+     "stopX": 0,
+     "light": false
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    },
+    "ui": [
+     {
+      "k": "quote",
+      "str": "ПРИЗРАК?",
+      "x": 0.34,
+      "y": 0.24,
+      "w": 300,
+      "h": 100
+     },
+     {
+      "k": "quote",
+      "str": "ИНОПЛАНЕТЯНИН!",
+      "x": 0.64,
+      "y": 0.2,
+      "w": 420,
+      "h": 100,
+      "at": 0.4
+     }
+    ]
+   },
+   "start": 338.77,
+   "end": 341.59
+  },
+  {
+   "id": "s107",
+   "line": "Кстати, кое -кто видит тебя прекрасно – собаки.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "mood": "day",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.6,
+      "y": 0.82,
+      "s": 1,
+      "path": [
+       [
+        0,
+        0.85,
+        0.82,
+        0
+       ],
+       [
+        1,
+        0.5,
+        0.82,
+        0
+       ]
+      ],
+      "o": {
+       "tongue": true
+      }
+     }
+    ],
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 341.59,
+   "end": 345.07
+  },
+  {
+   "id": "s108",
+   "line": "Дворовой пёсу подъезда каждый раз радостно бежит к тебе и тычется носом в ладонь.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "crouch",
+      "f": 1,
+      "e": "happy"
+     }
+    ],
+    "so": {
+     "mood": "day",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.5,
+      "y": 0.82,
+      "s": 1,
+      "o": {
+       "jump": true,
+       "tongue": true
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ],
+     "x": -60
+    }
+   },
+   "start": 345.07,
+   "end": 349.99
+  },
+  {
+   "id": "s109",
+   "line": "Ему без разницы видно тебя или нет.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "insert:yard",
+   "params": {
+    "tpl": "insert",
+    "set": "yard",
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.42,
+      "y": 0.9,
+      "s": 2.6,
+      "o": {
+       "tongue": true
+      }
+     }
+    ],
+    "so": {
+     "mood": "day",
+     "car": false
+    }
+   },
+   "start": 349.99,
+   "end": 352.61
+  },
+  {
+   "id": "s110",
+   "line": "Собаки живут в мире запахов, и для него ты пахнешь точно так же, как раньше.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "smell"
+   },
+   "start": 352.61,
+   "end": 357.31
+  },
+  {
+   "id": "s111",
+   "line": "Самый честный свидетель твоего существования.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "crouch",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.55,
+      "y": 0.82,
+      "s": 1,
+      "o": {
+       "tongue": true
+      }
+     }
+    ],
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 357.31,
+   "end": 360.39
+  },
+  {
+   "id": "s112",
+   "line": "Однажды вечером Лёха, конечно, шутит.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.56,
+      "p": "explain",
+      "f": -1,
+      "e": "smirk",
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "relaxed",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "sky": "night"
+    },
+    "cam": "push"
+   },
+   "start": 360.39,
+   "end": 362.45
+  },
+  {
+   "id": "s113",
+   "line": "«Слушай, а ты мог бы в кино бесплатно ходить, или",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "smirk",
+    "set": "living",
+    "so": {
+     "sky": "night"
+    },
+    "talk": true
+   },
+   "start": 362.45,
+   "end": 365.45
+  },
+  {
+   "id": "s114",
+   "line": "в кассу банка заглянуть ?» Ты смеёшься, но мысль остаётся.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "thinking",
+    "set": "living",
+    "so": {
+     "sky": "night"
+    }
+   },
+   "start": 365.45,
+   "end": 370.27
+  },
+  {
+   "id": "s115",
+   "line": "Этому вопросу больше двух тысяч лет.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "counter",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "years"
+   },
+   "start": 370.27,
+   "end": 373.07
+  },
+  {
+   "id": "s116",
+   "line": "Древнегреческий философ Платон рассказывал историю про",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "greece",
+   "scene": "scene:greece",
+   "params": {
+    "tpl": "scene",
+    "set": "greece",
+    "actors": [
+     {
+      "c": "PLATO",
+      "x": 0.4,
+      "p": "explain",
+      "f": 1,
+      "e": "thinking",
+      "talk": true
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 373.07,
+   "end": 376.35
+  },
+  {
+   "id": "s117",
+   "line": "пустуха Дига, который нашёл кольцо невидимости.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "greece",
+   "scene": "scene:greece",
+   "params": {
+    "tpl": "scene",
+    "set": "greece",
+    "actors": [
+     {
+      "c": "SHEPHERD",
+      "x": 0.4,
+      "p": "crouch",
+      "f": 1,
+      "e": "awe"
+     }
+    ],
+    "items": [
+     {
+      "n": "ring",
+      "x": 0.5,
+      "y": 0.79,
+      "s": 0.8,
+      "glow": "#ffd47e"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.25
+     ]
+    }
+   },
+   "start": 376.35,
+   "end": 379.55
+  },
+  {
+   "id": "s118",
+   "line": "И честный постух сразу превратился в преступника.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "greece",
+   "scene": "scene:greece",
+   "params": {
+    "tpl": "scene",
+    "set": "greece",
+    "actors": [
+     {
+      "c": "SHEPHERD",
+      "x": 0.45,
+      "p": "crossArms",
+      "f": 1,
+      "e": "smirk"
+     }
+    ],
+    "cam": "roll"
+   },
+   "start": 379.55,
+   "end": 382.69
+  },
+  {
+   "id": "s119",
+   "line": "Обманул, предал, захватил царскую власть.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "greece",
+   "scene": "scene:greece",
+   "params": {
+    "tpl": "scene",
+    "set": "greece",
+    "actors": [
+     {
+      "c": "SHEPHERD",
+      "x": 0.45,
+      "p": "cheer",
+      "f": 1,
+      "e": "angry"
+     }
+    ],
+    "items": [
+     {
+      "n": "crown",
+      "x": 0.47,
+      "y": 0.42,
+      "s": 0.8,
+      "bob": 6
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 382.69,
+   "end": 386.21
+  },
+  {
+   "id": "s120",
+   "line": "Платон спрашивал, а остался бы честным хоть кто -нибудь, если бы его никто не видел.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "greece",
+   "scene": "scene:greece",
+   "params": {
+    "tpl": "scene",
+    "set": "greece",
+    "actors": [
+     {
+      "c": "PLATO",
+      "x": 0.45,
+      "p": "think",
+      "f": 1,
+      "e": "thinking"
+     }
+    ],
+    "cam": "slow"
+   },
+   "start": 386.21,
+   "end": 392.17
+  },
+  {
+   "id": "s121",
+   "line": "Современные психологи проверили это на простых вещах.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "lab",
+   "scene": "scene:lab",
+   "params": {
+    "tpl": "scene",
+    "set": "lab",
+    "actors": [
+     {
+      "c": "DOC",
+      "x": 0.4,
+      "p": "explain",
+      "f": 1,
+      "e": "thinking"
+     },
+     {
+      "c": "DOC",
+      "x": 0.56,
+      "p": "holdFront",
+      "f": -1,
+      "e": "neutral",
+      "prop": "tablet",
+      "seed": 2
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 392.17,
+   "end": 395.57
+  },
+  {
+   "id": "s122",
+   "line": "В одном британском университете на кухне стояла касса честности.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "none"
+   },
+   "start": 395.57,
+   "end": 399.89
+  },
+  {
+   "id": "s123",
+   "line": "Берёшь чай или кофе, сам кладёшь деньги в коробку.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "none",
+    "money": true
+   },
+   "start": 399.89,
+   "end": 403.17
+  },
+  {
+   "id": "s124",
+   "line": "Навкоробкой учёные вешали картинку.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "flowers"
+   },
+   "start": 403.17,
+   "end": 405.37
+  },
+  {
+   "id": "s125",
+   "line": "Одну неделю цветы, другую, пару человеческих глаз.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "both"
+   },
+   "start": 405.37,
+   "end": 409.15
+  },
+  {
+   "id": "s126",
+   "line": "И в неделе с глазами люди платили почти в три раза больше.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "bars"
+   },
+   "start": 409.15,
+   "end": 412.93
+  },
+  {
+   "id": "s127",
+   "line": "Это были даже не настоящие глаза, просто картинка.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "honesty",
+    "pic": "eyes"
+   },
+   "start": 412.93,
+   "end": 416.65
+  },
+  {
+   "id": "s128",
+   "line": "Получается, честность у многих держится на ощущении, что на тебя смотрит.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "card:street",
+   "params": {
+    "tpl": "card",
+    "str": "КТО-ТО СМОТРИТ",
+    "set": "street",
+    "sub": "НА ЭТОМ ДЕРЖИТСЯ ЧЕСТНОСТЬ"
+   },
+   "bars": "scope",
+   "start": 416.65,
+   "end": 420.99
+  },
+  {
+   "id": "s129",
+   "line": "А на тебя теперь не смотрит вообще никто.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.45
+      ]
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.9,
+       0.6
+      ],
+      "seed": 2
+     }
+    ],
+    "s": "w",
+    "so": {
+     "mood": "dusk"
+    },
+    "cam": "pull"
+   },
+   "start": 420.99,
+   "end": 424.31
+  },
+  {
+   "id": "s130",
+   "line": "Ты долго думаешь об этом, а потом понимаешь, честность — это не про то, видит тебя или нет.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bedroom",
+   "scene": "scene:bedroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bedroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "sit",
+      "f": 1,
+      "e": "thinking",
+      "dy": -0.03,
+      "chair": false
+     }
+    ],
+    "so": {
+     "lamp": true
+    },
+    "cam": "push"
+   },
+   "start": 424.31,
+   "end": 430.59
+  },
+  {
+   "id": "s131",
+   "line": "Это про то, с каким человеком ты потом остаёшься наедине.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "thinking"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "cam": {
+     "k": "push",
+     "x": 140
+    }
+   },
+   "start": 430.59,
+   "end": 435.81
+  },
+  {
+   "id": "s132",
+   "line": "В кино ты всё -таки идёшь, но билет покупаешь.",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "cinema",
+   "scene": "scene:cinema",
+   "params": {
+    "tpl": "scene",
+    "set": "cinema",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.44,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 435.81,
+   "end": 439.13
+  },
+  {
+   "id": "s133",
+   "line": "Кассирша долго смотрит, как деньги сами ложатся в окошко.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "cinema",
+   "scene": "scene:cinema",
+   "params": {
+    "tpl": "scene",
+    "set": "cinema",
+    "actors": [],
+    "items": [
+     {
+      "n": "money",
+      "x": 0.5,
+      "y": 0.6,
+      "s": 0.9,
+      "path": [
+       [
+        0,
+        0.42,
+        0.62,
+        0
+       ],
+       [
+        0.7,
+        0.5,
+        0.62,
+        0
+       ],
+       [
+        1,
+        0.5,
+        0.62,
+        0
+       ]
+      ]
+     }
+    ],
+    "cam": {
+     "k": "slow",
+     "z": [
+      1.8,
+      1.9
+     ],
+     "x": 0,
+     "y": -200
+    }
+   },
+   "start": 439.13,
+   "end": 442.71
+  },
+  {
+   "id": "s134",
+   "line": "На 14 день у Лёхи день рождения.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "cheer",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.5,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "relaxed",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "wave",
+      "f": -1,
+      "e": "happy",
+      "seed": 3
+     }
+    ],
+    "s": "w",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 14"
+     }
+    ]
+   },
+   "start": 442.71,
+   "end": 445.65
+  },
+  {
+   "id": "s135",
+   "line": "Друзья Лёхи уже в курсе, и через полчаса перестают",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "handsOnHead",
+      "f": 1,
+      "e": "shocked"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "crossArms",
+      "f": -1,
+      "e": "surprised",
+      "seed": 3
+     },
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      }
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 445.65,
+   "end": 448.61
+  },
+  {
+   "id": "s136",
+   "line": "сдрагивать от бокала, который сам по себе плавает над столом.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "relaxed",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "talk",
+      "f": -1,
+      "e": "smile",
+      "seed": 3
+     },
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      }
+     },
+     {
+      "c": "L",
+      "x": 0.62,
+      "p": "relaxed",
+      "f": -1,
+      "e": "happy"
+     }
+    ],
+    "cam": "slow"
+   },
+   "start": 448.61,
+   "end": 452.43
+  },
+  {
+   "id": "s137",
+   "line": "И тут ты замечаешь в себе странное.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "face:party",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "thinking",
+    "set": "party"
+   },
+   "start": 452.43,
+   "end": 454.77
+  },
+  {
+   "id": "s138",
+   "line": "Ты никогда не любил говорить тосты.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "nervous",
+      "vis": true,
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      }
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "relaxed",
+      "f": 1,
+      "e": "neutral"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "relaxed",
+      "f": -1,
+      "e": "neutral",
+      "seed": 3
+     }
+    ],
+    "ghost": false,
+    "cam": "push",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "РАНЬШЕ"
+     }
+    ]
+   },
+   "start": 454.77,
+   "end": 456.91
+  },
+  {
+   "id": "s139",
+   "line": "Краснел, сбивался, мямлял, а",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "face:party",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "nervous",
+    "set": "party",
+    "ghost": false,
+    "ui": [
+     {
+      "k": "badge",
+      "str": "РАНЬШЕ"
+     }
+    ]
+   },
+   "start": 456.91,
+   "end": 459.13
+  },
+  {
+   "id": "s140",
+   "line": "сейчас встаёшь и говоришь.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "determined",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      },
+      "voice": true
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "relaxed",
+      "f": 1,
+      "e": "surprised"
+     },
+     {
+      "c": "L",
+      "x": 0.68,
+      "p": "relaxed",
+      "f": -1,
+      "e": "surprised"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 459.13,
+   "end": 461.33
+  },
+  {
+   "id": "s141",
+   "line": "Долго, честно, по -настоящему.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      },
+      "voice": true
+     },
+     {
+      "c": "L",
+      "x": 0.66,
+      "p": "relaxed",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ]
+    }
+   },
+   "start": 461.33,
+   "end": 464.11
+  },
+  {
+   "id": "s142",
+   "line": "Про то, как вы в 7 -м классе вместе прогуляли контрольную.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.7
+      ],
+      "run": true,
+      "vis": true
+     },
+     {
+      "c": "L",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.12,
+       0.62
+      ],
+      "run": true
+     }
+    ],
+    "ghost": false,
+    "s": "w",
+    "so": {
+     "mood": "day"
+    },
+    "cam": "left",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "7 КЛАСС"
+     }
+    ]
+   },
+   "start": 464.11,
+   "end": 467.31
+  },
+  {
+   "id": "s143",
+   "line": "Про то, как Лёха все эти две недели приходил каждый вечер.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.66,
+      "p": "stand",
+      "f": -1,
+      "walk": [
+       0.78,
+       0.58
+      ],
+      "hold": {
+       "n": "bag2",
+       "s": 0.6
+      }
+     }
+    ],
+    "so": {
+     "open": 0.7,
+     "mood": "night"
+    },
+    "cam": "push"
+   },
+   "start": 467.31,
+   "end": 470.75
+  },
+  {
+   "id": "s144",
+   "line": "Про то, что без него ты бы сейчас сошёл с ума.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "toast",
+      "f": 1,
+      "e": "sad",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      },
+      "voice": true
+     },
+     {
+      "c": "L",
+      "x": 0.6,
+      "p": "stand",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    }
+   },
+   "start": 470.75,
+   "end": 474.23
+  },
+  {
+   "id": "s145",
+   "line": "Гости молчат.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": -1,
+      "e": "sad",
+      "seed": 3
+     },
+     {
+      "c": "L",
+      "x": 0.6,
+      "p": "stand",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "A",
+      "x": 0.48,
+      "p": "stand",
+      "f": 1,
+      "e": "neutral",
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      }
+     }
+    ],
+    "s": "w",
+    "cam": "slow"
+   },
+   "start": 474.23,
+   "end": 475.63
+  },
+  {
+   "id": "s146",
+   "line": "Лёха отворачивается к окну и делает вид, что ему что -то попало в глаз.",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.62,
+      "p": "facepalm",
+      "f": 1,
+      "e": "cry"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ],
+     "x": 160
+    }
+   },
+   "start": 475.63,
+   "end": 480.19
+  },
+  {
+   "id": "s147",
+   "line": "И у этого тоже есть научное объяснение. Шведские учёные с помощью очков виртуальной реальности создавали у добровольцев иллюзию, что у них невидимое тело.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "vr"
+   },
+   "start": 480.19,
+   "end": 490.23
+  },
+  {
+   "id": "s148",
+   "line": "Человек смотрел вниз и не видел себя.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "lab",
+   "scene": "scene:lab",
+   "params": {
+    "tpl": "scene",
+    "set": "lab",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.5,
+      "p": "sad",
+      "f": 1,
+      "e": "confused",
+      "prop": null
+     }
+    ],
+    "items": [
+     {
+      "n": "vr",
+      "x": 0.505,
+      "y": 0.475,
+      "s": 0.55
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 490.23,
+   "end": 493.05
+  },
+  {
+   "id": "s149",
+   "line": "А потом его ставили перед строгой публикой.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "lab",
+   "scene": "scene:lab",
+   "params": {
+    "tpl": "scene",
+    "set": "lab",
+    "actors": [
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "e": "nervous"
+     },
+     {
+      "c": "BOSS",
+      "x": 0.56,
+      "p": "crossArms",
+      "f": -1,
+      "e": "angry"
+     },
+     {
+      "c": "BOSS",
+      "x": 0.68,
+      "p": "crossArms",
+      "f": -1,
+      "e": "angry",
+      "seed": 2
+     },
+     {
+      "c": "BOSS",
+      "x": 0.8,
+      "p": "crossArms",
+      "f": -1,
+      "e": "angry",
+      "seed": 3
+     }
+    ],
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 493.05,
+   "end": 495.59
+  },
+  {
+   "id": "s150",
+   "line": "И выяснилось, у тех, кто чувствовал себя невидимым, сердце билось спокойнее, а стресс перед публикой был ниже.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "heart"
+   },
+   "start": 495.59,
+   "end": 503.05
+  },
+  {
+   "id": "s151",
+   "line": "Когда нам кажется, что на нас не смотрят, мы перестаём бояться.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "lab",
+   "scene": "card:lab",
+   "params": {
+    "tpl": "card",
+    "str": "НЕ СМОТРЯТ — НЕ СТРАШНО",
+    "set": "lab"
+   },
+   "bars": "scope",
+   "start": 503.05,
+   "end": 507.63
+  },
+  {
+   "id": "s152",
+   "line": "С работой ты договорился.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.18,
+      "p": "sit",
+      "f": 1,
+      "e": "neutral"
+     }
+    ],
+    "items": [
+     {
+      "n": "laptop",
+      "x": 0.25,
+      "y": 0.53,
+      "s": 0.5
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "x": -380
+    }
+   },
+   "start": 507.63,
+   "end": 509.57
+  },
+  {
+   "id": "s153",
+   "line": "Болеешь, работаешь из дома, без камеры.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.18,
+      "p": "sit",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "items": [
+     {
+      "n": "laptop",
+      "x": 0.25,
+      "y": 0.53,
+      "s": 0.5
+     }
+    ],
+    "cam": {
+     "k": "slow",
+     "x": -380
+    },
+    "ui": [
+     {
+      "k": "readout",
+      "label": "КАМЕРА:",
+      "value": "ВЫКЛ",
+      "at": 0.2,
+      "color": "#ff6f61"
+     }
+    ]
+   },
+   "start": 509.57,
+   "end": 512.61
+  },
+  {
+   "id": "s154",
+   "line": "На 16 -й день общее совещание по видеосвязи.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": -1,
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 16"
+     }
+    ]
+   },
+   "start": 512.61,
+   "end": 516.31
+  },
+  {
+   "id": "s155",
+   "line": "Ты отходишь налить чаю, а микрофон остается включённым.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.62
+      ],
+      "wk": [
+       0,
+       0.7
+      ]
+     }
+    ],
+    "items": [
+     {
+      "n": "laptop",
+      "x": 0.25,
+      "y": 0.53,
+      "s": 0.5
+     }
+    ],
+    "cam": {
+     "k": "right"
+    },
+    "ui": [
+     {
+      "k": "readout",
+      "label": "МИКРОФОН:",
+      "value": "ВКЛ",
+      "at": 0.4,
+      "color": "#5fd39a"
+     }
+    ]
+   },
+   "start": 516.31,
+   "end": 519.83
+  },
+  {
+   "id": "s156",
+   "line": "И коллеги думают, что ты отключился.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": -1,
+    "micOn": true
+   },
+   "start": 519.83,
+   "end": 522.31
+  },
+  {
+   "id": "s157",
+   "line": "Артём опять пропал, говорит кто -то.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": 2,
+    "micOn": true
+   },
+   "start": 522.31,
+   "end": 524.91
+  },
+  {
+   "id": "s158",
+   "line": "Да он вечно такой, фыркает коллегой из соседнего отдела, отсиживается.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": 3,
+    "micOn": true,
+    "spkE": "smirk"
+   },
+   "start": 524.91,
+   "end": 529.55
+  },
+  {
+   "id": "s159",
+   "line": "И вдруг вмешивается начальник.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": 1,
+    "micOn": true,
+    "spkE": "determined"
+   },
+   "start": 529.55,
+   "end": 531.75
+  },
+  {
+   "id": "s160",
+   "line": "Вообще -то половина проекта прошлой осенью держалась на нём.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "face:void",
+   "params": {
+    "tpl": "face",
+    "c": "BOSS",
+    "e": "determined",
+    "set": "void",
+    "talk": true
+   },
+   "start": 531.75,
+   "end": 534.95
+  },
+  {
+   "id": "s161",
+   "line": "Просто он об этом никогда не говорит.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "call:void",
+   "params": {
+    "tpl": "call",
+    "speaker": 1,
+    "micOn": true,
+    "spkE": "smile"
+   },
+   "start": 534.95,
+   "end": 537.75
+  },
+  {
+   "id": "s162",
+   "line": "Ты стоишь посреди кухни, чашка висит в воздухе и чуть дрожит.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.6,
+      "p": "holdFront",
+      "f": 1,
+      "e": "awe",
+      "hold": {
+       "n": "cup",
+       "s": 0.8
+      }
+     }
+    ],
+    "so": {
+     "noKettle": false
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.35
+     ],
+     "x": 120
+    }
+   },
+   "start": 537.75,
+   "end": 542.53
+  },
+  {
+   "id": "s163",
+   "line": "Ты три года думал, что начальник тебя вообще не замечает.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "face:kitchen",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "awe",
+    "set": "kitchen"
+   },
+   "start": 542.53,
+   "end": 546.31
+  },
+  {
+   "id": "s164",
+   "line": "На 18 -й день ты заходишь к родителям.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.7,
+       0.33
+      ],
+      "wk": [
+       0,
+       0.8
+      ]
+     }
+    ],
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "s": "w",
+    "cam": "left",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 18"
+     }
+    ]
+   },
+   "start": 546.31,
+   "end": 548.87
+  },
+  {
+   "id": "s165",
+   "line": "Поздно вечером идёшь на кухню попить воды и у двери замираешь.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.18,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.06,
+       0.2
+      ],
+      "wk": [
+       0,
+       0.5
+      ]
+     },
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "doorway": true
+    },
+    "cam": "push"
+   },
+   "start": 548.87,
+   "end": 553.07
+  },
+  {
+   "id": "s166",
+   "line": "Родители думают, что ты уже ушёл домой.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ],
+     "x": 250
+    }
+   },
+   "start": 553.07,
+   "end": 556.15
+  },
+  {
+   "id": "s167",
+   "line": "Я ведь ни разу ему не сказал, говорит папа.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "face:parents",
+   "params": {
+    "tpl": "face",
+    "c": "DAD",
+    "e": "sad",
+    "set": "parents",
+    "talk": true
+   },
+   "start": 556.15,
+   "end": 559.07
+  },
+  {
+   "id": "s168",
+   "line": "Голос у него хриплый.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad",
+      "talk": true
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ],
+     "x": 230
+    }
+   },
+   "start": 559.07,
+   "end": 560.55
+  },
+  {
+   "id": "s169",
+   "line": "Что горжусь им.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "face:parents",
+   "params": {
+    "tpl": "face",
+    "c": "DAD",
+    "e": "sad",
+    "set": "parents",
+    "talk": true,
+    "tilt": -0.05
+   },
+   "start": 560.55,
+   "end": 561.91
+  },
+  {
+   "id": "s170",
+   "line": "Всё думал потом, успеется, он же взрослый.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "thinking",
+      "talk": true
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": {
+     "k": "slow",
+     "z": 1.2,
+     "x": 240
+    }
+   },
+   "start": 561.91,
+   "end": 564.59
+  },
+  {
+   "id": "s171",
+   "line": "А теперь, а если он на совсем такой?",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "face:parents",
+   "params": {
+    "tpl": "face",
+    "c": "DAD",
+    "e": "worried",
+    "set": "parents",
+    "talk": true
+   },
+   "start": 564.59,
+   "end": 568.17
+  },
+  {
+   "id": "s172",
+   "line": "Мама молчит.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.25,
+      1.35
+     ],
+     "x": 420
+    }
+   },
+   "start": 568.17,
+   "end": 569.65
+  },
+  {
+   "id": "s173",
+   "line": "Ты слышишь, как она гладит его по руке.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "insert:parents",
+   "params": {
+    "tpl": "insert",
+    "set": "parents",
+    "items": [],
+    "hand": {
+     "c": "MOM",
+     "x0": 0.66,
+     "x1": 0.55,
+     "y0": 0.5,
+     "y1": 0.52,
+     "dir": -1
+    }
+   },
+   "start": 569.65,
+   "end": 572.07
+  },
+  {
+   "id": "s174",
+   "line": "Ты стоишь в дверях, а тебя не видно.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.17,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     },
+     {
+      "c": "DAD",
+      "x": 0.62,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "MOM",
+      "x": 0.79,
+      "p": "sit",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "doorway": true
+    },
+    "cam": {
+     "k": "push",
+     "x": -300
+    }
+   },
+   "start": 572.07,
+   "end": 574.31
+  },
+  {
+   "id": "s175",
+   "line": "Папа никогда не говорил таких вещей.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "face:parents",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "sad",
+    "set": "parents"
+   },
+   "start": 574.31,
+   "end": 576.63
+  },
+  {
+   "id": "s176",
+   "line": "Ни на выпускном, никогда",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy",
+      "vis": true
+     },
+     {
+      "c": "DAD",
+      "x": 0.6,
+      "p": "crossArms",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ВЫПУСКНОЙ"
+     }
+    ]
+   },
+   "start": 576.63,
+   "end": 577.99
+  },
+  {
+   "id": "s177",
+   "line": "ты получил первую работу.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "holdFront",
+      "f": 1,
+      "e": "happy",
+      "vis": true,
+      "prop": "paper"
+     },
+     {
+      "c": "DAD",
+      "x": 0.6,
+      "p": "crossArms",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "ghost": false,
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ПЕРВАЯ РАБОТА"
+     }
+    ]
+   },
+   "start": 577.99,
+   "end": 579.95
+  },
+  {
+   "id": "s178",
+   "line": "Ты всегда думал, что ему всё равно.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.17,
+      "p": "sad",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "doorway": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ],
+     "x": -420
+    }
+   },
+   "start": 579.95,
+   "end": 582.45
+  },
+  {
+   "id": "s179",
+   "line": "Ты тихо уходишь и впервые понимаешь, люди",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.36,
+       0.1
+      ]
+     }
+    ],
+    "so": {
+     "car": false
+    },
+    "s": "w",
+    "cam": "right"
+   },
+   "start": 582.45,
+   "end": 585.35
+  },
+  {
+   "id": "s180",
+   "line": "говорят о тебе, когда тебя нет рядом.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "card:yard",
+   "params": {
+    "tpl": "card",
+    "str": "ЛЮДИ ГОВОРЯТ О ТЕБЕ",
+    "set": "yard",
+    "so": {
+     "car": false
+    },
+    "sub": "КОГДА ТЕБЯ НЕТ РЯДОМ"
+   },
+   "bars": "scope",
+   "start": 585.35,
+   "end": 587.63
+  },
+  {
+   "id": "s181",
+   "line": "И иногда это совсем не то, чего ты боялся.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.55,
+      "p": "relaxed",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "car": false
+    },
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 587.63,
+   "end": 591.37
+  },
+  {
+   "id": "s182",
+   "line": "А на 20 -й день ты случайно слышишь Лёху.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.3,
+       0.5
+      ],
+      "wk": [
+       0,
+       0.6
+      ]
+     }
+    ],
+    "so": {
+     "sky": "night"
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 20"
+     }
+    ]
+   },
+   "start": 591.37,
+   "end": 594.03
+  },
+  {
+   "id": "s183",
+   "line": "Он стоит у тебя на балконе и говорит по телефону со своей мамой.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.4,
+      "p": "phone",
+      "f": -1,
+      "e": "neutral",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      },
+      "talk": true
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 594.03,
+   "end": 597.95
+  },
+  {
+   "id": "s184",
+   "line": "Думает, что ты в душе.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.4,
+      "p": "phone",
+      "f": -1,
+      "e": "neutral",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      },
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.66,
+      "p": "stand",
+      "f": -1,
+      "e": "surprised"
+     }
+    ],
+    "s": "w",
+    "cam": "slow"
+   },
+   "start": 597.95,
+   "end": 599.47
+  },
+  {
+   "id": "s185",
+   "line": "Мам, ну не приеду я в субботу.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "face:balcony",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "nervous",
+    "set": "balcony",
+    "talk": true,
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.82,
+      "y": 0.98,
+      "s": 1.3
+     }
+    ]
+   },
+   "start": 599.47,
+   "end": 601.49
+  },
+  {
+   "id": "s186",
+   "line": "Да, опять к Тёме. Нет, он не болеет.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.42,
+      "p": "phone",
+      "f": -1,
+      "e": "neutral",
+      "talk": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ]
+    }
+   },
+   "start": 601.49,
+   "end": 604.21
+  },
+  {
+   "id": "s187",
+   "line": "То есть, болеет? Мам, долго объяснять?",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "face:balcony",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "confused",
+    "set": "balcony",
+    "talk": true,
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.82,
+      "y": 0.98,
+      "s": 1.3
+     }
+    ]
+   },
+   "start": 604.21,
+   "end": 607.07
+  },
+  {
+   "id": "s188",
+   "line": "Просто ему сейчас плохо. Он бы для меня то же самое сделал.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.42,
+      "p": "phone",
+      "f": -1,
+      "e": "sad",
+      "talk": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.25,
+      1.4
+     ]
+    }
+   },
+   "start": 607.07,
+   "end": 611.07
+  },
+  {
+   "id": "s189",
+   "line": "Да, каждый вечер. Сколько надо, столько и буду.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "face:balcony",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "determined",
+    "set": "balcony",
+    "talk": true,
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.82,
+      "y": 0.98,
+      "s": 1.3
+     }
+    ]
+   },
+   "start": 611.07,
+   "end": 615.07
+  },
+  {
+   "id": "s190",
+   "line": "Ты тихо отходишь от двери.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.5,
+       0.28
+      ]
+     }
+    ],
+    "so": {
+     "sky": "night"
+    },
+    "cam": "left"
+   },
+   "start": 615.07,
+   "end": 617.03
+  },
+  {
+   "id": "s191",
+   "line": "Лёха никогда не говорит таких вещей в слух.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "face:living",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "sad",
+    "set": "living",
+    "so": {
+     "sky": "night"
+    }
+   },
+   "start": 617.03,
+   "end": 619.75
+  },
+  {
+   "id": "s192",
+   "line": "Он шутит,",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.5,
+      "p": "talk",
+      "f": -1,
+      "e": "smirk",
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.38,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ]
+   },
+   "start": 619.75,
+   "end": 620.51
+  },
+  {
+   "id": "s193",
+   "line": "роняет ключи, ворует",
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "ding",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "insert:hallway",
+   "params": {
+    "tpl": "insert",
+    "set": "hallway",
+    "items": [
+     {
+      "n": "keys",
+      "x": 0.5,
+      "y": 0.4,
+      "s": 2.4,
+      "path": [
+       [
+        0,
+        0.5,
+        0.4,
+        0
+       ],
+       [
+        0.6,
+        0.52,
+        0.8,
+        1.5
+       ],
+       [
+        1,
+        0.52,
+        0.8,
+        1.5
+       ]
+      ]
+     }
+    ]
+   },
+   "start": 620.51,
+   "end": 621.81
+  },
+  {
+   "id": "s194",
+   "line": "у тебя печенье.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "kitchen",
+   "scene": "scene:kitchen",
+   "params": {
+    "tpl": "scene",
+    "set": "kitchen",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.55,
+      "p": "holdFront",
+      "f": -1,
+      "e": "smirk",
+      "hold": {
+       "n": "cookie",
+       "s": 0.9
+      }
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    }
+   },
+   "start": 621.81,
+   "end": 622.77
+  },
+  {
+   "id": "s195",
+   "line": "А оказывается, ради тебя он уже почти три",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.64,
+      "p": "stand",
+      "f": -1,
+      "walk": [
+       0.78,
+       0.55
+      ],
+      "hold": {
+       "n": "bag2",
+       "s": 0.6
+      }
+     }
+    ],
+    "so": {
+     "open": 0.7,
+     "mood": "night"
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ПОЧТИ 3 НЕДЕЛИ"
+     }
+    ]
+   },
+   "start": 622.77,
+   "end": 625.75
+  },
+  {
+   "id": "s196",
+   "line": "недели отменяет свою жизнь и ни разу не пожаловался.",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "set": "balcony",
+   "scene": "scene:balcony",
+   "params": {
+    "tpl": "scene",
+    "set": "balcony",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.4,
+      "p": "stand",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "cam": "pull"
+   },
+   "start": 625.75,
+   "end": 630.53
+  },
+  {
+   "id": "s197",
+   "line": "На 22 -ю день тебя накрывает.",
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "sad",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ДЕНЬ 22"
+     }
+    ],
+    "cam": "roll"
+   },
+   "start": 630.53,
+   "end": 633.41
+  },
+  {
+   "id": "s198",
+   "line": "Ты не знаешь, что это закончится.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "cry",
+    "set": "bathroom",
+    "so": {
+     "mood": "night"
+    }
+   },
+   "start": 633.41,
+   "end": 635.69
+  },
+  {
+   "id": "s199",
+   "line": "Для тебя впереди вся жизнь",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [],
+    "so": {
+     "mood": "night"
+    },
+    "cam": {
+     "k": "slow",
+     "z": [
+      2.0,
+      2.1
+     ],
+     "x": 320,
+     "y": -560
+    }
+   },
+   "start": 635.69,
+   "end": 637.11
+  },
+  {
+   "id": "s200",
+   "line": "без лица в зеркале, без",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "s": "w",
+    "cam": "left"
+   },
+   "start": 637.11,
+   "end": 638.89
+  },
+  {
+   "id": "s201",
+   "line": "отражения в витрине, без фотографий.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "insert:bathroom",
+   "params": {
+    "tpl": "insert",
+    "set": "bathroom",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.5,
+      "y": 0.95,
+      "s": 1.9,
+      "o": {
+       "name": "КАМЕРА",
+       "sub": "в кадре никого"
+      }
+     }
+    ],
+    "so": {
+     "mood": "night"
+    }
+   },
+   "start": 638.89,
+   "end": 642.05
+  },
+  {
+   "id": "s202",
+   "line": "Ты стоишь перед зеркалом и думаешь, а ты вообще ещё есть?",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.36,
+      "p": "stand",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "cam": {
+     "k": "push",
+     "x": 140
+    },
+    "ui": [
+     {
+      "k": "line",
+      "str": "А ТЫ ВООБЩЕ ЕЩЁ ЕСТЬ?",
+      "at": 0.3,
+      "y": 0.16,
+      "size": 64
+     }
+    ]
+   },
+   "start": 642.05,
+   "end": 646.01
+  },
+  {
+   "id": "s203",
+   "line": "Если тебя никто не видит, даже ты сам.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "sad",
+    "set": "bathroom",
+    "so": {
+     "mood": "night"
+    },
+    "tilt": 0.08
+   },
+   "start": 646.01,
+   "end": 649.11
+  },
+  {
+   "id": "s204",
+   "line": "Лёха приходит без звонка, садится рядом на пол в ванной.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.58,
+      "p": "floorSit",
+      "f": -1,
+      "e": "sad"
+     },
+     {
+      "c": "A",
+      "x": 0.46,
+      "p": "floorSit",
+      "f": 1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "cam": "push"
+   },
+   "start": 649.11,
+   "end": 652.57
+  },
+  {
+   "id": "s205",
+   "line": "Молчит, потом толкает тебя плечом, туда, где, по его расчётам, твое плечо попадает.",
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "hit",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.56,
+      "p": [
+       [
+        0,
+        "floorSit"
+       ],
+       [
+        0.5,
+        "floorSit"
+       ]
+      ],
+      "f": -1,
+      "e": "smile",
+      "rot": -0.12
+     },
+     {
+      "c": "A",
+      "x": 0.46,
+      "p": "floorSit",
+      "f": 1,
+      "e": "surprised"
+     }
+    ],
+    "so": {
+     "mood": "night"
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ]
+    }
+   },
+   "start": 652.57,
+   "end": 658.63
+  },
+  {
+   "id": "s206",
+   "line": "Ты есть, Тём, я проверил.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "smile",
+    "set": "bathroom",
+    "so": {
+     "mood": "night"
+    },
+    "talk": true
+   },
+   "start": 658.63,
+   "end": 661.63
+  },
+  {
+   "id": "s207",
+   "line": "На 25 -ый день мама просит тебя заехать к бабушке.",
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "card:gran",
+   "params": {
+    "tpl": "card",
+    "str": "ДЕНЬ 25",
+    "set": "gran",
+    "sub": "К БАБУШКЕ"
+   },
+   "bars": "scope",
+   "start": 661.63,
+   "end": 665.41
+  },
+  {
+   "id": "s208",
+   "line": "Бабушка не знает про невидимость, ей сказали, что ты в командировке.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.62,
+      "p": "holdFront",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "A",
+      "x": 0.25,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "pies": 0
+    },
+    "cam": "push"
+   },
+   "start": 665.41,
+   "end": 669.39
+  },
+  {
+   "id": "s209",
+   "line": "Ты просто хочешь побыть рядом.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.2,
+      "p": "sit",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "GRAN",
+      "x": 0.66,
+      "p": "holdFront",
+      "f": 1,
+      "e": "happy"
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "x": -200
+    }
+   },
+   "start": 669.39,
+   "end": 671.39
+  },
+  {
+   "id": "s210",
+   "line": "Сидишь тихо в углу кухни, пока она печат пирожки и напевает.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.2,
+      "p": "sit",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "GRAN",
+      "x": 0.58,
+      "p": "talk",
+      "f": 1,
+      "e": "happy",
+      "talk": true
+     }
+    ],
+    "so": {
+     "pies": 6
+    },
+    "items": [
+     {
+      "n": "note",
+      "x": 0.62,
+      "y": 0.38,
+      "s": 1,
+      "bob": 18
+     },
+     {
+      "n": "note",
+      "x": 0.67,
+      "y": 0.32,
+      "s": 0.8,
+      "bob": 14,
+      "seed": 2
+     }
+    ],
+    "cam": "slow",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 671.39,
+   "end": 675.55
+  },
+  {
+   "id": "s211",
+   "line": "И тут звонит телефон.",
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "phonering",
+     "gain": -6
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "landline",
+      "x": 0.5,
+      "y": 0.75,
+      "s": 3,
+      "shake": 8
+     }
+    ],
+    "rings": [
+     0.5,
+     0.62
+    ]
+   },
+   "start": 675.55,
+   "end": 677.45
+  },
+  {
+   "id": "s212",
+   "line": "Бабушка берёт трубку и бледнеет.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": [
+       [
+        0,
+        "neutral"
+       ],
+       [
+        0.5,
+        "scared"
+       ]
+      ],
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.2,
+      "p": "sit",
+      "f": 1,
+      "e": "worried"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.25
+     ]
+    }
+   },
+   "start": 677.45,
+   "end": 680.07
+  },
+  {
+   "id": "s213",
+   "line": "Ты слышишь из трубки мужской голос, сдавленный, будто сквозь слёзы.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "handset",
+      "x": 0.5,
+      "y": 0.82,
+      "s": 2.2,
+      "rot": 0.4
+     }
+    ],
+    "rings": [
+     0.47,
+     0.4
+    ],
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 680.07,
+   "end": 684.89
+  },
+  {
+   "id": "s214",
+   "line": "Бабуль, это я, Тёма.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "scared",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    },
+    "ui": [
+     {
+      "k": "quote",
+      "str": "«Бабуль, это я, Тёма»",
+      "x": 0.78,
+      "y": 0.18,
+      "w": 520,
+      "h": 100
+     }
+    ]
+   },
+   "start": 684.89,
+   "end": 687.51
+  },
+  {
+   "id": "s215",
+   "line": "Я в аварию попал, человек избил.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "shocked",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.25,
+      1.4
+     ],
+     "x": -100
+    }
+   },
+   "start": 687.51,
+   "end": 690.57
+  },
+  {
+   "id": "s216",
+   "line": "Мне нужны деньги срочно, а то посадят.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "cry",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    },
+    "tears": true
+   },
+   "start": 690.57,
+   "end": 693.31
+  },
+  {
+   "id": "s217",
+   "line": "Только маме не говори.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "handset",
+      "x": 0.5,
+      "y": 0.82,
+      "s": 2.2,
+      "rot": 0.4
+     }
+    ],
+    "rings": [
+     0.47,
+     0.4
+    ],
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 693.31,
+   "end": 695.15
+  },
+  {
+   "id": "s218",
+   "line": "Ты стоишь в двух шагах.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "cry",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.52,
+      "p": "stand",
+      "f": -1,
+      "e": "angry"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": "push"
+   },
+   "start": 695.15,
+   "end": 696.95
+  },
+  {
+   "id": "s219",
+   "line": "Тёма, это ты.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "angry",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 696.95,
+   "end": 698.95
+  },
+  {
+   "id": "s220",
+   "line": "И ты ни в какую аварию не попадал.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "cry",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.52,
+      "p": "crossArms",
+      "f": -1,
+      "e": "angry"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ]
+    }
+   },
+   "start": 698.95,
+   "end": 701.37
+  },
+  {
+   "id": "s221",
+   "line": "Бабушка уже плачет, трубку берёт следователь.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "cry",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": "roll"
+   },
+   "start": 701.37,
+   "end": 704.65
+  },
+  {
+   "id": "s222",
+   "line": "Строгий, уверенный голос.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "scene:void",
+   "params": {
+    "tpl": "scene",
+    "set": "void",
+    "actors": [
+     {
+      "c": "SCAMMER",
+      "x": 0.5,
+      "p": "phone",
+      "f": -1,
+      "e": "smirk",
+      "prop": "phone",
+      "talk": true
+     }
+    ],
+    "cam": "push",
+    "fx": [
+     "rain"
+    ]
+   },
+   "start": 704.65,
+   "end": 706.59
+  },
+  {
+   "id": "s223",
+   "line": "Говорит, что вопрос можно решить.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "scene:void",
+   "params": {
+    "tpl": "scene",
+    "set": "void",
+    "actors": [
+     {
+      "c": "SCAMMER",
+      "x": 0.48,
+      "p": "explain",
+      "f": -1,
+      "e": "smirk",
+      "talk": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ]
+    },
+    "fx": [
+     "rain"
+    ]
+   },
+   "start": 706.59,
+   "end": 708.21
+  },
+  {
+   "id": "s224",
+   "line": "Что за деньгами приедет курьер.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "scene:void",
+   "params": {
+    "tpl": "scene",
+    "set": "void",
+    "actors": [
+     {
+      "c": "SCAMMER",
+      "x": 0.5,
+      "p": "phone",
+      "f": -1,
+      "e": "smirk",
+      "prop": "phone",
+      "talk": true
+     }
+    ],
+    "cam": "left",
+    "fx": [
+     "rain"
+    ]
+   },
+   "start": 708.21,
+   "end": 710.57
+  },
+  {
+   "id": "s225",
+   "line": "Что никому звонить нельзя, это тайна следствия.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "face:void",
+   "params": {
+    "tpl": "face",
+    "c": "SCAMMER",
+    "e": "smirk",
+    "set": "void",
+    "talk": true
+   },
+   "start": 710.57,
+   "end": 713.99
+  },
+  {
+   "id": "s226",
+   "line": "И бабушка уже идёт к шкафу, где в",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.6,
+      "p": "stand",
+      "f": 1,
+      "e": "cry",
+      "walk": [
+       0.45,
+       0.82
+      ],
+      "wk": [
+       0,
+       0.8
+      ]
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "table": false
+    },
+    "cam": "right"
+   },
+   "start": 713.99,
+   "end": 716.21
+  },
+  {
+   "id": "s227",
+   "line": "старой коробке из -под конфет лежат её сбережения.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "candybox",
+      "x": 0.5,
+      "y": 0.75,
+      "s": 2.2,
+      "o": {
+       "open": true
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 716.21,
+   "end": 719.63
+  },
+  {
+   "id": "s228",
+   "line": "Мошенники давят на одно и то же, страх и спешку. Когда человек боится за близкого и ему говорят срочно, мозг переходит в режим тревоги.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "scam"
+   },
+   "start": 719.63,
+   "end": 729.35
+  },
+  {
+   "id": "s229",
+   "line": "Мы перестаем взвешивать и проверять, и делаем первое, что нам вилят.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "scared",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 729.35,
+   "end": 734.23
+  },
+  {
+   "id": "s230",
+   "line": "Поэтому мошенники никогда не дают времени подумать.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "scene:void",
+   "params": {
+    "tpl": "scene",
+    "set": "void",
+    "actors": [
+     {
+      "c": "SCAMMER",
+      "x": 0.5,
+      "p": "point",
+      "f": -1,
+      "e": "smirk",
+      "talk": true
+     }
+    ],
+    "items": [],
+    "cam": "push",
+    "fx": [
+     "rain"
+    ]
+   },
+   "start": 734.23,
+   "end": 737.13
+  },
+  {
+   "id": "s231",
+   "line": "И всегда просят никому не звонить.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "scene:void",
+   "params": {
+    "tpl": "scene",
+    "set": "void",
+    "actors": [
+     {
+      "c": "SCAMMER",
+      "x": 0.5,
+      "p": "phone",
+      "f": -1,
+      "e": "angry",
+      "prop": "phone",
+      "talk": true
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.3
+     ]
+    },
+    "fx": [
+     "rain"
+    ]
+   },
+   "start": 737.13,
+   "end": 739.93
+  },
+  {
+   "id": "s232",
+   "line": "А ещё запомни простое правило. Настоящие полицейские, следователи и банки никогда не присылают курьера за наличными.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "rule"
+   },
+   "start": 739.93,
+   "end": 748.17
+  },
+  {
+   "id": "s233",
+   "line": "Если за деньгами кто -то приходит к двери, это почти наверняка мошенники.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "stairs",
+   "scene": "scene:stairs",
+   "params": {
+    "tpl": "scene",
+    "set": "stairs",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.62,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.4,
+       0.72
+      ],
+      "wk": [
+       0,
+       0.7
+      ]
+     }
+    ],
+    "cam": "push",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ЭТО МОШЕННИКИ",
+      "color": "#ff6f61"
+     }
+    ]
+   },
+   "start": 748.17,
+   "end": 753.65
+  },
+  {
+   "id": "s234",
+   "line": "Ты не можешь просто крикнуть, бабуль, это я.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "handsOnHead",
+      "f": 1,
+      "e": "worried"
+     },
+     {
+      "c": "GRAN",
+      "x": 0.35,
+      "p": "phone",
+      "f": 1,
+      "e": "cry",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "pies": 6
+    },
+    "cam": "push"
+   },
+   "start": 753.65,
+   "end": 757.01
+  },
+  {
+   "id": "s235",
+   "line": "Голос из пустоты её до смерти напугает.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "scared",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 757.01,
+   "end": 760.01
+  },
+  {
+   "id": "s236",
+   "line": "Поэтому ты берёшь ручку.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "pen",
+      "x": 0.5,
+      "y": 0.7,
+      "s": 2,
+      "path": [
+       [
+        0,
+        0.5,
+        0.78,
+        1.5
+       ],
+       [
+        0.6,
+        0.5,
+        0.55,
+        0.3
+       ],
+       [
+        1,
+        0.5,
+        0.52,
+        0.3
+       ]
+      ]
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 760.01,
+   "end": 761.79
+  },
+  {
+   "id": "s237",
+   "line": "Бабушка видит, как ручка сама поднимается со стола и выводит крупными",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.4,
+      "p": "phone",
+      "f": 1,
+      "e": "surprised",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "paper": true
+    },
+    "items": [
+     {
+      "n": "pen",
+      "x": 0.53,
+      "y": 0.5,
+      "s": 1,
+      "bob": 10,
+      "rot": 0.4
+     }
+    ],
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ],
+     "x": -60
+    }
+   },
+   "start": 761.79,
+   "end": 765.81
+  },
+  {
+   "id": "s238",
+   "line": "буквами на газете «Бабуля, это я, Тёма, я рядом, это мошенники».",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "newspaper",
+      "x": 0.5,
+      "y": 0.86,
+      "s": 1.8,
+      "o": {
+       "text": "БАБУЛЯ, ЭТО Я, ТЁМА.\nЯ РЯДОМ.\nЭТО МОШЕННИКИ!",
+       "pk": [
+        0.05,
+        0.9
+       ]
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    },
+    "cam": "slow"
+   },
+   "start": 765.81,
+   "end": 772.17
+  },
+  {
+   "id": "s239",
+   "line": "Бабушка застывает, потом медленно протягивает руку",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.4,
+        "reach"
+       ]
+      ],
+      "f": 1,
+      "e": "awe"
+     },
+     {
+      "c": "A",
+      "x": 0.54,
+      "p": "reach",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "paper": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ]
+    }
+   },
+   "start": 772.17,
+   "end": 775.45
+  },
+  {
+   "id": "s240",
+   "line": "в пустоту, нащупывает твою ладонь, сжимает.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [],
+    "so": {
+     "phoneOff": true
+    },
+    "hand": {
+     "c": "GRAN",
+     "x0": 0.25,
+     "x1": 0.45,
+     "y0": 0.55,
+     "y1": 0.5,
+     "dir": 1
+    }
+   },
+   "start": 775.45,
+   "end": 779.35
+  },
+  {
+   "id": "s241",
+   "line": "И ты видишь, как у неё в глазах страх сменяется чем -то совсем другим.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": [
+     [
+      0,
+      "scared"
+     ],
+     [
+      0.5,
+      "determined"
+     ]
+    ],
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    }
+   },
+   "start": 779.35,
+   "end": 784.43
+  },
+  {
+   "id": "s242",
+   "line": "«Тёмочка», тихо говорит она, прикрыв трубку ладонью.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": "phone",
+      "f": 1,
+      "e": "smile",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      },
+      "talk": true
+     },
+     {
+      "c": "A",
+      "x": 0.54,
+      "p": "stand",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "paper": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.35
+     ]
+    }
+   },
+   "start": 784.43,
+   "end": 788.03
+  },
+  {
+   "id": "s243",
+   "line": "«Ты чего такой прозрачный",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "smirk",
+    "set": "gran",
+    "so": {
+     "phoneOff": true
+    },
+    "talk": true,
+    "ui": [
+     {
+      "k": "quote",
+      "str": "Ты чего такой прозрачный?",
+      "x": 0.78,
+      "y": 0.18,
+      "w": 520,
+      "h": 100
+     }
+    ]
+   },
+   "start": 788.03,
+   "end": 789.63
+  },
+  {
+   "id": "s244",
+   "line": "?» Дальше вы действуете вместе.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": "phone",
+      "f": 1,
+      "e": "determined",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     },
+     {
+      "c": "A",
+      "x": 0.54,
+      "p": "crossArms",
+      "f": -1,
+      "e": "determined"
+     }
+    ],
+    "so": {
+     "phoneOff": true,
+     "paper": true
+    },
+    "cam": "push"
+   },
+   "start": 789.63,
+   "end": 792.87
+  },
+  {
+   "id": "s245",
+   "line": "Бабушка продолжает разговор, как будто ничего не случилось.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": "phone",
+      "f": 1,
+      "e": "smirk",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      },
+      "talk": true
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    },
+    "cam": "slow"
+   },
+   "start": 792.87,
+   "end": 795.97
+  },
+  {
+   "id": "s246",
+   "line": "«Да -да, собираю, жду курьера, а ты",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": "phone",
+      "f": 1,
+      "e": "smirk",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      },
+      "talk": true
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ]
+    },
+    "ui": [
+     {
+      "k": "quote",
+      "str": "Да-да, собираю, жду курьера",
+      "x": 0.68,
+      "y": 0.2,
+      "w": 520,
+      "h": 100
+     }
+    ]
+   },
+   "start": 795.97,
+   "end": 798.67
+  },
+  {
+   "id": "s247",
+   "line": "из соседней комнаты звонишь в полицию и",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.45,
+      "p": "phone",
+      "f": 1,
+      "e": "determined",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      },
+      "voice": true
+     }
+    ],
+    "so": {
+     "sky": "golden"
+    },
+    "cam": "push"
+   },
+   "start": 798.67,
+   "end": 801.13
+  },
+  {
+   "id": "s248",
+   "line": "рассказываешь всё, адрес, время, что говорили по телефону».",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "insert:living",
+   "params": {
+    "tpl": "insert",
+    "set": "living",
+    "items": [
+     {
+      "n": "phone",
+      "x": 0.5,
+      "y": 0.95,
+      "s": 1.9,
+      "o": {
+       "name": "102",
+       "sub": "ПОЛИЦИЯ",
+       "call": true
+      }
+     }
+    ],
+    "so": {
+     "sky": "golden"
+    }
+   },
+   "start": 801.13,
+   "end": 805.25
+  },
+  {
+   "id": "s249",
+   "line": "Через 40 минут в дверь звонит курьер,",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "buzz",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "stairs",
+   "scene": "scene:stairs",
+   "params": {
+    "tpl": "scene",
+    "set": "stairs",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.66,
+      "p": "point",
+      "f": 1,
+      "e": "neutral"
+     }
+    ],
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ЧЕРЕЗ 40 МИНУТ"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 805.25,
+   "end": 807.55
+  },
+  {
+   "id": "s250",
+   "line": "молодой парень в капюшоне, бабушка отдаёт ему",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "stairs",
+   "scene": "scene:stairs",
+   "params": {
+    "tpl": "scene",
+    "set": "stairs",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.6,
+      "p": "reach",
+      "f": 1,
+      "e": "smirk"
+     },
+     {
+      "c": "GRAN",
+      "x": 0.8,
+      "p": "holdFront",
+      "f": -1,
+      "e": "neutral",
+      "hold": {
+       "n": "package",
+       "s": 0.6
+      }
+     }
+    ],
+    "so": {
+     "open": 0.8
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ],
+     "x": 200
+    }
+   },
+   "start": 807.55,
+   "end": 810.23
+  },
+  {
+   "id": "s251",
+   "line": "пакет, внутри, конечно, не деньги, а нарезанная газета.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "stairs",
+   "scene": "insert:stairs",
+   "params": {
+    "tpl": "insert",
+    "set": "stairs",
+    "items": [
+     {
+      "n": "package",
+      "x": 0.5,
+      "y": 0.85,
+      "s": 2.2
+     },
+     {
+      "n": "cutpaper",
+      "x": 0.5,
+      "y": 0.5,
+      "s": 1.8
+     }
+    ]
+   },
+   "start": 810.23,
+   "end": 813.87
+  },
+  {
+   "id": "s252",
+   "line": "Курьер торопливо спускается по лестнице, а за ним в двух шагах спускаешься ты.",
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "footstep",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "stairs",
+   "scene": "scene:stairs",
+   "params": {
+    "tpl": "scene",
+    "set": "stairs",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.7,
+       0.2
+      ],
+      "run": true
+     },
+     {
+      "c": "A",
+      "x": 0.62,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.92,
+       0.42
+      ]
+     }
+    ],
+    "cam": "left"
+   },
+   "start": 813.87,
+   "end": 818.35
+  },
+  {
+   "id": "s253",
+   "line": "Его никто не видит рядом с тобой, и тебя никто не видит рядом с ним.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.3,
+       0.6
+      ]
+     },
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.5
+      ]
+     }
+    ],
+    "s": "w",
+    "so": {
+     "car": false
+    },
+    "cam": "right"
+   },
+   "start": 818.35,
+   "end": 823.41
+  },
+  {
+   "id": "s254",
+   "line": "У подъезда его ждёт машина.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "COURIER",
+      "x": 0.55,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.35,
+       0.6
+      ],
+      "wk": [
+       0,
+       0.7
+      ]
+     }
+    ],
+    "so": {
+     "carX": 300
+    },
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 823.41,
+   "end": 825.41
+  },
+  {
+   "id": "s255",
+   "line": "Ты подходишь в платную и диктуешь в телефон номер,",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.6,
+      "p": "phone",
+      "f": -1,
+      "e": "determined",
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      },
+      "voice": true
+     }
+    ],
+    "so": {
+     "carX": 380
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.25
+     ],
+     "x": 200
+    }
+   },
+   "start": 825.41,
+   "end": 828.33
+  },
+  {
+   "id": "s256",
+   "line": "а из -за угла уже выходят двое в форме.",
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "footstep",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "COP",
+      "x": 0.2,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.0,
+       0.35
+      ]
+     },
+     {
+      "c": "COP",
+      "x": 0.12,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       -0.08,
+       0.27
+      ],
+      "seed": 3
+     },
+     {
+      "c": "COURIER",
+      "x": 0.62,
+      "p": "handsOnHead",
+      "f": -1,
+      "e": "scared"
+     }
+    ],
+    "so": {
+     "carX": 380
+    },
+    "s": "w",
+    "cam": "right"
+   },
+   "start": 828.33,
+   "end": 831.19
+  },
+  {
+   "id": "s257",
+   "line": "Когда курьера сажают в машину, бабушка стоит у",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "COP",
+      "x": 0.5,
+      "p": "point",
+      "f": 1,
+      "e": "determined"
+     },
+     {
+      "c": "COURIER",
+      "x": 0.62,
+      "p": "sad",
+      "f": -1,
+      "e": "sad"
+     }
+    ],
+    "so": {
+     "carX": 380
+    },
+    "cam": "push"
+   },
+   "start": 831.19,
+   "end": 833.95
+  },
+  {
+   "id": "s258",
+   "line": "окна, и один из полицейских потом спрашивает её.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.5,
+      "p": "stand",
+      "f": -1,
+      "e": "neutral"
+     },
+     {
+      "c": "COP",
+      "x": 0.66,
+      "p": "stand",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "so": {
+     "phoneOff": false,
+     "sky": "night"
+    },
+    "cam": "slow"
+   },
+   "start": 833.95,
+   "end": 837.05
+  },
+  {
+   "id": "s259",
+   "line": "«А как вы догадались, что это мошенники ?» Бабушка поправляет платок",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "COP",
+      "x": 0.6,
+      "p": "explain",
+      "f": -1,
+      "e": "surprised",
+      "talk": true
+     },
+     {
+      "c": "GRAN",
+      "x": 0.42,
+      "p": "stand",
+      "f": 1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "sky": "night"
+    },
+    "cam": "push",
+    "ui": [
+     {
+      "k": "quote",
+      "str": "А как вы догадались?",
+      "x": 0.6,
+      "y": 0.18,
+      "w": 480,
+      "h": 100
+     }
+    ]
+   },
+   "start": 837.05,
+   "end": 841.11
+  },
+  {
+   "id": "s260",
+   "line": "и говорит, а мой внук стоял рядом со мной, а потом",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "smile",
+    "set": "gran",
+    "so": {
+     "sky": "night"
+    },
+    "talk": true,
+    "ui": [
+     {
+      "k": "quote",
+      "str": "Мой внук стоял рядом со мной",
+      "x": 0.76,
+      "y": 0.18,
+      "w": 520,
+      "h": 100
+     }
+    ]
+   },
+   "start": 841.11,
+   "end": 844.49
+  },
+  {
+   "id": "s261",
+   "line": "она усаживает пустоту за стол и ставит перед ней тарелку пирожков.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "sit",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "GRAN",
+      "x": 0.5,
+      "p": "holdFront",
+      "f": -1,
+      "e": "happy"
+     }
+    ],
+    "so": {
+     "pies": 6,
+     "piesDX": -150,
+     "sky": "night"
+    },
+    "cam": "push"
+   },
+   "start": 844.49,
+   "end": 848.93
+  },
+  {
+   "id": "s262",
+   "line": "«Раз ты прозрачный, значит, не доедаешь.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "smirk",
+    "set": "gran",
+    "so": {
+     "sky": "night"
+    },
+    "talk": true
+   },
+   "start": 848.93,
+   "end": 851.95
+  },
+  {
+   "id": "s263",
+   "line": "Пирожки один за другим исчезают в воздухе.",
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 1.2,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "pies",
+      "x": 0.5,
+      "y": 0.8,
+      "s": 2.6,
+      "o": {
+       "nFrom": 8,
+       "nTo": 1
+      }
+     }
+    ],
+    "so": {
+     "sky": "night"
+    }
+   },
+   "start": 851.95,
+   "end": 854.93
+  },
+  {
+   "id": "s264",
+   "line": "Бабушка смотрит на это с огромным удовлетворением.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.56,
+      "p": "crossArms",
+      "f": -1,
+      "e": "happy"
+     },
+     {
+      "c": "A",
+      "x": 0.3,
+      "p": "sit",
+      "f": 1,
+      "e": "happy"
+     }
+    ],
+    "so": {
+     "pies": 2,
+     "piesDX": -150,
+     "sky": "night"
+    },
+    "cam": "push"
+   },
+   "start": 854.93,
+   "end": 858.27
+  },
+  {
+   "id": "s265",
+   "line": "Перед уходом она долго трогает твое лицо ладонями, будто запоминает.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "GRAN",
+      "x": 0.44,
+      "p": "reach",
+      "f": 1,
+      "e": "smile"
+     },
+     {
+      "c": "A",
+      "x": 0.52,
+      "p": "stand",
+      "f": -1,
+      "e": "smile"
+     }
+    ],
+    "so": {
+     "sky": "night",
+     "table": false
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.2,
+      1.4
+     ]
+    },
+    "fx": [
+     "dust",
+     "hearts"
+    ]
+   },
+   "start": 858.27,
+   "end": 863.07
+  },
+  {
+   "id": "s266",
+   "line": "«Красивый !» говорит.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "joy",
+    "set": "gran",
+    "so": {
+     "sky": "night"
+    },
+    "talk": true
+   },
+   "start": 863.07,
+   "end": 864.87
+  },
+  {
+   "id": "s267",
+   "line": "«Я и так знаю. Мне видеть не обязательно.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "face:gran",
+   "params": {
+    "tpl": "face",
+    "c": "GRAN",
+    "e": "smile",
+    "set": "gran",
+    "so": {
+     "sky": "night"
+    },
+    "talk": true,
+    "tilt": 0.06
+   },
+   "start": 864.87,
+   "end": 868.57
+  },
+  {
+   "id": "s268",
+   "line": "А на тридцатый день ты подходишь",
+   "in": {
+    "type": "flash",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "flash",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "card:bathroom",
+   "params": {
+    "tpl": "card",
+    "str": "ДЕНЬ 30",
+    "set": "bathroom"
+   },
+   "bars": "scope",
+   "start": 868.57,
+   "end": 870.17
+  },
+  {
+   "id": "s269",
+   "line": "к зеркалу и видишь себя, растрёпанного,",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.38,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "reflectA": true
+    },
+    "cam": {
+     "k": "push",
+     "x": 140
+    }
+   },
+   "start": 870.17,
+   "end": 873.67
+  },
+  {
+   "id": "s270",
+   "line": "с отпечатком подушки на щеке, самого обычного.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": [
+     [
+      0,
+      "surprised"
+     ],
+     [
+      0.5,
+      "smile"
+     ]
+    ],
+    "set": "bathroom",
+    "ghost": false
+   },
+   "start": 873.67,
+   "end": 877.13
+  },
+  {
+   "id": "s271",
+   "line": "Ты стоишь и разглядываешь своё лицо, как будто видишь его впервые в жизни.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "face:bathroom",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "awe",
+    "set": "bathroom",
+    "ghost": false,
+    "tilt": -0.05
+   },
+   "start": 877.13,
+   "end": 881.87
+  },
+  {
+   "id": "s272",
+   "line": "И кажется, впервые в жизни оно тебе нравится.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "bathroom",
+   "scene": "scene:bathroom",
+   "params": {
+    "tpl": "scene",
+    "set": "bathroom",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.38,
+      "p": "stand",
+      "f": 1,
+      "e": "happy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "reflectA": true
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ],
+     "x": 200
+    },
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 881.87,
+   "end": 885.45
+  },
+  {
+   "id": "s273",
+   "line": "Через час приезжает папа, он стоит в дверях и смотрит на тебя, видимого, растрёпанного, в старой футболке.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.68,
+      "p": "stand",
+      "f": -1,
+      "e": "surprised"
+     },
+     {
+      "c": "A",
+      "x": 0.42,
+      "p": "stand",
+      "f": 1,
+      "e": "smile",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "open": 0.8
+    },
+    "cam": "push",
+    "ui": [
+     {
+      "k": "badge",
+      "str": "ЧЕРЕЗ ЧАС"
+     }
+    ]
+   },
+   "start": 885.45,
+   "end": 892.83
+  },
+  {
+   "id": "s274",
+   "line": "А потом подходит, обнимает и говорит прямо в ухо.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "scene:hallway",
+   "params": {
+    "tpl": "scene",
+    "set": "hallway",
+    "actors": [
+     {
+      "c": "DAD",
+      "x": 0.56,
+      "p": [
+       [
+        0,
+        "stand"
+       ],
+       [
+        0.4,
+        "hug"
+       ]
+      ],
+      "f": -1,
+      "e": "smile",
+      "walk": [
+       0.68,
+       0.53
+      ],
+      "wk": [
+       0,
+       0.4
+      ]
+     },
+     {
+      "c": "A",
+      "x": 0.44,
+      "p": "hug",
+      "f": 1,
+      "e": "happy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "open": 0.8
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.15,
+      1.3
+     ]
+    }
+   },
+   "start": 892.83,
+   "end": 896.35
+  },
+  {
+   "id": "s275",
+   "line": "«Тёма, я тобой горжусь».",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "face:hallway",
+   "params": {
+    "tpl": "face",
+    "c": "DAD",
+    "e": "cry",
+    "set": "hallway",
+    "talk": true,
+    "tears": true
+   },
+   "start": 896.35,
+   "end": 898.85
+  },
+  {
+   "id": "s276",
+   "line": "Он не знает, что ты это уже слышал, но второй раз лучше.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "hallway",
+   "scene": "face:hallway",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "happy",
+    "set": "hallway",
+    "ghost": false,
+    "tears": true
+   },
+   "start": 898.85,
+   "end": 903.37
+  },
+  {
+   "id": "s277",
+   "line": "Вечером из -за угла выбегает Лёха, останавливается",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.0,
+       0.42
+      ],
+      "wk": [
+       0,
+       0.7
+      ],
+      "run": true
+     },
+     {
+      "c": "A",
+      "x": 0.62,
+      "p": "stand",
+      "f": -1,
+      "e": "smile",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 903.37,
+   "end": 906.43
+  },
+  {
+   "id": "s278",
+   "line": "в трёх шагах и долго тебя разглядывает.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.42,
+      "p": "stand",
+      "f": 1,
+      "e": "surprised"
+     },
+     {
+      "c": "A",
+      "x": 0.62,
+      "p": "relaxed",
+      "f": -1,
+      "e": "smile",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "cam": {
+     "k": "push",
+     "z": [
+      1.1,
+      1.2
+     ]
+    }
+   },
+   "start": 906.43,
+   "end": 909.63
+  },
+  {
+   "id": "s279",
+   "line": "«Слушай», говорит он наконец, «а ты, оказывается, страшный.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "face:yard",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "smirk",
+    "set": "yard",
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "talk": true
+   },
+   "start": 909.63,
+   "end": 913.47
+  },
+  {
+   "id": "s280",
+   "line": "Я как -то успел отвыкнуть».",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "face:yard",
+   "params": {
+    "tpl": "face",
+    "c": "L",
+    "e": "happy",
+    "set": "yard",
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "talk": true,
+    "tilt": 0.06
+   },
+   "start": 913.47,
+   "end": 915.21
+  },
+  {
+   "id": "s281",
+   "line": "А потом обнимает так, что у тебя хрустит спина.",
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.47,
+      "p": "hug",
+      "f": 1,
+      "e": "joy"
+     },
+     {
+      "c": "A",
+      "x": 0.55,
+      "p": "hug",
+      "f": -1,
+      "e": "happy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "cam": "shake",
+    "fx": [
+     "dust",
+     "hearts"
+    ]
+   },
+   "start": 915.21,
+   "end": 918.25
+  },
+  {
+   "id": "s282",
+   "line": "Дворовый пёс прыгает вокруг вас и лает.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.45,
+      "p": "cheer",
+      "f": 1,
+      "e": "joy"
+     },
+     {
+      "c": "A",
+      "x": 0.55,
+      "p": "cheer",
+      "f": -1,
+      "e": "joy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.66,
+      "y": 0.82,
+      "s": 1,
+      "o": {
+       "jump": true,
+       "tongue": true
+      }
+     }
+    ],
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 918.25,
+   "end": 921.03
+  },
+  {
+   "id": "s283",
+   "line": "Ему, в отличие от всех, ничего объяснять не надо.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "insert:yard",
+   "params": {
+    "tpl": "insert",
+    "set": "yard",
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.42,
+      "y": 0.9,
+      "s": 2.6,
+      "o": {
+       "tongue": true,
+       "jump": true
+      }
+     }
+    ],
+    "so": {
+     "mood": "dusk",
+     "car": false
+    }
+   },
+   "start": 921.03,
+   "end": 924.57
+  },
+  {
+   "id": "s284",
+   "line": "Он и так всё это время знал, что ты здесь.",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "set": "yard",
+   "scene": "scene:yard",
+   "params": {
+    "tpl": "scene",
+    "set": "yard",
+    "actors": [
+     {
+      "c": "L",
+      "x": 0.45,
+      "p": "relaxed",
+      "f": 1,
+      "e": "happy"
+     },
+     {
+      "c": "A",
+      "x": 0.53,
+      "p": "relaxed",
+      "f": -1,
+      "e": "happy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "dusk",
+     "car": false
+    },
+    "items": [
+     {
+      "n": "dog",
+      "x": 0.62,
+      "y": 0.82,
+      "s": 1,
+      "o": {
+       "tongue": true
+      }
+     }
+    ],
+    "s": "w",
+    "cam": "pull",
+    "fx": [
+     "dust",
+     "streak"
+    ]
+   },
+   "start": 924.57,
+   "end": 927.61
+  },
+  {
+   "id": "s285",
+   "line": "Знаешь, что самое странное?",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "face:street",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "thinking",
+    "set": "street",
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    }
+   },
+   "start": 927.61,
+   "end": 929.39
+  },
+  {
+   "id": "s286",
+   "line": "Ты боялся стать невидимым.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "thinking",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "push"
+   },
+   "start": 929.39,
+   "end": 931.29
+  },
+  {
+   "id": "s287",
+   "line": "А потом понял, мы все и так гораздо невидимее, чем думаем.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "relaxed",
+      "f": 1,
+      "e": "smile",
+      "vis": true
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.45
+      ],
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.6
+      ],
+      "prop": "phone",
+      "seed": 2
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.85,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.7,
+       1.0
+      ],
+      "seed": 4
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "s": "w",
+    "cam": "pull"
+   },
+   "start": 931.29,
+   "end": 935.35
+  },
+  {
+   "id": "s288",
+   "line": "Есть известный эксперимент.",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   },
+   "set": "lecture",
+   "scene": "scene:lecture",
+   "params": {
+    "tpl": "scene",
+    "set": "lecture",
+    "actors": [],
+    "cam": "push"
+   },
+   "start": 935.35,
+   "end": 937.47
+  },
+  {
+   "id": "s289",
+   "line": "Студента просили надеть нелепую футболку с лицом певца,",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   },
+   "set": "lecture",
+   "scene": "insert:lecture",
+   "params": {
+    "tpl": "insert",
+    "set": "lecture",
+    "items": [
+     {
+      "n": "tshirt",
+      "x": 0.5,
+      "y": 0.85,
+      "s": 2.2
+     }
+    ]
+   },
+   "start": 937.47,
+   "end": 940.89
+  },
+  {
+   "id": "s290",
+   "line": "которого стеснялись слушать и войти в аудиторию полной людей.",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   },
+   "set": "lecture",
+   "scene": "scene:lecture",
+   "params": {
+    "tpl": "scene",
+    "set": "lecture",
+    "actors": [
+     {
+      "c": "STUDENT",
+      "x": 0.5,
+      "p": "stand",
+      "f": 1,
+      "e": "nervous",
+      "walk": [
+       0.3,
+       0.5
+      ],
+      "wk": [
+       0,
+       0.6
+      ]
+     }
+    ],
+    "s": "m",
+    "cam": "push"
+   },
+   "start": 940.89,
+   "end": 944.63
+  },
+  {
+   "id": "s291",
+   "line": "Студент был уверен, что его футболку заметит примерно половина. На деле её заметил примерно каждый четвёртый.",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "spotlight"
+   },
+   "start": 944.63,
+   "end": 951.11
+  },
+  {
+   "id": "s292",
+   "line": "Психологи называют это «эффектом прожектора». Нам кажется, что на нас всё время направлен луч, а на самом деле все заняты собой.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "beam"
+   },
+   "start": 951.11,
+   "end": 959.47
+  },
+  {
+   "id": "s293",
+   "line": "Так что не нужно становиться невидимым, чтобы перестать бояться чужих взглядов.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "relaxed",
+      "f": 1,
+      "e": "smile",
+      "vis": true
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "phone",
+      "f": 1,
+      "e": "neutral",
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "phone",
+      "f": -1,
+      "e": "neutral",
+      "prop": "phone",
+      "seed": 2
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "s": "w",
+    "cam": "push"
+   },
+   "start": 959.47,
+   "end": 963.59
+  },
+  {
+   "id": "s294",
+   "line": "Достаточно понять, что эти взгляды гораздо короче, чем кажется.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "relaxed",
+      "f": 1,
+      "e": "happy",
+      "vis": true
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.2,
+       0.42
+      ],
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.75,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.9,
+       0.65
+      ],
+      "prop": "phone",
+      "seed": 2
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "s": "w",
+    "cam": "right"
+   },
+   "start": 963.59,
+   "end": 968.09
+  },
+  {
+   "id": "s295",
+   "line": "Говорит тосты,",
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "set": "party",
+   "scene": "scene:party",
+   "params": {
+    "tpl": "scene",
+    "set": "party",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "toast",
+      "f": 1,
+      "e": "joy",
+      "vis": true,
+      "hold": {
+       "n": "glass",
+       "s": 0.6
+      }
+     },
+     {
+      "c": "L",
+      "x": 0.66,
+      "p": "cheer",
+      "f": -1,
+      "e": "joy"
+     }
+    ],
+    "ghost": false,
+    "cam": "push"
+   },
+   "start": 968.09,
+   "end": 969.35
+  },
+  {
+   "id": "s296",
+   "line": "«танцуй, скажи папе,",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": [
+       [
+        0,
+        "cheer"
+       ],
+       [
+        0.3,
+        "jump"
+       ],
+       [
+        0.6,
+        "cheer"
+       ]
+      ],
+      "f": 1,
+      "e": "joy",
+      "vis": true
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    },
+    "cam": "pull"
+   },
+   "start": 969.35,
+   "end": 970.97
+  },
+  {
+   "id": "s297",
+   "line": "что любишь его».",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "parents",
+   "scene": "scene:parents",
+   "params": {
+    "tpl": "scene",
+    "set": "parents",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.48,
+      "p": "hug",
+      "f": 1,
+      "e": "happy",
+      "vis": true
+     },
+     {
+      "c": "DAD",
+      "x": 0.56,
+      "p": "hug",
+      "f": -1,
+      "e": "happy"
+     }
+    ],
+    "ghost": false,
+    "cam": "push",
+    "fx": [
+     "dust",
+     "hearts"
+    ]
+   },
+   "start": 970.97,
+   "end": 972.11
+  },
+  {
+   "id": "s298",
+   "line": "«Не жди, пока станешь невидимым».",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "card:street",
+   "params": {
+    "tpl": "card",
+    "str": "НЕ ЖДИ, ПОКА СТАНЕШЬ НЕВИДИМЫМ",
+    "set": "street",
+    "so": {
+     "mood": "golden"
+    },
+    "size": 90
+   },
+   "bars": "scope",
+   "start": 972.11,
+   "end": 974.25
+  },
+  {
+   "id": "s299",
+   "line": "А ещё ты теперь замечаешь тех, кто невидим без всякой магии.",
+   "amb": {
+    "name": "hum",
+    "gain": -24
+   },
+   "set": "metro",
+   "scene": "scene:metro",
+   "params": {
+    "tpl": "scene",
+    "set": "metro",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.4,
+      "p": "stand",
+      "f": 1,
+      "e": "thinking",
+      "vis": true
+     },
+     {
+      "c": "CLEANER",
+      "x": 0.6,
+      "p": "mop",
+      "f": -1,
+      "e": "neutral"
+     }
+    ],
+    "ghost": false,
+    "cam": "push"
+   },
+   "start": 974.25,
+   "end": 978.27
+  },
+  {
+   "id": "s300",
+   "line": "Уборщицу в метро, охранника на входе, пожилых",
+   "amb": {
+    "name": "hum",
+    "gain": -24
+   },
+   "set": "metro",
+   "scene": "scene:metro",
+   "params": {
+    "tpl": "scene",
+    "set": "metro",
+    "actors": [
+     {
+      "c": "CLEANER",
+      "x": 0.5,
+      "p": "mop",
+      "f": 1,
+      "e": "sad"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.4
+      ],
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.75,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.65
+      ],
+      "prop": "phone",
+      "seed": 2
+     }
+    ],
+    "s": "w",
+    "cam": "right"
+   },
+   "start": 978.27,
+   "end": 981.43
+  },
+  {
+   "id": "s301",
+   "line": "людей, которым звонят мошенники, а рядом нет",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "clinic",
+   "scene": "scene:clinic",
+   "params": {
+    "tpl": "scene",
+    "set": "clinic",
+    "actors": [
+     {
+      "c": "GUARD",
+      "x": 0.5,
+      "p": "crossArms",
+      "f": 1,
+      "e": "neutral"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.15,
+       0.45
+      ],
+      "prop": "phone"
+     }
+    ],
+    "cam": "push"
+   },
+   "start": 981.43,
+   "end": 984.05
+  },
+  {
+   "id": "s302",
+   "line": "никого, кто сказал бы «это не я».",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "scene:gran",
+   "params": {
+    "tpl": "scene",
+    "set": "gran",
+    "actors": [
+     {
+      "c": "OLD",
+      "x": 0.42,
+      "p": "phone",
+      "f": 1,
+      "e": "worried",
+      "hold": {
+       "n": "handset",
+       "s": 0.5,
+       "rot": 0.3
+      }
+     }
+    ],
+    "so": {
+     "phoneOff": true
+    },
+    "cam": "push"
+   },
+   "start": 984.05,
+   "end": 986.73
+  },
+  {
+   "id": "s303",
+   "line": "Тех, кого мы каждый день не видим, просто потому что не смотрим.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "scene:street",
+   "params": {
+    "tpl": "scene",
+    "set": "street",
+    "actors": [
+     {
+      "c": "CLEANER",
+      "x": 0.5,
+      "p": "mop",
+      "f": 1,
+      "e": "neutral"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.3,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.1,
+       0.6
+      ],
+      "prop": "phone"
+     },
+     {
+      "c": "PLAIN",
+      "x": 0.7,
+      "p": "stand",
+      "f": 1,
+      "walk": [
+       0.95,
+       0.4
+      ],
+      "prop": "phone",
+      "seed": 2
+     }
+    ],
+    "so": {
+     "mood": "dusk"
+    },
+    "s": "w",
+    "cam": "pull"
+   },
+   "start": 986.73,
+   "end": 991.07
+  },
+  {
+   "id": "s304",
+   "line": "И одна просьба – позвони сегодня бабушки и дедушки.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "living",
+   "scene": "scene:living",
+   "params": {
+    "tpl": "scene",
+    "set": "living",
+    "actors": [
+     {
+      "c": "A",
+      "x": 0.5,
+      "p": "phone",
+      "f": 1,
+      "e": "smile",
+      "vis": true,
+      "hold": {
+       "n": "phone",
+       "s": 0.18,
+       "dx": -6,
+       "dy": 22
+      }
+     }
+    ],
+    "ghost": false,
+    "so": {
+     "sky": "golden"
+    },
+    "cam": "push"
+   },
+   "start": 991.07,
+   "end": 994.49
+  },
+  {
+   "id": "s305",
+   "line": "Просто так, и договоритесь, если кто -то позвонит от твоего имени и попросит денег, пусть кладут трубку и перезванивают тебе сами.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "bp:void",
+   "params": {
+    "tpl": "bp",
+    "id": "callback"
+   },
+   "start": 994.49,
+   "end": 1002.77
+  },
+  {
+   "id": "s306",
+   "line": "Это займёт минуту, а может спасти все их сбережения.",
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "gran",
+   "scene": "insert:gran",
+   "params": {
+    "tpl": "insert",
+    "set": "gran",
+    "items": [
+     {
+      "n": "candybox",
+      "x": 0.5,
+      "y": 0.75,
+      "s": 2.2,
+      "o": {
+       "open": true
+      }
+     }
+    ],
+    "ui": [
+     {
+      "k": "readout",
+      "label": "ЗАЙМЁТ",
+      "value": "1 МИНУТУ",
+      "x": 0.5,
+      "y": 0.2,
+      "align": "center",
+      "at": 0.1
+     }
+    ]
+   },
+   "start": 1002.77,
+   "end": 1006.99
+  },
+  {
+   "id": "s307",
+   "line": "А теперь вопрос тебе.",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "face:street",
+   "params": {
+    "tpl": "face",
+    "c": "A",
+    "e": "smile",
+    "set": "street",
+    "ghost": false,
+    "so": {
+     "mood": "golden"
+    }
+   },
+   "start": 1006.99,
+   "end": 1008.85
+  },
+  {
+   "id": "s308",
+   "line": "Если бы ты стал невидимым на 30 дней, что бы ты хотел услышать, когда тебя нет рядом?",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "card:street",
+   "params": {
+    "tpl": "card",
+    "str": "ЧТО БЫ ТЫ ХОТЕЛ УСЛЫШАТЬ?",
+    "set": "street",
+    "so": {
+     "mood": "dusk"
+    },
+    "size": 90
+   },
+   "bars": "scope",
+   "start": 1008.85,
+   "end": 1014.09
+  },
+  {
+   "id": "s309",
+   "line": "И чего бы боялся услышать больше всего?",
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "set": "street",
+   "scene": "card:street",
+   "params": {
+    "tpl": "card",
+    "str": "ЧЕГО БЫ БОЯЛСЯ УСЛЫШАТЬ?",
+    "set": "street",
+    "so": {
+     "mood": "dusk"
+    },
+    "size": 90
+   },
+   "bars": "scope",
+   "start": 1014.09,
+   "end": 1016.77
+  },
+  {
+   "id": "s310",
+   "line": "Напиши в комментариях. Если тебе понравился этот выпуск, подпишись на канал и нажми на колокольчик. Обещаю, мы тебя видим. А скоро встретимся в новом выпуске «Что если».",
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "set": "void",
+   "scene": "end:void",
+   "params": {
+    "tpl": "end",
+    "q": "Что бы ты хотел услышать?"
+   },
+   "bars": "none",
+   "start": 1016.77,
+   "end": 1031.09
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 23.09,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 23.09,
+   "end": 93.53,
+   "mood": "wonder",
+   "intensity": 0.4
+  },
+  {
+   "start": 93.53,
+   "end": 181.85,
+   "mood": "playful",
+   "intensity": 0.35
+  },
+  {
+   "start": 181.85,
+   "end": 295.17,
+   "mood": "playful",
+   "intensity": 0.3
+  },
+  {
+   "start": 295.17,
+   "end": 310.89,
+   "mood": "tension",
+   "intensity": 0.4
+  },
+  {
+   "start": 310.89,
+   "end": 360.39,
+   "mood": "hopeful",
+   "intensity": 0.3
+  },
+  {
+   "start": 360.39,
+   "end": 442.71,
+   "mood": "mystery",
+   "intensity": 0.3
+  },
+  {
+   "start": 442.71,
+   "end": 480.19,
+   "mood": "hopeful",
+   "intensity": 0.35
+  },
+  {
+   "start": 480.19,
+   "end": 507.63,
+   "mood": "wonder",
+   "intensity": 0.25
+  },
+  {
+   "start": 507.63,
+   "end": 546.31,
+   "mood": "calm",
+   "intensity": 0.3
+  },
+  {
+   "start": 546.31,
+   "end": 630.53,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 630.53,
+   "end": 661.63,
+   "mood": "sad",
+   "intensity": 0.25
+  },
+  {
+   "start": 661.63,
+   "end": 675.55,
+   "mood": "calm",
+   "intensity": 0.3
+  },
+  {
+   "start": 675.55,
+   "end": 719.63,
+   "mood": "tension",
+   "intensity": 0.5
+  },
+  {
+   "start": 719.63,
+   "end": 753.65,
+   "mood": "dark",
+   "intensity": 0.35
+  },
+  {
+   "start": 753.65,
+   "end": 805.25,
+   "mood": "tension",
+   "intensity": 0.45
+  },
+  {
+   "start": 805.25,
+   "end": 831.19,
+   "mood": "action",
+   "intensity": 0.5
+  },
+  {
+   "start": 831.19,
+   "end": 868.57,
+   "mood": "hopeful",
+   "intensity": 0.35
+  },
+  {
+   "start": 868.57,
+   "end": 927.61,
+   "mood": "triumph",
+   "intensity": 0.45
+  },
+  {
+   "start": 927.61,
+   "end": 935.35,
+   "mood": "calm",
+   "intensity": 0.3
+  },
+  {
+   "start": 935.35,
+   "end": 959.47,
+   "mood": "wonder",
+   "intensity": 0.3
+  },
+  {
+   "start": 959.47,
+   "end": 974.25,
+   "mood": "hopeful",
+   "intensity": 0.4
+  },
+  {
+   "start": 974.25,
+   "end": 991.07,
+   "mood": "sad",
+   "intensity": 0.3
+  },
+  {
+   "start": 991.07,
+   "end": 1016.77,
+   "mood": "hopeful",
+   "intensity": 0.35
+  },
+  {
+   "start": 1016.77,
+   "end": 1031.09,
+   "mood": "triumph",
+   "intensity": 0.4
+  }
+ ],
+ "sfx": []
+}

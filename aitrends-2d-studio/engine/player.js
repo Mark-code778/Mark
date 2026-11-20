@@ -11,11 +11,16 @@ let main, mg, bufA, bufB, glCanvas, grainTiles = [], three = null;
 const errors = (window.ERRORS = []);
 const mk = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
 
+const CYR = 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116';
 async function loadFonts() {
   const F = [['Fredoka', '600', 'fredoka/files/fredoka-latin-600-normal.woff2'], ['Fredoka', '700', 'fredoka/files/fredoka-latin-700-normal.woff2'],
     ['Nunito', '800', 'nunito/files/nunito-latin-800-normal.woff2'], ['Nunito', '900', 'nunito/files/nunito-latin-900-normal.woff2'],
-    ['Playfair Display', '900', 'playfair-display/files/playfair-display-latin-900-italic.woff2', 'italic']];
-  for (const [fam, w, file, style] of F) { try { const ff = new FontFace(fam, `url(/node_modules/@fontsource/${file})`, { weight: w, style: style || 'normal' }); await ff.load(); document.fonts.add(ff); } catch (e) { console.log('font missing', fam, w); } }
+    ['Playfair Display', '900', 'playfair-display/files/playfair-display-latin-900-italic.woff2', 'italic'],
+    // Cyrillic: Fredoka has none, so its Cyrillic range is served by Rubik (same rounded-bold feel)
+    ['Fredoka', '600', 'rubik/files/rubik-cyrillic-600-normal.woff2', null, CYR], ['Fredoka', '700', 'rubik/files/rubik-cyrillic-700-normal.woff2', null, CYR],
+    ['Nunito', '800', 'nunito/files/nunito-cyrillic-800-normal.woff2', null, CYR], ['Nunito', '900', 'nunito/files/nunito-cyrillic-900-normal.woff2', null, CYR],
+    ['Playfair Display', '900', 'playfair-display/files/playfair-display-cyrillic-900-italic.woff2', 'italic', CYR]];
+  for (const [fam, w, file, style, range] of F) { try { const ff = new FontFace(fam, `url(/node_modules/@fontsource/${file})`, { weight: w, style: style || 'normal', ...(range ? { unicodeRange: range } : {}) }); await ff.load(); document.fonts.add(ff); } catch (e) { console.log('font missing', fam, w); } }
 }
 async function boot() {
   const cfg = await (await fetch(`${PROJ}/config.json`)).json();

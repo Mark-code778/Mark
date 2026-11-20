@@ -1,0 +1,25 @@
+// cast.js — постоянный каст. Цвет = личность, одинаковый во всех кадрах.
+// Артём и Лёха — главные (см. aitrends-2d-studio/cast/main-cast.js). Рост у всех одинаковый (никаких kid).
+export const ARTYOM = { top: 'hoodie', color: '#f08a24', head: 'none' };          // Артём, 25 — оранжевое худи
+export const LYOKHA = { top: 'hoodie', color: '#2f6fd6', head: 'none' };          // Лёха — синее худи
+export const MOM = { top: 'dress', color: '#d9659a', head: 'ponytail' };          // мама — розовое платье
+export const DAD = { top: 'tshirt', color: '#3f9a5a', head: 'none', face: 'glasses' }; // папа — зелёный свитер, очки
+export const GRAN = { top: 'dress', color: '#8a5ad6', head: 'bun', face: 'glasses' };  // бабушка — фиолетовое платье
+export const BOSS = { top: 'suit', color: '#2a2833', head: 'none', face: 'glasses' };
+export const COURIER = { top: 'hoodie', color: '#26232c', head: 'hood', headColor: '#26232c' };
+export const COP = { top: 'suit', color: '#1d2a4a', head: 'cap', headColor: '#1d2a4a' };
+export const PLAIN = { top: 'none', head: 'none' };                                // прохожие — просто силуэты
+export const COAT = { top: 'trench', color: '#3a3440', head: 'none' };             // мужчина в дорогом пальто
+export const STRICT = { top: 'dress', color: '#5a5a66', head: 'bun' };             // строгая соседка
+export const GIRL = { top: 'tshirt', color: '#c8c2b8', head: 'ponytail' };         // школьницы
+export const PLATO = { top: 'labcoat', head: 'curly' };                           // Платон (белая тога)
+export const SHEPHERD = { top: 'tshirt', color: '#8a6a4a', head: 'curly' };
+export const STUDENT = { top: 'tshirt', color: '#e8e2d6', head: 'spiky' };
+export const NURSE = { top: 'labcoat', head: 'bun' };
+export const DOC = { top: 'labcoat', head: 'none', face: 'glasses' };
+export const GUARD = { top: 'suit', color: '#1a1a22', head: 'cap', headColor: '#1a1a22' };
+export const WOMAN = { top: 'dress', color: '#4a8a8a', head: 'ponytail' };
+export const OLD = { top: 'dress', color: '#6a6a8a', head: 'bun' };
+export const SCAMMER = { top: 'trench', color: '#1a1820', head: 'fedora', headColor: '#1a1820', face: 'sunglasses' };
+export const CLEANER = { top: 'tracksuit', color: '#5a6a7a', head: 'beanie', headColor: '#5a6a7a' };
+export const CAST = { NURSE, DOC, GUARD, WOMAN, OLD, SCAMMER, CLEANER, A: ARTYOM, L: LYOKHA, MOM, DAD, GRAN, BOSS, COURIER, COP, PLAIN, COAT, STRICT, GIRL, PLATO, SHEPHERD, STUDENT };

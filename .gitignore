@@ -4,3 +4,5 @@ data/
 aitrends-2d-studio/projects/*/build/
 aitrends-2d-studio/projects/*/out/
 aitrends-2d-studio/examples/*/build/
+__pycache__/
+*.log

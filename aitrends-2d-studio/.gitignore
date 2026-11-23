@@ -3,3 +3,4 @@ projects/*/build/
 projects/*/out/
 projects/*/audio/
 projects/*/input/*.wav
+__pycache__/

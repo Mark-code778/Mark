@@ -46,12 +46,39 @@ JB = [('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1
       ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('G5', 1), ('C5', 1.5), ('D5', .5), ('E5', 4),
       ('F5', 1), ('F5', 1), ('F5', 1.5), ('F5', .5), ('F5', 1), ('E5', 1), ('E5', 1), ('E5', .5), ('E5', .5), ('G5', 1), ('G5', 1), ('F5', 1), ('D5', 1), ('C5', 4)]
 JB_CH = ['C', 'C', 'C', 'C', 'F', 'C', 'D7', 'G7', 'C', 'C', 'C', 'C', 'F', 'C', 'G7', 'C']   # по такту (4 доли)
-# «В лесу родилась ёлочка» (восьмые = 0.5 доли), фа мажор
-EL = [('C5', .5), ('A5', .5), ('A5', .5), ('G5', .5), ('A5', .5), ('F5', .5), ('C5', .5), ('C5', .5), ('C5', 1),
-      ('C5', .5), ('A5', .5), ('A5', .5), ('Bb5', .5), ('G5', .5), ('C6', 1.5),
-      ('C6', .5), ('D6', .5), ('D6', .5), ('Bb5', .5), ('Bb5', .5), ('A5', .5), ('G5', .5), ('F5', .5), ('F5', 1),
-      ('F5', .5), ('Bb5', .5), ('Bb5', .5), ('A5', .5), ('G5', .5), ('F5', 1.5)]
-EL_CH = ['F', 'F', 'F', 'C7', 'F', 'Bb', 'C7', 'C7', 'F']                                   # по такту (2 доли)
+# «В лесу родилась ёлочка» (Л. Бекман), до мажор, размер 2/4, восьмые = 0.5 доли.
+# В ле-су ро-ди-лась ё-лоч-ка | в ле-су о-на рос-ла | Зи-мой и ле-том строй-на-я | зе-лё-на-я бы-ла
+EL_PICKUP = ('G4', .5)
+EL = [('E5', .5), ('E5', .5), ('D5', .5), ('E5', .5), ('C5', .5), ('G4', .5), ('G4', 1),
+      ('G4', .5), ('E5', .5), ('E5', .5), ('F5', .5), ('D5', .5), ('G5', 1.5),
+      ('G5', .5), ('A5', .5), ('A5', .5), ('F5', .5), ('F5', .5), ('E5', .5), ('D5', .5), ('C5', .5),
+      ('C5', .5), ('F5', .5), ('F5', .5), ('E5', .5), ('D5', .5), ('C5', 1.5)]
+# аккорды: (аккорд, доли)
+EL_CH = [('C', 2), ('C', 1), ('G7', 1), ('C', 2), ('G7', 2), ('C', 2), ('F', 1), ('C', 1), ('F', 2), ('G7', 1), ('C', 1)]
+
+def section_el(bpm, reps=1, mel_gain=1.0):
+    beat = 60 / bpm
+    total_beats = sum(d for _, d in EL)
+    total = (0.5 + total_beats * reps) * beat
+    buf = np.zeros(int(SR * (total + 2)))
+    t = 0.0
+    add(buf, glock(hz(EL_PICKUP[0]), EL_PICKUP[1] * beat), t, 0.36 * mel_gain); t += EL_PICKUP[1] * beat
+    t0 = t
+    for r in range(reps):
+        for n, d in EL:
+            add(buf, glock(hz(n), d * beat), t, 0.36 * mel_gain); t += d * beat
+        tt = t0 + r * total_beats * beat
+        for c, nb in EL_CH:            # бас «умпа» по долям
+            root, fifth = CH[c][0], CH[c][2]
+            for j in range(int(nb)):
+                tb = tt + j * beat
+                if j % 2 == 0: add(buf, pluck(hz(root + '3') / 2, beat * 0.9), tb, 0.30)
+                else: add(buf, stab([hz(x + '4') for x in CH[c]], beat * 0.6), tb, 0.13)
+            if nb == 1: pass
+            tt += nb * beat
+    for k in range(int(total / (beat / 2))):
+        add(buf, JINGLE[k % 4], k * beat / 2, 0.05 if k % 2 else 0.09)
+    return buf[: int(SR * total)]
 
 def section(mel, chords, bpm, beats_per_bar, mel_gain=1.0, octave_double=False):
     beat = 60 / bpm
@@ -79,8 +106,8 @@ def section(mel, chords, bpm, beats_per_bar, mel_gain=1.0, octave_double=False):
 def build(seconds):
     parts = [section([], ['C', 'F', 'G7', 'C'], 150, 4),
              section(JB, JB_CH, 150, 4), section(JB, JB_CH, 150, 4, octave_double=True),
-             section(EL, EL_CH, 132, 2), section(EL, EL_CH, 132, 2, octave_double=True),
-             section([], ['F', 'Bb', 'C7', 'F'], 132, 2)]
+             section_el(104, reps=2),
+             section([], ['F', 'G7', 'C', 'C'], 150, 4)]
     loop = np.concatenate(parts)
     xf = int(SR * 1.0); need = int(SR * seconds); out = np.zeros(need + len(loop))
     ramp = np.linspace(0, 1, xf); pos = 0

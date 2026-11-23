@@ -7,25 +7,28 @@ import { NY } from '../lib/ny.js';
 const snowGround = (g, GY, c1 = '#dfe6f2', c2 = '#7a86a8') => { g.fillStyle = linGrad(g, 0, GY - 10, 0, GY + 400, [c1, c2]); g.fillRect(-E.W, GY - 10, E.W * 3, E.H * 2); };
 export function blizzard(g, t, k = 1) { FX.snow(g, t, { count: Math.round(160 * k), speed: 160 * k }); FX.rain(g, t, { count: Math.round(140 * k), angle: 0.9, speed: 1500, len: 30, color: '#e8f0ff', a: 0.25 * k, w: 2 }); FX.fog(g, E.H * 0.3, E.H * 0.6, '#c8d4f0', 0.18 * k); }
 
-// ---------- салон машины (разрез сбоку): водитель справа, задний ряд слева ----------
+// ---------- салон машины: аккуратная машина в разрезе сбоку, люди видны в окнах ----------
+// Геометрия (относительно CX, GY): колёса r=70 на y=-70, x=±480; линия окон (пояс) y=-215; крыша y=-370.
+// Сиденья: водитель x≈330, пассажир x≈200 (за ним), сзади x≈-230 и x≈-400. Корпус и стёкла рисует предмет carShell (поверх людей).
+export const CAR_GEO = { belt: 215, roof: 370, front: 780, rear: -760 };
 export function carIn(g, t, cam, o = {}) {
-  const M = mood(o.mood || 'night'), GY = GROUND(), CX = E.W / 2;
-  layer(g, cam, 0.3, (g) => { backdrop(g, ['#141a33', '#2a3358', '#4a5580']); if (o.storm !== false) { FX.snow(g, t, { count: 220, speed: 260 }); FX.rain(g, t, { count: 160, angle: 1.1, speed: 1700, len: 26, color: '#e8f0ff', a: 0.3, w: 2 }); } else FX.snow(g, t, { count: 90, speed: 40 }); if (o.hazard) { const on = Math.floor(t * 2.2) % 2 === 0; if (on) { glow(g, CX - 900, GY - 300, 500, '#ffb02a', 0.25); glow(g, CX + 900, GY - 300, 500, '#ffb02a', 0.25); } } if (o.lights) glow(g, CX - 1200 + (o.lightsX || 0), GY - 340, 300 + (o.lightsK || 0) * 400, '#fff2c2', 0.5 + 0.4 * (o.lightsK || 0)); });
-  layer(g, cam, 0.85, (g) => {
-    // корпус-рамка салона: крыша, стойки, окна
-    const L = CX - 900, R = CX + 900, top = GY - 560;
-    g.fillStyle = '#1e1a22'; g.fillRect(-E.W, -E.H, E.W * 3, top - (-E.H)); g.fillRect(-E.W, GY - 120, E.W * 3, E.H * 2);
-    g.fillRect(-E.W, -E.H, L - (-E.W), E.H * 3); g.fillRect(R, -E.H, E.W * 2, E.H * 3);
-    for (const px of [CX - 300, CX + 360]) { g.fillStyle = '#1e1a22'; g.fillRect(px - 22, top, 44, GY - 120 - top); }
-    g.fillStyle = 'rgba(200,220,255,.06)'; g.fillRect(L, top, R - L, GY - 120 - top);
-    if (o.fog) { g.fillStyle = `rgba(230,236,250,${0.35 * o.fog})`; g.fillRect(L, top, R - L, GY - 120 - top); }
-    // приборная панель справа
-    rr(g, R - 260, GY - 250, 300, 140, 20); g.fillStyle = '#2a2530'; g.fill(); circle(g, R - 160, GY - 190, 26, '#3a3540'); glow(g, R - 160, GY - 190, 60, o.dash || '#7fd0ff', 0.25); if (o.hazard) { const on = Math.floor(t * 2.2) % 2 === 0; circle(g, R - 90, GY - 200, 10, on ? '#ff6a2a' : '#4a2a1a'); if (on) glow(g, R - 90, GY - 200, 50, '#ff6a2a', 0.6); }
-    // сиденья
-    for (const sx of [CX + 330, CX - 330]) { rr(g, sx - 120, GY - 330, 50, 230, 16); g.fillStyle = '#4a3a44'; g.fill(); rr(g, sx - 120, GY - 150, 220, 40, 14); g.fill(); }
+  const M = mood('night'), GY = GROUND(), CX = E.W / 2;
+  layer(g, cam, 0.15, (g) => { backdrop(g, ['#0e1430', '#252c58', '#4a5288']); if (o.storm === false) { FX.stars(g, t, { count: 90 }); FX.moon(g, CX + 620, GY - 760, 28); } });
+  layer(g, cam, 0.4, (g) => { FX.hills(g, { y: GY - 120, amp: 60, color: '#4a5688', seed: 4 }); for (let i = 0; i < 12; i++) FX.pine(g, CX - 1600 + i * 290, GY - 110, 0.5 + (i % 3) * 0.15, '#1e2648'); if (o.lights) glow(g, CX - 1100 + (o.lightsX || 0), GY - 260, 200 + (o.lightsK || 0) * 500, '#fff2c2', 0.45 + 0.4 * (o.lightsK || 0)); });
+  layer(g, cam, 1, (g) => {
+    g.fillStyle = linGrad(g, 0, GY - 30, 0, GY + 400, ['#cdd6ec', '#5a6488']); g.fillRect(-E.W, GY - 30, E.W * 3, E.H * 2);
+    g.save(); g.translate(CX, 0); g.scale(0.85, 1); g.translate(-CX, 0);
+    // тёмный салон за окнами (силуэт кабины)
+    g.fillStyle = o.warm ? '#2a2026' : '#17151d';
+    g.beginPath(); g.moveTo(CX - 600, GY - 200); g.lineTo(CX - 470, GY - 360); g.lineTo(CX + 360, GY - 360); g.lineTo(CX + 480, GY - 200); g.closePath(); g.fill();
+    if (o.warm) glow(g, CX - 40, GY - 260, 520, '#ffcf8a', 0.16);
+    const dash = o.dash || '#7fd0ff'; glow(g, CX + 440, GY - 230, 120, dash, 0.22);
+    // спинки сидений
+    for (const sx of [CX + 270, CX + 140, CX - 300, CX - 470]) { rr(g, sx - 20, GY - 330, 44, 150, 14); g.fillStyle = '#3a3040'; g.fill(); }
+    g.restore();
   });
-  layer(g, cam, 1, (g) => { g.fillStyle = '#1e1a22'; g.fillRect(-E.W, GY - 100, E.W * 3, E.H * 2); glow(g, CX, GY - 300, 900, o.warm ? '#ffcf8a' : '#9fb0ff', o.warm ? 0.16 : 0.07); });
-  return { GY: GY - 110, CX, M };
+  if (o.storm !== false) { FX.snow(g, t, { count: 160, speed: 220 }); FX.rain(g, t, { count: 110, angle: 1.0, speed: 1500, len: 26, color: '#e8f0ff', a: 0.22, w: 2 }); } else FX.snow(g, t, { count: 60, speed: 40 });
+  return { GY, CX, M };
 }
 
 // ---------- заснеженное поле ночью, дорога, метель ----------

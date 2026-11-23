@@ -116,6 +116,37 @@ export const NY = {
     for (let i = 0; i < 5; i++) { g.fillStyle = '#ffd88a'; g.fillRect(x - 40 * s + i * 18 * s, y - 220 * s, 8 * s, 30 * s); } glow(g, x, y - 360 * s, 140 * s, '#fff3d6', 0.25); },
   terem(g, x, y, s, o) { g.fillStyle = '#8a5a3a'; g.fillRect(x - 160 * s, y - 220 * s, 320 * s, 220 * s); poly(g, [[x - 190 * s, y - 220 * s], [x + 190 * s, y - 220 * s], [x, y - 380 * s]], '#c0453a'); g.fillRect(x - 60 * s, y - 470 * s, 120 * s, 150 * s); poly(g, [[x - 80 * s, y - 470 * s], [x + 80 * s, y - 470 * s], [x, y - 580 * s]], '#3a6ea5'); for (const dx of [-100, 0, 100]) { g.fillStyle = '#ffe7b0'; g.fillRect(x + dx * s - 25 * s, y - 170 * s, 50 * s, 60 * s); glow(g, x + dx * s, y - 140 * s, 70 * s, '#ffd88a', 0.3); } g.fillStyle = '#f4f8ff'; g.fillRect(x - 200 * s, y - 226 * s, 400 * s, 10 * s); },
   key(g, x, y, s, o) { g.save(); g.translate(x, y); g.rotate(o.rot || 0); rr(g, -14 * s, -24 * s, 28 * s, 24 * s, 6 * s); g.fillStyle = '#2a2a33'; g.fill(); rr(g, -4 * s, 0, 8 * s, 34 * s, 2 * s); g.fillStyle = '#c9cdd4'; g.fill(); g.fillRect(4 * s, 14 * s, 6 * s, 4 * s); g.fillRect(4 * s, 24 * s, 6 * s, 4 * s); g.restore(); },
+  // корпус машины поверх сидящих людей (низ дверей, стойки, крыша, колёса, стёкла)
+  carShell(g, x, y, s, o) {
+    const c = o.color || '#4a6a8a', d = shade(c, -0.25), t = o.t || 0, B = y - 215, R = y - 370;
+    const KX = 0.85; g.save(); g.translate(x, 0); g.scale(KX, 1); g.translate(-x, 0);
+    // крыша и стойки
+    g.fillStyle = c;
+    g.beginPath(); g.moveTo(x - 620, B); g.lineTo(x - 490, R); g.lineTo(x + 380, R); g.lineTo(x + 500, B); g.lineTo(x + 470, B); g.lineTo(x + 360, R + 18); g.lineTo(x - 470, R + 18); g.lineTo(x - 580, B); g.closePath(); g.fill();
+    poly(g, [[x - 10, R + 10], [x + 26, R + 10], [x + 30, B], [x - 14, B]], d);        // средняя стойка
+    poly(g, [[x - 580, B], [x - 470, R + 18], [x - 446, R + 18], [x - 548, B]], d);
+    // стёкла: лёгкий голубой отблеск + блики
+    const glass = (pts) => { g.save(); g.beginPath(); pts.forEach((p, i) => (i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]))); g.closePath(); g.clip(); g.fillStyle = 'rgba(170,200,255,.10)'; g.fillRect(x - 800, R - 10, 1600, 400); g.strokeStyle = 'rgba(255,255,255,.18)'; g.lineWidth = 10; for (const k of [0, 1]) { g.beginPath(); g.moveTo(x - 400 + k * 520 + ((t * 20) % 40), B); g.lineTo(x - 300 + k * 520 + ((t * 20) % 40), R); g.stroke(); } if (o.fog) { g.fillStyle = `rgba(232,238,250,${0.38 * o.fog})`; g.fillRect(x - 800, R - 10, 1600, 400); } g.restore(); };
+    glass([[x - 548, B], [x - 446, R + 18], [x - 10, R + 18], [x - 14, B]]);
+    glass([[x + 30, B], [x + 26, R + 18], [x + 360, R + 18], [x + 470, B]]);
+    // нижняя часть: двери, капот, багажник
+    g.fillStyle = c; g.beginPath(); g.moveTo(x - 760, B + 20); g.quadraticCurveTo(x - 760, B, x - 700, B); g.lineTo(x + 520, B); g.quadraticCurveTo(x + 760, B + 4, x + 785, B + 50); g.lineTo(x + 790, y - 100); g.quadraticCurveTo(x + 790, y - 60, x + 750, y - 60); g.lineTo(x - 740, y - 60); g.quadraticCurveTo(x - 770, y - 60, x - 768, y - 100); g.closePath(); g.fill();
+    g.fillStyle = shade(c, 0.12); g.fillRect(x - 700, B + 4, 1220, 10);                                            // блик по поясу
+    g.fillStyle = d; g.fillRect(x - 760, y - 120, 1550, 12);                                                     // молдинг
+    for (const dx of [-14, 30]) seg(g, [[x + dx, B + 6], [x + dx, y - 70]], 3, d);                               // швы дверей
+    seg(g, [[x - 548, B + 6], [x - 560, y - 74]], 3, d); seg(g, [[x + 470, B + 6], [x + 470, y - 74]], 3, d);
+    for (const hx of [x - 120, x + 330]) { rr(g, hx, B + 30, 50, 10, 5); g.fillStyle = shade(c, 0.3); g.fill(); }  // ручки
+    rr(g, x + 440, B - 30, 40, 24, 6); g.fillStyle = d; g.fill();                                                 // зеркало
+    // фары и фонари
+    rr(g, x + 745, B + 30, 40, 26, 8); g.fillStyle = '#fff2c2'; g.fill(); if (o.headlights) glow(g, x + 790, B + 44, 220, '#fff2c2', 0.5);
+    rr(g, x - 770, B + 30, 26, 26, 6); g.fillStyle = '#c0262a'; g.fill();
+    if (o.hazard) { const on = Math.floor(t * 2.2) % 2 === 0; for (const hx of [x + 760, x - 760]) { circle(g, hx, B + 74, 10, on ? '#ffb02a' : '#6a4a1a'); if (on) glow(g, hx, B + 74, 120, '#ffb02a', 0.55); } }
+    // снег на крыше и капоте
+    g.fillStyle = 'rgba(240,244,255,.9)'; rr(g, x - 480, R - 10, 850, 14, 7); g.fill(); rr(g, x + 520, B - 6, 240, 10, 5); g.fill();
+    g.restore();
+    // колёса и арки (вне сжатия, чтобы остались круглыми)
+    for (const wx of [x - 480 * KX, x + 480 * KX]) { g.fillStyle = '#141218'; g.beginPath(); g.arc(wx, y - 70, 92, Math.PI, 0); g.fill(); circle(g, wx, y - 70, 70, '#141218'); circle(g, wx, y - 70, 34, '#8a8f9c'); circle(g, wx, y - 70, 10, '#3a3a44'); }
+  },
   blink(g, x, y, s, o) { const on = Math.floor((o.t || 0) * 2.2) % 2 === 0; circle(g, x, y, 8 * s, on ? '#ffb02a' : '#5a3a1a'); if (on) glow(g, x, y, 90 * s, '#ffb02a', 0.6); },
   table(g, x, y, s, o) { // праздничный стол со скатертью
     const w = (o.w || 420) * s; g.fillStyle = o.cloth || '#f4efe6'; g.fillRect(x - w / 2, y - 110 * s, w, 30 * s); poly(g, [[x - w / 2, y - 80 * s], [x + w / 2, y - 80 * s], [x + w / 2 - 6 * s, y - 40 * s], [x - w / 2 + 6 * s, y - 40 * s]], shade(o.cloth || '#f4efe6', -0.08)); for (const dx of [-1, 1]) seg(g, [[x + dx * (w / 2 - 20 * s), y - 40 * s], [x + dx * (w / 2 - 20 * s), y]], 8 * s, '#4a3028'); },

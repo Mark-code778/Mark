@@ -30,9 +30,10 @@ const amb = { roomtone: { name: 'roomtone', gain: -24 }, city: { name: 'city', g
 const Zm = fig('Z'), T = fig('T'), KD = fig('K'), Q = fig('Q'), U = fig('U'), O = fig('O'), I = fig('I'), SN = fig('S'), OS = fig('R'), MC = fig('N');
 const W0 = (x = 0) => ({ z: [1, 1.05], x: [x + 20, x - 20], y: 0 });         // единственный план для сцен с людьми: фигуры всегда одного размера
 const ZOOM = (x = 0, y = 0, z = 1.8) => ({ z: [z, z + 0.08], x: [x + 10, x - 10], y });   // наезд только на предметы (без людей)
-const sitCar = (o = {}) => ({ p: 'sit', y: 60, f: 1, ...o });
-const CAR = (e = {}, extra = {}) => [A(420, sitCar({ e: e.A || 'neutral', ...(extra.A || {}) })), Zm(220, sitCar({ e: e.Z || 'happy', ...(extra.Z || {}) })), B(-250, sitCar({ e: e.B || 'smile', ...(extra.B || {}) })), D(-440, sitCar({ e: e.D || 'neutral', ...(extra.D || {}) }))];
-const CARO = (more = []) => [{ o: 'steering', x: 580, y: 230, s: 0.9 }, { o: 'holodets', x: -345, y: 150, coat: true, s: 0.8 }, ...more];
+const sitCar = (o = {}) => ({ p: 'sit', y: 84, f: 1, shadow: false, ...o });
+const CAR = (e = {}, extra = {}) => [Zm(170, sitCar({ e: e.Z || 'happy', ...(extra.Z || {}) })), A(280, sitCar({ e: e.A || 'neutral', ...(extra.A || {}) })), D(-365, sitCar({ e: e.D || 'neutral', ...(extra.D || {}) })), B(-220, sitCar({ e: e.B || 'smile', ...(extra.B || {}) }))];
+const SHELL = (o = {}) => ({ o: 'carShell', x: 0, y: 0, s: 1, front: true, abs: true, ...o });
+const CARO = (more = [], sh = {}) => [{ o: 'steering', x: 365, y: 255, s: 0.55, back: true }, { o: 'holodets', x: -293, y: 196, coat: true, s: 0.6 }, ...more, SHELL(sh)];
 const KIT = { mood: 'interiorWarm' };
 const LIV = (more = {}) => ({ sofa: true, ...more });
 const TREE = (more = {}) => ({ o: 'tree', x: 620, y: 0, h: 300, back: true, ...more });
@@ -40,9 +41,9 @@ const amb2 = { ...amb, room: { name: 'roomtone', gain: -26 }, wind: { name: 'win
 
 // ================= ХОЛОДНОЕ ОТКРЫТИЕ: МАШИНА В ПОЛЕ =================
 K(0.00, st('snowfield', { storm: 1 }, W0(-100), [], [{ o: 'car', x: -100, y: 0, s: 1.0, color: '#4a6a8a', lit: true }, { o: 'blink', x: 110, y: 110 }, { o: 'blink', x: -300, y: 110 }], { badge: { str: '23:57', at: 0.2 } }), { scene: 'заглохшая машина посреди снежного поля, метель', amb: amb2.storm, in: { type: 'fade', dur: 0.8 } });
-K(1.84, st('carIn', { hazard: true }, W0(), [A(420, sitCar({ e: 'worried' }))], CARO([{ o: 'steering', x: 580, y: 230, s: 0.9 }])), { scene: 'ты сидишь в заглохшей машине' });
-K(5.26, st('carIn', { hazard: true }, W0(), [A(420, sitCar({ e: 'neutral' })), Zm(220, sitCar({ e: 'smile' }))], CARO()), { scene: 'рядом Лёха в костюме Деда Мороза' });
-K(8.38, st('carIn', { hazard: true }, W0(), CAR({ A: 'neutral', Z: 'smile', B: 'smile', D: 'thinking' }), CARO([{ o: 'radio', attach: 3, s: 0.8, ay: 10, dial: 0.5 }])), { scene: 'бабушка с холодцом, дедушка крутит радио' });
+K(1.84, st('carIn', { hazard: true }, W0(), [A(280, sitCar({ e: 'worried' }))], CARO([{ o: 'steering', x: 365, y: 255, s: 0.55, back: true }])), { scene: 'ты сидишь в заглохшей машине' });
+K(5.26, st('carIn', { hazard: true }, W0(), [A(280, sitCar({ e: 'neutral' })), Zm(170, sitCar({ e: 'smile' }))], CARO()), { scene: 'рядом Лёха в костюме Деда Мороза' });
+K(8.38, st('carIn', { hazard: true }, W0(), CAR({ A: 'neutral', Z: 'smile', B: 'smile', D: 'thinking' }), CARO([{ o: 'radio', attach: 2, s: 0.8, ay: 10, dial: 0.5 }])), { scene: 'бабушка с холодцом, дедушка крутит радио' });
 K(15.32, ins('snowfield', { storm: 1 }, [{ o: 'car', x: 0, y: 0, s: 0.8, color: '#4a6a8a' }], { blur: 0, cam: { z: [1, 1.05], x: [0, 0], y: 0 }, read: [{ label: 'ДО ДОМА', value: '40 КМ', at: 0.2, y: 230 }] }), { scene: 'до дома 40 км' });
 K(16.96, ins('kremlinNight', {}, [], { blur: 6, read: [{ label: 'ДО НОВОГО ГОДА', value: '3 МИНУТЫ', at: 0.2, color: '#ff6f61' }] }), { scene: 'до Нового года 3 минуты', sfx: sfx([0.2, 'tick', -12], [1.2, 'tick', -12]) });
 K(19.18, face('A', 'confused', 'carIn', { so: { hazard: true } }), { scene: 'самый странный Новый год в твоей жизни' });
@@ -166,7 +167,7 @@ K([474.04, 'еду'], face('A', 'neutral', 'yardW', { talk: [0, 3.6] }), { scene
 K(482.18, face('Z', [[0, 'thinking'], [1.6, 'determined']], 'stairwell', { talk: [2.0, 3.6] }), { scene: 'Лёха молчит секунду: «Подожди меня у подъезда»' });
 K(485.84, st('yardW', {}, W0(0), [Zm(-700, { walk: { to: 80, at: 0, dur: 3.4, run: true }, e: 'happy' })], [{ o: 'car', x: 300, y: 0, s: 1.0, color: '#4a6a8a', driver: true, driverColor: '#ee7a2b' }, { o: 'sack', attach: 0, hand: 'B', ay: 40 }], { badge: { str: '+20 МИНУТ', at: 0.3 } }), { scene: 'через 20 минут Лёха в полном костюме Деда Мороза' });
 K(491.62, st('yardW', {}, W0(0), [Zm(0, { p: 'holdFront', e: 'smile' })], [{ o: 'sack', x: -150, y: 0 }, { o: 'staff', attach: 0, ay: 120 }], { call: { p: [-150, 60], to: [-500, 420], str: 'МЕШОК', at: 0.3, w: 240 } }), { scene: 'с мешком, с посохом — переодеться не успел' });
-K(495.24, st('carIn', { storm: false }, W0(), [A(420, sitCar({ e: 'smirk' })), Zm(220, sitCar({ e: 'happy', talk: [0, 4.4] }))], CARO().slice(0, 1)), { scene: '«Ну что, Снегурочка? Поехали за подарками» — басом' });
+K(495.24, st('carIn', { storm: false }, W0(), [A(280, sitCar({ e: 'smirk' })), Zm(170, sitCar({ e: 'happy', talk: [0, 4.4] }))], CARO().slice(0, 1)), { scene: '«Ну что, Снегурочка? Поехали за подарками» — басом' });
 K(499.70, st('tvstudio', {}, W0(), [SN(-60, { p: 'wave', e: 'smile' })], [], { read: { value: 'НАША, РУССКАЯ ПРИДУМКА', at: 0.6 } }), { in: { type: 'dip', dur: 0.4 }, scene: 'Снегурочка — чисто наша придумка', amb: amb.murmur });
 K(503.34, st('tvstudio', {}, W0(), [SN(-200, { p: 'stand', e: 'smile' }), X(200, { p: 'shrug', e: 'confused', f: -1 })], [], { read: { value: 'У САНТЫ ВНУЧКИ НЕТ', at: 0.4, color: '#ff6f61' } }), { scene: 'ни у одного Санта-Клауса нет внучки' });
 K(506.76, st('yardW', { flakes: 60 }, W0(), [SN(80, { p: 'stand', e: 'happy' })], [], { tint: 'memory' }), { scene: 'девочка, слепленная из снега, из старинных сказок' });
@@ -176,8 +177,8 @@ K(520.16, st('club', {}, W0(), [Zm(-120, { p: 'wave', e: 'happy' }), SN(120, { p
 // ================= ДОРОГА В ДЕРЕВНЮ =================
 K(529.68, st('winterroad', { storm: 0.6, speed: 260 }, W0(), [], [{ o: 'car', x: 0, y: 0, s: 1.0, color: '#4a6a8a', lights: true, driver: true, driverColor: '#ee7a2b' }], { read: { value: '4 ЧАСА ВМЕСТО 2', at: 0.6, y: 230 } }), { in: { type: 'dip', dur: 0.4 }, scene: 'дорога занимает 4 часа вместо двух', amb: amb2.storm });
 K(533.40, st('winterroad', { storm: 1.2, speed: 160 }, W0(), [], [{ o: 'car', x: 0, y: 0, s: 1.0, color: '#4a6a8a', lights: true }]), { scene: 'чем дальше от города, тем сильнее метель' });
-K(535.90, st('carIn', { storm: true, fog: 0.4 }, W0(), [A(420, sitCar({ e: 'nervous' })), Zm(220, sitCar({ e: 'neutral' }))], CARO().slice(0, 1)), { scene: 'дворники не справляются, едете медленно' });
-K(541.26, st('carIn', {}, W0(), [A(420, sitCar({ e: 'smile' })), Zm(220, sitCar({ e: 'joy', talk: [0, 6], p: [[0, 'sit'], [1.0, 'explain'], [3.0, 'sit']] }))], CARO().slice(0, 1)), { scene: 'Лёха развлекает: поёт басом, рассказывает истории' });
+K(535.90, st('carIn', { storm: true, fog: 0.4 }, W0(), [A(280, sitCar({ e: 'nervous' })), Zm(170, sitCar({ e: 'neutral' }))], CARO().slice(0, 1)), { scene: 'дворники не справляются, едете медленно' });
+K(541.26, st('carIn', {}, W0(), [A(280, sitCar({ e: 'smile' })), Zm(170, sitCar({ e: 'joy', talk: [0, 6], p: [[0, 'sit'], [1.0, 'explain'], [3.0, 'sit']] }))], CARO().slice(0, 1)), { scene: 'Лёха развлекает: поёт басом, рассказывает истории' });
 K(548.14, face('Z', 'smirk', 'carIn', { talk: [0, 8.2] }), { scene: '«Если остановят — скажу, что везу подарки детям. Деда Мороза не оштрафуют»' });
 
 // ================= ДЕРЕВНЯ =================
@@ -196,14 +197,14 @@ K(620.02, face('B', 'determined', 'village', { talk: [1.6, 3.0] }), { scene: 'б
 
 // ================= ОБРАТНО: МЕТЕЛЬ =================
 K([620.02, 'девять'], st('winterroad', { mood: 'night', storm: 1.3, speed: 120 }, W0(), [], [{ o: 'car', x: 0, y: 0, s: 1.0, color: '#4a6a8a', lights: true }], { badge: { str: '21:00', at: 0.2 } }), { in: { type: 'dip', dur: 0.4 }, scene: 'в девять выезжаете, метель разыгралась вовсю', amb: amb2.storm });
-K(628.94, st('carIn', { fog: 0.5 }, W0(), [A(420, sitCar({ e: 'determined', p: 'holdFront' }))], CARO().slice(0, 1)), { scene: 'дороги почти не видно, ты вцепился в руль' });
-K(632.72, st('carIn', {}, W0(), CAR({ A: 'determined', Z: 'smile', B: 'smile', D: 'neutral' }), CARO([{ o: 'pirozhki', attach: 1, s: 0.6, ay: 10 }])), { scene: 'Лёха с пирожками, бабушка с дедушкой и холодец в пальто' });
+K(628.94, st('carIn', { fog: 0.5 }, W0(), [A(280, sitCar({ e: 'determined', p: 'holdFront' }))], CARO().slice(0, 1)), { scene: 'дороги почти не видно, ты вцепился в руль' });
+K(632.72, st('carIn', {}, W0(), CAR({ A: 'determined', Z: 'smile', B: 'smile', D: 'neutral' }), CARO([{ o: 'pirozhki', attach: 0, s: 0.6, ay: 10 }])), { scene: 'Лёха с пирожками, бабушка с дедушкой и холодец в пальто' });
 K(644.62, face('D', 'smile', 'carIn', { talk: [0, 9.0], tint: 'memory', read: { label: '1960-Е:', value: '20 ЧЕЛОВЕК — 1 МАНДАРИН', at: 3.6 } }), { scene: 'дедушка рассказывает про общежитие в 60-х' });
 K(654.14, st('carIn', {}, W0(), CAR({ A: 'smile', Z: 'joy', B: 'happy', D: 'smile' }, { Z: { talk: [0, 4.4], p: [[0, 'sit'], [0.4, 'explain']] } }), CARO()), { scene: 'Лёха рассказывает про сегодняшние заказы' });
 K(658.64, st('living', LIV(), W0(), [Zm(200, { p: 'handsOnHead', e: 'shocked', f: -1 })], [{ o: 'cat', path: [[0, [-200, 0]], [2.6, [-500, 0]]], s: 1.3, color: '#8a6a4a', mode: 'swipe' }, { o: 'sack', path: [[0, [-120, 0]], [2.6, [-430, 0]]] }], { tint: 'memory' }), { scene: 'огромный дог утащил мешок под диван', sfx: sfx([0.4, 'swish', -12]) });
 K(663.78, st('living', LIV(), W0(), [Zm(200, { p: 'wave', e: 'nervous', f: -1 }), P(-200, { p: 'point', e: 'joy', f: 1, say: { str: 'ЛЁХА МОРОЗ!', at: 1.0, w: 300, until: 6 } })], [TREE()], { tint: 'memory' }), { scene: 'папа ребёнка — бывший одноклассник: «Лёха Мороз!»' });
 K(670.58, st('living', LIV(), W0(), [Zm(200, { p: 'shrug', e: 'nervous', f: -1 }), U(-80, { p: 'point', e: 'thinking', f: 1, say: { str: 'ПАХНЕТ ШАУРМОЙ?', at: 0.8, w: 340, until: 6 } })], [TREE()], { tint: 'memory' }), { scene: 'девочка: почему от Деда Мороза пахнет шаурмой?' });
-K(675.80, st('carIn', {}, W0(), CAR({ A: 'happy', Z: 'joy', B: 'joy', D: 'happy' }, { B: { jit: 2 } }), CARO([{ o: 'holodets', x: -345, y: 150, coat: true, s: 0.8, sh: [[0.6, 6], [1.4, 0]] }]).slice(0, 1).concat([{ o: 'holodets', x: -345, y: 150, coat: true, s: 0.8, sh: [[0.6, 6], [1.4, 0]] }])), { scene: 'бабушка смеётся так, что чуть не роняет холодец', sfx: sfx([0.6, 'boing', -14]) });
+K(675.80, st('carIn', {}, W0(), CAR({ A: 'happy', Z: 'joy', B: 'joy', D: 'happy' }, { B: { jit: 2 } }), CARO([{ o: 'holodets', x: -293, y: 196, coat: true, s: 0.6, sh: [[0.6, 6], [1.4, 0]] }]).slice(0, 1).concat([{ o: 'holodets', x: -293, y: 196, coat: true, s: 0.6, sh: [[0.6, 6], [1.4, 0]] }])), { scene: 'бабушка смеётся так, что чуть не роняет холодец', sfx: sfx([0.6, 'boing', -14]) });
 K(679.22, st('carIn', {}, W0(), CAR({ A: 'smile', Z: 'happy', B: 'smile', D: 'joy' }, { D: { p: [[0, 'sit'], [0.4, 'reach']], talk: [2.3, 6.6] } }), CARO()), { scene: 'дедушка хлопает Лёху по плечу: «Хороший ты парень, Мороз!»' });
 
 // ================= МАШИНА ГЛОХНЕТ =================
@@ -219,12 +220,12 @@ K(720.46, ins('snowfield', { storm: 1 }, [{ o: 'phone', x: 0, y: 100, s: 7, labe
 // ================= БЕЗ ТРЁХ МИНУТ ПОЛНОЧЬ =================
 K(722.38, st('snowfield', { storm: 1 }, W0(-100), [], [{ o: 'car', x: -100, y: 0, s: 1.0, color: '#4a6a8a', lit: true }, { o: 'blink', x: 110, y: 110 }, { o: 'blink', x: -300, y: 110 }], { badge: { str: '23:57', at: 0.4 } }), { scene: 'и вот мы снова там, откуда начали', in: { type: 'flash', dur: 0.3 }, amb: amb2.storm });
 K(729.44, st('carIn', { hazard: true }, W0(), CAR({ A: 'neutral', Z: 'smile', B: 'smile', D: 'neutral' }), CARO()), { scene: 'прохладно, аварийка, бабушка укутала всех в шарфы' });
-K(736.92, st('carIn', { hazard: true }, W0(), CAR({ A: 'neutral', Z: 'neutral', B: 'neutral', D: 'determined' }), CARO([{ o: 'radio', attach: 3, s: 0.8, ay: 10, dial: [[0, 0], [3, 2.5], [9, 3.2]] }])), { scene: 'дедушка крутит радио: шипение, треск…', sfx: sfx([0.4, 'glitch', -16], [2.0, 'glitch', -16]) });
+K(736.92, st('carIn', { hazard: true }, W0(), CAR({ A: 'neutral', Z: 'neutral', B: 'neutral', D: 'determined' }), CARO([{ o: 'radio', attach: 2, s: 0.8, ay: 10, dial: [[0, 0], [3, 2.5], [9, 3.2]] }])), { scene: 'дедушка крутит радио: шипение, треск…', sfx: sfx([0.4, 'glitch', -16], [2.0, 'glitch', -16]) });
 K([736.92, 'вдруг'], ins('kremlinNight', {}, [], { blur: 3 }), { scene: 'сквозь помехи — голос диктора и звук, который все узнают', sfx: sfx([0.4, 'riser', -14]) });
 K(747.44, st('kremlinNight', {}, { z: [1.1, 1.2], x: [0, 0], y: -320 }, [], [], { big: { str: 'КУРАНТЫ', at: 0.1, top: true } }), { scene: 'куранты', sfx: sfx([0.1, 'clock', -8]) });
 K(748.48, face('B', 'joy', 'carIn', { talk: [0, 2.0] }), { scene: '«Дед, поймал!» — кричит бабушка' });
-K(751.12, st('carIn', { hazard: true, warm: true }, W0(), CAR({ A: 'surprised', Z: 'joy', B: 'happy', D: 'smile' }, { Z: { p: [[0, 'sit'], [1.0, 'holdFront']] } }), CARO([{ o: 'mandarins', attach: 1, n: 6, s: 0.7, when: [2.4, 99] }])), { scene: 'Лёха достаёт из мешка — мандарины! Целый пакет', sfx: sfx([2.4, 'ding', -10]) });
-K(758.52, st('carIn', { hazard: true, warm: true }, W0(), CAR({ A: 'happy', Z: 'joy', B: 'smile', D: 'smile' }, { D: { p: [[0, 'sit'], [1.6, 'holdFront']] } }), CARO([{ o: 'pirozhki', attach: 2, s: 0.6, ay: 10 }, { o: 'thermos', attach: 3, s: 0.7, ay: 20, when: [2.2, 99] }])), { scene: 'бабушка разворачивает пирожки, дедушка достаёт термос' });
+K(751.12, st('carIn', { hazard: true, warm: true }, W0(), CAR({ A: 'surprised', Z: 'joy', B: 'happy', D: 'smile' }, { Z: { p: [[0, 'sit'], [1.0, 'holdFront']] } }), CARO([{ o: 'mandarins', attach: 0, n: 6, s: 0.7, when: [2.4, 99] }])), { scene: 'Лёха достаёт из мешка — мандарины! Целый пакет', sfx: sfx([2.4, 'ding', -10]) });
+K(758.52, st('carIn', { hazard: true, warm: true }, W0(), CAR({ A: 'happy', Z: 'joy', B: 'smile', D: 'smile' }, { D: { p: [[0, 'sit'], [1.6, 'holdFront']] } }), CARO([{ o: 'pirozhki', attach: 3, s: 0.6, ay: 10 }, { o: 'thermos', attach: 2, s: 0.7, ay: 20, when: [2.2, 99] }])), { scene: 'бабушка разворачивает пирожки, дедушка достаёт термос' });
 K(765.08, ins('carIn', { warm: true }, [0, 1, 2, 3].map((i) => ({ o: 'pcup', x: -300 + i * 200, y: 240, s: 2.2, when: [0.4 + i * 0.5, 99] })), { blur: 10 }), { scene: 'и раздаёт пластиковые стаканчики, которые всегда возит с собой' });
 K(770.34, face('Z', 'determined', 'carIn', { talk: [1.8, 5.0], so: { warm: true } }), { scene: 'Лёха басом: «Так, у каждого желание. Пишем»' });
 K(775.34, ins('carIn', { warm: true }, [{ o: 'notebook', x: 0, y: 220, s: 3.4 }], { blur: 10 }), { scene: 'блокнот, в котором дети писали ему письма', sfx: sfx([0.4, 'swish', -14]) });
@@ -249,7 +250,7 @@ K(853.14, face('D', 'happy', 'carIn', { so: { warm: true } }), { scene: 'дед�
 K(854.98, face('Z', 'determined', 'carIn', { talk: [2.1, 8.3], so: { warm: true } }), { scene: '«Дед Мороз разрешает всем съесть по мандарину. Новый год уже наступил»' });
 K(863.48, st('carIn', { hazard: true, warm: true, fog: 0.5 }, W0(-200), CAR({ A: 'smile', Z: 'smile', B: 'smile', D: 'thinking' }, { D: { look: [-0.8, -0.3], f: -1 } }), CARO()), { scene: 'дедушка смотрит в запотевшее окно' });
 K(869.90, face('D', 'smile', 'carIn', { talk: [0, 3.3], so: { warm: true }, read: { value: '82 НОВЫХ ГОДА', at: 1.2 } }), { scene: '«У меня было 82 Новых года»' });
-K(873.54, st('carIn', {}, W0(), [D(-100, { p: 'sit', y: 60, e: 'smile' })], [{ o: 'mandarin', x: 60, y: 160, r: 12 }], { tint: 'memory', read: [{ value: 'ОБЩЕЖИТИЕ', at: 0.2, x: 200, y: 300 }, { value: 'КАЗАРМА', at: 2.3, x: 760, y: 300 }, { value: 'РОДДОМ', at: 4.0, x: 1300, y: 300 }] }), { scene: 'общежитие, армия, роддом под окнами, когда родился твой папа' });
+K(873.54, st('carIn', {}, W0(), [D(-255, sitCar({ e: 'smile' }))], [{ o: 'mandarin', x: -130, y: 250, r: 12 }], { tint: 'memory', read: [{ value: 'ОБЩЕЖИТИЕ', at: 0.2, x: 200, y: 300 }, { value: 'КАЗАРМА', at: 2.3, x: 760, y: 300 }, { value: 'РОДДОМ', at: 4.0, x: 1300, y: 300 }] }), { scene: 'общежитие, армия, роддом под окнами, когда родился твой папа' });
 K(881.02, face('D', 'joy', 'carIn', { talk: [0, 7.8], so: { warm: true } }), { scene: '«…но в машине посреди поля с Дедом Морозом — впервые. Жизнь до конца удивляет»' });
 
 // ================= ТРАКТОР =================
@@ -258,7 +259,7 @@ K(893.82, st('snowfield', { storm: 0.8, lights: true, lightsK: [[0, 0.3], [4.8, 
 K(897.24, st('carIn', { hazard: true, lights: true, lightsK: 0.9 }, W0(), CAR({ A: 'surprised', Z: 'surprised', B: 'scared', D: 'surprised' }), CARO()), { scene: 'вы замираете, свет ярче, рокот мотора', sfx: sfx([2.6, 'hum', -10, { dur: 2.5, pitch: 0.5 }]) });
 K(902.86, st('snowfield', { storm: 0.7 }, W0(), [], [{ o: 'car', x: -500, y: 0, s: 1.0, color: '#4a6a8a', lit: true }, { o: 'tractor', path: [[0, [900, 0]], [4.0, [250, 0]]], ease: 'out', s: 1.2, lights: true, lit: true, driver: true, flip: true }]), { scene: 'из метели выезжает огромный трактор с гирляндой на кабине', sfx: sfx([0, 'hum', -8, { dur: 4, pitch: 0.5 }]) });
 K(908.64, st('snowfield', { storm: 0.6 }, W0(), [T(300, { walk: { to: -200, at: 0.4, dur: 2.6 }, e: 'neutral', f: -1 })], [{ o: 'car', x: -500, y: 0, s: 1.0, color: '#4a6a8a', lit: true }, { o: 'tractor', x: 450, y: 0, s: 1.2, lights: true, lit: true, flip: true, back: true }]), { scene: 'из трактора вылезает мужик в тулупе и ушанке' });
-K(911.90, st('carIn', { hazard: true, lights: true, lightsK: 0.6 }, W0(), CAR({ A: 'surprised', Z: 'smile', B: 'surprised', D: 'surprised' }), CARO([{ o: 'thermos', attach: 3, s: 0.7, ay: 20 }]), { }), { scene: 'стучит в окно, заглядывает внутрь', sfx: sfx([0.6, 'hit', -12], [0.9, 'hit', -12]) });
+K(911.90, st('carIn', { hazard: true, lights: true, lightsK: 0.6 }, W0(), CAR({ A: 'surprised', Z: 'smile', B: 'surprised', D: 'surprised' }), CARO([{ o: 'thermos', attach: 2, s: 0.7, ay: 20 }]), { }), { scene: 'стучит в окно, заглядывает внутрь', sfx: sfx([0.6, 'hit', -12], [0.9, 'hit', -12]) });
 K(915.58, face('T', [[0, 'neutral'], [2.0, 'surprised'], [4.0, 'awe']], 'snowfield', { so: { storm: 0.5 }, look: [[0, [0.6, 0]], [1.2, [0.2, 0]], [2.4, [-0.2, 0]], [3.4, [-0.6, 0]]] }), { scene: 'видит тебя, бабушку с холодцом, дедушку с термосом и Деда Мороза' });
 K(922.10, face('T', 'confused', 'snowfield', { so: { storm: 0.5 }, talk: [1.6, 11.0] }), { scene: '«Ну дела. С Новым годом, что ли? Гляжу — аварийка мигает. Дед Мороз-то настоящий?»' });
 K(933.68, face('Z', 'smirk', 'carIn', { talk: [1.3, 1.9] }), { scene: 'Лёха басом: «А то»', sfx: sfx([1.9, 'ding', -14]) });
@@ -347,12 +348,12 @@ K(1303.18, line('ТАК ЧТО ОБЕЩАТЬ СТОИТ', 'living', {}), { scen
 K(1305.26, st('living', {}, W0(), [A(-60, { lie: 1, y: 70, e: 'sleepy' })], [{ o: 'bowl', x: 200, y: 0, s: 1.0 }], { badge: { str: 'ФЕВРАЛЬ', at: 0.3 } }), { scene: 'даже если в феврале ты снова на диване с остатками оливье', sfx: sfx([1.6, 'boing', -16]) });
 
 // ================= ЖЕЛАНИЯ =================
-K(1309.48, st('carIn', { storm: false }, W0(), [A(420, sitCar({ e: 'smile' })), Zm(220, sitCar({ e: 'neutral', p: [[0, 'sit'], [4.0, 'reach']] }))], [{ o: 'steering', x: 580, y: 230, s: 0.9 }, { o: 'wish', attach: 1, s: 0.4, label: '', when: [4.4, 99] }]), { in: { type: 'dip', dur: 0.5 }, scene: 'вечером 1 января ты отвозишь Лёху — он достаёт бумажку с желанием', amb: amb.city });
+K(1309.48, st('carIn', { storm: false }, W0(), [A(280, sitCar({ e: 'smile' })), Zm(170, sitCar({ e: 'neutral', p: [[0, 'sit'], [4.0, 'reach']] }))], [{ o: 'steering', x: 365, y: 255, s: 0.55, back: true }, { o: 'wish', attach: 1, s: 0.4, label: '', when: [4.4, 99] }]), { in: { type: 'dip', dur: 0.5 }, scene: 'вечером 1 января ты отвозишь Лёху — он достаёт бумажку с желанием', amb: amb.city });
 K(1319.02, ins('carIn', { storm: false }, [{ o: 'wish', x: 0, y: 360, s: 3.2, label: 'ЧТОБЫ НА СЛЕДУЮЩИЙ ГОД\nБЫЛО КУДА ПРИЕХАТЬ' }], { blur: 12 }), { scene: '«чтобы на следующий год было куда приехать»' });
-K(1324.22, st('carIn', { storm: false }, W0(), [A(420, sitCar({ e: 'smile', p: 'reach', f: -1 })), Zm(220, sitCar({ e: 'surprised' }))], [{ o: 'steering', x: 580, y: 230, s: 0.9 }]), { scene: 'ты молча достаёшь свою' });
+K(1324.22, st('carIn', { storm: false }, W0(), [A(280, sitCar({ e: 'smile', p: 'reach', f: -1 })), Zm(170, sitCar({ e: 'surprised' }))], [{ o: 'steering', x: 365, y: 255, s: 0.55, back: true }]), { scene: 'ты молча достаёшь свою' });
 K(1326.32, ins('carIn', { storm: false }, [{ o: 'wish', x: 0, y: 360, s: 3.2, label: 'ВМЕСТЕ' }], { blur: 12 }), { scene: 'на ней одно слово: «Вместе»', sfx: sfx([3.6, 'shimmer', -10]) });
 K(1331.10, face('Z', [[0, 'thinking'], [3.2, 'cry']], 'carIn', { so: { storm: false }, talk: [3.2, 5.2] }), { scene: '«Слушай, похоже, сбылось»' });
-K(1336.36, st('carIn', { storm: false }, W0(), [A(420, sitCar({ e: 'smile', look: [-0.4, 0] })), Zm(220, sitCar({ e: 'cry', f: -1, p: [[0, 'sit'], [1.6, 'facepalm']] }))], [{ o: 'steering', x: 580, y: 230, s: 0.9 }]), { scene: 'он отворачивается и вытирает глаза рукавом красного халата' });
+K(1336.36, st('carIn', { storm: false }, W0(), [A(280, sitCar({ e: 'smile', look: [-0.4, 0] })), Zm(170, sitCar({ e: 'cry', f: -1, p: [[0, 'sit'], [1.6, 'facepalm']] }))], [{ o: 'steering', x: 365, y: 255, s: 0.55, back: true }]), { scene: 'он отворачивается и вытирает глаза рукавом красного халата' });
 
 // ================= ФИНАЛ: ГЛАВНОЕ — С КЕМ =================
 K(1343.64, line('КАК ПРОХОДИТ НОВЫЙ ГОД В КАЖДОЙ СЕМЬЕ?', 'living', { size: 62 }), { in: { type: 'dip', dur: 0.5 }, scene: 'знаешь, как проходит Новый год в каждой семье?' });
@@ -397,6 +398,8 @@ const shots = items.map((p, i) => {
   const lineText = words.filter((w) => w.start >= start - 0.05 && w.start < end - 0.05).map((w) => w.word).join(' ');
   return { id: 's' + String(i + 1).padStart(3, '0'), start, end: +end.toFixed(2), line: lineText, scene: p.scene || '', set: p.params.set || null, bars: p.bars || null, in: p.in || { type: 'cut' }, sfx: p.sfx || [], ...(p.amb ? { amb: p.amb } : {}), ...(p.captions === false ? { captions: false } : {}), params: p.params, notes: '' };
 });
+// салон машины: у каждого кадра с людьми — корпус машины поверх (аварийка/запотевание из параметров локации)
+for (const it of items) { const P = it.params; if (P.tpl === 'st' && P.set === 'carIn' && (P.figs || []).length) { P.objs = (P.objs || []).filter((o) => o.o !== 'carShell'); const so = P.so || {}; P.objs.push({ o: 'carShell', x: 0, y: 0, s: 1, front: true, abs: true, hazard: !!so.hazard, fog: typeof so.fog === 'number' ? so.fog : 0, headlights: !!so.lights }); } }
 // длинные кадры (> 7 с) делим: вторая половина — крупное лицо главного в кадре героя (или смена ракурса лица)
 const split = [];
 for (const sh of shots) {

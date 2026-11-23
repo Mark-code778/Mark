@@ -98,32 +98,46 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "worried"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -162,34 +176,48 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -227,58 +255,74 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
+      "w": "Z",
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "smile"
+     },
+     {
+      "w": "A",
+      "x": 280,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "neutral"
      },
      {
-      "w": "Z",
-      "x": 220,
+      "w": "D",
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "smile"
+      "shadow": false,
+      "e": "thinking"
      },
      {
       "w": "B",
-      "x": -250,
+      "x": -220,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
-     },
-     {
-      "w": "D",
-      "x": -440,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "thinking"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "radio",
-      "attach": 3,
+      "attach": 2,
       "s": 0.8,
       "ay": 10,
       "dial": 0.5
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -5996,18 +6040,20 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smirk"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy",
       "talk": [
        0,
@@ -6018,9 +6064,21 @@
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -6478,27 +6536,41 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "nervous"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0.4,
+      "headlights": false
      }
     ]
    },
@@ -6535,15 +6607,16 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": [
        [
         0,
@@ -6558,8 +6631,9 @@
         "sit"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        0,
@@ -6570,9 +6644,21 @@
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -7396,19 +7482,32 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "holdFront",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "determined"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0.5,
+      "headlights": false
      }
     ]
    },
@@ -7444,57 +7543,73 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
+      "w": "Z",
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "smile"
+     },
+     {
+      "w": "A",
+      "x": 280,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "determined"
      },
      {
-      "w": "Z",
-      "x": 220,
+      "w": "D",
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "smile"
+      "shadow": false,
+      "e": "neutral"
      },
      {
       "w": "B",
-      "x": -250,
+      "x": -220,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
-     },
-     {
-      "w": "D",
-      "x": -440,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "neutral"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "pirozhki",
-      "attach": 1,
+      "attach": 0,
       "s": 0.6,
       "ay": 10
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -7514,8 +7629,8 @@
    "sfx": [],
    "params": {
     "tpl": "face",
-    "w": "A",
-    "e": "determined",
+    "w": "Z",
+    "e": "smile",
     "set": "carIn",
     "so": {},
     "fx": 80
@@ -7611,16 +7726,8 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smile"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": [
        [
         0,
@@ -7631,8 +7738,9 @@
         "explain"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        0,
@@ -7640,35 +7748,58 @@
       ]
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "happy"
+      "shadow": false,
+      "e": "smile"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "happy"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -7932,52 +8063,57 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "happy"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "joy",
-      "jit": 2
+      "shadow": false,
+      "e": "happy"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "joy",
+      "jit": 2
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8,
+      "s": 0.6,
       "sh": [
        [
         0.6,
@@ -7988,6 +8124,17 @@
         0
        ]
       ]
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -8023,32 +8170,26 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smile"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": [
        [
         0,
@@ -8059,28 +8200,50 @@
         "reach"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        2.3,
        6.6
       ]
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -8332,51 +8495,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "worried"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "worried"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "worried"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "worried"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "worried"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -8671,51 +8850,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "neutral"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "smile"
+      "shadow": false,
+      "e": "neutral"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -8735,8 +8930,8 @@
    "sfx": [],
    "params": {
     "tpl": "face",
-    "w": "A",
-    "e": "neutral",
+    "w": "Z",
+    "e": "smile",
     "set": "carIn",
     "so": {
      "hazard": true
@@ -8788,55 +8983,60 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "neutral"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "determined"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "neutral"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "radio",
-      "attach": 3,
+      "attach": 2,
       "s": 0.8,
       "ay": 10,
       "dial": [
@@ -8853,6 +9053,17 @@
         3.2
        ]
       ]
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9005,16 +9216,8 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "surprised"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": [
        [
         0,
@@ -9025,50 +9228,74 @@
         "holdFront"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "happy"
+      "shadow": false,
+      "e": "surprised"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "happy"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "mandarins",
-      "attach": 1,
+      "attach": 0,
       "n": 6,
       "s": 0.7,
       "when": [
        2.4,
        99
       ]
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9088,8 +9315,8 @@
    "sfx": [],
    "params": {
     "tpl": "face",
-    "w": "A",
-    "e": "surprised",
+    "w": "Z",
+    "e": "joy",
     "set": "carIn",
     "so": {
      "hazard": true,
@@ -9132,32 +9359,26 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "happy"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "smile"
+      "shadow": false,
+      "e": "happy"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": [
        [
         0,
@@ -9168,40 +9389,62 @@
         "holdFront"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "pirozhki",
-      "attach": 2,
+      "attach": 3,
       "s": 0.6,
       "ay": 10
      },
      {
       "o": "thermos",
-      "attach": 3,
+      "attach": 2,
       "s": 0.7,
       "ay": 20,
       "when": [
        2.2,
        99
       ]
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9393,51 +9636,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "holdFront",
-      "y": 60,
-      "f": 1,
-      "e": "thinking"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "determined"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "holdFront",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "thinking"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "holdFront",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "thinking"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "holdFront",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "thinking"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9580,51 +9839,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smirk"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "shrug",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smirk"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "smile"
+      "shadow": false,
+      "e": "smirk"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9644,7 +9919,7 @@
    "sfx": [],
    "params": {
     "tpl": "face",
-    "w": "A",
+    "w": "Z",
     "e": "smirk",
     "set": "carIn",
     "so": {
@@ -9733,51 +10008,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smile"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "happy"
+      "shadow": false,
+      "e": "smile"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "happy"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -9953,51 +10244,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smile"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
-      "e": "happy"
+      "shadow": false,
+      "e": "smile"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "happy"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ],
     "timer": {
@@ -10126,23 +10433,12 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "joy",
-      "talk": [
-       0,
-       1.5
-      ]
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "cheer",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        0,
@@ -10150,11 +10446,12 @@
       ]
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        0,
@@ -10163,10 +10460,24 @@
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "joy",
+      "talk": [
+       0,
+       1.5
+      ]
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "joy",
       "talk": [
        0,
@@ -10177,16 +10488,28 @@
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0.6,
+      "headlights": false
      }
     ],
     "big": {
@@ -10383,51 +10706,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "reach",
-      "y": 60,
-      "f": -1,
-      "e": "happy"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "reach",
-      "y": 60,
+      "y": 84,
       "f": -1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "reach",
-      "y": 60,
-      "f": 1,
-      "e": "cry"
+      "y": 84,
+      "f": -1,
+      "shadow": false,
+      "e": "happy"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "reach",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "reach",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "cry"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0.6,
+      "headlights": false
      }
     ]
    },
@@ -10554,55 +10893,71 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "smile"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": -1,
+      "shadow": false,
       "e": "thinking",
       "look": [
        -0.8,
        -0.3
       ]
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0.5,
+      "headlights": false
      }
     ]
    },
@@ -10670,18 +11025,31 @@
     "figs": [
      {
       "w": "D",
-      "x": -100,
+      "x": -255,
       "p": "sit",
-      "y": 60,
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "smile"
      }
     ],
     "objs": [
      {
       "o": "mandarin",
-      "x": 60,
-      "y": 160,
+      "x": -130,
+      "y": 250,
       "r": 12
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ],
     "tint": "memory",
@@ -10945,51 +11313,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
+      "w": "Z",
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "surprised"
      },
      {
-      "w": "Z",
-      "x": 220,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "surprised"
+     },
+     {
+      "w": "D",
+      "x": -365,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "surprised"
      },
      {
       "w": "B",
-      "x": -250,
+      "x": -220,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "scared"
-     },
-     {
-      "w": "D",
-      "x": -440,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "surprised"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": true
      }
     ]
    },
@@ -11183,57 +11567,73 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "surprised"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "surprised"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
+      "e": "surprised"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
       "e": "surprised"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
      },
      {
       "o": "thermos",
-      "attach": 3,
+      "attach": 2,
       "s": 0.7,
       "ay": 20
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": true
      }
     ]
    },
@@ -15814,15 +16214,16 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": [
        [
         0,
@@ -15833,17 +16234,19 @@
         "reach"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "neutral"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "wish",
@@ -15854,6 +16257,17 @@
        4.4,
        99
       ]
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -15964,27 +16378,41 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "reach",
-      "y": 60,
+      "y": 84,
       "f": -1,
+      "shadow": false,
       "e": "smile"
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "surprised"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -16109,10 +16537,11 @@
     "figs": [
      {
       "w": "A",
-      "x": 420,
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile",
       "look": [
        -0.4,
@@ -16121,7 +16550,7 @@
      },
      {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": [
        [
         0,
@@ -16132,17 +16561,30 @@
         "facepalm"
        ]
       ],
-      "y": 60,
+      "y": 84,
       "f": -1,
+      "shadow": false,
       "e": "cry"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": false,
+      "fog": 0,
+      "headlights": false
      }
     ]
    },
@@ -16533,51 +16975,67 @@
     "s": 1.2,
     "figs": [
      {
-      "w": "A",
-      "x": 420,
-      "p": "sit",
-      "y": 60,
-      "f": 1,
-      "e": "happy"
-     },
-     {
       "w": "Z",
-      "x": 220,
+      "x": 170,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "joy"
      },
      {
-      "w": "B",
-      "x": -250,
+      "w": "A",
+      "x": 280,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "happy"
      },
      {
       "w": "D",
-      "x": -440,
+      "x": -365,
       "p": "sit",
-      "y": 60,
+      "y": 84,
       "f": 1,
+      "shadow": false,
       "e": "smile"
+     },
+     {
+      "w": "B",
+      "x": -220,
+      "p": "sit",
+      "y": 84,
+      "f": 1,
+      "shadow": false,
+      "e": "happy"
      }
     ],
     "objs": [
      {
       "o": "steering",
-      "x": 580,
-      "y": 230,
-      "s": 0.9
+      "x": 365,
+      "y": 255,
+      "s": 0.55,
+      "back": true
      },
      {
       "o": "holodets",
-      "x": -345,
-      "y": 150,
+      "x": -293,
+      "y": 196,
       "coat": true,
-      "s": 0.8
+      "s": 0.6
+     },
+     {
+      "o": "carShell",
+      "x": 0,
+      "y": 0,
+      "s": 1,
+      "front": true,
+      "abs": true,
+      "hazard": true,
+      "fog": 0,
+      "headlights": false
      }
     ],
     "big": {

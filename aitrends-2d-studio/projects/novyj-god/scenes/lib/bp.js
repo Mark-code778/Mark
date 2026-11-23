@@ -22,6 +22,29 @@ function head(g, x, y, r, o = {}) {
 }
 
 export const BP = {
+  // 11 часовых поясов: волна Нового года с востока на запад
+  zones(g, t, info) {
+    const n = 11, x0 = E.W * 0.06, w = E.W * 0.88, y0 = E.H * 0.3, h = E.H * 0.36, cw = w / n;
+    const names = ['КАЛИНИНГРАД', 'МОСКВА', 'САМАРА', 'ЕКАТЕРИНБУРГ', 'ОМСК', 'НОВОСИБИРСК', 'ИРКУТСК', 'ЯКУТСК', 'ВЛАДИВОСТОК', 'МАГАДАН', 'КАМЧАТКА'];
+    const wave = info.wave ? key(t, info.wave) : 11;
+    for (let i = 0; i < n; i++) {
+      const x = x0 + i * cw, lit = (n - 1 - i) < wave;
+      rr(g, x + 4, y0, cw - 8, h, 10); g.fillStyle = lit ? alpha(GOLD(), 0.28) : alpha(C(), 0.08); g.fill(); g.strokeStyle = alpha(lit ? GOLD() : C(), 0.7); g.lineWidth = 2; g.stroke();
+      if (lit) { for (let k = 0; k < 6; k++) { const ph = (t * 0.8 + k / 6 + i * 0.13) % 1, a = k * 1.05; circle(g, x + cw / 2 + Math.cos(a) * ph * cw * 0.35, y0 + h * 0.35 + Math.sin(a) * ph * cw * 0.35, 3 * (1 - ph) + 1, alpha(['#ff6a8a', '#ffd47e', '#7fe8ff'][k % 3], 1 - ph)); } }
+      g.save(); g.translate(x + cw / 2, y0 + h * 0.7); g.rotate(-Math.PI / 2); fitText(g, names[i], 0, 0, h * 0.55, cw * 0.55, { color: lit ? GOLD() : CREAM() }); g.restore();
+    }
+    arrow(g, x0 + w, y0 + h + 60, x0, y0 + h + 60, ease.inOut(prog(t, 0.3, 1.8)), GOLD());
+    tag(g, info.lbl || 'НОВЫЙ ГОД НАСТУПАЕТ 11 РАЗ', E.W / 2, y0 - 80, 760, 70, GOLD(), fade(t, 0.2));
+  },
+  // эффект нового старта
+  start(g, t, info) {
+    const x0 = E.W * 0.12, x1 = E.W * 0.88, y = E.H * 0.62;
+    seg(g, [[x0, y], [x1, y]], 4, C());
+    const marks = [[0.15, 'ДЕНЬ РОЖДЕНИЯ'], [0.4, 'ПОНЕДЕЛЬНИК'], [0.62, '1-Е ЧИСЛО'], [0.88, 'НОВЫЙ ГОД']];
+    marks.forEach(([u, s], i) => { const a = fade(t, (info.ats || [0.3, 0.8, 1.3, 1.9])[i]); const x = lerp(x0, x1, u), big = i === 3; ring(g, x, y, big ? 26 : 16, 4, alpha(big ? GOLD() : C(), a)); if (big && a > 0) glow(g, x, y, 120, GOLD(), 0.5 * a); tag(g, s, x, y + 80, big ? 300 : 260, 56, big ? GOLD() : CREAM(), a); const hgt = big ? 260 : 120; seg(g, [[x, y - 20], [x, y - 20 - hgt * a]], big ? 10 : 6, alpha(big ? GOLD() : C(), a)); });
+    tag(g, info.lbl || 'ЭФФЕКТ НОВОГО СТАРТА', E.W / 2, E.H * 0.2, 700, 72, GOLD(), fade(t, info.lblAt ?? 2.3));
+  },
+
   // «Ты двигаешь предметы взглядом и мыслью. Всё, что видишь.»
   rules(g, t, info) {
     const y = E.H * 0.56, ex = E.W * 0.2, bx = E.W * 0.48, ox = E.W * 0.8;
@@ -148,7 +171,7 @@ export const BP = {
   // 3 значка: пульт, чай, носки
   icons(g, t, info) {
     const list = info.items || [['remote', 'ПУЛЬТ'], ['cup', 'ЧАЙ'], ['socks', 'НОСКИ']], ats = info.ats || [0.3, 1.2, 2.0];
-    list.forEach(([o, lbl], i) => { const a = ease.outBack(prog(t, ats[i], ats[i] + 0.4)); if (a <= 0) return; const x = E.W * (0.25 + i * 0.25), y = E.H * 0.5; g.save(); g.translate(x, y); g.scale(a, a); g.translate(-x, -y); circle(g, x, y, 130, alpha(C(), 0.12)); ring(g, x, y, 130, 3, C()); OBJ[o](g, x, y + 40, 2.4, { rot: 0, steam: true, t }); g.restore(); tag(g, lbl, x, y + 200, 240, 60, GOLD(), a); });
+    list.forEach(([o, lbl, sc], i) => { const a = ease.outBack(prog(t, ats[i], ats[i] + 0.4)); if (a <= 0) return; const x = E.W * (0.25 + i * 0.25), y = E.H * 0.5; g.save(); g.translate(x, y); g.scale(a, a); g.translate(-x, -y); circle(g, x, y, 130, alpha(C(), 0.12)); ring(g, x, y, 130, 3, C()); OBJ[o](g, x, y + (sc ? 0 : 40), sc || 2.4, { rot: 0, steam: true, t }); g.restore(); tag(g, lbl, x, y + 200, 240, 60, GOLD(), a); });
     if (info.top) tag(g, info.top, E.W / 2, E.H * 0.17, 760, 72, RED(), fade(t, 0.1));
   },
 };

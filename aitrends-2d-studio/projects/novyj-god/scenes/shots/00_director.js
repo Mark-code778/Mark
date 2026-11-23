@@ -8,6 +8,9 @@ import { SETS, GROUND } from '../sets/sets.js';
 import { WHO, CAST, POWER } from '../cast.js';
 import { OBJ, power, powerWave, fitText } from '../lib/objs.js';
 import { BP } from '../lib/bp.js';
+import { NY, headExtras } from '../lib/ny.js';
+import { blizzard } from '../sets/ny_sets.js';
+Object.assign(OBJ, NY);
 
 export const FIG_S = 1.2;   // единый масштаб всех фигур во всём ролике
 // ---------- свои позы ----------
@@ -65,7 +68,8 @@ function drawFig(g, f, t, info, M) {
   const o = { x: st.x, y: st.y, s: st.s, facing: st.facing, pose: st.pose, rot: st.rot, outfit: of, expr: ex(f.e, t), talk, look: at(f.look, t, undefined), blink: (t + (f.w || 'A').charCodeAt(0) * 0.37) % 3.3 > 3.18, rim: { color: f.rimC || M.rim, dir: info.rimDir || [0, -1], w: 4 }, alpha: f.alpha, prop: f.prop, shadow: f.shadow ?? (st.fl < 0.2), trail: f.trail, dim: f.dim };
   drawFigure(g, o);
   const [hx, hy, hr] = headPos(o);
-  if (of.moustache) OBJ.moustache(g, hx + st.facing * hr * 0.34, hy + hr * 0.22, hr);
+  if (of.moustache && !of.santa) OBJ.moustache(g, hx + st.facing * hr * 0.34, hy + hr * 0.22, hr);
+  headExtras(g, of, hx, hy, hr, st.facing, false, { beardTilt: at(f.beardTilt, t, 0) });
   if (f.blood) OBJ.blood(g, hx + st.facing * hr * 0.45, hy + hr * 0.1, st.s * 0.5, { k: prog(t, f.blood, f.blood + 1) });
   if (f.yolk) { OBJ.splat(g, hx - hr * 0.3, hy - hr * 0.6, st.s * 0.3, { seed: 2 }); OBJ.splat(g, st.x + 6 * st.s, st.y - 150 * st.s, st.s * 0.35, { seed: 5 }); }
   if (f.eyes) { const a = at(f.eyes, t, 0); if (a) { glow(g, hx + st.facing * hr * 0.4, hy - hr * 0.1, hr * 1.4, POWER, 0.6 * a); } }
@@ -147,6 +151,8 @@ TPL.st = (g, t, info) => {
   if (info.fg) blurLayer(g, 10, (g) => objs.filter((o) => o.front).forEach((o) => drawObj(g, o, t, info, figs)), cam, 1.6);
   else layer(g, cam, 1, (g) => objs.filter((o) => o.front).forEach((o) => drawObj(g, o, t, info, figs)));
   if (info.fx === 'rain') FX.rain(g, t, { count: 180 });
+  if (info.storm) blizzard(g, t, info.storm);
+  if (info.flakes) FX.snow(g, t, { count: info.flakes, speed: 50 });
   overlays(g, t, info, cam, M);
 };
 TPL.face = (g, t, info) => {
@@ -162,7 +168,8 @@ TPL.face = (g, t, info) => {
   const cyN = info.nod ? cy + Math.sin(prog(t, info.nod[0], info.nod[1]) * Math.PI * 2) * 22 : cy;
   if (info.eyes) { const a = at(info.eyes, t, 0); if (a) glow(g, cx, cyN - r * 0.1, r * 1.8, POWER, 0.35 * a); }
   bigFace(g, cx, cyN, r, { outfit: of, expr: ex(info.e, t), talk, blink: (t % 3.2) > 3.08 && !info.noBlink, look: at(info.look, t, [0, 0]), rimColor: info.rimC || M.rim, rimSide: info.side ?? -1, tilt });
-  if (of.moustache) OBJ.moustache(g, cx, cyN + r * 0.2, r * 0.8);
+  if (of.moustache && !of.santa) OBJ.moustache(g, cx, cyN + r * 0.2, r * 0.8);
+  g.save(); g.translate(cx, cyN); if (tilt) g.rotate(tilt); headExtras(g, of, 0, 0, r, 1, true, { beardTilt: at(info.beardTilt, t, 0) }); g.restore();
   if (info.blood != null) { const k = prog(t, info.blood, info.blood + 1.2); if (k > 0) { seg(g, [[cx + r * 0.2, cyN + r * 0.12], [cx + r * 0.22, cyN + r * (0.12 + 0.34 * k)]], r * 0.035, '#c0262a'); circle(g, cx + r * 0.22, cyN + r * (0.12 + 0.34 * k), r * 0.03, '#c0262a'); } }
   if (info.eyesGlow) { const a = at(info.eyesGlow, t, 0); if (a) for (const dx of [-0.34, 0.34]) glow(g, cx + dx * r, cyN - r * 0.16, r * 0.35, POWER, 0.8 * a); }
   if (info.sweat) { g.fillStyle = '#9fd8ff'; g.beginPath(); g.ellipse(cx - r * 0.75, cyN - r * 0.5 + (t * 40) % 60, r * 0.06, r * 0.1, 0, 0, 7); g.fill(); }
@@ -185,9 +192,9 @@ TPL.line = (g, t, info) => {
 TPL.bp = (g, t, info) => { UI.blueprint(g, {}); const fn = BP[info.bp]; if (fn) fn(g, t, info); overlays(g, t, info, { z: 1 }, mood('void')); };
 TPL.title = (g, t, info) => {
   const cam = { z: 1.02 + 0.05 * t / info.dur, x: -20 * t / info.dur };
-  SETS.yard(g, t, cam, { mood: 'dusk' }); veil(g, '#0c0810', 0.45);
-  power(g, E.W / 2, E.H * 0.5, 420, t, 0.6, 11);
-  UI.titleCard(g, t, { lines: ['ЧТО ЕСЛИ', 'У ТЕБЯ ТЕЛЕКИНЕЗ?'], dur: info.dur });
+  SETS[info.set || 'kremlinNight'](g, t, cam, { fireworks: true, ...(info.so || {}) }); veil(g, '#0c0810', 0.4);
+  UI.titleCard(g, t, { lines: info.lines || ['ТОТ САМЫЙ НОВЫЙ ГОД,', 'КОТОРЫЙ МЫ НИКОГДА НЕ ЗАБУДЕМ'], dur: info.dur });
+  FX.snow(g, t, { count: 80, speed: 40 });
 };
 TPL.q = (g, t, info) => {
   const ui = S().ui;
@@ -216,9 +223,9 @@ TPL.sub = (g, t, info) => {
 };
 TPL.endcard = (g, t, info) => {
   g.fillStyle = linGrad(g, 0, 0, 0, E.H, ['#120c1e', '#2a1a2e', '#4a2a2a']); g.fillRect(-E.W, -E.H, E.W * 3, E.H * 3); glow(g, E.W / 2, E.H * 0.95, E.W * 0.5, '#ff9a5a', 0.35); power(g, E.W / 2, E.H * 0.3, 380, t, 0.45, 8);
-  UI.titleCard(g, t, { lines: ['ДО ВСТРЕЧИ В НОВОМ ВЫПУСКЕ', 'ЧТО ЕСЛИ…'], dur: info.dur + 10, y: E.H * 0.32 });
+  UI.titleCard(g, t, { lines: info.lines || ['С НАСТУПАЮЩИМ', 'НОВЫМ ГОДОМ!'], dur: info.dur + 10, y: E.H * 0.32 }); FX.snow(g, t, { count: 90, speed: 40 });
   const n = CAST.length, gap = V(170, 120);
-  CAST.forEach((of, i) => { const k = ease.out(prog(t, 0.3 + i * 0.1, 0.8 + i * 0.1)); const x = E.W / 2 + (i - (n - 1) / 2) * gap, y = E.H - V(60, 300); const ps = posesAt(t, [[0, 'relaxed'], [0.9 + i * 0.1, 'wave']]); drawFigure(g, { x, y: y + (1 - k) * 40, s: V(0.95, 1.0), facing: 1, outfit: of, pose: breathe(ps, t, 1, i), expr: 'happy', alpha: k, rim: { color: '#ffb070', dir: [0, -1] } }); if (of.moustache) { const [hx, hy, hr] = headPos({ x, y: y + (1 - k) * 40, s: V(0.95, 1.0), pose: ps }); OBJ.moustache(g, hx + hr * 0.34, hy + hr * 0.22, hr); } });
+  CAST.forEach((of, i) => { const k = ease.out(prog(t, 0.3 + i * 0.1, 0.8 + i * 0.1)); const x = E.W / 2 + (i - (n - 1) / 2) * gap, y = E.H - V(60, 300); const ps = posesAt(t, [[0, 'relaxed'], [0.9 + i * 0.1, 'wave']]); drawFigure(g, { x, y: y + (1 - k) * 40, s: V(0.95, 1.0), facing: 1, outfit: of, pose: breathe(ps, t, 1, i), expr: 'happy', alpha: k, rim: { color: '#ffb070', dir: [0, -1] } }); { const [hx, hy, hr] = headPos({ x, y: y + (1 - k) * 40, s: V(0.95, 1.0), pose: ps }); if (of.moustache && !of.santa) OBJ.moustache(g, hx + hr * 0.34, hy + hr * 0.22, hr); headExtras(g, of, hx, hy, hr, 1, false, {}); } });
 };
 
 // ---------- регистрация всех кадров с params.tpl ----------

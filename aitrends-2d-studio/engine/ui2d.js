@@ -78,8 +78,8 @@ export function endScreen(g, t, o = {}) {
   text(g, question, E.W / 2, V(150, 360), { size: V(64, 66), font: FONTS.serif, weight: 900, italic: true, color: ui.cream, alpha: a1, glow: 18, glowColor: 'rgba(255,170,90,.5)', maxW: E.W * 0.88 });
   bubble(g, E.W / 2 - V(260, 170), V(300, 560), { w: V(110, 130), h: V(60, 70) });
   const sp = ease.outBack(prog(t, 0.6, 1.1)); g.save(); g.translate(E.W / 2 + V(60, 60), V(300, 560)); g.scale(sp, sp); rr(g, -150, -38, 300, 76, 38); g.fillStyle = '#e0302a'; g.fill(); g.fillStyle = '#fff'; g.beginPath(); g.moveTo(-104, 12); g.quadraticCurveTo(-104, -18, -92, -18); g.quadraticCurveTo(-80, -18, -80, 12); g.closePath(); g.fill(); circle(g, -92, 17, 5, '#fff'); text(g, o.subscribe || 'Подписаться', 22, 2, { size: 34, color: '#fff', font: FONTS.ui, weight: 900, maxW: 200 }); g.restore();
-  const n = cast.length, gap = Math.min(V(150, 120), (E.W * 0.85) / Math.max(1, n)), y0 = E.H - V(170, 420);
-  cast.forEach((of, i) => { const k = ease.out(prog(t, 0.3 + i * 0.08, 0.7 + i * 0.08)); drawFigure(g, { x: E.W / 2 + (i - (n - 1) / 2) * gap, y: y0 + (1 - k) * 40, s: V(0.9, 1.05), facing: 1, outfit: of, pose: POSES.relaxed, expr: 'smile', alpha: k, rim: { color: rim, dir: [0, 1] } }); });
+  const n = cast.length, gap = Math.min(V(150, 120) * (o.s ? o.s / 0.9 : 1), (E.W * 0.85) / Math.max(1, n)), y0 = E.H - V(o.s ? 110 : 170, 420);
+  cast.forEach((of, i) => { const k = ease.out(prog(t, 0.3 + i * 0.08, 0.7 + i * 0.08)); drawFigure(g, { x: E.W / 2 + (i - (n - 1) / 2) * gap, y: y0 + (1 - k) * 40, s: o.s ?? V(0.9, 1.05), facing: 1, outfit: of, pose: POSES.relaxed, expr: 'smile', alpha: k, rim: { color: rim, dir: [0, 1] } }); });
 }
 // Word-level captions (great for 9:16). Shows a 3–4 word phrase, current word highlighted.
 export function captions(g, globalT, o = {}) {

@@ -4,3 +4,6 @@ projects/*/out/
 projects/*/audio/
 projects/*/input/*.wav
 __pycache__/
+projects/*/trailer/parts/
+projects/*/trailer/*.wav
+projects/*/trailer/video_silent.mp4

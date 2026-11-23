@@ -1,82 +1,100 @@
-"""Тихая новогодняя музыка (синтез): колокольчики-челеста, мягкий пэд, бубенцы.
-Мелодии — народные/общественное достояние: «Jingle Bells» (1857) и «В лесу родилась ёлочка» (Л. Бекман, 1903).
+"""Весёлая новогодняя музыка (синтез): металлофон + бубенцы + прыгающий бас «умпа», только мажор.
+Мелодии — общественное достояние: «Jingle Bells» (1857) и «В лесу родилась ёлочка» (Л. Бекман, 1903).
 Запуск: python3 story/newyear_music.py <длительность_с> <out.wav>
 """
 import sys, wave
 import numpy as np
 
 SR = 44100
-N = {n: i for i, n in enumerate(['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'])}
-def hz(name):
-    nm, octv = name[:-1], int(name[-1])
-    nm = {'Bb': 'A#', 'Eb': 'D#'}.get(nm, nm)
-    return 440.0 * 2 ** ((N[nm] + 12 * (octv + 1) - 69) / 12)
+NAMES = {'C': 0, 'C#': 1, 'D': 2, 'D#': 3, 'Eb': 3, 'E': 4, 'F': 5, 'F#': 6, 'G': 7, 'G#': 8, 'A': 9, 'A#': 10, 'Bb': 10, 'B': 11}
+def hz(n): return 440.0 * 2 ** ((NAMES[n[:-1]] + 12 * (int(n[-1]) + 1) - 69) / 12)
 
-def celesta(f, dur):
-    t = np.arange(int(SR * (dur + 1.2))) / SR
-    env = np.exp(-t * 3.2) * np.minimum(1, t / 0.004)
-    s = np.sin(2 * np.pi * f * t) + 0.35 * np.sin(2 * np.pi * 2 * f * t) * np.exp(-t * 6) + 0.12 * np.sin(2 * np.pi * 3.01 * f * t) * np.exp(-t * 9)
-    return s * env
+def add(buf, x, t, g=1.0):
+    i = int(t * SR)
+    if i >= len(buf): return
+    n = min(len(x), len(buf) - i); buf[i:i + n] += x[:n] * g
 
-def pad(freqs, dur):
-    t = np.arange(int(SR * (dur + 0.8))) / SR
-    env = np.minimum(1, t / 0.6) * np.minimum(1, np.maximum(0, (dur + 0.8 - t) / 0.8))
-    s = sum(np.sin(2 * np.pi * f * t) + 0.5 * np.sin(2 * np.pi * f * 1.003 * t) for f in freqs)
-    return s * env / len(freqs)
+def glock(f, dur):        # яркий металлофон
+    L = int(SR * min(1.6, dur + 0.9)); t = np.arange(L) / SR
+    env = np.exp(-t * 4.5) * np.minimum(1, t / 0.002)
+    return (np.sin(2 * np.pi * f * t) + 0.45 * np.sin(2 * np.pi * 2 * f * t) * np.exp(-t * 7) + 0.25 * np.sin(2 * np.pi * 4.2 * f * t) * np.exp(-t * 12)) * env
 
-def bell(rng):
-    n = int(SR * 0.18); t = np.arange(n) / SR
-    x = rng.standard_normal(n); x = np.diff(np.concatenate([[0], x]))  # грубый ВЧ-фильтр
-    return x * np.exp(-t * 28)
+def pluck(f, dur):        # бас
+    L = int(SR * dur); t = np.arange(L) / SR
+    env = np.exp(-t * 7) * np.minimum(1, t / 0.004)
+    return (np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * 2 * f * t)) * env
 
-CH = {'C': ['C3', 'E3', 'G3'], 'F': ['F3', 'A3', 'C4'], 'G': ['G2', 'B2', 'D3', 'F3'], 'Bb': ['Bb2', 'D3', 'F3'], 'Am': ['A2', 'C3', 'E3'], 'Dm': ['D3', 'F3', 'A3']}
+def stab(freqs, dur):     # короткий аккорд «па»
+    L = int(SR * dur); t = np.arange(L) / SR
+    env = np.exp(-t * 12) * np.minimum(1, t / 0.003)
+    return sum(np.sin(2 * np.pi * f * t) + 0.2 * np.sin(2 * np.pi * 3 * f * t) for f in freqs) / len(freqs) * env
 
+_r = np.random.default_rng(3)
+JINGLE = []
+for k in range(4):        # несколько вариантов звона бубенцов
+    L = int(SR * 0.12); t = np.arange(L) / SR; s = np.zeros(L)
+    for _ in range(9):
+        f = _r.uniform(4500, 9000); ph = _r.uniform(0, 6.28); d = _r.uniform(0, 0.012)
+        s += np.sin(2 * np.pi * f * t + ph) * np.exp(-np.maximum(0, t - d) * 45) * (t >= d)
+    JINGLE.append(s / 9)
+
+CH = {'C': ['C', 'E', 'G'], 'F': ['F', 'A', 'C'], 'G': ['G', 'B', 'D'], 'G7': ['G', 'B', 'F'], 'Bb': ['Bb', 'D', 'F'], 'C7': ['C', 'E', 'Bb'], 'D7': ['D', 'F#', 'C']}
+
+# Jingle Bells, припев (четверти), в до мажоре
 JB = [('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('G5', 1), ('C5', 1.5), ('D5', .5), ('E5', 4),
       ('F5', 1), ('F5', 1), ('F5', 1.5), ('F5', .5), ('F5', 1), ('E5', 1), ('E5', 1), ('E5', .5), ('E5', .5), ('E5', 1), ('D5', 1), ('D5', 1), ('E5', 1), ('D5', 2), ('G5', 2),
       ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('E5', 1), ('E5', 2), ('E5', 1), ('G5', 1), ('C5', 1.5), ('D5', .5), ('E5', 4),
       ('F5', 1), ('F5', 1), ('F5', 1.5), ('F5', .5), ('F5', 1), ('E5', 1), ('E5', 1), ('E5', .5), ('E5', .5), ('G5', 1), ('G5', 1), ('F5', 1), ('D5', 1), ('C5', 4)]
-JB_CH = ['C', 'C', 'C', 'C', 'F', 'C', 'G', 'G', 'C', 'C', 'C', 'C', 'F', 'C', 'G', 'C']
-EL = [('C5', .5), ('A5', .5), ('A5', .5), ('G5', .5), ('A5', .5), ('F5', .5), ('C5', .5), ('C5', .5),
+JB_CH = ['C', 'C', 'C', 'C', 'F', 'C', 'D7', 'G7', 'C', 'C', 'C', 'C', 'F', 'C', 'G7', 'C']   # по такту (4 доли)
+# «В лесу родилась ёлочка» (восьмые = 0.5 доли), фа мажор
+EL = [('C5', .5), ('A5', .5), ('A5', .5), ('G5', .5), ('A5', .5), ('F5', .5), ('C5', .5), ('C5', .5), ('C5', 1),
       ('C5', .5), ('A5', .5), ('A5', .5), ('Bb5', .5), ('G5', .5), ('C6', 1.5),
-      ('C6', .5), ('D5', .5), ('D5', .5), ('Bb5', .5), ('Bb5', .5), ('A5', .5), ('G5', .5), ('F5', .5),
+      ('C6', .5), ('D6', .5), ('D6', .5), ('Bb5', .5), ('Bb5', .5), ('A5', .5), ('G5', .5), ('F5', .5), ('F5', 1),
       ('F5', .5), ('Bb5', .5), ('Bb5', .5), ('A5', .5), ('G5', .5), ('F5', 1.5)]
-EL_CH = ['F', 'F', 'F', 'C', 'Bb', 'F', 'Bb', 'F']
+EL_CH = ['F', 'F', 'F', 'C7', 'F', 'Bb', 'C7', 'C7', 'F']                                   # по такту (2 доли)
 
-def section(mel, chords, bpm, rng, bells=True, mel_gain=1.0):
-    beat = 60 / bpm; total = (sum(d for _, d in mel) if mel else 4 * len(chords)) * beat
-    out = np.zeros(int(SR * (total + 2)))
+def section(mel, chords, bpm, beats_per_bar, mel_gain=1.0, octave_double=False):
+    beat = 60 / bpm
+    total = (sum(d for _, d in mel) if mel else len(chords) * beats_per_bar) * beat
+    bar = beats_per_bar * beat
+    total = max(total, len(chords) * bar)
+    buf = np.zeros(int(SR * (total + 2)))
     t = 0.0
     for n, d in mel:
-        s = celesta(hz(n), d * beat) * 0.32 * mel_gain; i = int(t * SR); out[i:i + len(s)] += s[: len(out) - i]; t += d * beat
-    bar = total / len(chords)
-    for k, c in enumerate(chords):
-        s = pad([hz(x) for x in CH[c]], bar) * 0.16; i = int(k * bar * SR); out[i:i + len(s)] += s[: len(out) - i]
-        b = celesta(hz(CH[c][0][:-1] + '2'), bar) * 0.12; out[i:i + len(b)] += b[: len(out) - i]
-    if bells:
-        for k in range(int(total / beat)):
-            s = bell(rng) * (0.05 if k % 2 else 0.08); i = int(k * beat * SR); out[i:i + len(s)] += s[: len(out) - i]
-    return out[: int(SR * total)]
+        add(buf, glock(hz(n), d * beat), t, 0.36 * mel_gain)
+        if octave_double: add(buf, glock(hz(n[:-1] + str(int(n[-1]) + 1)), d * beat), t, 0.10 * mel_gain)
+        t += d * beat
+    for k, c in enumerate(chords):          # бас «умпа»: корень — аккорд — квинта — аккорд
+        root, fifth = CH[c][0], CH[c][2]
+        b0 = k * bar
+        for j in range(beats_per_bar):
+            tt = b0 + j * beat
+            if j % 2 == 0: add(buf, pluck(hz((root if j == 0 else fifth) + '3') / 2, beat * 0.9), tt, 0.30)
+            else: add(buf, stab([hz(x + '4') for x in CH[c]], beat * 0.6), tt, 0.13)
+    nb = int(total / (beat / 2))
+    for k in range(nb):                      # бубенцы на восьмых, акцент на долях
+        add(buf, JINGLE[k % 4], k * beat / 2, 0.07 if k % 2 else 0.12)
+    return buf[: int(SR * total)]
 
 def build(seconds):
-    rng = np.random.default_rng(7)
-    parts = [section([], ['C', 'Am', 'F', 'G'], 92, rng, bells=False),
-             section(JB, JB_CH, 96, rng), section(EL, EL_CH, 80, rng, bells=False), section(EL, EL_CH, 80, rng),
-             section([], ['F', 'Dm', 'Bb', 'C'], 92, rng, bells=False), section(JB, JB_CH, 96, rng, mel_gain=0.85)]
-    # пустые секции (только аккорды) задаём длиной 4 такта
-    loop = np.concatenate([p if len(p) else np.zeros(1) for p in parts])
-    xf = int(SR * 2.0); need = int(SR * seconds); out = np.zeros(need + xf)
-    pos = 0; ramp = np.linspace(0, 1, xf)
+    parts = [section([], ['C', 'F', 'G7', 'C'], 150, 4),
+             section(JB, JB_CH, 150, 4), section(JB, JB_CH, 150, 4, octave_double=True),
+             section(EL, EL_CH, 132, 2), section(EL, EL_CH, 132, 2, octave_double=True),
+             section([], ['F', 'Bb', 'C7', 'F'], 132, 2)]
+    loop = np.concatenate(parts)
+    xf = int(SR * 1.0); need = int(SR * seconds); out = np.zeros(need + len(loop))
+    ramp = np.linspace(0, 1, xf); pos = 0
     while pos < need:
         seg = loop.copy(); seg[:xf] *= ramp; seg[-xf:] *= ramp[::-1]
-        end = min(len(out), pos + len(seg)); out[pos:end] += seg[: end - pos]; pos += len(seg) - xf
+        out[pos:pos + len(seg)] += seg; pos += len(seg) - xf
     out = out[:need]
-    fade = int(SR * 3); out[-fade:] *= np.linspace(1, 0, fade); out[:int(SR * 1.5)] *= np.linspace(0, 1, int(SR * 1.5))
+    f = int(SR * 2.5); out[-f:] *= np.linspace(1, 0, f); out[:int(SR * 0.5)] *= np.linspace(0, 1, int(SR * 0.5))
     out /= np.max(np.abs(out)) + 1e-9
-    return (out * 0.7).astype(np.float32)
+    return (out * 0.8).astype(np.float32)
 
 if __name__ == '__main__':
     dur, path = float(sys.argv[1]), sys.argv[2]
-    x = build(dur); st = np.stack([x, x], 1)
-    pcm = (np.clip(st, -1, 1) * 32767).astype(np.int16)
+    x = build(dur)
+    pcm = (np.clip(np.stack([x, x], 1), -1, 1) * 32767).astype(np.int16)
     with wave.open(path, 'wb') as w: w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(pcm.tobytes())
     print('wrote', path, f'{dur:.1f}s')

@@ -159,6 +159,16 @@ function drawHeadwear(g, o, hx, hy, r, pass) {
     case 'ponytail': { g.strokeStyle = fill(o._ink); g.lineWidth = r * 0.42; g.lineCap = 'round'; g.beginPath(); g.moveTo(hx - r * 0.7, hy - r * 0.55); g.quadraticCurveTo(hx - r * 1.7, hy - r * 0.4, hx - r * 1.45, hy + r * 0.75); g.stroke();
       if (o.headColor && !sil) seg(g, [[hx - r * 0.9, hy - r * 0.75], [hx - r * 0.8, hy - r * 0.35]], r * 0.22, o.headColor); break; }
     case 'bun': circle(g, hx - r * 0.55, hy - r * 0.95, r * 0.45, fill(o._ink)); break;
+    case 'troll': { const tc = fill(o.headColor || '#3fe07a'); g.fillStyle = tc; g.beginPath(); g.moveTo(hx - r * 0.95, hy - r * 0.2); for (let i = 0; i <= 8; i++) { const a = Math.PI * (1.05 + i * 0.1125); const rr2 = i % 2 ? r * 2.1 : r * 1.0; g.lineTo(hx + Math.cos(a) * rr2, hy + Math.sin(a) * rr2 - (i % 2 ? r * 0.3 : 0)); } g.lineTo(hx + r * 0.95, hy - r * 0.2); g.closePath(); g.fill(); break; }
+    case 'scarf': { const sc = fill(o.headColor || '#c04a5a'); g.fillStyle = sc; g.beginPath(); g.arc(hx, hy, r * 1.08, Math.PI * 0.92, Math.PI * 2.08); g.lineTo(hx + r * 0.95, hy + r * 0.2); g.quadraticCurveTo(hx, hy - r * 1.3, hx - r * 0.95, hy + r * 0.2); g.closePath(); g.fill(); poly(g, [[hx - r * 0.9, hy + r * 0.1], [hx - r * 1.5, hy + r * 0.9], [hx - r * 0.6, hy + r * 0.6]], sc); if (!sil) for (let i = 0; i < 5; i++) circle(g, hx - r * 0.7 + i * r * 0.35, hy - r * 0.55 + Math.abs(i - 2) * r * 0.1, r * 0.07, shade(o.headColor || '#c04a5a', 0.45)); break; }
+    case 'temples': { const gc = fill(o.headColor || '#c9ccd4'); g.save(); g.beginPath(); g.arc(hx, hy, r * 1.02, 0, Math.PI * 2); g.clip(); circle(g, hx - r * 0.95, hy - r * 0.15, r * 0.36, gc); circle(g, hx + r * 0.75, hy - r * 0.45, r * 0.22, gc); g.restore(); break; }
+    case 'greyHair': { const gc = fill(o.headColor || '#c9ccd4'); g.fillStyle = gc; g.beginPath(); g.ellipse(hx - r * 0.08, hy - r * 0.3, r * 1.08, r * 0.86, 0, Math.PI * 0.95, Math.PI * 2.02); g.fill(); circle(g, hx - r * 0.9, hy, r * 0.3, gc); break; }
+    case 'greyBun': { const gc = fill(o.headColor || '#d4d6dc'); g.fillStyle = gc; g.beginPath(); g.ellipse(hx - r * 0.05, hy - r * 0.45, r * 1.04, r * 0.62, 0, Math.PI * 0.98, Math.PI * 2.02); g.fill(); circle(g, hx - r * 0.7, hy - r * 0.95, r * 0.42, gc); break; }
+    case 'straw': { const gc = fill(o.hairColor || '#d4d6dc'); circle(g, hx - r * 0.95, hy - r * 0.05, r * 0.3, gc); const sc = fill(o.headColor || '#e8c870'); g.fillStyle = sc; g.beginPath(); g.ellipse(hx, hy - r * 0.55, r * 1.75, r * 0.3, 0, 0, Math.PI * 2); g.fill(); g.beginPath(); g.ellipse(hx, hy - r * 0.62, r * 0.95, r * 0.75, 0, Math.PI, Math.PI * 2); g.fill();
+      if (!sil) { g.fillStyle = '#c0453a'; g.fillRect(hx - r * 0.95, hy - r * 0.78, r * 1.9, r * 0.18); } break; }
+    case 'panama': { const pc = fill(o.headColor || '#f4f1ea'); g.fillStyle = pc; g.beginPath(); g.ellipse(hx, hy - r * 0.5, r * 1.45, r * 0.3, 0, 0, Math.PI * 2); g.fill(); g.beginPath(); g.ellipse(hx, hy - r * 0.55, r * 0.98, r * 0.8, 0, Math.PI, Math.PI * 2); g.fill();
+      if (!sil) { g.strokeStyle = alpha(shade(o.headColor || '#f4f1ea', -0.25), 0.9); g.lineWidth = r * 0.08; g.beginPath(); g.ellipse(hx, hy - r * 0.6, r * 0.97, r * 0.2, 0, 0, Math.PI); g.stroke(); } break; }
+    case 'tuft': g.fillStyle = fill(o._ink); g.beginPath(); g.moveTo(hx - r * 0.2, hy - r * 0.92); g.quadraticCurveTo(hx - r * 0.1, hy - r * 1.7, hx + r * 0.45, hy - r * 1.55); g.quadraticCurveTo(hx + r * 0.1, hy - r * 1.3, hx + r * 0.25, hy - r * 0.9); g.fill(); break;
     case 'curly': for (let i = 0; i < 7; i++) { const a = Math.PI * (1.05 + i * 0.13); circle(g, hx + Math.cos(a) * r * 0.92, hy + Math.sin(a) * r * 0.92, r * 0.34, fill(o._ink)); } break;
     case 'spiky': g.fillStyle = fill(o._ink); g.beginPath(); for (let i = 0; i <= 6; i++) { const a = Math.PI * (1.05 + i * 0.15); const rr2 = i % 2 ? r * 1.45 : r * 0.95; g.lineTo(hx + Math.cos(a) * rr2, hy + Math.sin(a) * rr2); } g.closePath(); g.fill(); break;
   }
@@ -236,6 +246,8 @@ function parts(g, o, p, of, ink, far, pass, grow = 0) {
   face(g, p.head[0], p.head[1], HR, { expr: o.expr, talk: o.talk, blink: o.blink, look: o.look, override: o.face });
   if (of.face === 'glasses') { const c = S().feature; g.strokeStyle = c; g.lineWidth = 2.4; for (const dx of [-6.5, 10]) { g.beginPath(); g.arc(p.head[0] + 9 + dx, p.head[1] - 4, 7, 0, Math.PI * 2); g.stroke(); } seg(g, [[p.head[0] + 9.5, p.head[1] - 4], [p.head[0] + 12.5, p.head[1] - 4]], 2, c); }
   if (of.face === 'sunglasses') { g.fillStyle = '#05060a'; rr(g, p.head[0] - 1, p.head[1] - 10, 16, 11, 4); g.fill(); rr(g, p.head[0] + 17, p.head[1] - 10, 15, 11, 4); g.fill(); seg(g, [[p.head[0] - 4, p.head[1] - 7], [p.head[0] + 33, p.head[1] - 7]], 2.5, '#05060a'); g.fillStyle = '#9fe8ff'; g.fillRect(p.head[0] + 2, p.head[1] - 8, 4, 2); g.fillRect(p.head[0] + 20, p.head[1] - 8, 4, 2); }
+  if (of.mole) circle(g, p.head[0] + 12 + of.mole[0] * 10, p.head[1] + of.mole[1] * HR, 3.2, '#c8906a');
+  if (of.beard) { g.fillStyle = of.beard; g.beginPath(); g.arc(p.head[0] + 3, p.head[1] + 2, HR + 1.5, Math.PI * 0.05, Math.PI * 0.95); g.arc(p.head[0] + 6, p.head[1] - 2, HR * 0.78, Math.PI * 0.85, Math.PI * 0.12, true); g.closePath(); g.fill(); }
   if (of.head === 'hood') { g.strokeStyle = shade(of.headColor || of.color || '#d64a33', 0.15); g.lineWidth = 5; g.beginPath(); g.arc(p.head[0] - 6, p.head[1] + 2, HR * 1.18, Math.PI * 0.9, Math.PI * 1.75); g.stroke(); }
   if (o.prop) drawProp(g, o.prop, p, ink);
 }
@@ -255,6 +267,12 @@ function drawProp(g, prop, p, ink) {
     case 'paddle': circle(g, h[0] + 12, h[1] - 6, 11, t.color || '#b2382a'); break;
     case 'pointer': seg(g, [h, [h[0] + 70, h[1] - 50]], 2.5, '#d8d0c0'); break;
     case 'tablet': rr(g, h[0] - 6, h[1] - 34, 40, 30, 4); g.fillStyle = ink; g.fill(); g.fillStyle = t.glow || '#7fd0d6'; g.fillRect(h[0] - 2, h[1] - 30, 32, 22); break;
+    case 'helmet': circle(g, h[0] + 16, h[1] - 18, 22, t.color || '#1e2230'); g.fillStyle = '#7fb8e8'; g.beginPath(); g.ellipse(h[0] + 26, h[1] - 18, 10, 13, 0, 0, 7); g.fill(); break;
+    case 'cig': seg(g, [h, [h[0] + 16, h[1] - 3]], 3, '#f2efe8'); circle(g, h[0] + 17, h[1] - 3, 2.2, '#ff7a3a'); for (let i = 0; i < 3; i++) { const k = ((t.t || 0) * 0.6 + i / 3) % 1; circle(g, h[0] + 18 + Math.sin(k * 9 + i) * 6, h[1] - 8 - k * 60, 4 + k * 8, `rgba(220,220,230,${0.35 * (1 - k)})`); } break;
+    case 'shovel': seg(g, [[h[0] - 4, h[1] - 60], [h[0] + 4, h[1] + 80]], 4, '#a87a4a'); poly(g, [[h[0] - 6, h[1] + 78], [h[0] + 16, h[1] + 78], [h[0] + 12, h[1] + 112], [h[0] - 2, h[1] + 112]], '#8a909a'); break;
+    case 'cane': seg(g, [[h[0] + 4, h[1] - 6], [h[0] + 14, 0]], 6, '#5a3a24'); g.strokeStyle = '#5a3a24'; g.lineWidth = 6; g.beginPath(); g.arc(h[0] - 6, h[1] - 6, 10, Math.PI, 0); g.stroke(); break;
+    case 'record': circle(g, h[0] + 14, h[1] - 14, 26, '#141418'); circle(g, h[0] + 14, h[1] - 14, 9, '#d8384a'); break;
+    case 'keys': circle(g, h[0] + 6, h[1] - 6, 6, '#c9ccd4'); seg(g, [[h[0] + 10, h[1] - 4], [h[0] + 22, h[1] + 6]], 3, '#c9ccd4'); break;
     case 'flashlight': seg(g, [h, [h[0] + 14, h[1] - 4]], 6, '#3a3a44'); g.save(); g.globalCompositeOperation = 'lighter'; g.fillStyle = 'rgba(255,240,200,.14)'; g.beginPath(); g.moveTo(h[0] + 14, h[1] - 4); g.lineTo(h[0] + 260, h[1] - 70); g.lineTo(h[0] + 260, h[1] + 60); g.closePath(); g.fill(); g.restore(); break;
   }
 }
@@ -276,6 +294,8 @@ export function bigFace(g, cx, cy, r, o = {}) {
   if (of.head && !['hood', 'none'].includes(of.head)) drawHeadwear(g, { ...of, _ink: ink }, 0, 0, r, 'main');
   face(g, 0, 0, r, { expr: o.expr, talk: o.talk, blink: o.blink, look: o.look, front: true, override: o.face });
   if (of.face === 'glasses') { g.strokeStyle = st.feature; g.lineWidth = r * 0.06; for (const dx of [-0.34, 0.34]) { g.beginPath(); g.arc(dx * r, -r * 0.16, r * 0.26, 0, Math.PI * 2); g.stroke(); } }
+  if (of.mole) circle(g, of.mole[0] * r, of.mole[1] * r, r * 0.055, '#c8906a');
+  if (of.beard) { g.fillStyle = of.beard; g.beginPath(); g.arc(0, 0, r * 1.01, Math.PI * 0.12, Math.PI * 0.88); g.arc(0, -r * 0.04, r * 0.86, Math.PI * 0.8, Math.PI * 0.2, true); g.closePath(); g.fill(); }
   if (of.face === 'sunglasses') { g.fillStyle = '#05060a'; rr(g, -r * 0.66, -r * 0.34, r * 0.6, r * 0.4, r * 0.12); g.fill(); rr(g, r * 0.06, -r * 0.34, r * 0.6, r * 0.4, r * 0.12); g.fill(); g.fillStyle = 'rgba(160,230,255,.6)'; g.fillRect(-r * 0.55, -r * 0.28, r * 0.12, r * 0.05); }
   g.restore();
 }

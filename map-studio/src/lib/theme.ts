@@ -31,6 +31,10 @@ export const MAP_FULL = 6000;
 export const CLOSE_START = 300;
 export const CLOSE_FULL = 160;
 
+// Natural Earth vectors fade out between these widths (km): too coarse for town-scale shots.
+export const VECTOR_FADE_START = 24;
+export const VECTOR_FADE_END = 12;
+
 // Animation defaults (seconds)
 export const DRAW_DUR = 1.6;
 export const LABEL_IN = 0.45;

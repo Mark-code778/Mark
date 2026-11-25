@@ -1,7 +1,7 @@
 import React from 'react';
 import {geoCircle, geoInterpolate, GeoProjection} from 'd3-geo';
 import {Cam, Overlay, LonLat} from '../lib/types';
-import {COLORS, colorOf, DRAW_DUR, FONT_SANS, FONT_SERIF, H, LABEL_IN, SHADOW, W, EARTH_KM} from '../lib/theme';
+import {COLORS, colorOf, DRAW_DUR, FONT_SANS, FONT_SERIF, H, LABEL_IN, SHADOW, W, EARTH_KM, VECTOR_FADE_START, VECTOR_FADE_END} from '../lib/theme';
 import {ease, smooth} from '../lib/camera';
 import {linesOf, pathOf, pathOfLines} from '../lib/geo';
 
@@ -28,6 +28,8 @@ const Pill: React.FC<{x: number; y: number; text: string; color: string; a: numb
 );
 
 export const Overlays: React.FC<{overlays: Overlay[]; proj: GeoProjection; t: number; cam: Cam; geo: GeoLayers}> = ({overlays, proj, t, cam, geo}) => {
+  // Natural Earth 1:10m is ~1 km accurate: below ~15 km across, its lines no longer match the photo, so they fade out.
+  const vec = smooth((Math.log(cam.span) - Math.log(VECTOR_FADE_END)) / (Math.log(VECTOR_FADE_START) - Math.log(VECTOR_FADE_END)));
   const svg: React.ReactNode[] = [];
   const html: React.ReactNode[] = [];
   const under: React.ReactNode[] = []; // fills + dimming go beneath lines
@@ -38,15 +40,18 @@ export const Overlays: React.FC<{overlays: Overlay[]; proj: GeoProjection; t: nu
     switch (o.type) {
       case 'coast': {
         const p = prog(t, o, 2.4);
-        svg.push(<path key={k(i, 'c')} d={pathOfLines(geo.coast.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.coast} strokeWidth={1.6} strokeLinejoin="round" />);
+        if (vec > 0.01) svg.push(<path key={k(i, 'c')} d={pathOfLines(geo.coast.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.coast} strokeWidth={1.6} strokeLinejoin="round" opacity={vec} />);
         break;
       }
       case 'borders': {
+        if (vec <= 0.01) break;
         const p = prog(t, o, 2);
-        if (o.states) svg.push(<path key={k(i, 's')} d={pathOfLines(geo.states.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.states} strokeWidth={1.3} strokeDasharray="5 5" />);
-        svg.push(<path key={k(i, 'm')} d={pathOfLines(geo.maritime.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.blue} strokeOpacity={0.7} strokeWidth={1.8} strokeDasharray="8 7" />);
-        svg.push(<path key={k(i, 'bs')} d={pathOfLines(geo.borders.flatMap(linesOf), proj, p)} fill="none" stroke="rgba(0,0,0,0.45)" strokeWidth={4.5} strokeLinejoin="round" />);
-        svg.push(<path key={k(i, 'b')} d={pathOfLines(geo.borders.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.border} strokeWidth={2.2} strokeLinejoin="round" />);
+        const g: React.ReactNode[] = [];
+        if (o.states) g.push(<path key={k(i, 's')} d={pathOfLines(geo.states.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.states} strokeWidth={1.3} strokeDasharray="5 5" />);
+        g.push(<path key={k(i, 'm')} d={pathOfLines(geo.maritime.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.blue} strokeOpacity={0.7} strokeWidth={1.8} strokeDasharray="8 7" />);
+        g.push(<path key={k(i, 'bs')} d={pathOfLines(geo.borders.flatMap(linesOf), proj, p)} fill="none" stroke="rgba(0,0,0,0.45)" strokeWidth={4.5} strokeLinejoin="round" />);
+        g.push(<path key={k(i, 'b')} d={pathOfLines(geo.borders.flatMap(linesOf), proj, p)} fill="none" stroke={COLORS.border} strokeWidth={2.2} strokeLinejoin="round" />);
+        svg.push(<g key={k(i, 'bg')} opacity={vec}>{g}</g>);
         break;
       }
       case 'country': {
@@ -55,9 +60,10 @@ export const Overlays: React.FC<{overlays: Overlay[]; proj: GeoProjection; t: nu
         const col = colorOf(o.color);
         const p = prog(t, o, 2.2);
         const a = smooth((t - (o.t ?? 0)) / 1.2);
-        if (o.focus) under.push(<path key={k(i, 'f')} d={`M-20,-20H${W + 20}V${H + 20}H-20Z ${pathOf(f, proj)}`} fillRule="evenodd" fill={`rgba(0,0,0,${0.5 * a})`} />);
-        if (o.fill !== false) under.push(<path key={k(i, 'cf')} d={pathOf(f, proj)} fill={col} fillOpacity={0.16 * a} />);
-        svg.push(<path key={k(i, 'co')} d={pathOfLines(linesOf(f), proj, p)} fill="none" stroke={col} strokeWidth={3.6} strokeLinejoin="round" style={{filter: `drop-shadow(0 0 6px ${col})`}} />);
+        if (vec <= 0.01) break;
+        if (o.focus) under.push(<path key={k(i, 'f')} d={`M-20,-20H${W + 20}V${H + 20}H-20Z ${pathOf(f, proj)}`} fillRule="evenodd" fill={`rgba(0,0,0,${0.5 * a * vec})`} />);
+        if (o.fill !== false) under.push(<path key={k(i, 'cf')} d={pathOf(f, proj)} fill={col} fillOpacity={0.16 * a * vec} />);
+        svg.push(<path key={k(i, 'co')} d={pathOfLines(linesOf(f), proj, p)} fill="none" stroke={col} strokeWidth={3.6} strokeLinejoin="round" opacity={vec} style={{filter: `drop-shadow(0 0 6px ${col})`}} />);
         break;
       }
       case 'line': {

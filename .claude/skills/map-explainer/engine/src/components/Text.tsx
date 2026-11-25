@@ -80,7 +80,7 @@ export const Hud: React.FC<{cam: Cam}> = ({cam}) => {
     <div style={{position: 'absolute', left: 110, bottom: 56, opacity: 0.85 * a, fontFamily: FONT_SANS, fontWeight: 600, fontSize: 19, color: '#fff', letterSpacing: '0.08em', textShadow: SHADOW}}>
       <div style={{display: 'flex', alignItems: 'flex-end', gap: 14, marginBottom: 10}}>
         <div style={{width: px, height: 9, borderLeft: '2px solid #fff', borderRight: '2px solid #fff', borderBottom: '2px solid #fff', boxShadow: '0 2px 4px rgba(0,0,0,0.6)'}} />
-        <div>{fmtKm(km, 0)}</div>
+        <div>{km < 1 ? `${Math.round(km * 1000)} м` : fmtKm(km, 0)}</div>
       </div>
       <div style={{fontVariantNumeric: 'tabular-nums'}}>{fmtCoord(cam.center[0], cam.center[1])}</div>
     </div>

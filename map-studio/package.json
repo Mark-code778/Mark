@@ -1,0 +1,31 @@
+{
+  "name": "map-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Faceless map explainer videos (Remotion, 1920x1080 @ 30fps)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts MapExplainer out/video.mp4",
+    "still": "remotion still src/index.ts MapExplainer",
+    "prep": "NODE_USE_ENV_PROXY=1 tsx scripts/prepare.ts",
+    "fetch-assets": "NODE_USE_ENV_PROXY=1 node scripts/fetch-assets.mjs",
+    "frames": "node scripts/frames.mjs",
+    "align": "python3 scripts/align.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.547",
+    "@remotion/media-utils": "^4.0.547",
+    "d3-geo": "^3.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.547",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.1",
+    "@types/node": "^26.6.7",
+    "@types/react": "^18.3.32",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

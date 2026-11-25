@@ -1,0 +1,30 @@
+{
+  "meta": {"title": "Тест стиля", "slug": "_styletest", "lang": "ru"},
+  "shots": [
+    {"id": "s01", "narration": "Хук.", "visual": "Глобус из космоса, приближение к Берингову проливу", "duration": 6,
+     "camera": {"from": {"center": [-150, 45], "span": 30000}, "to": {"center": [-169, 65.8], "span": 1400}},
+     "overlays": [{"type": "coast", "t": 3.2}],
+     "onScreenText": {"text": "Почему две страны разделяют всего 3,8 км?", "style": "hook", "t": 0.4}},
+    {"id": "s02", "narration": "Границы.", "visual": "Берингов пролив, границы прорисовываются", "duration": 5,
+     "camera": {"to": {"center": [-169, 65.8], "span": 900}},
+     "overlays": [{"type": "coast"}, {"type": "borders", "t": 0.3},
+       {"type": "country", "code": "RUS", "color": "red", "t": 0.8},
+       {"type": "country", "code": "USA", "color": "accent", "t": 1.2},
+       {"type": "label", "text": "Россия", "pos": [-175, 66.6], "kind": "country", "t": 1.6},
+       {"type": "label", "text": "США", "pos": [-163.5, 65.3], "kind": "country", "t": 2.0},
+       {"type": "label", "text": "Берингов\nпролив", "pos": [-169.3, 65.2], "kind": "water", "t": 2.4}],
+     "onScreenText": {"text": "Россия и Аляска", "style": "chapter", "kicker": "Глава 1"}},
+    {"id": "s03", "narration": "Расстояние.", "visual": "Острова Диомида крупно, линия расстояния", "duration": 6,
+     "camera": {"to": {"center": [-168.97, 65.77], "span": 22}},
+     "overlays": [{"type": "line", "coords": [[-168.98, 65.5], [-168.98, 66.1]], "dashed": true, "color": "white", "text": "Линия перемены дат", "t": 2.2},
+       {"type": "marker", "pos": [-169.07, 65.75], "text": "Ратманова", "side": "left", "color": "red", "t": 2.6},
+       {"type": "marker", "pos": [-168.93, 65.76], "text": "Малый Диомид", "color": "accent", "t": 2.9},
+       {"type": "distance", "from": [-169.035, 65.765], "to": [-168.945, 65.765], "text": "3,8 км", "t": 3.4}],
+     "onScreenText": {"text": "Слева — завтра. Справа — вчера.", "style": "caption", "t": 4.4}},
+    {"id": "s04", "narration": "Число.", "visual": "Число крупно", "duration": 4, "keep": true,
+     "overlays": [{"type": "ring", "pos": [-168.93, 65.76], "km": 5, "text": "80 жителей", "t": 0.3}],
+     "onScreenText": {"text": "80", "style": "number", "kicker": "жителей на острове", "t": 1.2}},
+    {"id": "s05", "narration": "Глава.", "visual": "Титульная карточка", "duration": 3, "kind": "title", "transition": "fade",
+     "title": {"kicker": "Глава 2", "text": "Холодная война на льду"}}
+  ]
+}
